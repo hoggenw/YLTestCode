@@ -1,0 +1,6 @@
+framework module YLBanner {
+  umbrella header "YLBanner-umbrella.h"
+
+  export *
+  module * { export * }
+}
