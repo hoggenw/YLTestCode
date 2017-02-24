@@ -1,6 +1,0 @@
-framework module YLRecordingVideo {
-  umbrella header "YLRecordingVideo-umbrella.h"
-
-  export *
-  module * { export * }
-}
