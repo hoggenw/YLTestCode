@@ -1,0 +1,6 @@
+framework module Pods_YLingFM {
+  umbrella header "Pods-YLingFM-umbrella.h"
+
+  export *
+  module * { export * }
+}
