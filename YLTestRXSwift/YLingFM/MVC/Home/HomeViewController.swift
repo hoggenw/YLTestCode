@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     var timer: Timer?
     var changeModel: TestModel = TestModel()
     //==============
+    var count = Variable(0)
     
     var subscription: Disposable?
     var inputTextFeild: UITextField = UITextField(frame: CGRect(x: 60, y: 100, width: 200, height: 35))
@@ -60,23 +61,58 @@ class HomeViewController: UIViewController {
             })
             
             
-       #elseif true
+       #elseif false
+             timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateValue), userInfo: nil, repeats: true)
+            _ = count.asObservable().subscribe(onNext: {[weak self] (num) in
+                self?.inputTextFeild.text = "variableValue: \(num)"
+            })
+            
 //            let searchResult = inputTextFeild.rx.text
 //                .throttle(0.3, scheduler: MainScheduler.instance)
 //                .distinctUntilChanged()
             
+       #elseif false
+            //共享监听Sharing subscription－shareReplay
+            let nameObserable = inputTextFeild.rx.text.shareReplay(1).map({($0?.characters.count)! >= 6})
+            let pwdObserable = secondTextFeild.rx.text.shareReplay(1).map({ (stringText) -> Bool in
+                return (stringText?.characters.count)! >= 8
+            })
+            _ = nameObserable.subscribe(onNext: {[weak self] (valid) in
+                self?.inputTextFeild.backgroundColor = valid ? UIColor.clear : UIColor.lightGray
+            }).addDisposableTo(disPoseBag)
             
-    #elseif true
-             let nameObserable = inputTextFeild.rx.text.shareReplay(1).map({($0?.characters.count)! >= 6})
-        #endif
+            _ = pwdObserable.subscribe(onNext: {[weak self] (valid) in
+                self?.secondTextFeild.backgroundColor = valid ? UIColor.clear : UIColor.lightGray
+            }).addDisposableTo(disPoseBag)
+            
+            _ = Observable.combineLatest(nameObserable, pwdObserable, resultSelector: { (nameValid, pwdValid) -> Bool in
+                return nameValid && pwdValid
+            }).subscribe(onNext: {[weak self] (valid) in
+                guard valid else {
+                    self?.cancalButton.backgroundColor = UIColor.gray
+                    return
+                }
+                self?.cancalButton.backgroundColor = UIColor.green
+                
+            })
+       #elseif true
+            
+            
+            
+       #endif
 
         
     }
     
 
+    func updateValue() {
+        count.value = count.value + 1
+    }
+    
     func cancelButtonAction(sender: UIButton)  {
         print("取消了")
         subscription?.dispose()
+        timer?.invalidate()
     }
     
     func timerAction() {
