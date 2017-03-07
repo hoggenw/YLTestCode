@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110DE8AB1E6E805C0034733E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DE8AA1E6E805C0034733E /* String+Extension.swift */; };
 		11BD9AEB1E5A72C900E93FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */; };
 		11BD9AED1E5A72C900E93FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD9AEC1E5A72C900E93FA8 /* ViewController.swift */; };
 		11BD9AF01E5A72C900E93FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD9AEE1E5A72C900E93FA8 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110DE8AA1E6E805C0034733E /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		11BD9AE71E5A72C900E93FA8 /* YLTestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLTestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BD9AEC1E5A72C900E93FA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		11BD9AE91E5A72C900E93FA8 /* YLTestCode */ = {
 			isa = PBXGroup;
 			children = (
+				110DE8AA1E6E805C0034733E /* String+Extension.swift */,
 				11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */,
 				11BD9AEC1E5A72C900E93FA8 /* ViewController.swift */,
 				11CC0D6B1E5A7548002994CB /* Oc.h */,
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110DE8AB1E6E805C0034733E /* String+Extension.swift in Sources */,
 				11BD9AED1E5A72C900E93FA8 /* ViewController.swift in Sources */,
 				11CC0D6D1E5A7548002994CB /* Oc.m in Sources */,
 				11BD9AEB1E5A72C900E93FA8 /* AppDelegate.swift in Sources */,
