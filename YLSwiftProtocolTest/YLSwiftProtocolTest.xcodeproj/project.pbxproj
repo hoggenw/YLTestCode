@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11340C271E72458100530B4B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11340C261E72458100530B4B /* String+Extension.swift */; };
 		11A1065A1E6026DF000F9704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A106591E6026DF000F9704 /* AppDelegate.swift */; };
 		11A1065C1E6026DF000F9704 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1065B1E6026DF000F9704 /* ViewController.swift */; };
 		11A1065F1E6026DF000F9704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A1065D1E6026DF000F9704 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11340C261E72458100530B4B /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		11340C281E72473D00530B4B /* YLSwiftProtocolTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLSwiftProtocolTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		11A106561E6026DF000F9704 /* YLSwiftProtocolTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLSwiftProtocolTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A106591E6026DF000F9704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A1065B1E6026DF000F9704 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,12 +80,14 @@
 		11A106581E6026DF000F9704 /* YLSwiftProtocolTest */ = {
 			isa = PBXGroup;
 			children = (
+				11340C261E72458100530B4B /* String+Extension.swift */,
 				11A106591E6026DF000F9704 /* AppDelegate.swift */,
 				11A1065B1E6026DF000F9704 /* ViewController.swift */,
 				11A1065D1E6026DF000F9704 /* Main.storyboard */,
 				11A106601E6026DF000F9704 /* Assets.xcassets */,
 				11A106621E6026DF000F9704 /* LaunchScreen.storyboard */,
 				11A106651E6026DF000F9704 /* Info.plist */,
+				11340C281E72473D00530B4B /* YLSwiftProtocolTest-Bridging-Header.h */,
 			);
 			path = YLSwiftProtocolTest;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 					11A106551E6026DF000F9704 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = KD59NK3467;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					11A106691E6026DF000F9704 = {
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A1065C1E6026DF000F9704 /* ViewController.swift in Sources */,
+				11340C271E72458100530B4B /* String+Extension.swift in Sources */,
 				11A1065A1E6026DF000F9704 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,12 +346,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KD59NK3467;
 				INFOPLIST_FILE = YLSwiftProtocolTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangliugen.YLSwiftProtocolTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YLSwiftProtocolTest/YLSwiftProtocolTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -353,12 +363,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KD59NK3467;
 				INFOPLIST_FILE = YLSwiftProtocolTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangliugen.YLSwiftProtocolTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YLSwiftProtocolTest/YLSwiftProtocolTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -412,6 +424,7 @@
 				11A106751E6026DF000F9704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11A106761E6026DF000F9704 /* Build configuration list for PBXNativeTarget "YLSwiftProtocolTestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				11A106781E6026DF000F9704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
