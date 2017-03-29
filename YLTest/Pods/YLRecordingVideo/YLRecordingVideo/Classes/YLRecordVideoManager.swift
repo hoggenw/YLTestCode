@@ -16,7 +16,7 @@ public class YLRecordVideoManager: NSObject {
 
     public static let recordVideoManager = YLRecordVideoManager()
     private var recordViewController: YLRecordVideoViewController?
-    public var delegate: YLRecordVideoChoiceDelegate?
+    public weak var delegate: YLRecordVideoChoiceDelegate?
     
     override init() {
         super.init()

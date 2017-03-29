@@ -14,25 +14,25 @@ import YLRecordingVideo
 class ViewController: UIViewController {
 
     let manager = YLScanViewManager.shareManager()
-    var baby: BabyBluetooth?
+    //var baby: BabyBluetooth?
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        baby = BabyBluetooth.shareBabyBluetooth()
+//        baby = BabyBluetooth.shareBabyBluetooth()
         intialUI()
-        let minius = { () -> Int in
-            return 10
-        }
-        let test = minius
-        print("\(test)")
-        
-        let sampleArray: [Int] = [1,2,3,4,5]
-        let stringArray = sampleArray.map {
-            String($0)
-        }
-        for index in 0..<stringArray.count {
-            print("\(stringArray[index])")
-        }
+//        let minius = { () -> Int in
+//            return 10
+//        }
+//        let test = minius
+//        print("\(test)")
+//        
+//        let sampleArray: [Int] = [1,2,3,4,5]
+//        let stringArray = sampleArray.map {
+//            String($0)
+//        }
+//        for index in 0..<stringArray.count {
+//            print("\(stringArray[index])")
+//        }
     }
     
     func intialUI() {
@@ -41,7 +41,13 @@ class ViewController: UIViewController {
         button.backgroundColor = UIColor.brown
         button.frame = CGRect(x: self.view.bounds.width/2 - 30, y: self.view.bounds.height/2 - 200, width: 60, height: 50)
         button.setTitle("扫描", for: .normal)
+//        let leftmargin: CGFloat = 0
+//        let rightmargin: CGFloat = 0
         button.addTarget(self, action: #selector(scanQRcode), for: .touchUpInside)
+//        button.addLineWithSide(.inBottom, color: .red, thickness: 3, margin1: leftmargin, margin2: rightmargin)
+//        button.addLineWithSide(.inLeft, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
+//        button.addLineWithSide(.outBottom, color: .red, thickness: 3, margin1: leftmargin, margin2: rightmargin)
+//        button.addLineWithSide(.outLeft, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
         self.view.addSubview(button)
         
         let button1 = UIButton()
@@ -50,6 +56,10 @@ class ViewController: UIViewController {
         button1.setTitle("生成", for: .normal)
         button1.addTarget(self, action: #selector(creatSelfQRcODE), for: .touchUpInside)
         self.view.addSubview(button1)
+//        button1.addLineWithSide(.inRight, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
+//        button1.addLineWithSide(.inTop, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
+//        button1.addLineWithSide(.outRight, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
+//        button1.addLineWithSide(.outTop, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
         
         let button2 = UIButton()
         button2.backgroundColor = UIColor.brown

@@ -19,7 +19,7 @@ public enum YLVideoQuality {
     case highQuality
 }
 
-public protocol YLRecordVideoControlDelegate {
+public protocol YLRecordVideoControlDelegate: class {
     func startRecordDelegate()
     func restartRecordDelegate()
     func cancelRecordDelegate()
@@ -27,7 +27,7 @@ public protocol YLRecordVideoControlDelegate {
     func choiceVideoDelegate()
 }
 
-public protocol YLRecordVideoChoiceDelegate {
+public protocol YLRecordVideoChoiceDelegate: class {
     func choiceVideoWith(path: String)
 }
 

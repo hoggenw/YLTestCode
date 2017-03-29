@@ -14,7 +14,7 @@ open class YLRecordControlView: UIView {
     //最大允许的录制时间（秒）
     open var totalSeconds: Float64?
     /// 录制的控制代理
-    open var delegate: YLRecordVideoControlDelegate?
+    open weak var delegate: YLRecordVideoControlDelegate?
     
     fileprivate var recordButton = UIButton()
     fileprivate var stopOrChioceButton = UIButton()
