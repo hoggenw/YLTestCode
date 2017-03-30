@@ -141,7 +141,44 @@ public extension String {
         return textBounds.size
 
     }
+    func toDouble() -> Double? {
+        return NumberFormatter().number(from: self)?.doubleValue
+    }
     
+    func toFloat() -> Float? {
+        return NumberFormatter().number(from: self)?.floatValue
+    }
+    
+    func toInt() -> Int? {
+        return NumberFormatter().number(from: self)?.intValue
+    }
+    
+    func isEmptyWithoutWhitespacesAndNewlines() -> Bool {
+        if isEmpty {
+            return true
+        }
+        return 0 == trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).characters.count
+    }
+    
+}
+
+extension String {
+    // 正则匹配判断
+    func isMatchRegex(_ regex:String) -> Bool {
+        let predicate =  NSPredicate(format: "SELF MATCHES %@" , regex)
+        return predicate.evaluate(with: self)
+    }
+    // 是否是电话号码
+    func isPhoneNum() -> Bool {
+        
+        let regex = "^1\\d{10}$"
+        return self.isMatchRegex(regex)
+    }
+    //身份证号码判断
+    func isIdentityForChina() -> Bool {
+        let regex = "^(\\d{15}$|^\\d{18}$|^\\d{17}(\\d|X|x))$"
+        return self.isMatchRegex(regex)
+    }
 }
 
 
