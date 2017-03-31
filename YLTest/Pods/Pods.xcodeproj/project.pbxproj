@@ -7,202 +7,264 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09D7B4E7E06A5C88B59F158C01C9E749 /* BabyCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D80A80F811A0295CD2FC7329B8A9AF0 /* BabyCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F73F1F81CAAE1BD66A2630E9722CBEF /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB9AB70CF729E56154399FC2642B72 /* BabyCentralManager.m */; };
-		0FF4C0279E853B8808661CCED55CB08A /* BabyCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 72941D5C06081A339DFDBE0C3123AF29 /* BabyCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11E998ED8F5B94A98BC72066F30EBC40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
-		12FD383810E341A083DBBAB8FC9468FA /* qrcode_scan_btn_flash_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EF296D1AEDF35D52BBCA4919889E34B /* qrcode_scan_btn_flash_down@2x.png */; };
-		1307B0563F40D332F8DD95332B48F8A5 /* Pods-YLTestCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C80C2419B54685C1D1A67B94B7691C /* Pods-YLTestCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D3EFC39B8080ADF2A6393DAF990B234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
-		1DBF8D6A1BB898D8D4DFBC3F1CA9A33B /* qrcode_scan_part_net.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A2643091D49779676F71D935245E4FA /* qrcode_scan_part_net.png */; };
-		2A1F48B2B23C23AEE7EE4B764BC872BE /* qrcode_scan_full_net.png in Resources */ = {isa = PBXBuildFile; fileRef = DE967F65615138B55A7A5B24A4017058 /* qrcode_scan_full_net.png */; };
-		3675DB0655A14E65B5EE206B9E5A8F92 /* qrcode_scan_light_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CF778C6F06139D34EE5E91FBF70B84A /* qrcode_scan_light_green@2x.png */; };
-		3845B4FCF4F57923A14D592F3B14E088 /* BabyPeripheralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E91088F7BCA21C02E49734CB59096B9 /* BabyPeripheralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D42D10314DFE838B99FD410367667E4 /* YLRecordControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0CDBE90219884042D476979B6FC4B /* YLRecordControlView.swift */; };
-		3F2F90163AFF2E83A8D97FCF72903360 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 8370C45F9095955F69968C9083B07070 /* BabyBluetooth.m */; };
-		47AE933A251FB5067ED7F1B450EB0493 /* YLScanViewSytle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BE55786F1C37D3347AF4CDBB782CFB /* YLScanViewSytle.swift */; };
-		47C01F2C252AFB04450B893CFCDE6C57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3034D4F09F6F8B6450F266189D34C4DC /* UIKit.framework */; };
-		4D085404CCBAB4513F02004CBCCC1384 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACE4E8836522D54804F3530488A1AD9 /* Photos.framework */; };
-		5076F8A23B5FECE5275ED90DDE860DF9 /* YLRecordVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB21EF8C078E03C9D827F6326E362670 /* YLRecordVideoManager.swift */; };
-		538EB9FC43C094F4A6C1DFF08192FFF9 /* qrcode_scan_btn_flash_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DB1F88314C2F9880222192290F7B50 /* qrcode_scan_btn_flash_nor@2x.png */; };
-		56784A4C7D58FCC3F39207553E8BC40E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
-		63160BC08DF1705DA3A5B3626DDFF619 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6227DD3EF17DB8FDB6C196F52BDEF /* BabySpeaker.m */; };
-		655D7A714C4C46C3D56C1857DC70E53D /* YLScanViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D523801A245A2225B26F0877054B7 /* YLScanViewManager.swift */; };
-		67B3C09C25AC430F480040DC4A24D380 /* YLBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 199BDA59F46B946B8CB5C200DBED2724 /* YLBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77F903A5F0E60C7385800709C26DD346 /* YLSwiftScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0A4A68EFBD5DF5D0AAEA663C150F41 /* YLSwiftScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B4E2D6F0B4E0041B608CBC68B896F16 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7B0015F98EB389097188C3EA41E85A /* AVKit.framework */; };
-		7C20B110135E64832C3DCDA317786D19 /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 988DF7BA2902394BDB079269FD13A057 /* BabyPeripheralManager.m */; };
-		7CA108D7D2160B23D52C1E1A7173EDE9 /* BabySpeaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C53D16399D52721D8E26E9C2F615574 /* BabySpeaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		872C0555B1F955CBA78F63592225AD5B /* BabyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 6455D0726445D8EBBFB6F1FDA067218B /* BabyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8962D10C1A7536576334C709ECA40741 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3034D4F09F6F8B6450F266189D34C4DC /* UIKit.framework */; };
-		8BDD9FDD4F9A82720ED560BA2FCF0476 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F4970EF89691FF475030D240E8DB91 /* BabyCallback.m */; };
-		8CD1DD4FC3DD3F3494DD331442995C9E /* qrcode_Scan_weixin_Line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C49A9E23861FAE0D93C1A5CE6F4CE /* qrcode_Scan_weixin_Line@2x.png */; };
-		8EA4D1081FDD7A0C4CF289B37EAA7D62 /* YLRecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A38392194F24FD067C93A7A634254 /* YLRecordVideoViewController.swift */; };
-		8EDFA0834471E720F892F19F6935793F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02863738A935176220025BB502C49FC /* AVFoundation.framework */; };
-		94BF59E2A01E74659A7D3FE8422E315D /* YLBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD2A88D92CAF492985E8DF32B4DC0A /* YLBanner.swift */; };
-		95134844F3C263B271ADAF7E7AA8C915 /* BabyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8E76E822835DCB9E6AFED1014EDD0 /* BabyBluetooth-dummy.m */; };
-		958665977F2F738FFE8424AB79944E46 /* BabyDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 45ECA6DE2305BC68319375282E1610E4 /* BabyDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9696BEF7470EE50446871CFABA63DC40 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9235095CCD9470D88DEBCEB8701E8 /* BabyToy.m */; };
-		98C06885969AE524140A5FF01670006E /* YLScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D99F9452893ECC058DF32D3C38AD637 /* YLScanViewController.swift */; };
-		9FD6F55CD7C53BEB880A1CBD2A1DCC19 /* YLRecordVideoStlye.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF69E4546759F455EE66776158491730 /* YLRecordVideoStlye.swift */; };
-		A00FFF8537CA374A2C44552FEAAB80A4 /* BabyRhythm.h in Headers */ = {isa = PBXBuildFile; fileRef = E13EE37091DC6E708346E51E80A47888 /* BabyRhythm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A35B0821F1AA5052F5C78885141149B5 /* YLProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD228F3CF69C17EA69E63D7BE6892EF9 /* YLProgressView.swift */; };
-		A44260F78581E1877E271E6D185A9F16 /* YLScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A96F10602215F303B3FEDC9212B3A61 /* YLScanView.swift */; };
-		A7BAF6B1D66ABCA145630D43E8CB6B36 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D395127E09EB3E2B374C158804F77 /* BabyOptions.m */; };
-		B02C6A78F63FBB79650AA27461E3E39E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
-		B08E717A8B6CC2C30F38CC02BC0F03C8 /* YLScanViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D9B138D02375D01EFC4E2829846EA /* YLScanViewSetting.swift */; };
-		B383E3B74A117E213CC8ADF9A02BDB4F /* Pods-YLTestCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E73B57D14A0691C58E0F3EFCD399CF /* Pods-YLTestCode-dummy.m */; };
-		B6C5E685E050400ADEE9E4095ECA9FC4 /* YLSwiftScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5D780F24ABA55FAAB3A6ECF94F6E3C6 /* YLSwiftScan.bundle */; };
-		BE9E49FC52285E888815A139CA799BC4 /* BabyOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF422F48206C0E9DF84D5D1670CBD110 /* BabyOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF6A5C203424EFF8E7190BEEB576D651 /* YLPhonePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721B5C33DAE44E8F7CE17096778FAB2 /* YLPhonePermissions.swift */; };
-		DF42EEA9A35DCFA91E06FC322CD2E6C3 /* YLRecordingVideo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CDE92283A0F2A9D6C108DBBB105279 /* YLRecordingVideo-dummy.m */; };
-		EA1B2808BAC79A8EFACAC91ECAC9EE57 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A8C73FFDDE91F4B925B017FB499E3 /* UIColor+Extension.swift */; };
-		EC8657A1909D8A20E3FD145E77AA9286 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02863738A935176220025BB502C49FC /* AVFoundation.framework */; };
-		ECC9615F01E6E7CB2671999EBDE3F37B /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F27519B9CCA5BFE97CEC2F7489A333C /* Timer+Extension.swift */; };
-		ED08B4184BBC55E431C0AF089CEC8752 /* YLBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 758FF5EEBFB1F10E7ED3439C0883ACEC /* YLBanner-dummy.m */; };
+		046EA484DC8690E2B0950B2876555739 /* Array+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6370C4F6D38856A2CEAE0DB5D540 /* Array+Extension .swift */; };
+		09D7B4E7E06A5C88B59F158C01C9E749 /* BabyCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 65E83DF142BEB11E9539FBA87BD691E3 /* BabyCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DAEBB69C35B9E3A3245C8FF14931FF5 /* YLAuxiliaryKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C53CB29026DB6D6D029BCC4D682521BC /* YLAuxiliaryKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E6362631E6E9341BE222148AF0BB86F /* qrcode_scan_btn_flash_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C558CE120A833DD080D98FE953A16FA0 /* qrcode_scan_btn_flash_nor@2x.png */; };
+		0F73F1F81CAAE1BD66A2630E9722CBEF /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 211BE4994022C2AD60721FAC09C7FDC3 /* BabyCentralManager.m */; };
+		0FF4C0279E853B8808661CCED55CB08A /* BabyCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E530829BF7DB1F50BA1CE279E2E556 /* BabyCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102B3821E7BBE39FF8E7E3BA101946D2 /* YLRecordingVideo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B3BA369C1C29E4713FB714ECEC7E8A /* YLRecordingVideo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16F08FB5C0C29BFA387CB11F4EFFB36A /* YLScanViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E623F20D7DD4415578507C401385F5 /* YLScanViewManager.swift */; };
+		17C0546D434AC7110FCCF2049FB9A035 /* YLSwiftScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B34ADEC7DCD7F2B4D7C083405BC95DE /* YLSwiftScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18F2AB8CA4EB181A4DDB80D487B55F9B /* YLScanViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F6672B0C40D455588949CC6DEC058 /* YLScanViewSetting.swift */; };
+		195E260D8BDE381804368C3F57151BEA /* YLSwiftScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A355155D91DE873C4F6898CD92769A50 /* YLSwiftScan-dummy.m */; };
+		257511B9E18C46EE703D54B2A9BA82C0 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2BCD4B19435683760EF8369EAFC97 /* CGSize+Extension.swift */; };
+		2890A12CE6AB0B01AA97EC0A941CED76 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02863738A935176220025BB502C49FC /* AVFoundation.framework */; };
+		2D41B7ABAE62466390484493D24AB5B9 /* YLScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1C6193593F289D1135D422D70FF53 /* YLScanLineAnimation.swift */; };
+		344D10E576B4C06A2020B2A206A45AAC /* YLRecordVideoStlye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0E02243C4E95FFCF9F3DA2680190C /* YLRecordVideoStlye.swift */; };
+		3845B4FCF4F57923A14D592F3B14E088 /* BabyPeripheralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00032B54D596B8C2BCAC182F97069D02 /* BabyPeripheralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F2F90163AFF2E83A8D97FCF72903360 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C3161AECD3C02430F0BF56FEA39ED4 /* BabyBluetooth.m */; };
+		46BDA12CA1B90F7277B0C0820F4F9ED1 /* YLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E89677E78E5925E3585E52204DB17B /* YLNavigationController.swift */; };
+		4ACB01D452A3488910A0E5FC610FF6D6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093ED7B88203432A5FCA885CA66FAE1 /* UIColor+Extension.swift */; };
+		4DC57833828B6472D1E8B743AF0E32A4 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F442C9482C57EF9630BD599A233CD /* Dictionary+Extension.swift */; };
+		4FF6A93490E87EAF6B652DEA9CED5134 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3034D4F09F6F8B6450F266189D34C4DC /* UIKit.framework */; };
+		5E8E419C172580373A666E00A01F6DFC /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0794C29F64ECF9FB9D9FA74933C8FE /* UILable+Extension.swift */; };
+		63160BC08DF1705DA3A5B3626DDFF619 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A18D20816AFBF1E38DA7DF3BD40ABA /* BabySpeaker.m */; };
+		66DC6BF50AB3A943937324416C14AC55 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2680404154276FE880A3254076FA45 /* UIColor+Extension.swift */; };
+		77C7F6FCF6FAFDAE17BF4C8EBAF3331B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02863738A935176220025BB502C49FC /* AVFoundation.framework */; };
+		7AE7914445ACB40BD567F6027488E4B4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACE4E8836522D54804F3530488A1AD9 /* Photos.framework */; };
+		7C20B110135E64832C3DCDA317786D19 /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81241EB5088CD3652A59AC17BBC74897 /* BabyPeripheralManager.m */; };
+		7C7EF4064BDDC0C2771D7AB9DDD2990C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4776E37F7C7934497E9E2B63C351D6 /* Date+Extension.swift */; };
+		7CA108D7D2160B23D52C1E1A7173EDE9 /* BabySpeaker.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5B7A1B81419EC0A2A8A6749BEC3268 /* BabySpeaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E81291A61B4C9168E5BA34BB867F1BE /* YLRecordControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A507FB7F390AD7A6854D5F621A8A314 /* YLRecordControlView.swift */; };
+		872C0555B1F955CBA78F63592225AD5B /* BabyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B7AF53F307262A6F524CE19217D63B /* BabyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BDD9FDD4F9A82720ED560BA2FCF0476 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C254693485B4792DCA74B8DA758551 /* BabyCallback.m */; };
+		8D5A2DDCB6F2E4EF0DD8D4DA03C47889 /* Pods-YLTestCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E73B57D14A0691C58E0F3EFCD399CF /* Pods-YLTestCode-dummy.m */; };
+		933EA2EBF4494DB632132F82075F7F58 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C16DD5E47026EA42383CA1E1FDF78C /* UIView+Extension.swift */; };
+		95134844F3C263B271ADAF7E7AA8C915 /* BabyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F939E57AB4F2425DBAF3CB8CFE9B6E9 /* BabyBluetooth-dummy.m */; };
+		958665977F2F738FFE8424AB79944E46 /* BabyDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 578E8CD9AB90F9FAE671735250D00161 /* BabyDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9696BEF7470EE50446871CFABA63DC40 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE372BD7AF33D1088BB7E775F11890E6 /* BabyToy.m */; };
+		9A35AE37EAAEC6D3294404BD5153A020 /* YLAuxiliaryKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D88F8CA117DAE6873D2BDB09EAA894F /* YLAuxiliaryKit-dummy.m */; };
+		9D9C42B0B4B37EEBD250CB04F552CE09 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7B0015F98EB389097188C3EA41E85A /* AVKit.framework */; };
+		A00FFF8537CA374A2C44552FEAAB80A4 /* BabyRhythm.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C4D66E296E9C71D510CC27877E6B804 /* BabyRhythm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0AE354837DA2FDF67C30F6C85623DC2 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C4EA08D5750AE360D5AF88373ECE9 /* UIButton + Extension.swift */; };
+		A1CDECE8D912AE7B72AA696BB381B7CD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E59EDF9E6CCF11E821FBF063337B2 /* UIImage+Extension.swift */; };
+		A46CDE9E11F1637E5FD01E4BE63AE0FE /* qrcode_scan_btn_flash_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC000D4721E65C0D681250338393ED49 /* qrcode_scan_btn_flash_down@2x.png */; };
+		A7BAF6B1D66ABCA145630D43E8CB6B36 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6EDFFAD80F3B205024A036F1EBF0C4 /* BabyOptions.m */; };
+		A7F02EBA69BB992D8BF5AB55E39935E0 /* YLScanViewSytle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044012A47AC850C5A7E282AD20DF2E86 /* YLScanViewSytle.swift */; };
+		B0E2549815183A7FCE98D5E1B890E52D /* qrcode_scan_light_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFADAC8A394BD258EC7DF0FE2884C321 /* qrcode_scan_light_green@2x.png */; };
+		B346DCE396273AAA55D10A917206061D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
+		B3754CCCF2F00206FF80A05F47486B8A /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F4FADC0CF5B693BD663384C30B9A4 /* Timer+Extension.swift */; };
+		B7108B5A07BA9CCAF7F6850D44E988E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
+		B8FDFB069E085E8FA6C8EE84AC70532D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
+		BD52F0CBEDADE69C619F76AF036C65AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3034D4F09F6F8B6450F266189D34C4DC /* UIKit.framework */; };
+		BE9E49FC52285E888815A139CA799BC4 /* BabyOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFE67FDCD722184C4CED4E793E1BAB5 /* BabyOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04892E88E88F1C1AD816DB99199FEB8 /* qrcode_Scan_weixin_Line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99AEC56E96862EB6C2F04FC99181C8BD /* qrcode_Scan_weixin_Line@2x.png */; };
+		C24F2A2FD142EDC0C230542B938C7A44 /* YLProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836D29F64247985087F54B7315EE7D /* YLProgressView.swift */; };
+		C56881AC7707D01DB6FCF693D5741B03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
+		C72DFCC1177DCE1966140C10C4816DA2 /* YLRecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0413A168A1857D700800F7427C3C549 /* YLRecordVideoViewController.swift */; };
+		C7A8FE7A4214A9E581DBADD1F7C28C16 /* YLMainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330E350FEA42CE7B96CAAB24CAF898B /* YLMainTabbarViewController.swift */; };
+		CC4F7B5354EDFAE69505BFB0A84CC177 /* YLPhonePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DE7FFD53D8A7582C694DE694B15A9 /* YLPhonePermissions.swift */; };
+		CD880BB18AA9E91FC4D4BDBE0DA29FC0 /* YLBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21712A8245DB3B01B419706F9B7DD569 /* YLBanner.swift */; };
+		CF3B57CD20BF262037083F986912A13A /* YLSwiftScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2DB880BCD5DB173834A5D2D897B300E /* YLSwiftScan.bundle */; };
+		CFD01CE3B98B1C7DAC4D81F5FBFA3DEC /* YLRecordVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79663125C56976B6F11DD8F7D7373B /* YLRecordVideoManager.swift */; };
+		D1792448941703ECEBDF4A339F956EF1 /* YLScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533558856B71A41406AB19504AE714E /* YLScanViewController.swift */; };
+		D8569F4758A3AD3192370BA4C8F15973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
+		DA94452F202F5BFC847137EA773FAEE3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7505B92E4FA5E8D21BFB7511E1E295D /* String+Extension.swift */; };
+		E0C6C1BA5A7A5ADEF55E3A6234994794 /* YLScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86482F991A4AB842CD3ACDB749060110 /* YLScanView.swift */; };
+		E8E713C67FF047C89BDBBD772044A7BE /* YLBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22AB8D7659667B8E1E62B75475A953 /* YLBanner-dummy.m */; };
+		EF260FDDE839CB631BDC7F4F7DCD7B63 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C49F3421895204B7D2CB5A3F5B52FD /* UIImageView+Extension.swift */; };
 		F010CE79289CACD8F132DA4DB78F20CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
-		F17063813215C9EFF4FB9583BF8FAE6E /* BabyToy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0448C354DF362A7D97D0BECB062360FF /* BabyToy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4DA49CEC3003E287EB7CE59F6C25F46 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = B4759CEF80B1706DF882E2282625887C /* BabyRhythm.m */; };
-		F8B679DAB27E2FF25CD88EC6EB9533F0 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5105B58230C6F8B61CB77FDC9C420EA2 /* BabyDefine.m */; };
-		FB296C9A81B7A7612AF0E80828A91874 /* YLSwiftScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B1B649112CB7F0469AB3F40E4F1612 /* YLSwiftScan-dummy.m */; };
-		FB2F53C66310B8049F6AEEAFF43470B4 /* YLRecordingVideo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D54D28DE8D05FBD599BF13E914BC306D /* YLRecordingVideo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD950578FBA24D8019D3C3FFFE1521DC /* YLScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD16F6B297B6D34601A67CF475E687 /* YLScanLineAnimation.swift */; };
-		FF6026DCB4C3A925C95BC5EA038523A7 /* BabyBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3160A082066546BD4B9B60C6D9467A40 /* BabyBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F17063813215C9EFF4FB9583BF8FAE6E /* BabyToy.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C9EE2966D82466A37551668CE1BC45 /* BabyToy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D33A39EE3E61192FA8A51A7F387AE4 /* qrcode_scan_part_net.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BDE446085E533164F6FA0D413B9648 /* qrcode_scan_part_net.png */; };
+		F3739049EB6F79916DF043BD814B8484 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4DF4E8F6689FF13BD40480480391A8 /* Device.swift */; };
+		F4DA49CEC3003E287EB7CE59F6C25F46 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = F94596A8B2818DE44944F58CAE3E831B /* BabyRhythm.m */; };
+		F50D3C873C45E823E081EB3DDE39BA89 /* YLBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F35646A20EE6CD43CF11E48B096F872 /* YLBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F527A178DA1E75E232E94FD7A972F478 /* Pods-YLTestCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C80C2419B54685C1D1A67B94B7691C /* Pods-YLTestCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8B679DAB27E2FF25CD88EC6EB9533F0 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18880E2A88CBBE24697486E99F5454E2 /* BabyDefine.m */; };
+		FD5478B89ACDF115C57845DF16976552 /* qrcode_scan_full_net.png in Resources */ = {isa = PBXBuildFile; fileRef = 1664A942085A341D13F27322D81A02CF /* qrcode_scan_full_net.png */; };
+		FDC3FE1B81405DA3475D1EEFE9608E13 /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F662AA2653D5B195733026910DC70F /* Timer+Extension.swift */; };
+		FF0ECB759BE834A3F8EE9943CAE66E45 /* YLRecordingVideo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A2E857DE9221CFAA3D529CBCD1DE04 /* YLRecordingVideo-dummy.m */; };
+		FF6026DCB4C3A925C95BC5EA038523A7 /* BabyBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3270856C2CE9D399B7261EB4900150 /* BabyBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		107AFFEDEFC65D4BC23C519356B8F489 /* PBXContainerItemProxy */ = {
+		5351A1BDF89F17B1EA730B03258FE0ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6589F4662CD0DFE15145CF6310A7E9EB;
+			remoteGlobalIDString = 323FA71E6EAAB368A7D7832AC60D1573;
 			remoteInfo = YLBanner;
 		};
-		35800A75CF22A6AA13FB9F8A240E078B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A6A6BD4659C5AD8447135E1FFFA69C8;
-			remoteInfo = "YLSwiftScan-YLSwiftScan";
-		};
-		4AD14744A643C4F8D07370A8C932A417 /* PBXContainerItemProxy */ = {
+		70CB380506D54544645C3250BE514D77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F4B1A0F40902F9533C324157F3F2703D;
 			remoteInfo = BabyBluetooth;
 		};
-		76F45F6F761EF8BAA3F98C552073713E /* PBXContainerItemProxy */ = {
+		A5C7B1F0CEEEEA687FD344196E518DA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0836A21ADCA0A32985F59FD61E75D7CC;
+			remoteGlobalIDString = E178DCB53A466176089BA0AF55CDF812;
 			remoteInfo = YLSwiftScan;
 		};
-		7C04D5308F57A93592678B5185EA9D8A /* PBXContainerItemProxy */ = {
+		AB39F82028C0693268F1D9C56C41DC65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2DB626D7B09C6F8A31027B84541E3F1F;
+			remoteGlobalIDString = D5DFC697E20B5FC3CC46D99C9CFC2866;
 			remoteInfo = YLRecordingVideo;
+		};
+		B8C4F573C3936C97949F031DEBF748EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 931910E35420C99E47B6B2313E207FF3;
+			remoteInfo = "YLSwiftScan-YLSwiftScan";
+		};
+		EDA54628FABC1258E26203155FCDB101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEF9B45E6D785B34C8411F7F1108B977;
+			remoteInfo = YLAuxiliaryKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00032B54D596B8C2BCAC182F97069D02 /* BabyPeripheralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyPeripheralManager.h; path = Classes/objc/BabyPeripheralManager.h; sourceTree = "<group>"; };
+		005AD58C7D8FDF1C5D393F6EA13E9900 /* YLRecordingVideo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRecordingVideo.xcconfig; sourceTree = "<group>"; };
+		00836D29F64247985087F54B7315EE7D /* YLProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLProgressView.swift; path = YLRecordingVideo/Classes/YLProgressView.swift; sourceTree = "<group>"; };
+		00C429ABE47AA2EAA97E19535ADA7165 /* YLSwiftScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLSwiftScan.modulemap; sourceTree = "<group>"; };
 		02C80C2419B54685C1D1A67B94B7691C /* Pods-YLTestCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YLTestCode-umbrella.h"; sourceTree = "<group>"; };
-		0448C354DF362A7D97D0BECB062360FF /* BabyToy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyToy.h; path = Classes/objc/BabyToy.h; sourceTree = "<group>"; };
-		089F652DB30E33934729B4CC03BDC11B /* YLSwiftScan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLSwiftScan-prefix.pch"; sourceTree = "<group>"; };
-		0EF296D1AEDF35D52BBCA4919889E34B /* qrcode_scan_btn_flash_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_btn_flash_down@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_btn_flash_down@2x.png"; sourceTree = "<group>"; };
-		11AD16F6B297B6D34601A67CF475E687 /* YLScanLineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanLineAnimation.swift; path = YLSwiftScan/Classes/YLScanLineAnimation.swift; sourceTree = "<group>"; };
-		13B1B649112CB7F0469AB3F40E4F1612 /* YLSwiftScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLSwiftScan-dummy.m"; sourceTree = "<group>"; };
-		13C36219FBD77B8BCFA99C642FF20763 /* YLBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLBanner.framework; path = YLBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		158539CD630AE8863DAD697C928746F5 /* YLRecordingVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLRecordingVideo.framework; path = YLRecordingVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17492693240D6B7D894C2EA22E357CA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17A7023A779AF088E36ABB62B253327B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		188AB6EF01D73548527E541114939C08 /* BabyBluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BabyBluetooth.xcconfig; sourceTree = "<group>"; };
-		194A8C73FFDDE91F4B925B017FB499E3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "YLBanner/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
-		199BDA59F46B946B8CB5C200DBED2724 /* YLBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLBanner-umbrella.h"; sourceTree = "<group>"; };
-		1D5C49A9E23861FAE0D93C1A5CE6F4CE /* qrcode_Scan_weixin_Line@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_Scan_weixin_Line@2x.png"; path = "YLSwiftScan/Assets/qrcode_Scan_weixin_Line@2x.png"; sourceTree = "<group>"; };
-		1F27519B9CCA5BFE97CEC2F7489A333C /* Timer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+Extension.swift"; path = "YLBanner/Classes/Timer+Extension.swift"; sourceTree = "<group>"; };
-		241D3F9F3B285D6CFEAE26C2E8B37AE0 /* ResourceBundle-YLSwiftScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YLSwiftScan-Info.plist"; sourceTree = "<group>"; };
-		2CF778C6F06139D34EE5E91FBF70B84A /* qrcode_scan_light_green@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_light_green@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_light_green@2x.png"; sourceTree = "<group>"; };
-		2D1210914DD84B5C12EB4EF58390A66D /* YLSwiftScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLSwiftScan.modulemap; sourceTree = "<group>"; };
+		044012A47AC850C5A7E282AD20DF2E86 /* YLScanViewSytle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewSytle.swift; path = YLSwiftScan/Classes/YLScanViewSytle.swift; sourceTree = "<group>"; };
+		0F22AB8D7659667B8E1E62B75475A953 /* YLBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLBanner-dummy.m"; sourceTree = "<group>"; };
+		1664A942085A341D13F27322D81A02CF /* qrcode_scan_full_net.png */ = {isa = PBXFileReference; includeInIndex = 1; name = qrcode_scan_full_net.png; path = YLSwiftScan/Assets/qrcode_scan_full_net.png; sourceTree = "<group>"; };
+		166DE8C11A965EBD7DC85DB2F3006945 /* YLBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLBanner.xcconfig; sourceTree = "<group>"; };
+		18880E2A88CBBE24697486E99F5454E2 /* BabyDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyDefine.m; path = Classes/objc/BabyDefine.m; sourceTree = "<group>"; };
+		1A507FB7F390AD7A6854D5F621A8A314 /* YLRecordControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordControlView.swift; path = YLRecordingVideo/Classes/YLRecordControlView.swift; sourceTree = "<group>"; };
+		1ACF408F9F13A0BC2574C3ED0B769DC5 /* YLAuxiliaryKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLAuxiliaryKit.xcconfig; sourceTree = "<group>"; };
+		20921954487258945E09029B8AE6F06D /* ResourceBundle-YLSwiftScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YLSwiftScan-Info.plist"; sourceTree = "<group>"; };
+		20C3161AECD3C02430F0BF56FEA39ED4 /* BabyBluetooth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyBluetooth.m; path = Classes/objc/BabyBluetooth.m; sourceTree = "<group>"; };
+		211BE4994022C2AD60721FAC09C7FDC3 /* BabyCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCentralManager.m; path = Classes/objc/BabyCentralManager.m; sourceTree = "<group>"; };
+		21712A8245DB3B01B419706F9B7DD569 /* YLBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLBanner.swift; path = YLBanner/Classes/YLBanner.swift; sourceTree = "<group>"; };
+		23008AFBAB127E3D45E3F57754622E88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2330E350FEA42CE7B96CAAB24CAF898B /* YLMainTabbarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLMainTabbarViewController.swift; path = YLAuxiliaryKit/Classes/YLMainTabbarViewController.swift; sourceTree = "<group>"; };
+		2C3270856C2CE9D399B7261EB4900150 /* BabyBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		2DC91DC1F4E21E41809168298AACBCE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F2680404154276FE880A3254076FA45 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2FF6938094FDE4FBD8ABE06C2B835169 /* YLBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLBanner-prefix.pch"; sourceTree = "<group>"; };
 		3034D4F09F6F8B6450F266189D34C4DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3160A082066546BD4B9B60C6D9467A40 /* BabyBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-umbrella.h"; sourceTree = "<group>"; };
-		351AF7C7AEB74A60D65A8E5EA62B7E2B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39F4970EF89691FF475030D240E8DB91 /* BabyCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCallback.m; path = Classes/objc/BabyCallback.m; sourceTree = "<group>"; };
-		3C53D16399D52721D8E26E9C2F615574 /* BabySpeaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabySpeaker.h; path = Classes/objc/BabySpeaker.h; sourceTree = "<group>"; };
-		45ECA6DE2305BC68319375282E1610E4 /* BabyDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyDefine.h; path = Classes/objc/BabyDefine.h; sourceTree = "<group>"; };
+		3093ED7B88203432A5FCA885CA66FAE1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "YLBanner/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		30C49F3421895204B7D2CB5A3F5B52FD /* UIImageView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		31C9EE2966D82466A37551668CE1BC45 /* BabyToy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyToy.h; path = Classes/objc/BabyToy.h; sourceTree = "<group>"; };
+		34B3BA369C1C29E4713FB714ECEC7E8A /* YLRecordingVideo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRecordingVideo-umbrella.h"; sourceTree = "<group>"; };
+		3533558856B71A41406AB19504AE714E /* YLScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewController.swift; path = YLSwiftScan/Classes/YLScanViewController.swift; sourceTree = "<group>"; };
+		3BCDB94FD49D2354747DF7D9208A6418 /* YLRecordingVideo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLRecordingVideo.modulemap; sourceTree = "<group>"; };
+		44C254693485B4792DCA74B8DA758551 /* BabyCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCallback.m; path = Classes/objc/BabyCallback.m; sourceTree = "<group>"; };
 		46A3A09B6FCFF2060A28C1264DC3D424 /* Pods-YLTestCode-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YLTestCode-acknowledgements.plist"; sourceTree = "<group>"; };
-		4A2643091D49779676F71D935245E4FA /* qrcode_scan_part_net.png */ = {isa = PBXFileReference; includeInIndex = 1; name = qrcode_scan_part_net.png; path = YLSwiftScan/Assets/qrcode_scan_part_net.png; sourceTree = "<group>"; };
-		4D3D523801A245A2225B26F0877054B7 /* YLScanViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewManager.swift; path = YLSwiftScan/Classes/YLScanViewManager.swift; sourceTree = "<group>"; };
-		4D7EBF48F2B3E5BD9CF053E678BF0525 /* BabyBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BabyBluetooth.modulemap; sourceTree = "<group>"; };
-		5105B58230C6F8B61CB77FDC9C420EA2 /* BabyDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyDefine.m; path = Classes/objc/BabyDefine.m; sourceTree = "<group>"; };
-		52DB1F88314C2F9880222192290F7B50 /* qrcode_scan_btn_flash_nor@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_btn_flash_nor@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_btn_flash_nor@2x.png"; sourceTree = "<group>"; };
-		5BBB9AB70CF729E56154399FC2642B72 /* BabyCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCentralManager.m; path = Classes/objc/BabyCentralManager.m; sourceTree = "<group>"; };
-		5D80A80F811A0295CD2FC7329B8A9AF0 /* BabyCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCentralManager.h; path = Classes/objc/BabyCentralManager.h; sourceTree = "<group>"; };
-		5EFD2A88D92CAF492985E8DF32B4DC0A /* YLBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLBanner.swift; path = YLBanner/Classes/YLBanner.swift; sourceTree = "<group>"; };
-		6455D0726445D8EBBFB6F1FDA067218B /* BabyBluetooth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyBluetooth.h; path = Classes/objc/BabyBluetooth.h; sourceTree = "<group>"; };
-		64DF7B3DDDDD89D5856DB53AC5472227 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6721B5C33DAE44E8F7CE17096778FAB2 /* YLPhonePermissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLPhonePermissions.swift; path = YLSwiftScan/Classes/YLPhonePermissions.swift; sourceTree = "<group>"; };
-		6A96F10602215F303B3FEDC9212B3A61 /* YLScanView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanView.swift; path = YLSwiftScan/Classes/YLScanView.swift; sourceTree = "<group>"; };
-		6E91088F7BCA21C02E49734CB59096B9 /* BabyPeripheralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyPeripheralManager.h; path = Classes/objc/BabyPeripheralManager.h; sourceTree = "<group>"; };
-		72941D5C06081A339DFDBE0C3123AF29 /* BabyCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCallback.h; path = Classes/objc/BabyCallback.h; sourceTree = "<group>"; };
-		758FF5EEBFB1F10E7ED3439C0883ACEC /* YLBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLBanner-dummy.m"; sourceTree = "<group>"; };
-		7A5CC99D1E4F58CB5BEF97DCB9CC4BA5 /* YLRecordingVideo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLRecordingVideo.modulemap; sourceTree = "<group>"; };
-		7BE0CDBE90219884042D476979B6FC4B /* YLRecordControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordControlView.swift; path = YLRecordingVideo/Classes/YLRecordControlView.swift; sourceTree = "<group>"; };
-		7D5D9B138D02375D01EFC4E2829846EA /* YLScanViewSetting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewSetting.swift; path = YLSwiftScan/Classes/YLScanViewSetting.swift; sourceTree = "<group>"; };
+		49E89677E78E5925E3585E52204DB17B /* YLNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLNavigationController.swift; path = YLAuxiliaryKit/Classes/YLNavigationController.swift; sourceTree = "<group>"; };
+		4AB4C33D1E62495E282C1BF17BCE5E83 /* BabyBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		4B70F955C7BAFCFDD7BFA3822B5C50D4 /* YLSwiftScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLSwiftScan.framework; path = YLSwiftScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA04BA3438515FD03CE73CEAF9C39C0 /* Pods_YLTestCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YLTestCode.framework; path = "Pods-YLTestCode.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE2BB016F8275D9AB1ADCCEA479CD7E /* YLBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLBanner.framework; path = YLBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51A2E857DE9221CFAA3D529CBCD1DE04 /* YLRecordingVideo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLRecordingVideo-dummy.m"; sourceTree = "<group>"; };
+		551F4FADC0CF5B693BD663384C30B9A4 /* Timer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+Extension.swift"; path = "YLBanner/Classes/Timer+Extension.swift"; sourceTree = "<group>"; };
+		578E8CD9AB90F9FAE671735250D00161 /* BabyDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyDefine.h; path = Classes/objc/BabyDefine.h; sourceTree = "<group>"; };
+		5C1C4EA08D5750AE360D5AF88373ECE9 /* UIButton + Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton + Extension.swift"; path = "YLAuxiliaryKit/Classes/UIButton + Extension.swift"; sourceTree = "<group>"; };
+		5C4D66E296E9C71D510CC27877E6B804 /* BabyRhythm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyRhythm.h; path = Classes/objc/BabyRhythm.h; sourceTree = "<group>"; };
+		61E5CE2680DBBFC84789B9D23BE7E740 /* YLAuxiliaryKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLAuxiliaryKit-prefix.pch"; sourceTree = "<group>"; };
+		62D0E02243C4E95FFCF9F3DA2680190C /* YLRecordVideoStlye.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoStlye.swift; path = YLRecordingVideo/Classes/YLRecordVideoStlye.swift; sourceTree = "<group>"; };
+		64F662AA2653D5B195733026910DC70F /* Timer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+Extension.swift"; path = "YLAuxiliaryKit/Classes/Timer+Extension.swift"; sourceTree = "<group>"; };
+		65E83DF142BEB11E9539FBA87BD691E3 /* BabyCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCentralManager.h; path = Classes/objc/BabyCentralManager.h; sourceTree = "<group>"; };
+		7079144760B2AF3FCB1792742C768552 /* YLBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLBanner.modulemap; sourceTree = "<group>"; };
+		725A14443AD93E597F6C353F4AF1FA7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		756C3C88F5880579DD2395694FA9B145 /* BabyBluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BabyBluetooth.xcconfig; sourceTree = "<group>"; };
+		76BDE446085E533164F6FA0D413B9648 /* qrcode_scan_part_net.png */ = {isa = PBXFileReference; includeInIndex = 1; name = qrcode_scan_part_net.png; path = YLSwiftScan/Assets/qrcode_scan_part_net.png; sourceTree = "<group>"; };
+		76C16DD5E47026EA42383CA1E1FDF78C /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
+		7C4DF4E8F6689FF13BD40480480391A8 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = YLAuxiliaryKit/Classes/Device.swift; sourceTree = "<group>"; };
+		7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLSwiftScan.xcconfig; sourceTree = "<group>"; };
+		7D992ADE60B402FE59C12402A79B7FF3 /* YLRecordingVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLRecordingVideo.framework; path = YLRecordingVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F939E57AB4F2425DBAF3CB8CFE9B6E9 /* BabyBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BabyBluetooth-dummy.m"; sourceTree = "<group>"; };
+		81241EB5088CD3652A59AC17BBC74897 /* BabyPeripheralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyPeripheralManager.m; path = Classes/objc/BabyPeripheralManager.m; sourceTree = "<group>"; };
 		81698C2B9DAF9C05CE1428D5A912D8CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8370C45F9095955F69968C9083B07070 /* BabyBluetooth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyBluetooth.m; path = Classes/objc/BabyBluetooth.m; sourceTree = "<group>"; };
-		88581D035E5DF8BED10D7EED0946C3C1 /* YLSwiftScan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLSwiftScan.xcconfig; sourceTree = "<group>"; };
-		8D99F9452893ECC058DF32D3C38AD637 /* YLScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewController.swift; path = YLSwiftScan/Classes/YLScanViewController.swift; sourceTree = "<group>"; };
-		8FA6227DD3EF17DB8FDB6C196F52BDEF /* BabySpeaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabySpeaker.m; path = Classes/objc/BabySpeaker.m; sourceTree = "<group>"; };
+		81A6D02D1FF12F491E2DCFF010C50A07 /* YLAuxiliaryKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLAuxiliaryKit.modulemap; sourceTree = "<group>"; };
+		81B7AF53F307262A6F524CE19217D63B /* BabyBluetooth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyBluetooth.h; path = Classes/objc/BabyBluetooth.h; sourceTree = "<group>"; };
+		86482F991A4AB842CD3ACDB749060110 /* YLScanView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanView.swift; path = YLSwiftScan/Classes/YLScanView.swift; sourceTree = "<group>"; };
+		88FA6370C4F6D38856A2CEAE0DB5D540 /* Array+Extension .swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension .swift"; path = "YLAuxiliaryKit/Classes/Array+Extension .swift"; sourceTree = "<group>"; };
+		89F36ACF84BFA2CBDBFBDA55816E6A4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFE67FDCD722184C4CED4E793E1BAB5 /* BabyOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyOptions.h; path = Classes/objc/BabyOptions.h; sourceTree = "<group>"; };
+		8D88F8CA117DAE6873D2BDB09EAA894F /* YLAuxiliaryKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLAuxiliaryKit-dummy.m"; sourceTree = "<group>"; };
 		91CD75AC1D3566409359740042AB1F86 /* Pods-YLTestCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLTestCode.release.xcconfig"; sourceTree = "<group>"; };
+		92F59373E7E5AEB757C89E792E357307 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F9A73636A0F11942819932F6AE4E26 /* YLRecordingVideo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRecordingVideo-prefix.pch"; sourceTree = "<group>"; };
 		9375CEDCF5816318FFDADF8AA4264047 /* Pods-YLTestCode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YLTestCode-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		955E560B2D09C40BFFD1995BDD4449D7 /* YLBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLBanner.xcconfig; sourceTree = "<group>"; };
-		988DF7BA2902394BDB079269FD13A057 /* BabyPeripheralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyPeripheralManager.m; path = Classes/objc/BabyPeripheralManager.m; sourceTree = "<group>"; };
-		9CA9235095CCD9470D88DEBCEB8701E8 /* BabyToy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyToy.m; path = Classes/objc/BabyToy.m; sourceTree = "<group>"; };
-		9E0A4A68EFBD5DF5D0AAEA663C150F41 /* YLSwiftScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLSwiftScan-umbrella.h"; sourceTree = "<group>"; };
-		9F2ED113649E82127B36FC1B15DF9074 /* YLBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLBanner.modulemap; sourceTree = "<group>"; };
+		948F6672B0C40D455588949CC6DEC058 /* YLScanViewSetting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewSetting.swift; path = YLSwiftScan/Classes/YLScanViewSetting.swift; sourceTree = "<group>"; };
+		99AEC56E96862EB6C2F04FC99181C8BD /* qrcode_Scan_weixin_Line@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_Scan_weixin_Line@2x.png"; path = "YLSwiftScan/Assets/qrcode_Scan_weixin_Line@2x.png"; sourceTree = "<group>"; };
+		9B34ADEC7DCD7F2B4D7C083405BC95DE /* YLSwiftScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLSwiftScan-umbrella.h"; sourceTree = "<group>"; };
+		9E79663125C56976B6F11DD8F7D7373B /* YLRecordVideoManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoManager.swift; path = YLRecordingVideo/Classes/YLRecordVideoManager.swift; sourceTree = "<group>"; };
+		9F35646A20EE6CD43CF11E48B096F872 /* YLBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLBanner-umbrella.h"; sourceTree = "<group>"; };
 		9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A07A38392194F24FD067C93A7A634254 /* YLRecordVideoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoViewController.swift; path = YLRecordingVideo/Classes/YLRecordVideoViewController.swift; sourceTree = "<group>"; };
-		A124170D2FEA044DAC94D748D5203620 /* YLRecordingVideo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRecordingVideo.xcconfig; sourceTree = "<group>"; };
-		A2BE55786F1C37D3347AF4CDBB782CFB /* YLScanViewSytle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewSytle.swift; path = YLSwiftScan/Classes/YLScanViewSytle.swift; sourceTree = "<group>"; };
+		A355155D91DE873C4F6898CD92769A50 /* YLSwiftScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLSwiftScan-dummy.m"; sourceTree = "<group>"; };
 		A76615181CF533F447AE2E5A146894AB /* Pods-YLTestCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YLTestCode.modulemap"; sourceTree = "<group>"; };
+		AB137A25F9EC3B32E92468690D92471B /* YLSwiftScan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLSwiftScan-prefix.pch"; sourceTree = "<group>"; };
 		AD7B0015F98EB389097188C3EA41E85A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
-		AF422F48206C0E9DF84D5D1670CBD110 /* BabyOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyOptions.h; path = Classes/objc/BabyOptions.h; sourceTree = "<group>"; };
-		B4759CEF80B1706DF882E2282625887C /* BabyRhythm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyRhythm.m; path = Classes/objc/BabyRhythm.m; sourceTree = "<group>"; };
-		BD228F3CF69C17EA69E63D7BE6892EF9 /* YLProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLProgressView.swift; path = YLRecordingVideo/Classes/YLProgressView.swift; sourceTree = "<group>"; };
-		BE4D395127E09EB3E2B374C158804F77 /* BabyOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyOptions.m; path = Classes/objc/BabyOptions.m; sourceTree = "<group>"; };
-		C0CDE92283A0F2A9D6C108DBBB105279 /* YLRecordingVideo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLRecordingVideo-dummy.m"; sourceTree = "<group>"; };
-		C795C80B8653095C7E5E043B6DC5B156 /* YLRecordingVideo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRecordingVideo-prefix.pch"; sourceTree = "<group>"; };
-		CB21EF8C078E03C9D827F6326E362670 /* YLRecordVideoManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoManager.swift; path = YLRecordingVideo/Classes/YLRecordVideoManager.swift; sourceTree = "<group>"; };
+		B9A2BCD4B19435683760EF8369EAFC97 /* CGSize+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Extension.swift"; path = "YLAuxiliaryKit/Classes/CGSize+Extension.swift"; sourceTree = "<group>"; };
+		BE0794C29F64ECF9FB9D9FA74933C8FE /* UILable+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILable+Extension.swift"; path = "YLAuxiliaryKit/Classes/UILable+Extension.swift"; sourceTree = "<group>"; };
+		C45DE7FFD53D8A7582C694DE694B15A9 /* YLPhonePermissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLPhonePermissions.swift; path = YLSwiftScan/Classes/YLPhonePermissions.swift; sourceTree = "<group>"; };
+		C53CB29026DB6D6D029BCC4D682521BC /* YLAuxiliaryKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLAuxiliaryKit-umbrella.h"; sourceTree = "<group>"; };
+		C558CE120A833DD080D98FE953A16FA0 /* qrcode_scan_btn_flash_nor@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_btn_flash_nor@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_btn_flash_nor@2x.png"; sourceTree = "<group>"; };
+		C5E530829BF7DB1F50BA1CE279E2E556 /* BabyCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCallback.h; path = Classes/objc/BabyCallback.h; sourceTree = "<group>"; };
+		C8A18D20816AFBF1E38DA7DF3BD40ABA /* BabySpeaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabySpeaker.m; path = Classes/objc/BabySpeaker.m; sourceTree = "<group>"; };
+		CA6EDFFAD80F3B205024A036F1EBF0C4 /* BabyOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyOptions.m; path = Classes/objc/BabyOptions.m; sourceTree = "<group>"; };
+		CB4776E37F7C7934497E9E2B63C351D6 /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "YLAuxiliaryKit/Classes/Date+Extension.swift"; sourceTree = "<group>"; };
+		CE372BD7AF33D1088BB7E775F11890E6 /* BabyToy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyToy.m; path = Classes/objc/BabyToy.m; sourceTree = "<group>"; };
 		D02863738A935176220025BB502C49FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		D54D28DE8D05FBD599BF13E914BC306D /* YLRecordingVideo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRecordingVideo-umbrella.h"; sourceTree = "<group>"; };
-		D5D780F24ABA55FAAB3A6ECF94F6E3C6 /* YLSwiftScan.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = YLSwiftScan.bundle; path = YLSwiftScan.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15E59EDF9E6CCF11E821FBF063337B2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D25F442C9482C57EF9630BD599A233CD /* Dictionary+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Extension.swift"; path = "YLAuxiliaryKit/Classes/Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		DACE4E8836522D54804F3530488A1AD9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
-		DBC1B40E7327FFE6BFB7E6A2327B3613 /* YLBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLBanner-prefix.pch"; sourceTree = "<group>"; };
-		DE967F65615138B55A7A5B24A4017058 /* qrcode_scan_full_net.png */ = {isa = PBXFileReference; includeInIndex = 1; name = qrcode_scan_full_net.png; path = YLSwiftScan/Assets/qrcode_scan_full_net.png; sourceTree = "<group>"; };
-		DF69E4546759F455EE66776158491730 /* YLRecordVideoStlye.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoStlye.swift; path = YLRecordingVideo/Classes/YLRecordVideoStlye.swift; sourceTree = "<group>"; };
-		E13EE37091DC6E708346E51E80A47888 /* BabyRhythm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyRhythm.h; path = Classes/objc/BabyRhythm.h; sourceTree = "<group>"; };
+		DC000D4721E65C0D681250338393ED49 /* qrcode_scan_btn_flash_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_btn_flash_down@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_btn_flash_down@2x.png"; sourceTree = "<group>"; };
+		DC5B7A1B81419EC0A2A8A6749BEC3268 /* BabySpeaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabySpeaker.h; path = Classes/objc/BabySpeaker.h; sourceTree = "<group>"; };
+		DFDCF8B0BF8A9A8FCDF79E8ECA879315 /* YLAuxiliaryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLAuxiliaryKit.framework; path = YLAuxiliaryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0413A168A1857D700800F7427C3C549 /* YLRecordVideoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoViewController.swift; path = YLRecordingVideo/Classes/YLRecordVideoViewController.swift; sourceTree = "<group>"; };
+		E1E623F20D7DD4415578507C401385F5 /* YLScanViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewManager.swift; path = YLSwiftScan/Classes/YLScanViewManager.swift; sourceTree = "<group>"; };
 		E29E83014B54AF1EBB1879A9871D9ECC /* Pods-YLTestCode-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YLTestCode-resources.sh"; sourceTree = "<group>"; };
-		E81F3CC73AFB4F1D5AADD09452771021 /* YLSwiftScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLSwiftScan.framework; path = YLSwiftScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8E8E76E822835DCB9E6AFED1014EDD0 /* BabyBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BabyBluetooth-dummy.m"; sourceTree = "<group>"; };
-		E9CE01DF64EA77DD06C659BC750E8AC4 /* BabyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BabyBluetooth.framework; path = BabyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA9DD441CAC2167B37D80E6EEDFF8624 /* Pods_YLTestCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YLTestCode.framework; path = "Pods-YLTestCode.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44AD1D5E19A3323DD29C132A53E1B41 /* BabyBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BabyBluetooth.modulemap; sourceTree = "<group>"; };
+		E6B661F27EF4DDC40D2525C9FA0F6905 /* BabyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BabyBluetooth.framework; path = BabyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7505B92E4FA5E8D21BFB7511E1E295D /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "YLAuxiliaryKit/Classes/String+Extension.swift"; sourceTree = "<group>"; };
 		ED5386EA29A8D57BFF431A3C2B5514C7 /* Pods-YLTestCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLTestCode.debug.xcconfig"; sourceTree = "<group>"; };
+		EFADAC8A394BD258EC7DF0FE2884C321 /* qrcode_scan_light_green@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_light_green@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_light_green@2x.png"; sourceTree = "<group>"; };
 		F1C132CC3FB099D6BD494F84422E7E43 /* Pods-YLTestCode-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YLTestCode-frameworks.sh"; sourceTree = "<group>"; };
-		F5064E4C56757117BFD5C8CB89C94FE2 /* BabyBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		F2DB880BCD5DB173834A5D2D897B300E /* YLSwiftScan.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = YLSwiftScan.bundle; path = YLSwiftScan.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E73B57D14A0691C58E0F3EFCD399CF /* Pods-YLTestCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YLTestCode-dummy.m"; sourceTree = "<group>"; };
+		F94596A8B2818DE44944F58CAE3E831B /* BabyRhythm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyRhythm.m; path = Classes/objc/BabyRhythm.m; sourceTree = "<group>"; };
+		F9D1C6193593F289D1135D422D70FF53 /* YLScanLineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanLineAnimation.swift; path = YLSwiftScan/Classes/YLScanLineAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0484A71CA47E7E08AD889B3CBDAAC425 /* Frameworks */ = {
+		1894B03DBCA106A474B2AB1B057CAF7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3EFC39B8080ADF2A6393DAF990B234 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3257C45E5BE56B24FB7D7E5EC242C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56881AC7707D01DB6FCF693D5741B03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2006E48AD84B0A9181BD0FFE44024E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8569F4758A3AD3192370BA4C8F15973 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,46 +276,92 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80A8F282A7CE27E1C947C0E1AE0369BD /* Frameworks */ = {
+		8762C5FF4C53FC7D77A5FFE14DB4415C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC8657A1909D8A20E3FD145E77AA9286 /* AVFoundation.framework in Frameworks */,
-				56784A4C7D58FCC3F39207553E8BC40E /* Foundation.framework in Frameworks */,
-				8962D10C1A7536576334C709ECA40741 /* UIKit.framework in Frameworks */,
+				77C7F6FCF6FAFDAE17BF4C8EBAF3331B /* AVFoundation.framework in Frameworks */,
+				B346DCE396273AAA55D10A917206061D /* Foundation.framework in Frameworks */,
+				BD52F0CBEDADE69C619F76AF036C65AB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A45DC97FE8454EBA73C41EE71FE3D4D6 /* Frameworks */ = {
+		CF2EBDB04B09AA22E96491D58C62F81B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B02C6A78F63FBB79650AA27461E3E39E /* Foundation.framework in Frameworks */,
+				B7108B5A07BA9CCAF7F6850D44E988E1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC83752693D938992F6359359E9F0365 /* Frameworks */ = {
+		D3236ADBC4D1A82D17B6ACC9D7D07007 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EDFA0834471E720F892F19F6935793F /* AVFoundation.framework in Frameworks */,
-				7B4E2D6F0B4E0041B608CBC68B896F16 /* AVKit.framework in Frameworks */,
-				11E998ED8F5B94A98BC72066F30EBC40 /* Foundation.framework in Frameworks */,
-				4D085404CCBAB4513F02004CBCCC1384 /* Photos.framework in Frameworks */,
-				47C01F2C252AFB04450B893CFCDE6C57 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEC429745EEBDDEB7C49C739238F87A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2890A12CE6AB0B01AA97EC0A941CED76 /* AVFoundation.framework in Frameworks */,
+				9D9C42B0B4B37EEBD250CB04F552CE09 /* AVKit.framework in Frameworks */,
+				B8FDFB069E085E8FA6C8EE84AC70532D /* Foundation.framework in Frameworks */,
+				7AE7914445ACB40BD567F6027488E4B4 /* Photos.framework in Frameworks */,
+				4FF6A93490E87EAF6B652DEA9CED5134 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080FE829A1215941EF51AC0E19D76A25 /* BabyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				81B7AF53F307262A6F524CE19217D63B /* BabyBluetooth.h */,
+				20C3161AECD3C02430F0BF56FEA39ED4 /* BabyBluetooth.m */,
+				C5E530829BF7DB1F50BA1CE279E2E556 /* BabyCallback.h */,
+				44C254693485B4792DCA74B8DA758551 /* BabyCallback.m */,
+				65E83DF142BEB11E9539FBA87BD691E3 /* BabyCentralManager.h */,
+				211BE4994022C2AD60721FAC09C7FDC3 /* BabyCentralManager.m */,
+				578E8CD9AB90F9FAE671735250D00161 /* BabyDefine.h */,
+				18880E2A88CBBE24697486E99F5454E2 /* BabyDefine.m */,
+				8AFE67FDCD722184C4CED4E793E1BAB5 /* BabyOptions.h */,
+				CA6EDFFAD80F3B205024A036F1EBF0C4 /* BabyOptions.m */,
+				00032B54D596B8C2BCAC182F97069D02 /* BabyPeripheralManager.h */,
+				81241EB5088CD3652A59AC17BBC74897 /* BabyPeripheralManager.m */,
+				5C4D66E296E9C71D510CC27877E6B804 /* BabyRhythm.h */,
+				F94596A8B2818DE44944F58CAE3E831B /* BabyRhythm.m */,
+				DC5B7A1B81419EC0A2A8A6749BEC3268 /* BabySpeaker.h */,
+				C8A18D20816AFBF1E38DA7DF3BD40ABA /* BabySpeaker.m */,
+				31C9EE2966D82466A37551668CE1BC45 /* BabyToy.h */,
+				CE372BD7AF33D1088BB7E775F11890E6 /* BabyToy.m */,
+				C7B81EB86CA5134A6B858247521097E9 /* Support Files */,
+			);
+			name = BabyBluetooth;
+			path = BabyBluetooth;
+			sourceTree = "<group>";
+		};
+		11A85E0B7B3D69338F1B31F8F3504DE8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89F36ACF84BFA2CBDBFBDA55816E6A4D /* Info.plist */,
+				81A6D02D1FF12F491E2DCFF010C50A07 /* YLAuxiliaryKit.modulemap */,
+				1ACF408F9F13A0BC2574C3ED0B769DC5 /* YLAuxiliaryKit.xcconfig */,
+				8D88F8CA117DAE6873D2BDB09EAA894F /* YLAuxiliaryKit-dummy.m */,
+				61E5CE2680DBBFC84789B9D23BE7E740 /* YLAuxiliaryKit-prefix.pch */,
+				C53CB29026DB6D6D029BCC4D682521BC /* YLAuxiliaryKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YLAuxiliaryKit";
+			sourceTree = "<group>";
+		};
+		15D6B0BDDDFD40109B5A7BBF10CC1A1C /* YLBanner */ = {
+			isa = PBXGroup;
+			children = (
+				551F4FADC0CF5B693BD663384C30B9A4 /* Timer+Extension.swift */,
+				3093ED7B88203432A5FCA885CA66FAE1 /* UIColor+Extension.swift */,
+				21712A8245DB3B01B419706F9B7DD569 /* YLBanner.swift */,
+				56191BA5E51A9D1A3010C68D53FC8E33 /* Support Files */,
+			);
+			name = YLBanner;
+			path = YLBanner;
+			sourceTree = "<group>";
+		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,46 +370,100 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		22BEDD445287695F2461BF0162B49AE6 /* Products */ = {
+		2581637B7FBF9DF1950AA2E337E7A61B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E9CE01DF64EA77DD06C659BC750E8AC4 /* BabyBluetooth.framework */,
-				EA9DD441CAC2167B37D80E6EEDFF8624 /* Pods_YLTestCode.framework */,
-				13C36219FBD77B8BCFA99C642FF20763 /* YLBanner.framework */,
-				158539CD630AE8863DAD697C928746F5 /* YLRecordingVideo.framework */,
-				D5D780F24ABA55FAAB3A6ECF94F6E3C6 /* YLSwiftScan.bundle */,
-				E81F3CC73AFB4F1D5AADD09452771021 /* YLSwiftScan.framework */,
+				725A14443AD93E597F6C353F4AF1FA7A /* Info.plist */,
+				20921954487258945E09029B8AE6F06D /* ResourceBundle-YLSwiftScan-Info.plist */,
+				00C429ABE47AA2EAA97E19535ADA7165 /* YLSwiftScan.modulemap */,
+				7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */,
+				A355155D91DE873C4F6898CD92769A50 /* YLSwiftScan-dummy.m */,
+				AB137A25F9EC3B32E92468690D92471B /* YLSwiftScan-prefix.pch */,
+				9B34ADEC7DCD7F2B4D7C083405BC95DE /* YLSwiftScan-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YLSwiftScan";
+			sourceTree = "<group>";
+		};
+		2F49F88D6ACC2919C543E3F27E0C1C63 /* YLAuxiliaryKit */ = {
+			isa = PBXGroup;
+			children = (
+				88FA6370C4F6D38856A2CEAE0DB5D540 /* Array+Extension .swift */,
+				B9A2BCD4B19435683760EF8369EAFC97 /* CGSize+Extension.swift */,
+				CB4776E37F7C7934497E9E2B63C351D6 /* Date+Extension.swift */,
+				7C4DF4E8F6689FF13BD40480480391A8 /* Device.swift */,
+				D25F442C9482C57EF9630BD599A233CD /* Dictionary+Extension.swift */,
+				E7505B92E4FA5E8D21BFB7511E1E295D /* String+Extension.swift */,
+				64F662AA2653D5B195733026910DC70F /* Timer+Extension.swift */,
+				5C1C4EA08D5750AE360D5AF88373ECE9 /* UIButton + Extension.swift */,
+				2F2680404154276FE880A3254076FA45 /* UIColor+Extension.swift */,
+				D15E59EDF9E6CCF11E821FBF063337B2 /* UIImage+Extension.swift */,
+				30C49F3421895204B7D2CB5A3F5B52FD /* UIImageView+Extension.swift */,
+				BE0794C29F64ECF9FB9D9FA74933C8FE /* UILable+Extension.swift */,
+				76C16DD5E47026EA42383CA1E1FDF78C /* UIView+Extension.swift */,
+				2330E350FEA42CE7B96CAAB24CAF898B /* YLMainTabbarViewController.swift */,
+				49E89677E78E5925E3585E52204DB17B /* YLNavigationController.swift */,
+				11A85E0B7B3D69338F1B31F8F3504DE8 /* Support Files */,
+			);
+			name = YLAuxiliaryKit;
+			path = YLAuxiliaryKit;
+			sourceTree = "<group>";
+		};
+		4DD38EAE0DF6BFF20E2DD4A0DC34231E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6B661F27EF4DDC40D2525C9FA0F6905 /* BabyBluetooth.framework */,
+				4BA04BA3438515FD03CE73CEAF9C39C0 /* Pods_YLTestCode.framework */,
+				DFDCF8B0BF8A9A8FCDF79E8ECA879315 /* YLAuxiliaryKit.framework */,
+				4CE2BB016F8275D9AB1ADCCEA479CD7E /* YLBanner.framework */,
+				7D992ADE60B402FE59C12402A79B7FF3 /* YLRecordingVideo.framework */,
+				F2DB880BCD5DB173834A5D2D897B300E /* YLSwiftScan.bundle */,
+				4B70F955C7BAFCFDD7BFA3822B5C50D4 /* YLSwiftScan.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		32781F44958AED03D6A6589F243C9DF7 /* Support Files */ = {
+		5070649105DD245095169BB472E977D0 /* YLSwiftScan */ = {
 			isa = PBXGroup;
 			children = (
-				17492693240D6B7D894C2EA22E357CA5 /* Info.plist */,
-				9F2ED113649E82127B36FC1B15DF9074 /* YLBanner.modulemap */,
-				955E560B2D09C40BFFD1995BDD4449D7 /* YLBanner.xcconfig */,
-				758FF5EEBFB1F10E7ED3439C0883ACEC /* YLBanner-dummy.m */,
-				DBC1B40E7327FFE6BFB7E6A2327B3613 /* YLBanner-prefix.pch */,
-				199BDA59F46B946B8CB5C200DBED2724 /* YLBanner-umbrella.h */,
+				C45DE7FFD53D8A7582C694DE694B15A9 /* YLPhonePermissions.swift */,
+				F9D1C6193593F289D1135D422D70FF53 /* YLScanLineAnimation.swift */,
+				86482F991A4AB842CD3ACDB749060110 /* YLScanView.swift */,
+				3533558856B71A41406AB19504AE714E /* YLScanViewController.swift */,
+				E1E623F20D7DD4415578507C401385F5 /* YLScanViewManager.swift */,
+				948F6672B0C40D455588949CC6DEC058 /* YLScanViewSetting.swift */,
+				044012A47AC850C5A7E282AD20DF2E86 /* YLScanViewSytle.swift */,
+				6B1E5DBC5DB4B71595C47B9A0BD94028 /* Resources */,
+				2581637B7FBF9DF1950AA2E337E7A61B /* Support Files */,
+			);
+			name = YLSwiftScan;
+			path = YLSwiftScan;
+			sourceTree = "<group>";
+		};
+		52DEC40F1352DE564DAB74C061C8E5A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				080FE829A1215941EF51AC0E19D76A25 /* BabyBluetooth */,
+				2F49F88D6ACC2919C543E3F27E0C1C63 /* YLAuxiliaryKit */,
+				15D6B0BDDDFD40109B5A7BBF10CC1A1C /* YLBanner */,
+				87C579E4393B1C04B672208D29BA586F /* YLRecordingVideo */,
+				5070649105DD245095169BB472E977D0 /* YLSwiftScan */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56191BA5E51A9D1A3010C68D53FC8E33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23008AFBAB127E3D45E3F57754622E88 /* Info.plist */,
+				7079144760B2AF3FCB1792742C768552 /* YLBanner.modulemap */,
+				166DE8C11A965EBD7DC85DB2F3006945 /* YLBanner.xcconfig */,
+				0F22AB8D7659667B8E1E62B75475A953 /* YLBanner-dummy.m */,
+				2FF6938094FDE4FBD8ABE06C2B835169 /* YLBanner-prefix.pch */,
+				9F35646A20EE6CD43CF11E48B096F872 /* YLBanner-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YLBanner";
-			sourceTree = "<group>";
-		};
-		337BBA558D0C495E2D647346639AFCF8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				17A7023A779AF088E36ABB62B253327B /* Info.plist */,
-				241D3F9F3B285D6CFEAE26C2E8B37AE0 /* ResourceBundle-YLSwiftScan-Info.plist */,
-				2D1210914DD84B5C12EB4EF58390A66D /* YLSwiftScan.modulemap */,
-				88581D035E5DF8BED10D7EED0946C3C1 /* YLSwiftScan.xcconfig */,
-				13B1B649112CB7F0469AB3F40E4F1612 /* YLSwiftScan-dummy.m */,
-				089F652DB30E33934729B4CC03BDC11B /* YLSwiftScan-prefix.pch */,
-				9E0A4A68EFBD5DF5D0AAEA663C150F41 /* YLSwiftScan-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YLSwiftScan";
 			sourceTree = "<group>";
 		};
 		6432B857778B3F2B6DBB2CAA1242D3D3 /* Targets Support Files */ = {
@@ -310,6 +472,19 @@
 				76D66517D0E0358C117F29AB20DEF313 /* Pods-YLTestCode */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6B1E5DBC5DB4B71595C47B9A0BD94028 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC000D4721E65C0D681250338393ED49 /* qrcode_scan_btn_flash_down@2x.png */,
+				C558CE120A833DD080D98FE953A16FA0 /* qrcode_scan_btn_flash_nor@2x.png */,
+				1664A942085A341D13F27322D81A02CF /* qrcode_scan_full_net.png */,
+				EFADAC8A394BD258EC7DF0FE2884C321 /* qrcode_scan_light_green@2x.png */,
+				76BDE446085E533164F6FA0D413B9648 /* qrcode_scan_part_net.png */,
+				99AEC56E96862EB6C2F04FC99181C8BD /* qrcode_Scan_weixin_Line@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		76D66517D0E0358C117F29AB20DEF313 /* Pods-YLTestCode */ = {
@@ -330,23 +505,6 @@
 			path = "Target Support Files/Pods-YLTestCode";
 			sourceTree = "<group>";
 		};
-		782D6C2309C2C6BEE6891AC88A69EC82 /* YLSwiftScan */ = {
-			isa = PBXGroup;
-			children = (
-				6721B5C33DAE44E8F7CE17096778FAB2 /* YLPhonePermissions.swift */,
-				11AD16F6B297B6D34601A67CF475E687 /* YLScanLineAnimation.swift */,
-				6A96F10602215F303B3FEDC9212B3A61 /* YLScanView.swift */,
-				8D99F9452893ECC058DF32D3C38AD637 /* YLScanViewController.swift */,
-				4D3D523801A245A2225B26F0877054B7 /* YLScanViewManager.swift */,
-				7D5D9B138D02375D01EFC4E2829846EA /* YLScanViewSetting.swift */,
-				A2BE55786F1C37D3347AF4CDBB782CFB /* YLScanViewSytle.swift */,
-				AFE041F55F56EC60899CDE3F2A2A6584 /* Resources */,
-				337BBA558D0C495E2D647346639AFCF8 /* Support Files */,
-			);
-			name = YLSwiftScan;
-			path = YLSwiftScan;
-			sourceTree = "<group>";
-		};
 		7A7F5994AE5CC428496525D37173FEAF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,141 +522,94 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				9FC507D635A7EB5EA3312E8355FCE128 /* Pods */,
-				22BEDD445287695F2461BF0162B49AE6 /* Products */,
+				52DEC40F1352DE564DAB74C061C8E5A2 /* Pods */,
+				4DD38EAE0DF6BFF20E2DD4A0DC34231E /* Products */,
 				6432B857778B3F2B6DBB2CAA1242D3D3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8203CDA067D8587BE91FB83AB5721E23 /* Support Files */ = {
+		87C579E4393B1C04B672208D29BA586F /* YLRecordingVideo */ = {
 			isa = PBXGroup;
 			children = (
-				4D7EBF48F2B3E5BD9CF053E678BF0525 /* BabyBluetooth.modulemap */,
-				188AB6EF01D73548527E541114939C08 /* BabyBluetooth.xcconfig */,
-				E8E8E76E822835DCB9E6AFED1014EDD0 /* BabyBluetooth-dummy.m */,
-				F5064E4C56757117BFD5C8CB89C94FE2 /* BabyBluetooth-prefix.pch */,
-				3160A082066546BD4B9B60C6D9467A40 /* BabyBluetooth-umbrella.h */,
-				64DF7B3DDDDD89D5856DB53AC5472227 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/BabyBluetooth";
-			sourceTree = "<group>";
-		};
-		8BDACF69690E70A551632058791A2A16 /* BabyBluetooth */ = {
-			isa = PBXGroup;
-			children = (
-				6455D0726445D8EBBFB6F1FDA067218B /* BabyBluetooth.h */,
-				8370C45F9095955F69968C9083B07070 /* BabyBluetooth.m */,
-				72941D5C06081A339DFDBE0C3123AF29 /* BabyCallback.h */,
-				39F4970EF89691FF475030D240E8DB91 /* BabyCallback.m */,
-				5D80A80F811A0295CD2FC7329B8A9AF0 /* BabyCentralManager.h */,
-				5BBB9AB70CF729E56154399FC2642B72 /* BabyCentralManager.m */,
-				45ECA6DE2305BC68319375282E1610E4 /* BabyDefine.h */,
-				5105B58230C6F8B61CB77FDC9C420EA2 /* BabyDefine.m */,
-				AF422F48206C0E9DF84D5D1670CBD110 /* BabyOptions.h */,
-				BE4D395127E09EB3E2B374C158804F77 /* BabyOptions.m */,
-				6E91088F7BCA21C02E49734CB59096B9 /* BabyPeripheralManager.h */,
-				988DF7BA2902394BDB079269FD13A057 /* BabyPeripheralManager.m */,
-				E13EE37091DC6E708346E51E80A47888 /* BabyRhythm.h */,
-				B4759CEF80B1706DF882E2282625887C /* BabyRhythm.m */,
-				3C53D16399D52721D8E26E9C2F615574 /* BabySpeaker.h */,
-				8FA6227DD3EF17DB8FDB6C196F52BDEF /* BabySpeaker.m */,
-				0448C354DF362A7D97D0BECB062360FF /* BabyToy.h */,
-				9CA9235095CCD9470D88DEBCEB8701E8 /* BabyToy.m */,
-				8203CDA067D8587BE91FB83AB5721E23 /* Support Files */,
-			);
-			name = BabyBluetooth;
-			path = BabyBluetooth;
-			sourceTree = "<group>";
-		};
-		9FC507D635A7EB5EA3312E8355FCE128 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8BDACF69690E70A551632058791A2A16 /* BabyBluetooth */,
-				FE3D4449ADDD954C503439CF61B5C49F /* YLBanner */,
-				CBF25A91B3985FD31AB0D846A0FCC6A0 /* YLRecordingVideo */,
-				782D6C2309C2C6BEE6891AC88A69EC82 /* YLSwiftScan */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AFE041F55F56EC60899CDE3F2A2A6584 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				0EF296D1AEDF35D52BBCA4919889E34B /* qrcode_scan_btn_flash_down@2x.png */,
-				52DB1F88314C2F9880222192290F7B50 /* qrcode_scan_btn_flash_nor@2x.png */,
-				DE967F65615138B55A7A5B24A4017058 /* qrcode_scan_full_net.png */,
-				2CF778C6F06139D34EE5E91FBF70B84A /* qrcode_scan_light_green@2x.png */,
-				4A2643091D49779676F71D935245E4FA /* qrcode_scan_part_net.png */,
-				1D5C49A9E23861FAE0D93C1A5CE6F4CE /* qrcode_Scan_weixin_Line@2x.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		CBF25A91B3985FD31AB0D846A0FCC6A0 /* YLRecordingVideo */ = {
-			isa = PBXGroup;
-			children = (
-				BD228F3CF69C17EA69E63D7BE6892EF9 /* YLProgressView.swift */,
-				7BE0CDBE90219884042D476979B6FC4B /* YLRecordControlView.swift */,
-				CB21EF8C078E03C9D827F6326E362670 /* YLRecordVideoManager.swift */,
-				DF69E4546759F455EE66776158491730 /* YLRecordVideoStlye.swift */,
-				A07A38392194F24FD067C93A7A634254 /* YLRecordVideoViewController.swift */,
-				E4FEB5FE1FDC4A8D378105118368D0D7 /* Support Files */,
+				00836D29F64247985087F54B7315EE7D /* YLProgressView.swift */,
+				1A507FB7F390AD7A6854D5F621A8A314 /* YLRecordControlView.swift */,
+				9E79663125C56976B6F11DD8F7D7373B /* YLRecordVideoManager.swift */,
+				62D0E02243C4E95FFCF9F3DA2680190C /* YLRecordVideoStlye.swift */,
+				E0413A168A1857D700800F7427C3C549 /* YLRecordVideoViewController.swift */,
+				EDDB36C01B29C589CF1130117AE11B12 /* Support Files */,
 			);
 			name = YLRecordingVideo;
 			path = YLRecordingVideo;
 			sourceTree = "<group>";
 		};
-		E4FEB5FE1FDC4A8D378105118368D0D7 /* Support Files */ = {
+		C7B81EB86CA5134A6B858247521097E9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				351AF7C7AEB74A60D65A8E5EA62B7E2B /* Info.plist */,
-				7A5CC99D1E4F58CB5BEF97DCB9CC4BA5 /* YLRecordingVideo.modulemap */,
-				A124170D2FEA044DAC94D748D5203620 /* YLRecordingVideo.xcconfig */,
-				C0CDE92283A0F2A9D6C108DBBB105279 /* YLRecordingVideo-dummy.m */,
-				C795C80B8653095C7E5E043B6DC5B156 /* YLRecordingVideo-prefix.pch */,
-				D54D28DE8D05FBD599BF13E914BC306D /* YLRecordingVideo-umbrella.h */,
+				E44AD1D5E19A3323DD29C132A53E1B41 /* BabyBluetooth.modulemap */,
+				756C3C88F5880579DD2395694FA9B145 /* BabyBluetooth.xcconfig */,
+				7F939E57AB4F2425DBAF3CB8CFE9B6E9 /* BabyBluetooth-dummy.m */,
+				4AB4C33D1E62495E282C1BF17BCE5E83 /* BabyBluetooth-prefix.pch */,
+				2C3270856C2CE9D399B7261EB4900150 /* BabyBluetooth-umbrella.h */,
+				2DC91DC1F4E21E41809168298AACBCE6 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BabyBluetooth";
+			sourceTree = "<group>";
+		};
+		EDDB36C01B29C589CF1130117AE11B12 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92F59373E7E5AEB757C89E792E357307 /* Info.plist */,
+				3BCDB94FD49D2354747DF7D9208A6418 /* YLRecordingVideo.modulemap */,
+				005AD58C7D8FDF1C5D393F6EA13E9900 /* YLRecordingVideo.xcconfig */,
+				51A2E857DE9221CFAA3D529CBCD1DE04 /* YLRecordingVideo-dummy.m */,
+				92F9A73636A0F11942819932F6AE4E26 /* YLRecordingVideo-prefix.pch */,
+				34B3BA369C1C29E4713FB714ECEC7E8A /* YLRecordingVideo-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YLRecordingVideo";
 			sourceTree = "<group>";
 		};
-		FE3D4449ADDD954C503439CF61B5C49F /* YLBanner */ = {
-			isa = PBXGroup;
-			children = (
-				1F27519B9CCA5BFE97CEC2F7489A333C /* Timer+Extension.swift */,
-				194A8C73FFDDE91F4B925B017FB499E3 /* UIColor+Extension.swift */,
-				5EFD2A88D92CAF492985E8DF32B4DC0A /* YLBanner.swift */,
-				32781F44958AED03D6A6589F243C9DF7 /* Support Files */,
-			);
-			name = YLBanner;
-			path = YLBanner;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4E0E00D9010140F97B68270BE8481ABB /* Headers */ = {
+		3FF90D4B493926BE21CF061E8507FAB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67B3C09C25AC430F480040DC4A24D380 /* YLBanner-umbrella.h in Headers */,
+				F527A178DA1E75E232E94FD7A972F478 /* Pods-YLTestCode-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97C500965B13C61C22A04863B28DC12D /* Headers */ = {
+		5F2BFF0C8EC2AF00D3D0186D4CD85979 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1307B0563F40D332F8DD95332B48F8A5 /* Pods-YLTestCode-umbrella.h in Headers */,
+				17C0546D434AC7110FCCF2049FB9A035 /* YLSwiftScan-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF57AB0C0F37F780139804960EFECFD8 /* Headers */ = {
+		7E463A3ED3867FA09AF0944436AB7C92 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77F903A5F0E60C7385800709C26DD346 /* YLSwiftScan-umbrella.h in Headers */,
+				F50D3C873C45E823E081EB3DDE39BA89 /* YLBanner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CD6150887526AFC530D1F35DED9E7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DAEBB69C35B9E3A3245C8FF14931FF5 /* YLAuxiliaryKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B404FD2ACA4DB84D118460B375BDD2B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102B3821E7BBE39FF8E7E3BA101946D2 /* YLRecordingVideo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,98 +630,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E05283AEA98BC21F094806AB86A4203B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB2F53C66310B8049F6AEEAFF43470B4 /* YLRecordingVideo-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0836A21ADCA0A32985F59FD61E75D7CC /* YLSwiftScan */ = {
+		323FA71E6EAAB368A7D7832AC60D1573 /* YLBanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FCEDB3CA58964E27D4EC6426EF4C157 /* Build configuration list for PBXNativeTarget "YLSwiftScan" */;
+			buildConfigurationList = 6B06CE99B75AA16DD89759540516F8E3 /* Build configuration list for PBXNativeTarget "YLBanner" */;
 			buildPhases = (
-				7C838AF8667E087788D86DADED562C55 /* Sources */,
-				80A8F282A7CE27E1C947C0E1AE0369BD /* Frameworks */,
-				65B6FA60027B38755777A4C29D229377 /* Resources */,
-				BF57AB0C0F37F780139804960EFECFD8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CA58D308CF0B45DD896E0C5A34A84DAE /* PBXTargetDependency */,
-			);
-			name = YLSwiftScan;
-			productName = YLSwiftScan;
-			productReference = E81F3CC73AFB4F1D5AADD09452771021 /* YLSwiftScan.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		0A6A6BD4659C5AD8447135E1FFFA69C8 /* YLSwiftScan-YLSwiftScan */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6E64E3087EB02CA57CCB9221747F23AE /* Build configuration list for PBXNativeTarget "YLSwiftScan-YLSwiftScan" */;
-			buildPhases = (
-				FE554FDCA7C5222207BD009E23326B63 /* Sources */,
-				FEC429745EEBDDEB7C49C739238F87A0 /* Frameworks */,
-				2E4F06A505F2276747C39D67DFA05EF6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "YLSwiftScan-YLSwiftScan";
-			productName = "YLSwiftScan-YLSwiftScan";
-			productReference = D5D780F24ABA55FAAB3A6ECF94F6E3C6 /* YLSwiftScan.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		2DB626D7B09C6F8A31027B84541E3F1F /* YLRecordingVideo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9E35CF8D1204A5ECA59463F274EEF74 /* Build configuration list for PBXNativeTarget "YLRecordingVideo" */;
-			buildPhases = (
-				9D7A84103A5AF999B1FCDE8F8682EC62 /* Sources */,
-				EC83752693D938992F6359359E9F0365 /* Frameworks */,
-				E05283AEA98BC21F094806AB86A4203B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = YLRecordingVideo;
-			productName = YLRecordingVideo;
-			productReference = 158539CD630AE8863DAD697C928746F5 /* YLRecordingVideo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		34D4D9DD0BC1147972FA4F5000C83BC5 /* Pods-YLTestCode */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9599E259740DF110F5EF02E5E9CA98D4 /* Build configuration list for PBXNativeTarget "Pods-YLTestCode" */;
-			buildPhases = (
-				7743936D9005A75C31BE530D6E4C8CFF /* Sources */,
-				A45DC97FE8454EBA73C41EE71FE3D4D6 /* Frameworks */,
-				97C500965B13C61C22A04863B28DC12D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8559197E83C232A9D218C6E0A14E14AA /* PBXTargetDependency */,
-				EB5576FA83E79BDDE98CF84C451C3554 /* PBXTargetDependency */,
-				C6581D74DA262E488FF6DA65E9019D63 /* PBXTargetDependency */,
-				56C92E4F2F43CECDF280CB939FDBB301 /* PBXTargetDependency */,
-			);
-			name = "Pods-YLTestCode";
-			productName = "Pods-YLTestCode";
-			productReference = EA9DD441CAC2167B37D80E6EEDFF8624 /* Pods_YLTestCode.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6589F4662CD0DFE15145CF6310A7E9EB /* YLBanner */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA3AB0C0E7352CD9C973EC0773C3FE87 /* Build configuration list for PBXNativeTarget "YLBanner" */;
-			buildPhases = (
-				FCA1240666F4E866FF536DC06DDE79CB /* Sources */,
-				0484A71CA47E7E08AD889B3CBDAAC425 /* Frameworks */,
-				4E0E00D9010140F97B68270BE8481ABB /* Headers */,
+				B483BF7643AA1B0B5C75897D1BA6DDB0 /* Sources */,
+				CF2EBDB04B09AA22E96491D58C62F81B /* Frameworks */,
+				7E463A3ED3867FA09AF0944436AB7C92 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -618,7 +647,77 @@
 			);
 			name = YLBanner;
 			productName = YLBanner;
-			productReference = 13C36219FBD77B8BCFA99C642FF20763 /* YLBanner.framework */;
+			productReference = 4CE2BB016F8275D9AB1ADCCEA479CD7E /* YLBanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		931910E35420C99E47B6B2313E207FF3 /* YLSwiftScan-YLSwiftScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 099554079D879FCD7A082B96949B129C /* Build configuration list for PBXNativeTarget "YLSwiftScan-YLSwiftScan" */;
+			buildPhases = (
+				07C6DC74D5719E253D3F956E53A59BED /* Sources */,
+				1894B03DBCA106A474B2AB1B057CAF7D /* Frameworks */,
+				E4034FE69897A0517B731F466201A08F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YLSwiftScan-YLSwiftScan";
+			productName = "YLSwiftScan-YLSwiftScan";
+			productReference = F2DB880BCD5DB173834A5D2D897B300E /* YLSwiftScan.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AEF9B45E6D785B34C8411F7F1108B977 /* YLAuxiliaryKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64564766D46BFB2A605C5B65EC00884B /* Build configuration list for PBXNativeTarget "YLAuxiliaryKit" */;
+			buildPhases = (
+				6C6A20BBAD4C1D3642C889770B427692 /* Sources */,
+				1C3257C45E5BE56B24FB7D7E5EC242C8 /* Frameworks */,
+				A3CD6150887526AFC530D1F35DED9E7A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLAuxiliaryKit;
+			productName = YLAuxiliaryKit;
+			productReference = DFDCF8B0BF8A9A8FCDF79E8ECA879315 /* YLAuxiliaryKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5DFC697E20B5FC3CC46D99C9CFC2866 /* YLRecordingVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75BA2F9F8269DA3CFFFD3C1CFE2E964B /* Build configuration list for PBXNativeTarget "YLRecordingVideo" */;
+			buildPhases = (
+				B6B97D6415D491BE3DAE016D0AF924FC /* Sources */,
+				D3236ADBC4D1A82D17B6ACC9D7D07007 /* Frameworks */,
+				B404FD2ACA4DB84D118460B375BDD2B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLRecordingVideo;
+			productName = YLRecordingVideo;
+			productReference = 7D992ADE60B402FE59C12402A79B7FF3 /* YLRecordingVideo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E178DCB53A466176089BA0AF55CDF812 /* YLSwiftScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D2220B6015CEE7B22FFB5EB8548B43F /* Build configuration list for PBXNativeTarget "YLSwiftScan" */;
+			buildPhases = (
+				719B1F1957FC7605CCC76903FA37327F /* Sources */,
+				8762C5FF4C53FC7D77A5FFE14DB4415C /* Frameworks */,
+				AF1581824973102A4058402B6169472C /* Resources */,
+				5F2BFF0C8EC2AF00D3D0186D4CD85979 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D71FCC9C462C47E0FC20859708E476 /* PBXTargetDependency */,
+			);
+			name = YLSwiftScan;
+			productName = YLSwiftScan;
+			productReference = 4B70F955C7BAFCFDD7BFA3822B5C50D4 /* YLSwiftScan.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F4B1A0F40902F9533C324157F3F2703D /* BabyBluetooth */ = {
@@ -635,7 +734,29 @@
 			);
 			name = BabyBluetooth;
 			productName = BabyBluetooth;
-			productReference = E9CE01DF64EA77DD06C659BC750E8AC4 /* BabyBluetooth.framework */;
+			productReference = E6B661F27EF4DDC40D2525C9FA0F6905 /* BabyBluetooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA2D0999EB5697336353A5CAF0D1F3BA /* Pods-YLTestCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B212C073995697AE231E7F2076B91BFB /* Build configuration list for PBXNativeTarget "Pods-YLTestCode" */;
+			buildPhases = (
+				024A760C3E88B3C6C16820B8182A1BCB /* Sources */,
+				2006E48AD84B0A9181BD0FFE44024E02 /* Frameworks */,
+				3FF90D4B493926BE21CF061E8507FAB4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BD67A03B544CB28D3936D34DC354C7A /* PBXTargetDependency */,
+				97B006964C2338647ADBF17FC3B91D09 /* PBXTargetDependency */,
+				FCB10051CE8AE774E19D5012B44113DA /* PBXTargetDependency */,
+				C14DFF39D77A9179964816397DC54167 /* PBXTargetDependency */,
+				457490F366ABEED885105745093E8E06 /* PBXTargetDependency */,
+			);
+			name = "Pods-YLTestCode";
+			productName = "Pods-YLTestCode";
+			productReference = 4BA04BA3438515FD03CE73CEAF9C39C0 /* Pods_YLTestCode.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -655,45 +776,61 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 22BEDD445287695F2461BF0162B49AE6 /* Products */;
+			productRefGroup = 4DD38EAE0DF6BFF20E2DD4A0DC34231E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F4B1A0F40902F9533C324157F3F2703D /* BabyBluetooth */,
-				34D4D9DD0BC1147972FA4F5000C83BC5 /* Pods-YLTestCode */,
-				6589F4662CD0DFE15145CF6310A7E9EB /* YLBanner */,
-				2DB626D7B09C6F8A31027B84541E3F1F /* YLRecordingVideo */,
-				0836A21ADCA0A32985F59FD61E75D7CC /* YLSwiftScan */,
-				0A6A6BD4659C5AD8447135E1FFFA69C8 /* YLSwiftScan-YLSwiftScan */,
+				FA2D0999EB5697336353A5CAF0D1F3BA /* Pods-YLTestCode */,
+				AEF9B45E6D785B34C8411F7F1108B977 /* YLAuxiliaryKit */,
+				323FA71E6EAAB368A7D7832AC60D1573 /* YLBanner */,
+				D5DFC697E20B5FC3CC46D99C9CFC2866 /* YLRecordingVideo */,
+				E178DCB53A466176089BA0AF55CDF812 /* YLSwiftScan */,
+				931910E35420C99E47B6B2313E207FF3 /* YLSwiftScan-YLSwiftScan */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2E4F06A505F2276747C39D67DFA05EF6 /* Resources */ = {
+		AF1581824973102A4058402B6169472C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12FD383810E341A083DBBAB8FC9468FA /* qrcode_scan_btn_flash_down@2x.png in Resources */,
-				538EB9FC43C094F4A6C1DFF08192FFF9 /* qrcode_scan_btn_flash_nor@2x.png in Resources */,
-				2A1F48B2B23C23AEE7EE4B764BC872BE /* qrcode_scan_full_net.png in Resources */,
-				3675DB0655A14E65B5EE206B9E5A8F92 /* qrcode_scan_light_green@2x.png in Resources */,
-				1DBF8D6A1BB898D8D4DFBC3F1CA9A33B /* qrcode_scan_part_net.png in Resources */,
-				8CD1DD4FC3DD3F3494DD331442995C9E /* qrcode_Scan_weixin_Line@2x.png in Resources */,
+				CF3B57CD20BF262037083F986912A13A /* YLSwiftScan.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65B6FA60027B38755777A4C29D229377 /* Resources */ = {
+		E4034FE69897A0517B731F466201A08F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C5E685E050400ADEE9E4095ECA9FC4 /* YLSwiftScan.bundle in Resources */,
+				A46CDE9E11F1637E5FD01E4BE63AE0FE /* qrcode_scan_btn_flash_down@2x.png in Resources */,
+				0E6362631E6E9341BE222148AF0BB86F /* qrcode_scan_btn_flash_nor@2x.png in Resources */,
+				FD5478B89ACDF115C57845DF16976552 /* qrcode_scan_full_net.png in Resources */,
+				B0E2549815183A7FCE98D5E1B890E52D /* qrcode_scan_light_green@2x.png in Resources */,
+				F2D33A39EE3E61192FA8A51A7F387AE4 /* qrcode_scan_part_net.png in Resources */,
+				C04892E88E88F1C1AD816DB99199FEB8 /* qrcode_Scan_weixin_Line@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		024A760C3E88B3C6C16820B8182A1BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5A2DDCB6F2E4EF0DD8D4DA03C47889 /* Pods-YLTestCode-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C6DC74D5719E253D3F956E53A59BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3708EDAD2C7A1276ABB839D39C0601D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -711,97 +848,275 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7743936D9005A75C31BE530D6E4C8CFF /* Sources */ = {
+		6C6A20BBAD4C1D3642C889770B427692 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B383E3B74A117E213CC8ADF9A02BDB4F /* Pods-YLTestCode-dummy.m in Sources */,
+				046EA484DC8690E2B0950B2876555739 /* Array+Extension .swift in Sources */,
+				257511B9E18C46EE703D54B2A9BA82C0 /* CGSize+Extension.swift in Sources */,
+				7C7EF4064BDDC0C2771D7AB9DDD2990C /* Date+Extension.swift in Sources */,
+				F3739049EB6F79916DF043BD814B8484 /* Device.swift in Sources */,
+				4DC57833828B6472D1E8B743AF0E32A4 /* Dictionary+Extension.swift in Sources */,
+				DA94452F202F5BFC847137EA773FAEE3 /* String+Extension.swift in Sources */,
+				FDC3FE1B81405DA3475D1EEFE9608E13 /* Timer+Extension.swift in Sources */,
+				A0AE354837DA2FDF67C30F6C85623DC2 /* UIButton + Extension.swift in Sources */,
+				66DC6BF50AB3A943937324416C14AC55 /* UIColor+Extension.swift in Sources */,
+				A1CDECE8D912AE7B72AA696BB381B7CD /* UIImage+Extension.swift in Sources */,
+				EF260FDDE839CB631BDC7F4F7DCD7B63 /* UIImageView+Extension.swift in Sources */,
+				5E8E419C172580373A666E00A01F6DFC /* UILable+Extension.swift in Sources */,
+				933EA2EBF4494DB632132F82075F7F58 /* UIView+Extension.swift in Sources */,
+				9A35AE37EAAEC6D3294404BD5153A020 /* YLAuxiliaryKit-dummy.m in Sources */,
+				C7A8FE7A4214A9E581DBADD1F7C28C16 /* YLMainTabbarViewController.swift in Sources */,
+				46BDA12CA1B90F7277B0C0820F4F9ED1 /* YLNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C838AF8667E087788D86DADED562C55 /* Sources */ = {
+		719B1F1957FC7605CCC76903FA37327F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF6A5C203424EFF8E7190BEEB576D651 /* YLPhonePermissions.swift in Sources */,
-				FD950578FBA24D8019D3C3FFFE1521DC /* YLScanLineAnimation.swift in Sources */,
-				A44260F78581E1877E271E6D185A9F16 /* YLScanView.swift in Sources */,
-				98C06885969AE524140A5FF01670006E /* YLScanViewController.swift in Sources */,
-				655D7A714C4C46C3D56C1857DC70E53D /* YLScanViewManager.swift in Sources */,
-				B08E717A8B6CC2C30F38CC02BC0F03C8 /* YLScanViewSetting.swift in Sources */,
-				47AE933A251FB5067ED7F1B450EB0493 /* YLScanViewSytle.swift in Sources */,
-				FB296C9A81B7A7612AF0E80828A91874 /* YLSwiftScan-dummy.m in Sources */,
+				CC4F7B5354EDFAE69505BFB0A84CC177 /* YLPhonePermissions.swift in Sources */,
+				2D41B7ABAE62466390484493D24AB5B9 /* YLScanLineAnimation.swift in Sources */,
+				E0C6C1BA5A7A5ADEF55E3A6234994794 /* YLScanView.swift in Sources */,
+				D1792448941703ECEBDF4A339F956EF1 /* YLScanViewController.swift in Sources */,
+				16F08FB5C0C29BFA387CB11F4EFFB36A /* YLScanViewManager.swift in Sources */,
+				18F2AB8CA4EB181A4DDB80D487B55F9B /* YLScanViewSetting.swift in Sources */,
+				A7F02EBA69BB992D8BF5AB55E39935E0 /* YLScanViewSytle.swift in Sources */,
+				195E260D8BDE381804368C3F57151BEA /* YLSwiftScan-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D7A84103A5AF999B1FCDE8F8682EC62 /* Sources */ = {
+		B483BF7643AA1B0B5C75897D1BA6DDB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35B0821F1AA5052F5C78885141149B5 /* YLProgressView.swift in Sources */,
-				3D42D10314DFE838B99FD410367667E4 /* YLRecordControlView.swift in Sources */,
-				DF42EEA9A35DCFA91E06FC322CD2E6C3 /* YLRecordingVideo-dummy.m in Sources */,
-				5076F8A23B5FECE5275ED90DDE860DF9 /* YLRecordVideoManager.swift in Sources */,
-				9FD6F55CD7C53BEB880A1CBD2A1DCC19 /* YLRecordVideoStlye.swift in Sources */,
-				8EA4D1081FDD7A0C4CF289B37EAA7D62 /* YLRecordVideoViewController.swift in Sources */,
+				B3754CCCF2F00206FF80A05F47486B8A /* Timer+Extension.swift in Sources */,
+				4ACB01D452A3488910A0E5FC610FF6D6 /* UIColor+Extension.swift in Sources */,
+				E8E713C67FF047C89BDBBD772044A7BE /* YLBanner-dummy.m in Sources */,
+				CD880BB18AA9E91FC4D4BDBE0DA29FC0 /* YLBanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCA1240666F4E866FF536DC06DDE79CB /* Sources */ = {
+		B6B97D6415D491BE3DAE016D0AF924FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC9615F01E6E7CB2671999EBDE3F37B /* Timer+Extension.swift in Sources */,
-				EA1B2808BAC79A8EFACAC91ECAC9EE57 /* UIColor+Extension.swift in Sources */,
-				ED08B4184BBC55E431C0AF089CEC8752 /* YLBanner-dummy.m in Sources */,
-				94BF59E2A01E74659A7D3FE8422E315D /* YLBanner.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE554FDCA7C5222207BD009E23326B63 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C24F2A2FD142EDC0C230542B938C7A44 /* YLProgressView.swift in Sources */,
+				7E81291A61B4C9168E5BA34BB867F1BE /* YLRecordControlView.swift in Sources */,
+				FF0ECB759BE834A3F8EE9943CAE66E45 /* YLRecordingVideo-dummy.m in Sources */,
+				CFD01CE3B98B1C7DAC4D81F5FBFA3DEC /* YLRecordVideoManager.swift in Sources */,
+				344D10E576B4C06A2020B2A206A45AAC /* YLRecordVideoStlye.swift in Sources */,
+				C72DFCC1177DCE1966140C10C4816DA2 /* YLRecordVideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		56C92E4F2F43CECDF280CB939FDBB301 /* PBXTargetDependency */ = {
+		457490F366ABEED885105745093E8E06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YLSwiftScan;
-			target = 0836A21ADCA0A32985F59FD61E75D7CC /* YLSwiftScan */;
-			targetProxy = 76F45F6F761EF8BAA3F98C552073713E /* PBXContainerItemProxy */;
+			target = E178DCB53A466176089BA0AF55CDF812 /* YLSwiftScan */;
+			targetProxy = A5C7B1F0CEEEEA687FD344196E518DA4 /* PBXContainerItemProxy */;
 		};
-		8559197E83C232A9D218C6E0A14E14AA /* PBXTargetDependency */ = {
+		8BD67A03B544CB28D3936D34DC354C7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BabyBluetooth;
 			target = F4B1A0F40902F9533C324157F3F2703D /* BabyBluetooth */;
-			targetProxy = 4AD14744A643C4F8D07370A8C932A417 /* PBXContainerItemProxy */;
+			targetProxy = 70CB380506D54544645C3250BE514D77 /* PBXContainerItemProxy */;
 		};
-		C6581D74DA262E488FF6DA65E9019D63 /* PBXTargetDependency */ = {
+		97B006964C2338647ADBF17FC3B91D09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YLRecordingVideo;
-			target = 2DB626D7B09C6F8A31027B84541E3F1F /* YLRecordingVideo */;
-			targetProxy = 7C04D5308F57A93592678B5185EA9D8A /* PBXContainerItemProxy */;
+			name = YLAuxiliaryKit;
+			target = AEF9B45E6D785B34C8411F7F1108B977 /* YLAuxiliaryKit */;
+			targetProxy = EDA54628FABC1258E26203155FCDB101 /* PBXContainerItemProxy */;
 		};
-		CA58D308CF0B45DD896E0C5A34A84DAE /* PBXTargetDependency */ = {
+		B6D71FCC9C462C47E0FC20859708E476 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "YLSwiftScan-YLSwiftScan";
-			target = 0A6A6BD4659C5AD8447135E1FFFA69C8 /* YLSwiftScan-YLSwiftScan */;
-			targetProxy = 35800A75CF22A6AA13FB9F8A240E078B /* PBXContainerItemProxy */;
+			target = 931910E35420C99E47B6B2313E207FF3 /* YLSwiftScan-YLSwiftScan */;
+			targetProxy = B8C4F573C3936C97949F031DEBF748EB /* PBXContainerItemProxy */;
 		};
-		EB5576FA83E79BDDE98CF84C451C3554 /* PBXTargetDependency */ = {
+		C14DFF39D77A9179964816397DC54167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YLRecordingVideo;
+			target = D5DFC697E20B5FC3CC46D99C9CFC2866 /* YLRecordingVideo */;
+			targetProxy = AB39F82028C0693268F1D9C56C41DC65 /* PBXContainerItemProxy */;
+		};
+		FCB10051CE8AE774E19D5012B44113DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YLBanner;
-			target = 6589F4662CD0DFE15145CF6310A7E9EB /* YLBanner */;
-			targetProxy = 107AFFEDEFC65D4BC23C519356B8F489 /* PBXContainerItemProxy */;
+			target = 323FA71E6EAAB368A7D7832AC60D1573 /* YLBanner */;
+			targetProxy = 5351A1BDF89F17B1EA730B03258FE0ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+		052DB2A2AF32B8E44644B7797400E71E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756C3C88F5880579DD2395694FA9B145 /* BabyBluetooth.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BabyBluetooth/BabyBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BabyBluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BabyBluetooth/BabyBluetooth.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BabyBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C63CA81D28EC0156135A752B68C4BC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YLSwiftScan/YLSwiftScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLSwiftScan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YLSwiftScan/YLSwiftScan.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YLSwiftScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		109D25166920653027E9614D2C07EB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166DE8C11A965EBD7DC85DB2F3006945 /* YLBanner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YLBanner/YLBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YLBanner/YLBanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YLBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A4BABFF8E77E22A9EBD14AC450AF868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166DE8C11A965EBD7DC85DB2F3006945 /* YLBanner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YLBanner/YLBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YLBanner/YLBanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YLBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		357200B1C27A4819B4BA8A1F167D6ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91CD75AC1D3566409359740042AB1F86 /* Pods-YLTestCode.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YLTestCode/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YLTestCode/Pods-YLTestCode.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YLTestCode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -837,7 +1152,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -845,9 +1160,78 @@
 			};
 			name = Debug;
 		};
-		052DB2A2AF32B8E44644B7797400E71E /* Release */ = {
+		5CBA4523A8E920DC13C793453C53A218 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 188AB6EF01D73548527E541114939C08 /* BabyBluetooth.xcconfig */;
+			baseConfigurationReference = ED5386EA29A8D57BFF431A3C2B5514C7 /* Pods-YLTestCode.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YLTestCode/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YLTestCode/Pods-YLTestCode.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YLTestCode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D9A6BC3A4B466B4BB5506906516F2E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YLSwiftScan/YLSwiftScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLSwiftScan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YLSwiftScan/YLSwiftScan.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YLSwiftScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6DEACBCCD912E22B3DA7007671C939F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005AD58C7D8FDF1C5D393F6EA13E9900 /* YLRecordingVideo.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -860,14 +1244,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BabyBluetooth/BabyBluetooth-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BabyBluetooth/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YLRecordingVideo/YLRecordingVideo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLRecordingVideo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BabyBluetooth/BabyBluetooth.modulemap";
+				MODULEMAP_FILE = "Target Support Files/YLRecordingVideo/YLRecordingVideo.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BabyBluetooth;
+				PRODUCT_NAME = YLRecordingVideo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -877,9 +1261,74 @@
 			};
 			name = Release;
 		};
-		09E8FD66FBF1CBF38BAB8B4E632169D5 /* Release */ = {
+		857E16DFB255F56FE6AF2C27D0D49AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88581D035E5DF8BED10D7EED0946C3C1 /* YLSwiftScan.xcconfig */;
+			baseConfigurationReference = 1ACF408F9F13A0BC2574C3ED0B769DC5 /* YLAuxiliaryKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YLAuxiliaryKit/YLAuxiliaryKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLAuxiliaryKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YLAuxiliaryKit/YLAuxiliaryKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YLAuxiliaryKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DC22CA0753B53876E3BD93061F516A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ACF408F9F13A0BC2574C3ED0B769DC5 /* YLAuxiliaryKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YLAuxiliaryKit/YLAuxiliaryKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLAuxiliaryKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YLAuxiliaryKit/YLAuxiliaryKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YLAuxiliaryKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B18D4DE0A4F8B1E381873AF8CAA14D2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YLSwiftScan";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -894,7 +1343,7 @@
 			};
 			name = Release;
 		};
-		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -926,7 +1375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -934,225 +1383,9 @@
 			};
 			name = Release;
 		};
-		45A66570865AA9DA2F3036CF18F6C79E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88581D035E5DF8BED10D7EED0946C3C1 /* YLSwiftScan.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YLSwiftScan/YLSwiftScan-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLSwiftScan/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLSwiftScan/YLSwiftScan.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = YLSwiftScan;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		48FBF7CA229E8D9BAB4784DFE079BC8C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A124170D2FEA044DAC94D748D5203620 /* YLRecordingVideo.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YLRecordingVideo/YLRecordingVideo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLRecordingVideo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLRecordingVideo/YLRecordingVideo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = YLRecordingVideo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5A2E0ACFCE081881AF68036B456F08D5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A124170D2FEA044DAC94D748D5203620 /* YLRecordingVideo.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YLRecordingVideo/YLRecordingVideo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLRecordingVideo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLRecordingVideo/YLRecordingVideo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = YLRecordingVideo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		632A12DD911A1A45885E6A044D179B2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 955E560B2D09C40BFFD1995BDD4449D7 /* YLBanner.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YLBanner/YLBanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLBanner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLBanner/YLBanner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = YLBanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6534B144C4126BCA578ABA5F6376FC87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 955E560B2D09C40BFFD1995BDD4449D7 /* YLBanner.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YLBanner/YLBanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLBanner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLBanner/YLBanner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = YLBanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		88868EAA9DC2175FC88F85B9E763AB69 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED5386EA29A8D57BFF431A3C2B5514C7 /* Pods-YLTestCode.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-YLTestCode/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YLTestCode/Pods-YLTestCode.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_YLTestCode;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C87E742F1336C64F54D3A19039C4636A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88581D035E5DF8BED10D7EED0946C3C1 /* YLSwiftScan.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YLSwiftScan";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/YLSwiftScan/ResourceBundle-YLSwiftScan-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = YLSwiftScan;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		DDC5BE0C93379B32BD43694C1D59A993 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 188AB6EF01D73548527E541114939C08 /* BabyBluetooth.xcconfig */;
+			baseConfigurationReference = 756C3C88F5880579DD2395694FA9B145 /* BabyBluetooth.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1182,99 +1415,109 @@
 			};
 			name = Debug;
 		};
-		E891AD6FC3F6546623F770CB751E1435 /* Release */ = {
+		E23208C5B02EC52C4C9E051A0F091BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88581D035E5DF8BED10D7EED0946C3C1 /* YLSwiftScan.xcconfig */;
+			baseConfigurationReference = 7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YLSwiftScan";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/YLSwiftScan/ResourceBundle-YLSwiftScan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = YLSwiftScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F73F0E5423C276208F3AFF23FA5EFA4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005AD58C7D8FDF1C5D393F6EA13E9900 /* YLRecordingVideo.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YLSwiftScan/YLSwiftScan-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLSwiftScan/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YLRecordingVideo/YLRecordingVideo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLRecordingVideo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLSwiftScan/YLSwiftScan.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = YLSwiftScan;
+				MODULEMAP_FILE = "Target Support Files/YLRecordingVideo/YLRecordingVideo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YLRecordingVideo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		E993BB30808318D9A4AE051A90C27303 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91CD75AC1D3566409359740042AB1F86 /* Pods-YLTestCode.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-YLTestCode/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YLTestCode/Pods-YLTestCode.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_YLTestCode;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		099554079D879FCD7A082B96949B129C /* Build configuration list for PBXNativeTarget "YLSwiftScan-YLSwiftScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23208C5B02EC52C4C9E051A0F091BE6 /* Debug */,
+				B18D4DE0A4F8B1E381873AF8CAA14D2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D2220B6015CEE7B22FFB5EB8548B43F /* Build configuration list for PBXNativeTarget "YLSwiftScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9A6BC3A4B466B4BB5506906516F2E1 /* Debug */,
+				0C63CA81D28EC0156135A752B68C4BC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
-				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FCEDB3CA58964E27D4EC6426EF4C157 /* Build configuration list for PBXNativeTarget "YLSwiftScan" */ = {
+		64564766D46BFB2A605C5B65EC00884B /* Build configuration list for PBXNativeTarget "YLAuxiliaryKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				45A66570865AA9DA2F3036CF18F6C79E /* Debug */,
-				E891AD6FC3F6546623F770CB751E1435 /* Release */,
+				857E16DFB255F56FE6AF2C27D0D49AEE /* Debug */,
+				9DC22CA0753B53876E3BD93061F516A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E64E3087EB02CA57CCB9221747F23AE /* Build configuration list for PBXNativeTarget "YLSwiftScan-YLSwiftScan" */ = {
+		6B06CE99B75AA16DD89759540516F8E3 /* Build configuration list for PBXNativeTarget "YLBanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C87E742F1336C64F54D3A19039C4636A /* Debug */,
-				09E8FD66FBF1CBF38BAB8B4E632169D5 /* Release */,
+				2A4BABFF8E77E22A9EBD14AC450AF868 /* Debug */,
+				109D25166920653027E9614D2C07EB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75BA2F9F8269DA3CFFFD3C1CFE2E964B /* Build configuration list for PBXNativeTarget "YLRecordingVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F73F0E5423C276208F3AFF23FA5EFA4D /* Debug */,
+				6DEACBCCD912E22B3DA7007671C939F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1288,29 +1531,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9599E259740DF110F5EF02E5E9CA98D4 /* Build configuration list for PBXNativeTarget "Pods-YLTestCode" */ = {
+		B212C073995697AE231E7F2076B91BFB /* Build configuration list for PBXNativeTarget "Pods-YLTestCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88868EAA9DC2175FC88F85B9E763AB69 /* Debug */,
-				E993BB30808318D9A4AE051A90C27303 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9E35CF8D1204A5ECA59463F274EEF74 /* Build configuration list for PBXNativeTarget "YLRecordingVideo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5A2E0ACFCE081881AF68036B456F08D5 /* Debug */,
-				48FBF7CA229E8D9BAB4784DFE079BC8C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA3AB0C0E7352CD9C973EC0773C3FE87 /* Build configuration list for PBXNativeTarget "YLBanner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				632A12DD911A1A45885E6A044D179B2D /* Debug */,
-				6534B144C4126BCA578ABA5F6376FC87 /* Release */,
+				5CBA4523A8E920DC13C793453C53A218 /* Debug */,
+				357200B1C27A4819B4BA8A1F167D6ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,6 +9,7 @@
 import UIKit
 import YLSwiftScan
 import YLRecordingVideo
+import YLAuxiliaryKit
 
 
 class ViewController: UIViewController {
@@ -41,13 +42,13 @@ class ViewController: UIViewController {
         button.backgroundColor = UIColor.brown
         button.frame = CGRect(x: self.view.bounds.width/2 - 30, y: self.view.bounds.height/2 - 200, width: 60, height: 50)
         button.setTitle("扫描", for: .normal)
-//        let leftmargin: CGFloat = 0
-//        let rightmargin: CGFloat = 0
+        let leftmargin: CGFloat = 0
+        let rightmargin: CGFloat = 0
         button.addTarget(self, action: #selector(scanQRcode), for: .touchUpInside)
-//        button.addLineWithSide(.inBottom, color: .red, thickness: 3, margin1: leftmargin, margin2: rightmargin)
-//        button.addLineWithSide(.inLeft, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
-//        button.addLineWithSide(.outBottom, color: .red, thickness: 3, margin1: leftmargin, margin2: rightmargin)
-//        button.addLineWithSide(.outLeft, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
+        button.addLineWithSide(.inBottom, color: .red, thickness: 3, margin1: leftmargin, margin2: rightmargin)
+        button.addLineWithSide(.inLeft, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
+        button.addLineWithSide(.outBottom, color: .red, thickness: 3, margin1: leftmargin, margin2: rightmargin)
+        button.addLineWithSide(.outLeft, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
         self.view.addSubview(button)
         
         let button1 = UIButton()

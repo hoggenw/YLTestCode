@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YLAuxiliaryKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YLBanner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0836A21ADCA0A32985F59FD61E75D7CC</key>
+		<key>323FA71E6EAAB368A7D7832AC60D1573</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0A6A6BD4659C5AD8447135E1FFFA69C8</key>
+		<key>931910E35420C99E47B6B2313E207FF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2DB626D7B09C6F8A31027B84541E3F1F</key>
+		<key>AEF9B45E6D785B34C8411F7F1108B977</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34D4D9DD0BC1147972FA4F5000C83BC5</key>
+		<key>D5DFC697E20B5FC3CC46D99C9CFC2866</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6589F4662CD0DFE15145CF6310A7E9EB</key>
+		<key>E178DCB53A466176089BA0AF55CDF812</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>F4B1A0F40902F9533C324157F3F2703D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA2D0999EB5697336353A5CAF0D1F3BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

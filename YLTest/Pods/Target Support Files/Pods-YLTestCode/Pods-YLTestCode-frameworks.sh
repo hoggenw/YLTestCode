@@ -90,12 +90,14 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BabyBluetooth/BabyBluetooth.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/YLAuxiliaryKit/YLAuxiliaryKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YLBanner/YLBanner.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YLRecordingVideo/YLRecordingVideo.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YLSwiftScan/YLSwiftScan.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BabyBluetooth/BabyBluetooth.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/YLAuxiliaryKit/YLAuxiliaryKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YLBanner/YLBanner.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YLRecordingVideo/YLRecordingVideo.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YLSwiftScan/YLSwiftScan.framework"
