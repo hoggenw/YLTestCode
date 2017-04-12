@@ -18,9 +18,10 @@ class ViewController: UIViewController {
     //var baby: BabyBluetooth?
     override func viewDidLoad() {
         super.viewDidLoad()
+        dictionaryReduceTest()
         
 //        baby = BabyBluetooth.shareBabyBluetooth()
-        intialUI()
+//        intialUI()
 //        let minius = { () -> Int in
 //            return 10
 //        }
@@ -99,6 +100,24 @@ class ViewController: UIViewController {
         videoManager.videoQuality = .normalQuality
         videoManager.recordTotalTime = 10
         videoManager.showRecordView(viewController: self)
+    }
+    
+    
+    //===============dictionary reduce test=============
+    
+    func dictionaryReduceTest() {
+        let json: [String : Any] = ["1":"first","2":2]
+        let result = json.reduce([:]) { (result, elment) -> [String: String] in
+            let key:String = elment.key
+            guard let value: AnyObject = elment.value as AnyObject? else {
+                return ["wrong":"result"]
+            }
+            var result = result
+            result[String(format: "this is key %@", key)] =   String(format: "this is value %@",value  as! CVarArg)
+            return result
+        }
+        
+        print("\(result)")
     }
 }
 
