@@ -119,6 +119,24 @@ class ViewController: UIViewController {
         
         print("\(result)")
     }
+    
+    func classNameChioce() {
+//        var outCount: UInt32 = 0
+//        let propertys = class_copyPropertyList(classForCoder, &outCount)
+//        let count: Int = Int(outCount)
+//        var isExist = false
+//        for i in 0..<count {
+//            guard let aPro = propertys?[i],
+//                let aName = property_getName(aPro),
+//                let name = String(utf8String: aName) else {
+//                    continue
+//            }
+//            if name == keyPath {
+//                isExist = true
+//                break
+//            }
+//        }
+    }
 }
 
 extension ViewController: YLRecordVideoChoiceDelegate {
