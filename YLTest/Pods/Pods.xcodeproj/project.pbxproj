@@ -7,85 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		046EA484DC8690E2B0950B2876555739 /* Array+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6370C4F6D38856A2CEAE0DB5D540 /* Array+Extension .swift */; };
-		09D7B4E7E06A5C88B59F158C01C9E749 /* BabyCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 65E83DF142BEB11E9539FBA87BD691E3 /* BabyCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DAEBB69C35B9E3A3245C8FF14931FF5 /* YLAuxiliaryKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C53CB29026DB6D6D029BCC4D682521BC /* YLAuxiliaryKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E6362631E6E9341BE222148AF0BB86F /* qrcode_scan_btn_flash_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C558CE120A833DD080D98FE953A16FA0 /* qrcode_scan_btn_flash_nor@2x.png */; };
-		0F73F1F81CAAE1BD66A2630E9722CBEF /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 211BE4994022C2AD60721FAC09C7FDC3 /* BabyCentralManager.m */; };
-		0FF4C0279E853B8808661CCED55CB08A /* BabyCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E530829BF7DB1F50BA1CE279E2E556 /* BabyCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		102B3821E7BBE39FF8E7E3BA101946D2 /* YLRecordingVideo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B3BA369C1C29E4713FB714ECEC7E8A /* YLRecordingVideo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16F08FB5C0C29BFA387CB11F4EFFB36A /* YLScanViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E623F20D7DD4415578507C401385F5 /* YLScanViewManager.swift */; };
-		17C0546D434AC7110FCCF2049FB9A035 /* YLSwiftScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B34ADEC7DCD7F2B4D7C083405BC95DE /* YLSwiftScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18F2AB8CA4EB181A4DDB80D487B55F9B /* YLScanViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F6672B0C40D455588949CC6DEC058 /* YLScanViewSetting.swift */; };
-		195E260D8BDE381804368C3F57151BEA /* YLSwiftScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A355155D91DE873C4F6898CD92769A50 /* YLSwiftScan-dummy.m */; };
-		257511B9E18C46EE703D54B2A9BA82C0 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2BCD4B19435683760EF8369EAFC97 /* CGSize+Extension.swift */; };
+		046EA484DC8690E2B0950B2876555739 /* Array+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D24C6F5085855A9573E2D088533BE34 /* Array+Extension .swift */; };
+		09D7B4E7E06A5C88B59F158C01C9E749 /* BabyCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D03EE243A6B1F1A279D4BBCDC62F7EE2 /* BabyCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DAEBB69C35B9E3A3245C8FF14931FF5 /* YLAuxiliaryKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E0543CDDFC6485BBFC656E1ED524F0 /* YLAuxiliaryKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E6362631E6E9341BE222148AF0BB86F /* qrcode_scan_btn_flash_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E349749A533EE21D4B410F0C427C43D0 /* qrcode_scan_btn_flash_nor@2x.png */; };
+		0F73F1F81CAAE1BD66A2630E9722CBEF /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5B20C7293A5CD79426022D7B001A5 /* BabyCentralManager.m */; };
+		0FF4C0279E853B8808661CCED55CB08A /* BabyCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 85A2BA3F95C71291E9476774E2B825E7 /* BabyCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102B3821E7BBE39FF8E7E3BA101946D2 /* YLRecordingVideo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1393D9D8BC4DD3FF2186A7603A4FE7 /* YLRecordingVideo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16F08FB5C0C29BFA387CB11F4EFFB36A /* YLScanViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C820CA0DE4A3ABF56B49419AC287E6 /* YLScanViewManager.swift */; };
+		17C0546D434AC7110FCCF2049FB9A035 /* YLSwiftScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D93D9DC5F38DAAFDF161F11BD822AB14 /* YLSwiftScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18F2AB8CA4EB181A4DDB80D487B55F9B /* YLScanViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B808D66EE55DB17E1C4247BC9DEAA1C /* YLScanViewSetting.swift */; };
+		195E260D8BDE381804368C3F57151BEA /* YLSwiftScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCC854CA0AC8F0BEB03292E1F44EC9F /* YLSwiftScan-dummy.m */; };
+		257511B9E18C46EE703D54B2A9BA82C0 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875490DCD061CB4097EF640D0006B67 /* CGSize+Extension.swift */; };
 		2890A12CE6AB0B01AA97EC0A941CED76 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02863738A935176220025BB502C49FC /* AVFoundation.framework */; };
-		2D41B7ABAE62466390484493D24AB5B9 /* YLScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1C6193593F289D1135D422D70FF53 /* YLScanLineAnimation.swift */; };
-		344D10E576B4C06A2020B2A206A45AAC /* YLRecordVideoStlye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0E02243C4E95FFCF9F3DA2680190C /* YLRecordVideoStlye.swift */; };
-		3845B4FCF4F57923A14D592F3B14E088 /* BabyPeripheralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00032B54D596B8C2BCAC182F97069D02 /* BabyPeripheralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F2F90163AFF2E83A8D97FCF72903360 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C3161AECD3C02430F0BF56FEA39ED4 /* BabyBluetooth.m */; };
-		46BDA12CA1B90F7277B0C0820F4F9ED1 /* YLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E89677E78E5925E3585E52204DB17B /* YLNavigationController.swift */; };
-		4ACB01D452A3488910A0E5FC610FF6D6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093ED7B88203432A5FCA885CA66FAE1 /* UIColor+Extension.swift */; };
-		4DC57833828B6472D1E8B743AF0E32A4 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F442C9482C57EF9630BD599A233CD /* Dictionary+Extension.swift */; };
+		2D41B7ABAE62466390484493D24AB5B9 /* YLScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5643E2CD2184F50D91CB5F77D0F58 /* YLScanLineAnimation.swift */; };
+		344D10E576B4C06A2020B2A206A45AAC /* YLRecordVideoStlye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB875605BDEFF382CC1C382EE559CC /* YLRecordVideoStlye.swift */; };
+		3845B4FCF4F57923A14D592F3B14E088 /* BabyPeripheralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F6B4366DBCF4F2F7A17B685C4994015 /* BabyPeripheralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F2F90163AFF2E83A8D97FCF72903360 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0522EBA31A8E0934610F321D6D0A8A /* BabyBluetooth.m */; };
+		46BDA12CA1B90F7277B0C0820F4F9ED1 /* YLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3007A66F1385917B8728758654F19DE7 /* YLNavigationController.swift */; };
+		4ACB01D452A3488910A0E5FC610FF6D6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76707572827962A18BD70C35663DC5 /* UIColor+Extension.swift */; };
+		4DC57833828B6472D1E8B743AF0E32A4 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811820504AB675C6FA984417AA1F8695 /* Dictionary+Extension.swift */; };
 		4FF6A93490E87EAF6B652DEA9CED5134 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3034D4F09F6F8B6450F266189D34C4DC /* UIKit.framework */; };
-		5E8E419C172580373A666E00A01F6DFC /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0794C29F64ECF9FB9D9FA74933C8FE /* UILable+Extension.swift */; };
-		63160BC08DF1705DA3A5B3626DDFF619 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A18D20816AFBF1E38DA7DF3BD40ABA /* BabySpeaker.m */; };
-		66DC6BF50AB3A943937324416C14AC55 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2680404154276FE880A3254076FA45 /* UIColor+Extension.swift */; };
+		5E8E419C172580373A666E00A01F6DFC /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A98134236A5E8CF9F1A15E17C31EA4 /* UILable+Extension.swift */; };
+		63160BC08DF1705DA3A5B3626DDFF619 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC690B4303E2FA8198E0CA16EC4E9F /* BabySpeaker.m */; };
+		66DC6BF50AB3A943937324416C14AC55 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83A40E1D7DAFAE72574FF80865788B /* UIColor+Extension.swift */; };
 		77C7F6FCF6FAFDAE17BF4C8EBAF3331B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02863738A935176220025BB502C49FC /* AVFoundation.framework */; };
 		7AE7914445ACB40BD567F6027488E4B4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACE4E8836522D54804F3530488A1AD9 /* Photos.framework */; };
-		7C20B110135E64832C3DCDA317786D19 /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81241EB5088CD3652A59AC17BBC74897 /* BabyPeripheralManager.m */; };
-		7C7EF4064BDDC0C2771D7AB9DDD2990C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4776E37F7C7934497E9E2B63C351D6 /* Date+Extension.swift */; };
-		7CA108D7D2160B23D52C1E1A7173EDE9 /* BabySpeaker.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5B7A1B81419EC0A2A8A6749BEC3268 /* BabySpeaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E81291A61B4C9168E5BA34BB867F1BE /* YLRecordControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A507FB7F390AD7A6854D5F621A8A314 /* YLRecordControlView.swift */; };
-		872C0555B1F955CBA78F63592225AD5B /* BabyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B7AF53F307262A6F524CE19217D63B /* BabyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BDD9FDD4F9A82720ED560BA2FCF0476 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C254693485B4792DCA74B8DA758551 /* BabyCallback.m */; };
+		7C20B110135E64832C3DCDA317786D19 /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EE132B221CED7CA35248CFC0387FBB /* BabyPeripheralManager.m */; };
+		7C7EF4064BDDC0C2771D7AB9DDD2990C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B443CE20BE96D3C8261C3BB4F1D65 /* Date+Extension.swift */; };
+		7CA108D7D2160B23D52C1E1A7173EDE9 /* BabySpeaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F819995A0B448E8389B691DE5B8F7B3 /* BabySpeaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E81291A61B4C9168E5BA34BB867F1BE /* YLRecordControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427B69F8FD4439D28E8E2F7624323BE /* YLRecordControlView.swift */; };
+		872C0555B1F955CBA78F63592225AD5B /* BabyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B8257D2C61A068E3AB7D93604CEE926 /* BabyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BDD9FDD4F9A82720ED560BA2FCF0476 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D430C1FEFD5117BFDECDDDC5BE1C6E /* BabyCallback.m */; };
 		8D5A2DDCB6F2E4EF0DD8D4DA03C47889 /* Pods-YLTestCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E73B57D14A0691C58E0F3EFCD399CF /* Pods-YLTestCode-dummy.m */; };
-		933EA2EBF4494DB632132F82075F7F58 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C16DD5E47026EA42383CA1E1FDF78C /* UIView+Extension.swift */; };
-		95134844F3C263B271ADAF7E7AA8C915 /* BabyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F939E57AB4F2425DBAF3CB8CFE9B6E9 /* BabyBluetooth-dummy.m */; };
-		958665977F2F738FFE8424AB79944E46 /* BabyDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 578E8CD9AB90F9FAE671735250D00161 /* BabyDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9696BEF7470EE50446871CFABA63DC40 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE372BD7AF33D1088BB7E775F11890E6 /* BabyToy.m */; };
-		9A35AE37EAAEC6D3294404BD5153A020 /* YLAuxiliaryKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D88F8CA117DAE6873D2BDB09EAA894F /* YLAuxiliaryKit-dummy.m */; };
+		933EA2EBF4494DB632132F82075F7F58 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135B5CF2B889F4ED3D71C5F1B000CCB9 /* UIView+Extension.swift */; };
+		95134844F3C263B271ADAF7E7AA8C915 /* BabyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08675F612059AE716074924213465CF8 /* BabyBluetooth-dummy.m */; };
+		958665977F2F738FFE8424AB79944E46 /* BabyDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A97F78FA3F70BD00A8F019C1F2702B7 /* BabyDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9696BEF7470EE50446871CFABA63DC40 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE939F3B212F92EB944C2AE161F009E /* BabyToy.m */; };
+		9A35AE37EAAEC6D3294404BD5153A020 /* YLAuxiliaryKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 465EACDA6A7C93818A97CBED8ABD3E88 /* YLAuxiliaryKit-dummy.m */; };
 		9D9C42B0B4B37EEBD250CB04F552CE09 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7B0015F98EB389097188C3EA41E85A /* AVKit.framework */; };
-		A00FFF8537CA374A2C44552FEAAB80A4 /* BabyRhythm.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C4D66E296E9C71D510CC27877E6B804 /* BabyRhythm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0AE354837DA2FDF67C30F6C85623DC2 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C4EA08D5750AE360D5AF88373ECE9 /* UIButton + Extension.swift */; };
-		A1CDECE8D912AE7B72AA696BB381B7CD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E59EDF9E6CCF11E821FBF063337B2 /* UIImage+Extension.swift */; };
-		A46CDE9E11F1637E5FD01E4BE63AE0FE /* qrcode_scan_btn_flash_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC000D4721E65C0D681250338393ED49 /* qrcode_scan_btn_flash_down@2x.png */; };
-		A7BAF6B1D66ABCA145630D43E8CB6B36 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6EDFFAD80F3B205024A036F1EBF0C4 /* BabyOptions.m */; };
-		A7F02EBA69BB992D8BF5AB55E39935E0 /* YLScanViewSytle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044012A47AC850C5A7E282AD20DF2E86 /* YLScanViewSytle.swift */; };
-		B0E2549815183A7FCE98D5E1B890E52D /* qrcode_scan_light_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFADAC8A394BD258EC7DF0FE2884C321 /* qrcode_scan_light_green@2x.png */; };
+		A00FFF8537CA374A2C44552FEAAB80A4 /* BabyRhythm.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC68170476FCD570522205B68C04E26 /* BabyRhythm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0AE354837DA2FDF67C30F6C85623DC2 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C9D20963CC00A3FF1EEBFFA41BC975 /* UIButton + Extension.swift */; };
+		A1CDECE8D912AE7B72AA696BB381B7CD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307209E68F060D6AFA7CF04232DC8C4 /* UIImage+Extension.swift */; };
+		A46CDE9E11F1637E5FD01E4BE63AE0FE /* qrcode_scan_btn_flash_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E73E2BEE0478EA5C8C1DAA57524C946 /* qrcode_scan_btn_flash_down@2x.png */; };
+		A7BAF6B1D66ABCA145630D43E8CB6B36 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0EE7E24D03E830DA4FDB9F085E6F0B /* BabyOptions.m */; };
+		A7F02EBA69BB992D8BF5AB55E39935E0 /* YLScanViewSytle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A3F5357C4530A25C754ED06744B329 /* YLScanViewSytle.swift */; };
+		B0E2549815183A7FCE98D5E1B890E52D /* qrcode_scan_light_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8CA5B322239A5552D753E181ECB0820 /* qrcode_scan_light_green@2x.png */; };
 		B346DCE396273AAA55D10A917206061D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
-		B3754CCCF2F00206FF80A05F47486B8A /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F4FADC0CF5B693BD663384C30B9A4 /* Timer+Extension.swift */; };
+		B3754CCCF2F00206FF80A05F47486B8A /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EECB04B1412F018DFE7EE133C9A2A30 /* Timer+Extension.swift */; };
 		B7108B5A07BA9CCAF7F6850D44E988E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
 		B8FDFB069E085E8FA6C8EE84AC70532D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
 		BD52F0CBEDADE69C619F76AF036C65AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3034D4F09F6F8B6450F266189D34C4DC /* UIKit.framework */; };
-		BE9E49FC52285E888815A139CA799BC4 /* BabyOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFE67FDCD722184C4CED4E793E1BAB5 /* BabyOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C04892E88E88F1C1AD816DB99199FEB8 /* qrcode_Scan_weixin_Line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99AEC56E96862EB6C2F04FC99181C8BD /* qrcode_Scan_weixin_Line@2x.png */; };
-		C24F2A2FD142EDC0C230542B938C7A44 /* YLProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836D29F64247985087F54B7315EE7D /* YLProgressView.swift */; };
+		BE9E49FC52285E888815A139CA799BC4 /* BabyOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D4D57B8D7F17D1C2CA5123036D61066 /* BabyOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04892E88E88F1C1AD816DB99199FEB8 /* qrcode_Scan_weixin_Line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDCA9CC043DFC2410D648223521F91B /* qrcode_Scan_weixin_Line@2x.png */; };
+		C24F2A2FD142EDC0C230542B938C7A44 /* YLProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2E6AFDF49ED9190A4273DEB523BCA /* YLProgressView.swift */; };
 		C56881AC7707D01DB6FCF693D5741B03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
-		C72DFCC1177DCE1966140C10C4816DA2 /* YLRecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0413A168A1857D700800F7427C3C549 /* YLRecordVideoViewController.swift */; };
-		C7A8FE7A4214A9E581DBADD1F7C28C16 /* YLMainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330E350FEA42CE7B96CAAB24CAF898B /* YLMainTabbarViewController.swift */; };
-		CC4F7B5354EDFAE69505BFB0A84CC177 /* YLPhonePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DE7FFD53D8A7582C694DE694B15A9 /* YLPhonePermissions.swift */; };
-		CD880BB18AA9E91FC4D4BDBE0DA29FC0 /* YLBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21712A8245DB3B01B419706F9B7DD569 /* YLBanner.swift */; };
+		C72DFCC1177DCE1966140C10C4816DA2 /* YLRecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEAEEB3623FC83481457216F448510E /* YLRecordVideoViewController.swift */; };
+		C7A8FE7A4214A9E581DBADD1F7C28C16 /* YLMainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7148EC9A7A3818CB3281A8F6F74CB6 /* YLMainTabbarViewController.swift */; };
+		CC4F7B5354EDFAE69505BFB0A84CC177 /* YLPhonePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6575F2755CC599EAD8BE6F1A7A1AA /* YLPhonePermissions.swift */; };
+		CD880BB18AA9E91FC4D4BDBE0DA29FC0 /* YLBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76D23C55FA393AC6E3F648A4E8230B /* YLBanner.swift */; };
 		CF3B57CD20BF262037083F986912A13A /* YLSwiftScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2DB880BCD5DB173834A5D2D897B300E /* YLSwiftScan.bundle */; };
-		CFD01CE3B98B1C7DAC4D81F5FBFA3DEC /* YLRecordVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79663125C56976B6F11DD8F7D7373B /* YLRecordVideoManager.swift */; };
-		D1792448941703ECEBDF4A339F956EF1 /* YLScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533558856B71A41406AB19504AE714E /* YLScanViewController.swift */; };
+		CFD01CE3B98B1C7DAC4D81F5FBFA3DEC /* YLRecordVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F524FC4C3C1493E948870697F3420F /* YLRecordVideoManager.swift */; };
+		D1792448941703ECEBDF4A339F956EF1 /* YLScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE83B159C0BE348ED427B741C082AFC /* YLScanViewController.swift */; };
 		D8569F4758A3AD3192370BA4C8F15973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
-		DA94452F202F5BFC847137EA773FAEE3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7505B92E4FA5E8D21BFB7511E1E295D /* String+Extension.swift */; };
-		E0C6C1BA5A7A5ADEF55E3A6234994794 /* YLScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86482F991A4AB842CD3ACDB749060110 /* YLScanView.swift */; };
-		E8E713C67FF047C89BDBBD772044A7BE /* YLBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22AB8D7659667B8E1E62B75475A953 /* YLBanner-dummy.m */; };
-		EF260FDDE839CB631BDC7F4F7DCD7B63 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C49F3421895204B7D2CB5A3F5B52FD /* UIImageView+Extension.swift */; };
+		DA94452F202F5BFC847137EA773FAEE3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D0E21340EF9D5C8D5C9C16437423D /* String+Extension.swift */; };
+		E0C6C1BA5A7A5ADEF55E3A6234994794 /* YLScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA3E635A7D119E76C77D32A555224 /* YLScanView.swift */; };
+		E8E713C67FF047C89BDBBD772044A7BE /* YLBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 561E4E3823E2EC06079EDEBB48D7D201 /* YLBanner-dummy.m */; };
+		EF260FDDE839CB631BDC7F4F7DCD7B63 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC50014563FDE6D0F46D26B74D94B92 /* UIImageView+Extension.swift */; };
 		F010CE79289CACD8F132DA4DB78F20CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */; };
-		F17063813215C9EFF4FB9583BF8FAE6E /* BabyToy.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C9EE2966D82466A37551668CE1BC45 /* BabyToy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2D33A39EE3E61192FA8A51A7F387AE4 /* qrcode_scan_part_net.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BDE446085E533164F6FA0D413B9648 /* qrcode_scan_part_net.png */; };
-		F3739049EB6F79916DF043BD814B8484 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4DF4E8F6689FF13BD40480480391A8 /* Device.swift */; };
-		F4DA49CEC3003E287EB7CE59F6C25F46 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = F94596A8B2818DE44944F58CAE3E831B /* BabyRhythm.m */; };
-		F50D3C873C45E823E081EB3DDE39BA89 /* YLBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F35646A20EE6CD43CF11E48B096F872 /* YLBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F17063813215C9EFF4FB9583BF8FAE6E /* BabyToy.h in Headers */ = {isa = PBXBuildFile; fileRef = 27847A58F80A8153A719884B3EE17810 /* BabyToy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D33A39EE3E61192FA8A51A7F387AE4 /* qrcode_scan_part_net.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BDBA5702688FBCF2D7D593A530543B2 /* qrcode_scan_part_net.png */; };
+		F3739049EB6F79916DF043BD814B8484 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F4237CF85DA8BB4BA893197B92BD8 /* Device.swift */; };
+		F4DA49CEC3003E287EB7CE59F6C25F46 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1416402FDC82E06CED07780ECCD0B0 /* BabyRhythm.m */; };
+		F50D3C873C45E823E081EB3DDE39BA89 /* YLBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA99F0D097318466F82281225F339006 /* YLBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F527A178DA1E75E232E94FD7A972F478 /* Pods-YLTestCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C80C2419B54685C1D1A67B94B7691C /* Pods-YLTestCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8B679DAB27E2FF25CD88EC6EB9533F0 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18880E2A88CBBE24697486E99F5454E2 /* BabyDefine.m */; };
-		FD5478B89ACDF115C57845DF16976552 /* qrcode_scan_full_net.png in Resources */ = {isa = PBXBuildFile; fileRef = 1664A942085A341D13F27322D81A02CF /* qrcode_scan_full_net.png */; };
-		FDC3FE1B81405DA3475D1EEFE9608E13 /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F662AA2653D5B195733026910DC70F /* Timer+Extension.swift */; };
-		FF0ECB759BE834A3F8EE9943CAE66E45 /* YLRecordingVideo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A2E857DE9221CFAA3D529CBCD1DE04 /* YLRecordingVideo-dummy.m */; };
-		FF6026DCB4C3A925C95BC5EA038523A7 /* BabyBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3270856C2CE9D399B7261EB4900150 /* BabyBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8B679DAB27E2FF25CD88EC6EB9533F0 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 08403F3F99CD82516EEB81E333966AC0 /* BabyDefine.m */; };
+		FD5478B89ACDF115C57845DF16976552 /* qrcode_scan_full_net.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E112B410959B82AF43945D3C2E3CDEE /* qrcode_scan_full_net.png */; };
+		FDC3FE1B81405DA3475D1EEFE9608E13 /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69DCE929A6D227A519945E5B33BA08 /* Timer+Extension.swift */; };
+		FF0ECB759BE834A3F8EE9943CAE66E45 /* YLRecordingVideo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA303DDA196FC664B20CA1F6C7C0AC9 /* YLRecordingVideo-dummy.m */; };
+		FF6026DCB4C3A925C95BC5EA038523A7 /* BabyBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3215B091596B747F035ADB4375F6DF64 /* BabyBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,114 +134,209 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00032B54D596B8C2BCAC182F97069D02 /* BabyPeripheralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyPeripheralManager.h; path = Classes/objc/BabyPeripheralManager.h; sourceTree = "<group>"; };
-		005AD58C7D8FDF1C5D393F6EA13E9900 /* YLRecordingVideo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRecordingVideo.xcconfig; sourceTree = "<group>"; };
-		00836D29F64247985087F54B7315EE7D /* YLProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLProgressView.swift; path = YLRecordingVideo/Classes/YLProgressView.swift; sourceTree = "<group>"; };
-		00C429ABE47AA2EAA97E19535ADA7165 /* YLSwiftScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLSwiftScan.modulemap; sourceTree = "<group>"; };
+		02A274D2DD9964182717B87761FC7319 /* MAOfflineCity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOfflineCity.h; path = MAMapKit.framework/Headers/MAOfflineCity.h; sourceTree = "<group>"; };
+		02B75413D7646E8168074C6FF9831182 /* MAOfflineItemCommonCity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOfflineItemCommonCity.h; path = MAMapKit.framework/Headers/MAOfflineItemCommonCity.h; sourceTree = "<group>"; };
 		02C80C2419B54685C1D1A67B94B7691C /* Pods-YLTestCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YLTestCode-umbrella.h"; sourceTree = "<group>"; };
-		044012A47AC850C5A7E282AD20DF2E86 /* YLScanViewSytle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewSytle.swift; path = YLSwiftScan/Classes/YLScanViewSytle.swift; sourceTree = "<group>"; };
-		0F22AB8D7659667B8E1E62B75475A953 /* YLBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLBanner-dummy.m"; sourceTree = "<group>"; };
-		1664A942085A341D13F27322D81A02CF /* qrcode_scan_full_net.png */ = {isa = PBXFileReference; includeInIndex = 1; name = qrcode_scan_full_net.png; path = YLSwiftScan/Assets/qrcode_scan_full_net.png; sourceTree = "<group>"; };
-		166DE8C11A965EBD7DC85DB2F3006945 /* YLBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLBanner.xcconfig; sourceTree = "<group>"; };
-		18880E2A88CBBE24697486E99F5454E2 /* BabyDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyDefine.m; path = Classes/objc/BabyDefine.m; sourceTree = "<group>"; };
-		1A507FB7F390AD7A6854D5F621A8A314 /* YLRecordControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordControlView.swift; path = YLRecordingVideo/Classes/YLRecordControlView.swift; sourceTree = "<group>"; };
-		1ACF408F9F13A0BC2574C3ED0B769DC5 /* YLAuxiliaryKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLAuxiliaryKit.xcconfig; sourceTree = "<group>"; };
-		20921954487258945E09029B8AE6F06D /* ResourceBundle-YLSwiftScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YLSwiftScan-Info.plist"; sourceTree = "<group>"; };
-		20C3161AECD3C02430F0BF56FEA39ED4 /* BabyBluetooth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyBluetooth.m; path = Classes/objc/BabyBluetooth.m; sourceTree = "<group>"; };
-		211BE4994022C2AD60721FAC09C7FDC3 /* BabyCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCentralManager.m; path = Classes/objc/BabyCentralManager.m; sourceTree = "<group>"; };
-		21712A8245DB3B01B419706F9B7DD569 /* YLBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLBanner.swift; path = YLBanner/Classes/YLBanner.swift; sourceTree = "<group>"; };
-		23008AFBAB127E3D45E3F57754622E88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2330E350FEA42CE7B96CAAB24CAF898B /* YLMainTabbarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLMainTabbarViewController.swift; path = YLAuxiliaryKit/Classes/YLMainTabbarViewController.swift; sourceTree = "<group>"; };
-		2C3270856C2CE9D399B7261EB4900150 /* BabyBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-umbrella.h"; sourceTree = "<group>"; };
-		2DC91DC1F4E21E41809168298AACBCE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F2680404154276FE880A3254076FA45 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
-		2FF6938094FDE4FBD8ABE06C2B835169 /* YLBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLBanner-prefix.pch"; sourceTree = "<group>"; };
+		036CF09E85B18D712927A16AE6CF9F2E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E5643E2CD2184F50D91CB5F77D0F58 /* YLScanLineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanLineAnimation.swift; path = YLSwiftScan/Classes/YLScanLineAnimation.swift; sourceTree = "<group>"; };
+		0427B69F8FD4439D28E8E2F7624323BE /* YLRecordControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordControlView.swift; path = YLRecordingVideo/Classes/YLRecordControlView.swift; sourceTree = "<group>"; };
+		08403F3F99CD82516EEB81E333966AC0 /* BabyDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyDefine.m; path = Classes/objc/BabyDefine.m; sourceTree = "<group>"; };
+		08675F612059AE716074924213465CF8 /* BabyBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BabyBluetooth-dummy.m"; sourceTree = "<group>"; };
+		08C9D20963CC00A3FF1EEBFFA41BC975 /* UIButton + Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton + Extension.swift"; path = "YLAuxiliaryKit/Classes/UIButton + Extension.swift"; sourceTree = "<group>"; };
+		0A69DCE929A6D227A519945E5B33BA08 /* Timer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+Extension.swift"; path = "YLAuxiliaryKit/Classes/Timer+Extension.swift"; sourceTree = "<group>"; };
+		0AC0430D43C22FDABCC7E95CED6B3D88 /* MAAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAAnnotation.h; path = MAMapKit.framework/Headers/MAAnnotation.h; sourceTree = "<group>"; };
+		0C9D0E21340EF9D5C8D5C9C16437423D /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "YLAuxiliaryKit/Classes/String+Extension.swift"; sourceTree = "<group>"; };
+		0CA81BC301A180D5C3C91367340E67FC /* AMapSearchVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchVersion.h; path = AMapSearchKit.framework/Headers/AMapSearchVersion.h; sourceTree = "<group>"; };
+		0FDCA9CC043DFC2410D648223521F91B /* qrcode_Scan_weixin_Line@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_Scan_weixin_Line@2x.png"; path = "YLSwiftScan/Assets/qrcode_Scan_weixin_Line@2x.png"; sourceTree = "<group>"; };
+		11937A62213827491E2F2C899B61BA4D /* YLSwiftScan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLSwiftScan.xcconfig; sourceTree = "<group>"; };
+		11CA8B9E706C13050A70B864DEC68057 /* AMapNaviDriveManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviDriveManager.h; path = AMapNaviKit.framework/Headers/AMapNaviDriveManager.h; sourceTree = "<group>"; };
+		135B5CF2B889F4ED3D71C5F1B000CCB9 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
+		144F490E75CDB1098743E781AAEB9DA3 /* MAGeodesicPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGeodesicPolyline.h; path = MAMapKit.framework/Headers/MAGeodesicPolyline.h; sourceTree = "<group>"; };
+		1987E9ECD5F3901A5DB2650EE1003C6B /* AMapNaviWalkView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviWalkView.h; path = AMapNaviKit.framework/Headers/AMapNaviWalkView.h; sourceTree = "<group>"; };
+		1BDB875605BDEFF382CC1C382EE559CC /* YLRecordVideoStlye.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoStlye.swift; path = YLRecordingVideo/Classes/YLRecordVideoStlye.swift; sourceTree = "<group>"; };
+		1DB24365D75043EC8DEB6AA2540DEE16 /* AMapNaviHUDView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviHUDView.h; path = AMapNaviKit.framework/Headers/AMapNaviHUDView.h; sourceTree = "<group>"; };
+		1DE2E6AFDF49ED9190A4273DEB523BCA /* YLProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLProgressView.swift; path = YLRecordingVideo/Classes/YLProgressView.swift; sourceTree = "<group>"; };
+		1EB71893F338F87E5C820E7AE976454C /* MACircleRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MACircleRenderer.h; path = MAMapKit.framework/Headers/MACircleRenderer.h; sourceTree = "<group>"; };
+		1EECB04B1412F018DFE7EE133C9A2A30 /* Timer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+Extension.swift"; path = "YLBanner/Classes/Timer+Extension.swift"; sourceTree = "<group>"; };
+		20947D381D855C85E71AC60DA24FBC4D /* MAGroundOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGroundOverlay.h; path = MAMapKit.framework/Headers/MAGroundOverlay.h; sourceTree = "<group>"; };
+		21F1FABC4C5C59F03B14D68BC4A9FD56 /* AMapUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapUtility.h; path = AMapFoundationKit.framework/Headers/AMapUtility.h; sourceTree = "<group>"; };
+		27847A58F80A8153A719884B3EE17810 /* BabyToy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyToy.h; path = Classes/objc/BabyToy.h; sourceTree = "<group>"; };
+		283B1C2823EB8864DF80295337442465 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		299BA3E635A7D119E76C77D32A555224 /* YLScanView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanView.swift; path = YLSwiftScan/Classes/YLScanView.swift; sourceTree = "<group>"; };
+		29E0543CDDFC6485BBFC656E1ED524F0 /* YLAuxiliaryKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLAuxiliaryKit-umbrella.h"; sourceTree = "<group>"; };
+		2C76707572827962A18BD70C35663DC5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "YLBanner/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3007A66F1385917B8728758654F19DE7 /* YLNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLNavigationController.swift; path = YLAuxiliaryKit/Classes/YLNavigationController.swift; sourceTree = "<group>"; };
+		3017D9D69A0A573BC9A1A6D003660DCB /* AMapNaviLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviLocation.h; path = AMapNaviKit.framework/Headers/AMapNaviLocation.h; sourceTree = "<group>"; };
 		3034D4F09F6F8B6450F266189D34C4DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3093ED7B88203432A5FCA885CA66FAE1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "YLBanner/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
-		30C49F3421895204B7D2CB5A3F5B52FD /* UIImageView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIImageView+Extension.swift"; sourceTree = "<group>"; };
-		31C9EE2966D82466A37551668CE1BC45 /* BabyToy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyToy.h; path = Classes/objc/BabyToy.h; sourceTree = "<group>"; };
-		34B3BA369C1C29E4713FB714ECEC7E8A /* YLRecordingVideo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRecordingVideo-umbrella.h"; sourceTree = "<group>"; };
-		3533558856B71A41406AB19504AE714E /* YLScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewController.swift; path = YLSwiftScan/Classes/YLScanViewController.swift; sourceTree = "<group>"; };
-		3BCDB94FD49D2354747DF7D9208A6418 /* YLRecordingVideo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLRecordingVideo.modulemap; sourceTree = "<group>"; };
-		44C254693485B4792DCA74B8DA758551 /* BabyCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCallback.m; path = Classes/objc/BabyCallback.m; sourceTree = "<group>"; };
+		30381F64D50A59DD21FA48D03DB9124B /* AMapLocationRegionObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationRegionObj.h; path = AMapLocationKit.framework/Headers/AMapLocationRegionObj.h; sourceTree = "<group>"; };
+		3215B091596B747F035ADB4375F6DF64 /* BabyBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		3217BB3A6BD4B0367C723986B7C9183D /* AMapNaviRideView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviRideView.h; path = AMapNaviKit.framework/Headers/AMapNaviRideView.h; sourceTree = "<group>"; };
+		33EBACF42BCC7FB47178BD80FC8533EB /* AMapNavi.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AMapNavi.bundle; path = AMapNaviKit.framework/AMapNavi.bundle; sourceTree = "<group>"; };
+		35EAEBE50B3B35EB2E257C2332B4A110 /* AMapFoundationVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapFoundationVersion.h; path = AMapFoundationKit.framework/Headers/AMapFoundationVersion.h; sourceTree = "<group>"; };
+		367904A7415885D1D3AB6D9FF502F7E7 /* AMapURLSearchType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapURLSearchType.h; path = AMapFoundationKit.framework/Headers/AMapURLSearchType.h; sourceTree = "<group>"; };
+		3A7148EC9A7A3818CB3281A8F6F74CB6 /* YLMainTabbarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLMainTabbarViewController.swift; path = YLAuxiliaryKit/Classes/YLMainTabbarViewController.swift; sourceTree = "<group>"; };
+		3BBA04B89E7152EAE166FEFB091E545F /* MATouchPoi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MATouchPoi.h; path = MAMapKit.framework/Headers/MATouchPoi.h; sourceTree = "<group>"; };
+		3D484FE6A51CF02DE8D4C522E95E98A7 /* MAPointAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPointAnnotation.h; path = MAMapKit.framework/Headers/MAPointAnnotation.h; sourceTree = "<group>"; };
+		3DE83B159C0BE348ED427B741C082AFC /* YLScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewController.swift; path = YLSwiftScan/Classes/YLScanViewController.swift; sourceTree = "<group>"; };
+		3F819995A0B448E8389B691DE5B8F7B3 /* BabySpeaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabySpeaker.h; path = Classes/objc/BabySpeaker.h; sourceTree = "<group>"; };
+		41E13F48CD7B38B524FDA05BC1D47CDC /* MAOfflineProvince.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOfflineProvince.h; path = MAMapKit.framework/Headers/MAOfflineProvince.h; sourceTree = "<group>"; };
+		42EE4F708C7FCB5CDD7F11E8680EB7D3 /* AMap.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
+		465EACDA6A7C93818A97CBED8ABD3E88 /* YLAuxiliaryKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLAuxiliaryKit-dummy.m"; sourceTree = "<group>"; };
 		46A3A09B6FCFF2060A28C1264DC3D424 /* Pods-YLTestCode-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YLTestCode-acknowledgements.plist"; sourceTree = "<group>"; };
-		49E89677E78E5925E3585E52204DB17B /* YLNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLNavigationController.swift; path = YLAuxiliaryKit/Classes/YLNavigationController.swift; sourceTree = "<group>"; };
-		4AB4C33D1E62495E282C1BF17BCE5E83 /* BabyBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		48C48DAABB965CA280E0FC19B500B4CC /* MAUserLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAUserLocation.h; path = MAMapKit.framework/Headers/MAUserLocation.h; sourceTree = "<group>"; };
+		49387E240CDD9356B03908AE623DBE70 /* AMapSearchObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchObj.h; path = AMapSearchKit.framework/Headers/AMapSearchObj.h; sourceTree = "<group>"; };
+		495AE03097702AE81D8608AA2C8030A1 /* MALineDrawType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MALineDrawType.h; path = MAMapKit.framework/Headers/MALineDrawType.h; sourceTree = "<group>"; };
+		4982D5EB3E4774CDAA400DF640E2FCEE /* AMapServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapServices.h; path = AMapFoundationKit.framework/Headers/AMapServices.h; sourceTree = "<group>"; };
 		4B70F955C7BAFCFDD7BFA3822B5C50D4 /* YLSwiftScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLSwiftScan.framework; path = YLSwiftScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA04BA3438515FD03CE73CEAF9C39C0 /* Pods_YLTestCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YLTestCode.framework; path = "Pods-YLTestCode.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE2BB016F8275D9AB1ADCCEA479CD7E /* YLBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLBanner.framework; path = YLBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51A2E857DE9221CFAA3D529CBCD1DE04 /* YLRecordingVideo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLRecordingVideo-dummy.m"; sourceTree = "<group>"; };
-		551F4FADC0CF5B693BD663384C30B9A4 /* Timer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+Extension.swift"; path = "YLBanner/Classes/Timer+Extension.swift"; sourceTree = "<group>"; };
-		578E8CD9AB90F9FAE671735250D00161 /* BabyDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyDefine.h; path = Classes/objc/BabyDefine.h; sourceTree = "<group>"; };
-		5C1C4EA08D5750AE360D5AF88373ECE9 /* UIButton + Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton + Extension.swift"; path = "YLAuxiliaryKit/Classes/UIButton + Extension.swift"; sourceTree = "<group>"; };
-		5C4D66E296E9C71D510CC27877E6B804 /* BabyRhythm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyRhythm.h; path = Classes/objc/BabyRhythm.h; sourceTree = "<group>"; };
-		61E5CE2680DBBFC84789B9D23BE7E740 /* YLAuxiliaryKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLAuxiliaryKit-prefix.pch"; sourceTree = "<group>"; };
-		62D0E02243C4E95FFCF9F3DA2680190C /* YLRecordVideoStlye.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoStlye.swift; path = YLRecordingVideo/Classes/YLRecordVideoStlye.swift; sourceTree = "<group>"; };
-		64F662AA2653D5B195733026910DC70F /* Timer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+Extension.swift"; path = "YLAuxiliaryKit/Classes/Timer+Extension.swift"; sourceTree = "<group>"; };
-		65E83DF142BEB11E9539FBA87BD691E3 /* BabyCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCentralManager.h; path = Classes/objc/BabyCentralManager.h; sourceTree = "<group>"; };
-		7079144760B2AF3FCB1792742C768552 /* YLBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLBanner.modulemap; sourceTree = "<group>"; };
-		725A14443AD93E597F6C353F4AF1FA7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		756C3C88F5880579DD2395694FA9B145 /* BabyBluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BabyBluetooth.xcconfig; sourceTree = "<group>"; };
-		76BDE446085E533164F6FA0D413B9648 /* qrcode_scan_part_net.png */ = {isa = PBXFileReference; includeInIndex = 1; name = qrcode_scan_part_net.png; path = YLSwiftScan/Assets/qrcode_scan_part_net.png; sourceTree = "<group>"; };
-		76C16DD5E47026EA42383CA1E1FDF78C /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
-		7C4DF4E8F6689FF13BD40480480391A8 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = YLAuxiliaryKit/Classes/Device.swift; sourceTree = "<group>"; };
-		7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLSwiftScan.xcconfig; sourceTree = "<group>"; };
+		4E5B12DDC604AC88B7CA4808A55E46DF /* MATraceLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MATraceLocation.h; path = MAMapKit.framework/Headers/MATraceLocation.h; sourceTree = "<group>"; };
+		4F0545BE5F432677B64F74A79BF96234 /* MATileOverlayRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MATileOverlayRenderer.h; path = MAMapKit.framework/Headers/MATileOverlayRenderer.h; sourceTree = "<group>"; };
+		4F6B4366DBCF4F2F7A17B685C4994015 /* BabyPeripheralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyPeripheralManager.h; path = Classes/objc/BabyPeripheralManager.h; sourceTree = "<group>"; };
+		4FAF196C38240D72F592E40C6C6E11EE /* MAMapKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMapKit.h; path = MAMapKit.framework/Headers/MAMapKit.h; sourceTree = "<group>"; };
+		50D846FDEA5ECEE1A2A7743E2755C567 /* AMapGeoFenceError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapGeoFenceError.h; path = AMapLocationKit.framework/Headers/AMapGeoFenceError.h; sourceTree = "<group>"; };
+		51374903381B1B075F4C8CD90669C9B4 /* YLSwiftScan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLSwiftScan-prefix.pch"; sourceTree = "<group>"; };
+		52D4A895A8D672608432A9CE91EBFD91 /* YLAuxiliaryKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLAuxiliaryKit.modulemap; sourceTree = "<group>"; };
+		547B443CE20BE96D3C8261C3BB4F1D65 /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "YLAuxiliaryKit/Classes/Date+Extension.swift"; sourceTree = "<group>"; };
+		54AB55894BC847B0E56FCAFD3416A0B4 /* AMapNaviRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviRoute.h; path = AMapNaviKit.framework/Headers/AMapNaviRoute.h; sourceTree = "<group>"; };
+		561E4E3823E2EC06079EDEBB48D7D201 /* YLBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLBanner-dummy.m"; sourceTree = "<group>"; };
+		5875490DCD061CB4097EF640D0006B67 /* CGSize+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Extension.swift"; path = "YLAuxiliaryKit/Classes/CGSize+Extension.swift"; sourceTree = "<group>"; };
+		5984E69B302367E8ECF9BD484FCC6B84 /* AMapNaviBaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviBaseManager.h; path = AMapNaviKit.framework/Headers/AMapNaviBaseManager.h; sourceTree = "<group>"; };
+		5A0EE7E24D03E830DA4FDB9F085E6F0B /* BabyOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyOptions.m; path = Classes/objc/BabyOptions.m; sourceTree = "<group>"; };
+		5B06445C6800D52C6576C1C46A8D4186 /* MAOfflineMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOfflineMap.h; path = MAMapKit.framework/Headers/MAOfflineMap.h; sourceTree = "<group>"; };
+		5B1416402FDC82E06CED07780ECCD0B0 /* BabyRhythm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyRhythm.m; path = Classes/objc/BabyRhythm.m; sourceTree = "<group>"; };
+		5BDBA5702688FBCF2D7D593A530543B2 /* qrcode_scan_part_net.png */ = {isa = PBXFileReference; includeInIndex = 1; name = qrcode_scan_part_net.png; path = YLSwiftScan/Assets/qrcode_scan_part_net.png; sourceTree = "<group>"; };
+		5C83A40E1D7DAFAE72574FF80865788B /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5CEE6780B1830AFCE43022558A75E8FD /* AMapSearchAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchAPI.h; path = AMapSearchKit.framework/Headers/AMapSearchAPI.h; sourceTree = "<group>"; };
+		5D1F4237CF85DA8BB4BA893197B92BD8 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = YLAuxiliaryKit/Classes/Device.swift; sourceTree = "<group>"; };
+		5D304A46C1DAC332AA3571B507778272 /* AMapNaviRideManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviRideManager.h; path = AMapNaviKit.framework/Headers/AMapNaviRideManager.h; sourceTree = "<group>"; };
+		5F0422E6BEB2A4D4B955A871230C5C17 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		60A820B7B2B8DBD93E65556A275B5D44 /* AMapURLSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapURLSearch.h; path = AMapFoundationKit.framework/Headers/AMapURLSearch.h; sourceTree = "<group>"; };
+		623A61BE5C20C92B99D0055CD84E1F90 /* MAOverlayPathRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOverlayPathRenderer.h; path = MAMapKit.framework/Headers/MAOverlayPathRenderer.h; sourceTree = "<group>"; };
+		6B808D66EE55DB17E1C4247BC9DEAA1C /* YLScanViewSetting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewSetting.swift; path = YLSwiftScan/Classes/YLScanViewSetting.swift; sourceTree = "<group>"; };
+		6E194054A9BAEE25A2BAAF58B3665477 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E73E2BEE0478EA5C8C1DAA57524C946 /* qrcode_scan_btn_flash_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_btn_flash_down@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_btn_flash_down@2x.png"; sourceTree = "<group>"; };
+		70B4246B165D9982A4C2DE86BD3863CB /* AMapLocationVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationVersion.h; path = AMapLocationKit.framework/Headers/AMapLocationVersion.h; sourceTree = "<group>"; };
+		7348B4B035BD707ABEAA83C9707C8543 /* MAAnimatedAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAAnimatedAnnotation.h; path = MAMapKit.framework/Headers/MAAnimatedAnnotation.h; sourceTree = "<group>"; };
+		770B4AEF3E4AA6DBFFB7100FB146E74A /* AMapLocationCommonObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationCommonObj.h; path = AMapLocationKit.framework/Headers/AMapLocationCommonObj.h; sourceTree = "<group>"; };
+		78BA54DD46BB459BC2149105B2D782A6 /* YLBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLBanner.modulemap; sourceTree = "<group>"; };
+		7A97F78FA3F70BD00A8F019C1F2702B7 /* BabyDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyDefine.h; path = Classes/objc/BabyDefine.h; sourceTree = "<group>"; };
+		7D24C6F5085855A9573E2D088533BE34 /* Array+Extension .swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension .swift"; path = "YLAuxiliaryKit/Classes/Array+Extension .swift"; sourceTree = "<group>"; };
+		7D975B0879A386C2365ED75AAA2E6E4F /* BabyBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-prefix.pch"; sourceTree = "<group>"; };
 		7D992ADE60B402FE59C12402A79B7FF3 /* YLRecordingVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLRecordingVideo.framework; path = YLRecordingVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F939E57AB4F2425DBAF3CB8CFE9B6E9 /* BabyBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BabyBluetooth-dummy.m"; sourceTree = "<group>"; };
-		81241EB5088CD3652A59AC17BBC74897 /* BabyPeripheralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyPeripheralManager.m; path = Classes/objc/BabyPeripheralManager.m; sourceTree = "<group>"; };
+		7E200147C416DBC098CDEDCD219363BC /* MAPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolygon.h; path = MAMapKit.framework/Headers/MAPolygon.h; sourceTree = "<group>"; };
+		7F3DD9763BBC0AE34302136A558AED79 /* MAOfflineItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOfflineItem.h; path = MAMapKit.framework/Headers/MAOfflineItem.h; sourceTree = "<group>"; };
+		811820504AB675C6FA984417AA1F8695 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Extension.swift"; path = "YLAuxiliaryKit/Classes/Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		81698C2B9DAF9C05CE1428D5A912D8CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81A6D02D1FF12F491E2DCFF010C50A07 /* YLAuxiliaryKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLAuxiliaryKit.modulemap; sourceTree = "<group>"; };
-		81B7AF53F307262A6F524CE19217D63B /* BabyBluetooth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyBluetooth.h; path = Classes/objc/BabyBluetooth.h; sourceTree = "<group>"; };
-		86482F991A4AB842CD3ACDB749060110 /* YLScanView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanView.swift; path = YLSwiftScan/Classes/YLScanView.swift; sourceTree = "<group>"; };
-		88FA6370C4F6D38856A2CEAE0DB5D540 /* Array+Extension .swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension .swift"; path = "YLAuxiliaryKit/Classes/Array+Extension .swift"; sourceTree = "<group>"; };
-		89F36ACF84BFA2CBDBFBDA55816E6A4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AFE67FDCD722184C4CED4E793E1BAB5 /* BabyOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyOptions.h; path = Classes/objc/BabyOptions.h; sourceTree = "<group>"; };
-		8D88F8CA117DAE6873D2BDB09EAA894F /* YLAuxiliaryKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLAuxiliaryKit-dummy.m"; sourceTree = "<group>"; };
+		81C820CA0DE4A3ABF56B49419AC287E6 /* YLScanViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewManager.swift; path = YLSwiftScan/Classes/YLScanViewManager.swift; sourceTree = "<group>"; };
+		85A2BA3F95C71291E9476774E2B825E7 /* BabyCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCallback.h; path = Classes/objc/BabyCallback.h; sourceTree = "<group>"; };
+		8A149C3B16B4A29345C22E7EABCD7285 /* MAMultiColoredPolylineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMultiColoredPolylineRenderer.h; path = MAMapKit.framework/Headers/MAMultiColoredPolylineRenderer.h; sourceTree = "<group>"; };
+		8B8257D2C61A068E3AB7D93604CEE926 /* BabyBluetooth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyBluetooth.h; path = Classes/objc/BabyBluetooth.h; sourceTree = "<group>"; };
+		8D4D57B8D7F17D1C2CA5123036D61066 /* BabyOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyOptions.h; path = Classes/objc/BabyOptions.h; sourceTree = "<group>"; };
+		8DA303DDA196FC664B20CA1F6C7C0AC9 /* YLRecordingVideo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLRecordingVideo-dummy.m"; sourceTree = "<group>"; };
+		8E112B410959B82AF43945D3C2E3CDEE /* qrcode_scan_full_net.png */ = {isa = PBXFileReference; includeInIndex = 1; name = qrcode_scan_full_net.png; path = YLSwiftScan/Assets/qrcode_scan_full_net.png; sourceTree = "<group>"; };
+		917F6EF6206548AF2D4E785ED12F41F5 /* YLAuxiliaryKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLAuxiliaryKit.xcconfig; sourceTree = "<group>"; };
 		91CD75AC1D3566409359740042AB1F86 /* Pods-YLTestCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLTestCode.release.xcconfig"; sourceTree = "<group>"; };
-		92F59373E7E5AEB757C89E792E357307 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92F9A73636A0F11942819932F6AE4E26 /* YLRecordingVideo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRecordingVideo-prefix.pch"; sourceTree = "<group>"; };
 		9375CEDCF5816318FFDADF8AA4264047 /* Pods-YLTestCode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YLTestCode-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		948F6672B0C40D455588949CC6DEC058 /* YLScanViewSetting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewSetting.swift; path = YLSwiftScan/Classes/YLScanViewSetting.swift; sourceTree = "<group>"; };
-		99AEC56E96862EB6C2F04FC99181C8BD /* qrcode_Scan_weixin_Line@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_Scan_weixin_Line@2x.png"; path = "YLSwiftScan/Assets/qrcode_Scan_weixin_Line@2x.png"; sourceTree = "<group>"; };
-		9B34ADEC7DCD7F2B4D7C083405BC95DE /* YLSwiftScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLSwiftScan-umbrella.h"; sourceTree = "<group>"; };
-		9E79663125C56976B6F11DD8F7D7373B /* YLRecordVideoManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoManager.swift; path = YLRecordingVideo/Classes/YLRecordVideoManager.swift; sourceTree = "<group>"; };
-		9F35646A20EE6CD43CF11E48B096F872 /* YLBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLBanner-umbrella.h"; sourceTree = "<group>"; };
+		95A5B20C7293A5CD79426022D7B001A5 /* BabyCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCentralManager.m; path = Classes/objc/BabyCentralManager.m; sourceTree = "<group>"; };
+		968EB1C9797A0FC6C6FD13916C4AE94B /* AMapNaviDriveView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviDriveView.h; path = AMapNaviKit.framework/Headers/AMapNaviDriveView.h; sourceTree = "<group>"; };
+		991E1C1542004F87ECD39379CBE12435 /* AMapLocationKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationKit.h; path = AMapLocationKit.framework/Headers/AMapLocationKit.h; sourceTree = "<group>"; };
+		9A5A88430197677ECC00F62EE129A02D /* AMapNaviCommonObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviCommonObj.h; path = AMapNaviKit.framework/Headers/AMapNaviCommonObj.h; sourceTree = "<group>"; };
+		9A62CDA5A480C3E58250917211DD7554 /* MAOfflineItemNationWide.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOfflineItemNationWide.h; path = MAMapKit.framework/Headers/MAOfflineItemNationWide.h; sourceTree = "<group>"; };
+		9CC50014563FDE6D0F46D26B74D94B92 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		9CCC854CA0AC8F0BEB03292E1F44EC9F /* YLSwiftScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLSwiftScan-dummy.m"; sourceTree = "<group>"; };
+		9E2A9AD5E361D8F9A2C3A2730291EBC7 /* MAShape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAShape.h; path = MAMapKit.framework/Headers/MAShape.h; sourceTree = "<group>"; };
+		9ED511FB0BA86FBD07EBA8CCECFB0178 /* MAMultiPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMultiPoint.h; path = MAMapKit.framework/Headers/MAMultiPoint.h; sourceTree = "<group>"; };
+		9EDD2296C1D049CC0533F990E224170E /* AMapNaviKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviKit.h; path = AMapNaviKit.framework/Headers/AMapNaviKit.h; sourceTree = "<group>"; };
 		9FEBEFBC8AEA6973F4244F368E26E71B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A355155D91DE873C4F6898CD92769A50 /* YLSwiftScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLSwiftScan-dummy.m"; sourceTree = "<group>"; };
+		9FF6575F2755CC599EAD8BE6F1A7A1AA /* YLPhonePermissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLPhonePermissions.swift; path = YLSwiftScan/Classes/YLPhonePermissions.swift; sourceTree = "<group>"; };
+		A2A3F5357C4530A25C754ED06744B329 /* YLScanViewSytle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewSytle.swift; path = YLSwiftScan/Classes/YLScanViewSytle.swift; sourceTree = "<group>"; };
+		A2DC1BDCF15D315AC2C314F0EC4E9270 /* BabyBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BabyBluetooth.modulemap; sourceTree = "<group>"; };
+		A4290101E623842620C95D05D36C49B4 /* AMapNaviRoutePolylineOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviRoutePolylineOption.h; path = AMapNaviKit.framework/Headers/AMapNaviRoutePolylineOption.h; sourceTree = "<group>"; };
+		A5152FA3882C84AEC5CEA6629F809304 /* MATraceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MATraceManager.h; path = MAMapKit.framework/Headers/MATraceManager.h; sourceTree = "<group>"; };
+		A58B89A2EB8530AD4E1C1A88EA3D27AD /* AMapSearchError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchError.h; path = AMapSearchKit.framework/Headers/AMapSearchError.h; sourceTree = "<group>"; };
 		A76615181CF533F447AE2E5A146894AB /* Pods-YLTestCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YLTestCode.modulemap"; sourceTree = "<group>"; };
-		AB137A25F9EC3B32E92468690D92471B /* YLSwiftScan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLSwiftScan-prefix.pch"; sourceTree = "<group>"; };
+		A7EFFEBB504DA5AC105E5A826A304A04 /* MAOfflineItemMunicipality.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOfflineItemMunicipality.h; path = MAMapKit.framework/Headers/MAOfflineItemMunicipality.h; sourceTree = "<group>"; };
+		A8CA5B322239A5552D753E181ECB0820 /* qrcode_scan_light_green@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_light_green@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_light_green@2x.png"; sourceTree = "<group>"; };
+		A9C2E86B7EA534C15FCAF3E417664295 /* AMapNaviWalkDataRepresentable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviWalkDataRepresentable.h; path = AMapNaviKit.framework/Headers/AMapNaviWalkDataRepresentable.h; sourceTree = "<group>"; };
+		AA09C13FAFF4CACCEDAD9495A5A75E6F /* AMapNaviVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviVersion.h; path = AMapNaviKit.framework/Headers/AMapNaviVersion.h; sourceTree = "<group>"; };
+		AB1E63888A4B9FF0DA88164BC54F74D0 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
 		AD7B0015F98EB389097188C3EA41E85A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
-		B9A2BCD4B19435683760EF8369EAFC97 /* CGSize+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Extension.swift"; path = "YLAuxiliaryKit/Classes/CGSize+Extension.swift"; sourceTree = "<group>"; };
-		BE0794C29F64ECF9FB9D9FA74933C8FE /* UILable+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILable+Extension.swift"; path = "YLAuxiliaryKit/Classes/UILable+Extension.swift"; sourceTree = "<group>"; };
-		C45DE7FFD53D8A7582C694DE694B15A9 /* YLPhonePermissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLPhonePermissions.swift; path = YLSwiftScan/Classes/YLPhonePermissions.swift; sourceTree = "<group>"; };
-		C53CB29026DB6D6D029BCC4D682521BC /* YLAuxiliaryKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLAuxiliaryKit-umbrella.h"; sourceTree = "<group>"; };
-		C558CE120A833DD080D98FE953A16FA0 /* qrcode_scan_btn_flash_nor@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_btn_flash_nor@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_btn_flash_nor@2x.png"; sourceTree = "<group>"; };
-		C5E530829BF7DB1F50BA1CE279E2E556 /* BabyCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCallback.h; path = Classes/objc/BabyCallback.h; sourceTree = "<group>"; };
-		C8A18D20816AFBF1E38DA7DF3BD40ABA /* BabySpeaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabySpeaker.m; path = Classes/objc/BabySpeaker.m; sourceTree = "<group>"; };
-		CA6EDFFAD80F3B205024A036F1EBF0C4 /* BabyOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyOptions.m; path = Classes/objc/BabyOptions.m; sourceTree = "<group>"; };
-		CB4776E37F7C7934497E9E2B63C351D6 /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "YLAuxiliaryKit/Classes/Date+Extension.swift"; sourceTree = "<group>"; };
-		CE372BD7AF33D1088BB7E775F11890E6 /* BabyToy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyToy.m; path = Classes/objc/BabyToy.m; sourceTree = "<group>"; };
+		AF39C1F56CC2BD7F058D0B5326A70B34 /* AMapFoundationKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapFoundationKit.h; path = AMapFoundationKit.framework/Headers/AMapFoundationKit.h; sourceTree = "<group>"; };
+		AFEAEEB3623FC83481457216F448510E /* YLRecordVideoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoViewController.swift; path = YLRecordingVideo/Classes/YLRecordVideoViewController.swift; sourceTree = "<group>"; };
+		B061A379AB4132B145277A6B270A815A /* AMapURLSearchConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapURLSearchConfig.h; path = AMapFoundationKit.framework/Headers/AMapURLSearchConfig.h; sourceTree = "<group>"; };
+		B0B7B40B6CCA04E56B9280688A4C14B0 /* MAConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAConfig.h; path = MAMapKit.framework/Headers/MAConfig.h; sourceTree = "<group>"; };
+		B3BC7F8AE71627285560F46D6A2FB1FF /* MAOverlayRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOverlayRenderer.h; path = MAMapKit.framework/Headers/MAOverlayRenderer.h; sourceTree = "<group>"; };
+		B4452F64AF835DAEF3CA678BF9FF3FE8 /* AMapSearchKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchKit.h; path = AMapSearchKit.framework/Headers/AMapSearchKit.h; sourceTree = "<group>"; };
+		B4E2A08DEBECF3C6521FEC03A0DE5ACE /* MAMultiTexturePolylineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMultiTexturePolylineRenderer.h; path = MAMapKit.framework/Headers/MAMultiTexturePolylineRenderer.h; sourceTree = "<group>"; };
+		B56846FF0DAAE9C1B92A484F97E6A237 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
+		B700C9814949C3DC3C74E43B87CA1E16 /* MAPinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPinAnnotationView.h; path = MAMapKit.framework/Headers/MAPinAnnotationView.h; sourceTree = "<group>"; };
+		BB1393D9D8BC4DD3FF2186A7603A4FE7 /* YLRecordingVideo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRecordingVideo-umbrella.h"; sourceTree = "<group>"; };
+		BC0522EBA31A8E0934610F321D6D0A8A /* BabyBluetooth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyBluetooth.m; path = Classes/objc/BabyBluetooth.m; sourceTree = "<group>"; };
+		BCC68170476FCD570522205B68C04E26 /* BabyRhythm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyRhythm.h; path = Classes/objc/BabyRhythm.h; sourceTree = "<group>"; };
+		BE157F874614D0BADC78204975370FEE /* BabyBluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BabyBluetooth.xcconfig; sourceTree = "<group>"; };
+		C0E035B839FC1EA1BE224385D6B98662 /* MAGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGeometry.h; path = MAMapKit.framework/Headers/MAGeometry.h; sourceTree = "<group>"; };
+		C2C328CFFD4F9A2992191FFC55942A13 /* AMapNaviWalkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviWalkManager.h; path = AMapNaviKit.framework/Headers/AMapNaviWalkManager.h; sourceTree = "<group>"; };
+		C6E56E7BF689BBB8304962FC84EB9426 /* MAMapStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMapStatus.h; path = MAMapKit.framework/Headers/MAMapStatus.h; sourceTree = "<group>"; };
+		C811C9244139A87CE16ED0913703FFE2 /* MAAnnotationMoveAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAAnnotationMoveAnimation.h; path = MAMapKit.framework/Headers/MAAnnotationMoveAnimation.h; sourceTree = "<group>"; };
+		C8C94A0B65391ED0D8C08C90F9481E42 /* YLBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLBanner-prefix.pch"; sourceTree = "<group>"; };
+		C8FC690B4303E2FA8198E0CA16EC4E9F /* BabySpeaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabySpeaker.m; path = Classes/objc/BabySpeaker.m; sourceTree = "<group>"; };
+		CA5ABE6FAF1D929F65E2D05722E5F86D /* MAMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMapView.h; path = MAMapKit.framework/Headers/MAMapView.h; sourceTree = "<group>"; };
+		CA98460C15598447F9ADE1F5DB836155 /* YLRecordingVideo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLRecordingVideo.modulemap; sourceTree = "<group>"; };
+		CDE939F3B212F92EB944C2AE161F009E /* BabyToy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyToy.m; path = Classes/objc/BabyToy.m; sourceTree = "<group>"; };
+		CE76D23C55FA393AC6E3F648A4E8230B /* YLBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLBanner.swift; path = YLBanner/Classes/YLBanner.swift; sourceTree = "<group>"; };
+		CF06E170C313BDB56F8678DB9BE4F02E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D02863738A935176220025BB502C49FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		D15E59EDF9E6CCF11E821FBF063337B2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIImage+Extension.swift"; sourceTree = "<group>"; };
-		D25F442C9482C57EF9630BD599A233CD /* Dictionary+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Extension.swift"; path = "YLAuxiliaryKit/Classes/Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		D03EE243A6B1F1A279D4BBCDC62F7EE2 /* BabyCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCentralManager.h; path = Classes/objc/BabyCentralManager.h; sourceTree = "<group>"; };
+		D2CC6A0B9588A80CB44E1D15709CB683 /* MAPolylineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolylineRenderer.h; path = MAMapKit.framework/Headers/MAPolylineRenderer.h; sourceTree = "<group>"; };
+		D434D09B85C4743BEF526CE2314A2739 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F57C191409204F22DE087E89AFF3DE /* MAHeatMapTileOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAHeatMapTileOverlay.h; path = MAMapKit.framework/Headers/MAHeatMapTileOverlay.h; sourceTree = "<group>"; };
+		D7D430C1FEFD5117BFDECDDDC5BE1C6E /* BabyCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCallback.m; path = Classes/objc/BabyCallback.m; sourceTree = "<group>"; };
+		D7F524FC4C3C1493E948870697F3420F /* YLRecordVideoManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoManager.swift; path = YLRecordingVideo/Classes/YLRecordVideoManager.swift; sourceTree = "<group>"; };
+		D93D9DC5F38DAAFDF161F11BD822AB14 /* YLSwiftScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLSwiftScan-umbrella.h"; sourceTree = "<group>"; };
+		D9AA5398F2D7F1C55D5C440414901DF0 /* YLAuxiliaryKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLAuxiliaryKit-prefix.pch"; sourceTree = "<group>"; };
+		D9F590702D8EDE66581C3A5535377918 /* MAPolygonRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolygonRenderer.h; path = MAMapKit.framework/Headers/MAPolygonRenderer.h; sourceTree = "<group>"; };
+		DA37590B3DCA5226CA527179C334199F /* MACircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MACircle.h; path = MAMapKit.framework/Headers/MACircle.h; sourceTree = "<group>"; };
+		DA9E391E02D2D94C9FB93A839757A7E1 /* MAIndoorInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAIndoorInfo.h; path = MAMapKit.framework/Headers/MAIndoorInfo.h; sourceTree = "<group>"; };
+		DAA0C465E9BD62DF8CEA718A33ADACA6 /* ResourceBundle-YLSwiftScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YLSwiftScan-Info.plist"; sourceTree = "<group>"; };
 		DACE4E8836522D54804F3530488A1AD9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
-		DC000D4721E65C0D681250338393ED49 /* qrcode_scan_btn_flash_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_btn_flash_down@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_btn_flash_down@2x.png"; sourceTree = "<group>"; };
-		DC5B7A1B81419EC0A2A8A6749BEC3268 /* BabySpeaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabySpeaker.h; path = Classes/objc/BabySpeaker.h; sourceTree = "<group>"; };
+		DE01544814D260429E8BFC5B48AC60A3 /* MAUserLocationRepresentation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAUserLocationRepresentation.h; path = MAMapKit.framework/Headers/MAUserLocationRepresentation.h; sourceTree = "<group>"; };
 		DFDCF8B0BF8A9A8FCDF79E8ECA879315 /* YLAuxiliaryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLAuxiliaryKit.framework; path = YLAuxiliaryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0413A168A1857D700800F7427C3C549 /* YLRecordVideoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLRecordVideoViewController.swift; path = YLRecordingVideo/Classes/YLRecordVideoViewController.swift; sourceTree = "<group>"; };
-		E1E623F20D7DD4415578507C401385F5 /* YLScanViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanViewManager.swift; path = YLSwiftScan/Classes/YLScanViewManager.swift; sourceTree = "<group>"; };
+		E061A33F20936570E792AED85139BCD2 /* YLRecordingVideo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRecordingVideo.xcconfig; sourceTree = "<group>"; };
+		E29452ADD2637E0C2A95B362BB4BC8DA /* AMapNearbyUploadInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNearbyUploadInfo.h; path = AMapSearchKit.framework/Headers/AMapNearbyUploadInfo.h; sourceTree = "<group>"; };
 		E29E83014B54AF1EBB1879A9871D9ECC /* Pods-YLTestCode-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YLTestCode-resources.sh"; sourceTree = "<group>"; };
-		E44AD1D5E19A3323DD29C132A53E1B41 /* BabyBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BabyBluetooth.modulemap; sourceTree = "<group>"; };
+		E349749A533EE21D4B410F0C427C43D0 /* qrcode_scan_btn_flash_nor@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_btn_flash_nor@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_btn_flash_nor@2x.png"; sourceTree = "<group>"; };
+		E349C96ECAD47E059786662EADA47BA9 /* AMapNaviKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapNaviKit.framework; sourceTree = "<group>"; };
+		E45EDB316B747FC83248664FDBACBFEC /* MAMultiPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMultiPolyline.h; path = MAMapKit.framework/Headers/MAMultiPolyline.h; sourceTree = "<group>"; };
+		E4D6F31E55392AA7C9AF6C0877DA420F /* YLSwiftScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YLSwiftScan.modulemap; sourceTree = "<group>"; };
+		E584F1A2C9A0E23D299DE6000A89879E /* MAOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOverlay.h; path = MAMapKit.framework/Headers/MAOverlay.h; sourceTree = "<group>"; };
 		E6B661F27EF4DDC40D2525C9FA0F6905 /* BabyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BabyBluetooth.framework; path = BabyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7505B92E4FA5E8D21BFB7511E1E295D /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "YLAuxiliaryKit/Classes/String+Extension.swift"; sourceTree = "<group>"; };
+		E6EE132B221CED7CA35248CFC0387FBB /* BabyPeripheralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyPeripheralManager.m; path = Classes/objc/BabyPeripheralManager.m; sourceTree = "<group>"; };
+		E6F54412A8076A1517D197D807F32B18 /* YLBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLBanner.xcconfig; sourceTree = "<group>"; };
+		EA33EAAEC7B7F737F3A3AB713A20A789 /* AMapNaviInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviInfo.h; path = AMapNaviKit.framework/Headers/AMapNaviInfo.h; sourceTree = "<group>"; };
+		EA77E8DE662E8D0EC12D3FCD2CD9D8FF /* MAGroundOverlayRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGroundOverlayRenderer.h; path = MAMapKit.framework/Headers/MAGroundOverlayRenderer.h; sourceTree = "<group>"; };
+		EA99F0D097318466F82281225F339006 /* YLBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLBanner-umbrella.h"; sourceTree = "<group>"; };
+		EAF49D2E82081B84DE58D776ED7EC9FF /* AMapNaviRideDataRepresentable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviRideDataRepresentable.h; path = AMapNaviKit.framework/Headers/AMapNaviRideDataRepresentable.h; sourceTree = "<group>"; };
+		ED4167E258DA1DE6791DC0E122295E6B /* AMapCommonObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapCommonObj.h; path = AMapSearchKit.framework/Headers/AMapCommonObj.h; sourceTree = "<group>"; };
 		ED5386EA29A8D57BFF431A3C2B5514C7 /* Pods-YLTestCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLTestCode.debug.xcconfig"; sourceTree = "<group>"; };
-		EFADAC8A394BD258EC7DF0FE2884C321 /* qrcode_scan_light_green@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "qrcode_scan_light_green@2x.png"; path = "YLSwiftScan/Assets/qrcode_scan_light_green@2x.png"; sourceTree = "<group>"; };
+		EE674DCBC5FBB39310482AC1832820D3 /* MAMapVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMapVersion.h; path = MAMapKit.framework/Headers/MAMapVersion.h; sourceTree = "<group>"; };
+		F002A40D6B6148AD199924F20E717194 /* MAAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAAnnotationView.h; path = MAMapKit.framework/Headers/MAAnnotationView.h; sourceTree = "<group>"; };
+		F01B8937300AFE447171F6C4B68B0DA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1C132CC3FB099D6BD494F84422E7E43 /* Pods-YLTestCode-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YLTestCode-frameworks.sh"; sourceTree = "<group>"; };
+		F2A98134236A5E8CF9F1A15E17C31EA4 /* UILable+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILable+Extension.swift"; path = "YLAuxiliaryKit/Classes/UILable+Extension.swift"; sourceTree = "<group>"; };
 		F2DB880BCD5DB173834A5D2D897B300E /* YLSwiftScan.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = YLSwiftScan.bundle; path = YLSwiftScan.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F307209E68F060D6AFA7CF04232DC8C4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "YLAuxiliaryKit/Classes/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F3DECCEFB9CE972F1823DD56AEB7DE66 /* AMapNearbySearchManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNearbySearchManager.h; path = AMapSearchKit.framework/Headers/AMapNearbySearchManager.h; sourceTree = "<group>"; };
+		F6B338F63DDE586516CA5688CC88DBFD /* AMapLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationManager.h; path = AMapLocationKit.framework/Headers/AMapLocationManager.h; sourceTree = "<group>"; };
+		F71CCA8F50EB4ACD117B00A1AC0C0628 /* AMapGeoFenceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapGeoFenceManager.h; path = AMapLocationKit.framework/Headers/AMapGeoFenceManager.h; sourceTree = "<group>"; };
 		F8E73B57D14A0691C58E0F3EFCD399CF /* Pods-YLTestCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YLTestCode-dummy.m"; sourceTree = "<group>"; };
-		F94596A8B2818DE44944F58CAE3E831B /* BabyRhythm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyRhythm.m; path = Classes/objc/BabyRhythm.m; sourceTree = "<group>"; };
-		F9D1C6193593F289D1135D422D70FF53 /* YLScanLineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScanLineAnimation.swift; path = YLSwiftScan/Classes/YLScanLineAnimation.swift; sourceTree = "<group>"; };
+		FA409D6F56F13C12018F40AC5433A3DD /* MATileOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MATileOverlay.h; path = MAMapKit.framework/Headers/MATileOverlay.h; sourceTree = "<group>"; };
+		FADA5DB9C52CD5EF00207E293D7B6362 /* YLRecordingVideo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRecordingVideo-prefix.pch"; sourceTree = "<group>"; };
+		FB546EE5851A521DBC52E83D9987A21A /* AMapNaviStatisticsInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviStatisticsInfo.h; path = AMapNaviKit.framework/Headers/AMapNaviStatisticsInfo.h; sourceTree = "<group>"; };
+		FD1A17D290A8AA34DF44D432A4DE0F90 /* AMapGeoFenceRegionObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapGeoFenceRegionObj.h; path = AMapLocationKit.framework/Headers/AMapGeoFenceRegionObj.h; sourceTree = "<group>"; };
+		FD24A17B9CD2FB6E3D30A55E2E6AEBF8 /* AMapNaviDriveDataRepresentable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNaviDriveDataRepresentable.h; path = AMapNaviKit.framework/Headers/AMapNaviDriveDataRepresentable.h; sourceTree = "<group>"; };
+		FF0ABC6D0B9AF8FFB32C3FB26C4630B7 /* MAPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolyline.h; path = MAMapKit.framework/Headers/MAPolyline.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,57 +404,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080FE829A1215941EF51AC0E19D76A25 /* BabyBluetooth */ = {
+		0F7D239E63B177F344C47308A6AC0110 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				81B7AF53F307262A6F524CE19217D63B /* BabyBluetooth.h */,
-				20C3161AECD3C02430F0BF56FEA39ED4 /* BabyBluetooth.m */,
-				C5E530829BF7DB1F50BA1CE279E2E556 /* BabyCallback.h */,
-				44C254693485B4792DCA74B8DA758551 /* BabyCallback.m */,
-				65E83DF142BEB11E9539FBA87BD691E3 /* BabyCentralManager.h */,
-				211BE4994022C2AD60721FAC09C7FDC3 /* BabyCentralManager.m */,
-				578E8CD9AB90F9FAE671735250D00161 /* BabyDefine.h */,
-				18880E2A88CBBE24697486E99F5454E2 /* BabyDefine.m */,
-				8AFE67FDCD722184C4CED4E793E1BAB5 /* BabyOptions.h */,
-				CA6EDFFAD80F3B205024A036F1EBF0C4 /* BabyOptions.m */,
-				00032B54D596B8C2BCAC182F97069D02 /* BabyPeripheralManager.h */,
-				81241EB5088CD3652A59AC17BBC74897 /* BabyPeripheralManager.m */,
-				5C4D66E296E9C71D510CC27877E6B804 /* BabyRhythm.h */,
-				F94596A8B2818DE44944F58CAE3E831B /* BabyRhythm.m */,
-				DC5B7A1B81419EC0A2A8A6749BEC3268 /* BabySpeaker.h */,
-				C8A18D20816AFBF1E38DA7DF3BD40ABA /* BabySpeaker.m */,
-				31C9EE2966D82466A37551668CE1BC45 /* BabyToy.h */,
-				CE372BD7AF33D1088BB7E775F11890E6 /* BabyToy.m */,
-				C7B81EB86CA5134A6B858247521097E9 /* Support Files */,
+				D5A5B0EF8DC6651812BBFD7F5B32CD85 /* AMap3DMap */,
+				EFAF27C5E9E96DEAF2501F902EB68DED /* AMapFoundation */,
+				A81B9AEC5173881E5265D50CD2314C0C /* AMapLocation */,
+				6EEF3F3DBBF368F5EDE79BCAF8973B84 /* AMapNavi */,
+				BDA3B55BFF3A55CCE93A33D40D71C7EE /* AMapSearch */,
+				5AEC88EAD5D495DE6506789C647A4C13 /* BabyBluetooth */,
+				5BFA8AF1F578A69A794A1DBCE62E3B5F /* YLAuxiliaryKit */,
+				6309935F3ED460955F64DD59B41BF0BC /* YLBanner */,
+				9B9BD0F038B7E966798323C514835628 /* YLRecordingVideo */,
+				29B226730AEEBE3182E426CDB1A5AC09 /* YLSwiftScan */,
 			);
-			name = BabyBluetooth;
-			path = BabyBluetooth;
-			sourceTree = "<group>";
-		};
-		11A85E0B7B3D69338F1B31F8F3504DE8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				89F36ACF84BFA2CBDBFBDA55816E6A4D /* Info.plist */,
-				81A6D02D1FF12F491E2DCFF010C50A07 /* YLAuxiliaryKit.modulemap */,
-				1ACF408F9F13A0BC2574C3ED0B769DC5 /* YLAuxiliaryKit.xcconfig */,
-				8D88F8CA117DAE6873D2BDB09EAA894F /* YLAuxiliaryKit-dummy.m */,
-				61E5CE2680DBBFC84789B9D23BE7E740 /* YLAuxiliaryKit-prefix.pch */,
-				C53CB29026DB6D6D029BCC4D682521BC /* YLAuxiliaryKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YLAuxiliaryKit";
-			sourceTree = "<group>";
-		};
-		15D6B0BDDDFD40109B5A7BBF10CC1A1C /* YLBanner */ = {
-			isa = PBXGroup;
-			children = (
-				551F4FADC0CF5B693BD663384C30B9A4 /* Timer+Extension.swift */,
-				3093ED7B88203432A5FCA885CA66FAE1 /* UIColor+Extension.swift */,
-				21712A8245DB3B01B419706F9B7DD569 /* YLBanner.swift */,
-				56191BA5E51A9D1A3010C68D53FC8E33 /* Support Files */,
-			);
-			name = YLBanner;
-			path = YLBanner;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
@@ -370,43 +429,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2581637B7FBF9DF1950AA2E337E7A61B /* Support Files */ = {
+		29B226730AEEBE3182E426CDB1A5AC09 /* YLSwiftScan */ = {
 			isa = PBXGroup;
 			children = (
-				725A14443AD93E597F6C353F4AF1FA7A /* Info.plist */,
-				20921954487258945E09029B8AE6F06D /* ResourceBundle-YLSwiftScan-Info.plist */,
-				00C429ABE47AA2EAA97E19535ADA7165 /* YLSwiftScan.modulemap */,
-				7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */,
-				A355155D91DE873C4F6898CD92769A50 /* YLSwiftScan-dummy.m */,
-				AB137A25F9EC3B32E92468690D92471B /* YLSwiftScan-prefix.pch */,
-				9B34ADEC7DCD7F2B4D7C083405BC95DE /* YLSwiftScan-umbrella.h */,
+				9FF6575F2755CC599EAD8BE6F1A7A1AA /* YLPhonePermissions.swift */,
+				03E5643E2CD2184F50D91CB5F77D0F58 /* YLScanLineAnimation.swift */,
+				299BA3E635A7D119E76C77D32A555224 /* YLScanView.swift */,
+				3DE83B159C0BE348ED427B741C082AFC /* YLScanViewController.swift */,
+				81C820CA0DE4A3ABF56B49419AC287E6 /* YLScanViewManager.swift */,
+				6B808D66EE55DB17E1C4247BC9DEAA1C /* YLScanViewSetting.swift */,
+				A2A3F5357C4530A25C754ED06744B329 /* YLScanViewSytle.swift */,
+				E80183CD9CA9214D5FC59871208D71D4 /* Resources */,
+				3900EC3B93E5786519FAD9608EC1BE86 /* Support Files */,
+			);
+			name = YLSwiftScan;
+			path = YLSwiftScan;
+			sourceTree = "<group>";
+		};
+		35AA714C1F24B43B2259C9C442074FDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E349C96ECAD47E059786662EADA47BA9 /* AMapNaviKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3900EC3B93E5786519FAD9608EC1BE86 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F01B8937300AFE447171F6C4B68B0DA9 /* Info.plist */,
+				DAA0C465E9BD62DF8CEA718A33ADACA6 /* ResourceBundle-YLSwiftScan-Info.plist */,
+				E4D6F31E55392AA7C9AF6C0877DA420F /* YLSwiftScan.modulemap */,
+				11937A62213827491E2F2C899B61BA4D /* YLSwiftScan.xcconfig */,
+				9CCC854CA0AC8F0BEB03292E1F44EC9F /* YLSwiftScan-dummy.m */,
+				51374903381B1B075F4C8CD90669C9B4 /* YLSwiftScan-prefix.pch */,
+				D93D9DC5F38DAAFDF161F11BD822AB14 /* YLSwiftScan-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YLSwiftScan";
-			sourceTree = "<group>";
-		};
-		2F49F88D6ACC2919C543E3F27E0C1C63 /* YLAuxiliaryKit */ = {
-			isa = PBXGroup;
-			children = (
-				88FA6370C4F6D38856A2CEAE0DB5D540 /* Array+Extension .swift */,
-				B9A2BCD4B19435683760EF8369EAFC97 /* CGSize+Extension.swift */,
-				CB4776E37F7C7934497E9E2B63C351D6 /* Date+Extension.swift */,
-				7C4DF4E8F6689FF13BD40480480391A8 /* Device.swift */,
-				D25F442C9482C57EF9630BD599A233CD /* Dictionary+Extension.swift */,
-				E7505B92E4FA5E8D21BFB7511E1E295D /* String+Extension.swift */,
-				64F662AA2653D5B195733026910DC70F /* Timer+Extension.swift */,
-				5C1C4EA08D5750AE360D5AF88373ECE9 /* UIButton + Extension.swift */,
-				2F2680404154276FE880A3254076FA45 /* UIColor+Extension.swift */,
-				D15E59EDF9E6CCF11E821FBF063337B2 /* UIImage+Extension.swift */,
-				30C49F3421895204B7D2CB5A3F5B52FD /* UIImageView+Extension.swift */,
-				BE0794C29F64ECF9FB9D9FA74933C8FE /* UILable+Extension.swift */,
-				76C16DD5E47026EA42383CA1E1FDF78C /* UIView+Extension.swift */,
-				2330E350FEA42CE7B96CAAB24CAF898B /* YLMainTabbarViewController.swift */,
-				49E89677E78E5925E3585E52204DB17B /* YLNavigationController.swift */,
-				11A85E0B7B3D69338F1B31F8F3504DE8 /* Support Files */,
-			);
-			name = YLAuxiliaryKit;
-			path = YLAuxiliaryKit;
 			sourceTree = "<group>";
 		};
 		4DD38EAE0DF6BFF20E2DD4A0DC34231E /* Products */ = {
@@ -423,47 +483,89 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5070649105DD245095169BB472E977D0 /* YLSwiftScan */ = {
+		5A9BA8B9A3FDD34409EF5A9447E48BB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C45DE7FFD53D8A7582C694DE694B15A9 /* YLPhonePermissions.swift */,
-				F9D1C6193593F289D1135D422D70FF53 /* YLScanLineAnimation.swift */,
-				86482F991A4AB842CD3ACDB749060110 /* YLScanView.swift */,
-				3533558856B71A41406AB19504AE714E /* YLScanViewController.swift */,
-				E1E623F20D7DD4415578507C401385F5 /* YLScanViewManager.swift */,
-				948F6672B0C40D455588949CC6DEC058 /* YLScanViewSetting.swift */,
-				044012A47AC850C5A7E282AD20DF2E86 /* YLScanViewSytle.swift */,
-				6B1E5DBC5DB4B71595C47B9A0BD94028 /* Resources */,
-				2581637B7FBF9DF1950AA2E337E7A61B /* Support Files */,
+				AB1E63888A4B9FF0DA88164BC54F74D0 /* AMapFoundationKit.framework */,
 			);
-			name = YLSwiftScan;
-			path = YLSwiftScan;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		52DEC40F1352DE564DAB74C061C8E5A2 /* Pods */ = {
+		5AEC88EAD5D495DE6506789C647A4C13 /* BabyBluetooth */ = {
 			isa = PBXGroup;
 			children = (
-				080FE829A1215941EF51AC0E19D76A25 /* BabyBluetooth */,
-				2F49F88D6ACC2919C543E3F27E0C1C63 /* YLAuxiliaryKit */,
-				15D6B0BDDDFD40109B5A7BBF10CC1A1C /* YLBanner */,
-				87C579E4393B1C04B672208D29BA586F /* YLRecordingVideo */,
-				5070649105DD245095169BB472E977D0 /* YLSwiftScan */,
+				8B8257D2C61A068E3AB7D93604CEE926 /* BabyBluetooth.h */,
+				BC0522EBA31A8E0934610F321D6D0A8A /* BabyBluetooth.m */,
+				85A2BA3F95C71291E9476774E2B825E7 /* BabyCallback.h */,
+				D7D430C1FEFD5117BFDECDDDC5BE1C6E /* BabyCallback.m */,
+				D03EE243A6B1F1A279D4BBCDC62F7EE2 /* BabyCentralManager.h */,
+				95A5B20C7293A5CD79426022D7B001A5 /* BabyCentralManager.m */,
+				7A97F78FA3F70BD00A8F019C1F2702B7 /* BabyDefine.h */,
+				08403F3F99CD82516EEB81E333966AC0 /* BabyDefine.m */,
+				8D4D57B8D7F17D1C2CA5123036D61066 /* BabyOptions.h */,
+				5A0EE7E24D03E830DA4FDB9F085E6F0B /* BabyOptions.m */,
+				4F6B4366DBCF4F2F7A17B685C4994015 /* BabyPeripheralManager.h */,
+				E6EE132B221CED7CA35248CFC0387FBB /* BabyPeripheralManager.m */,
+				BCC68170476FCD570522205B68C04E26 /* BabyRhythm.h */,
+				5B1416402FDC82E06CED07780ECCD0B0 /* BabyRhythm.m */,
+				3F819995A0B448E8389B691DE5B8F7B3 /* BabySpeaker.h */,
+				C8FC690B4303E2FA8198E0CA16EC4E9F /* BabySpeaker.m */,
+				27847A58F80A8153A719884B3EE17810 /* BabyToy.h */,
+				CDE939F3B212F92EB944C2AE161F009E /* BabyToy.m */,
+				A230C14BAD45B818EB43393A7F861B16 /* Support Files */,
 			);
-			name = Pods;
+			name = BabyBluetooth;
+			path = BabyBluetooth;
 			sourceTree = "<group>";
 		};
-		56191BA5E51A9D1A3010C68D53FC8E33 /* Support Files */ = {
+		5BFA8AF1F578A69A794A1DBCE62E3B5F /* YLAuxiliaryKit */ = {
 			isa = PBXGroup;
 			children = (
-				23008AFBAB127E3D45E3F57754622E88 /* Info.plist */,
-				7079144760B2AF3FCB1792742C768552 /* YLBanner.modulemap */,
-				166DE8C11A965EBD7DC85DB2F3006945 /* YLBanner.xcconfig */,
-				0F22AB8D7659667B8E1E62B75475A953 /* YLBanner-dummy.m */,
-				2FF6938094FDE4FBD8ABE06C2B835169 /* YLBanner-prefix.pch */,
-				9F35646A20EE6CD43CF11E48B096F872 /* YLBanner-umbrella.h */,
+				7D24C6F5085855A9573E2D088533BE34 /* Array+Extension .swift */,
+				5875490DCD061CB4097EF640D0006B67 /* CGSize+Extension.swift */,
+				547B443CE20BE96D3C8261C3BB4F1D65 /* Date+Extension.swift */,
+				5D1F4237CF85DA8BB4BA893197B92BD8 /* Device.swift */,
+				811820504AB675C6FA984417AA1F8695 /* Dictionary+Extension.swift */,
+				0C9D0E21340EF9D5C8D5C9C16437423D /* String+Extension.swift */,
+				0A69DCE929A6D227A519945E5B33BA08 /* Timer+Extension.swift */,
+				08C9D20963CC00A3FF1EEBFFA41BC975 /* UIButton + Extension.swift */,
+				5C83A40E1D7DAFAE72574FF80865788B /* UIColor+Extension.swift */,
+				F307209E68F060D6AFA7CF04232DC8C4 /* UIImage+Extension.swift */,
+				9CC50014563FDE6D0F46D26B74D94B92 /* UIImageView+Extension.swift */,
+				F2A98134236A5E8CF9F1A15E17C31EA4 /* UILable+Extension.swift */,
+				135B5CF2B889F4ED3D71C5F1B000CCB9 /* UIView+Extension.swift */,
+				3A7148EC9A7A3818CB3281A8F6F74CB6 /* YLMainTabbarViewController.swift */,
+				3007A66F1385917B8728758654F19DE7 /* YLNavigationController.swift */,
+				5FBC8B154235729AA4F97A66E8CCEEA5 /* Support Files */,
+			);
+			name = YLAuxiliaryKit;
+			path = YLAuxiliaryKit;
+			sourceTree = "<group>";
+		};
+		5FBC8B154235729AA4F97A66E8CCEEA5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF06E170C313BDB56F8678DB9BE4F02E /* Info.plist */,
+				52D4A895A8D672608432A9CE91EBFD91 /* YLAuxiliaryKit.modulemap */,
+				917F6EF6206548AF2D4E785ED12F41F5 /* YLAuxiliaryKit.xcconfig */,
+				465EACDA6A7C93818A97CBED8ABD3E88 /* YLAuxiliaryKit-dummy.m */,
+				D9AA5398F2D7F1C55D5C440414901DF0 /* YLAuxiliaryKit-prefix.pch */,
+				29E0543CDDFC6485BBFC656E1ED524F0 /* YLAuxiliaryKit-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/YLBanner";
+			path = "../Target Support Files/YLAuxiliaryKit";
+			sourceTree = "<group>";
+		};
+		6309935F3ED460955F64DD59B41BF0BC /* YLBanner */ = {
+			isa = PBXGroup;
+			children = (
+				1EECB04B1412F018DFE7EE133C9A2A30 /* Timer+Extension.swift */,
+				2C76707572827962A18BD70C35663DC5 /* UIColor+Extension.swift */,
+				CE76D23C55FA393AC6E3F648A4E8230B /* YLBanner.swift */,
+				806D4DB37D150B87793EB55C8D3F2866 /* Support Files */,
+			);
+			name = YLBanner;
+			path = YLBanner;
 			sourceTree = "<group>";
 		};
 		6432B857778B3F2B6DBB2CAA1242D3D3 /* Targets Support Files */ = {
@@ -474,17 +576,33 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6B1E5DBC5DB4B71595C47B9A0BD94028 /* Resources */ = {
+		6EEF3F3DBBF368F5EDE79BCAF8973B84 /* AMapNavi */ = {
 			isa = PBXGroup;
 			children = (
-				DC000D4721E65C0D681250338393ED49 /* qrcode_scan_btn_flash_down@2x.png */,
-				C558CE120A833DD080D98FE953A16FA0 /* qrcode_scan_btn_flash_nor@2x.png */,
-				1664A942085A341D13F27322D81A02CF /* qrcode_scan_full_net.png */,
-				EFADAC8A394BD258EC7DF0FE2884C321 /* qrcode_scan_light_green@2x.png */,
-				76BDE446085E533164F6FA0D413B9648 /* qrcode_scan_part_net.png */,
-				99AEC56E96862EB6C2F04FC99181C8BD /* qrcode_Scan_weixin_Line@2x.png */,
+				5984E69B302367E8ECF9BD484FCC6B84 /* AMapNaviBaseManager.h */,
+				9A5A88430197677ECC00F62EE129A02D /* AMapNaviCommonObj.h */,
+				FD24A17B9CD2FB6E3D30A55E2E6AEBF8 /* AMapNaviDriveDataRepresentable.h */,
+				11CA8B9E706C13050A70B864DEC68057 /* AMapNaviDriveManager.h */,
+				968EB1C9797A0FC6C6FD13916C4AE94B /* AMapNaviDriveView.h */,
+				1DB24365D75043EC8DEB6AA2540DEE16 /* AMapNaviHUDView.h */,
+				EA33EAAEC7B7F737F3A3AB713A20A789 /* AMapNaviInfo.h */,
+				9EDD2296C1D049CC0533F990E224170E /* AMapNaviKit.h */,
+				3017D9D69A0A573BC9A1A6D003660DCB /* AMapNaviLocation.h */,
+				EAF49D2E82081B84DE58D776ED7EC9FF /* AMapNaviRideDataRepresentable.h */,
+				5D304A46C1DAC332AA3571B507778272 /* AMapNaviRideManager.h */,
+				3217BB3A6BD4B0367C723986B7C9183D /* AMapNaviRideView.h */,
+				54AB55894BC847B0E56FCAFD3416A0B4 /* AMapNaviRoute.h */,
+				A4290101E623842620C95D05D36C49B4 /* AMapNaviRoutePolylineOption.h */,
+				FB546EE5851A521DBC52E83D9987A21A /* AMapNaviStatisticsInfo.h */,
+				AA09C13FAFF4CACCEDAD9495A5A75E6F /* AMapNaviVersion.h */,
+				A9C2E86B7EA534C15FCAF3E417664295 /* AMapNaviWalkDataRepresentable.h */,
+				C2C328CFFD4F9A2992191FFC55942A13 /* AMapNaviWalkManager.h */,
+				1987E9ECD5F3901A5DB2650EE1003C6B /* AMapNaviWalkView.h */,
+				35AA714C1F24B43B2259C9C442074FDF /* Frameworks */,
+				805F3DC42C02EBA8AF1DE8FF2768D204 /* Resources */,
 			);
-			name = Resources;
+			name = AMapNavi;
+			path = AMapNavi;
 			sourceTree = "<group>";
 		};
 		76D66517D0E0358C117F29AB20DEF313 /* Pods-YLTestCode */ = {
@@ -522,52 +640,225 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				52DEC40F1352DE564DAB74C061C8E5A2 /* Pods */,
+				0F7D239E63B177F344C47308A6AC0110 /* Pods */,
 				4DD38EAE0DF6BFF20E2DD4A0DC34231E /* Products */,
 				6432B857778B3F2B6DBB2CAA1242D3D3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		87C579E4393B1C04B672208D29BA586F /* YLRecordingVideo */ = {
+		7F689E1678A7B259C8C9BD10AD9A037C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00836D29F64247985087F54B7315EE7D /* YLProgressView.swift */,
-				1A507FB7F390AD7A6854D5F621A8A314 /* YLRecordControlView.swift */,
-				9E79663125C56976B6F11DD8F7D7373B /* YLRecordVideoManager.swift */,
-				62D0E02243C4E95FFCF9F3DA2680190C /* YLRecordVideoStlye.swift */,
-				E0413A168A1857D700800F7427C3C549 /* YLRecordVideoViewController.swift */,
-				EDDB36C01B29C589CF1130117AE11B12 /* Support Files */,
+				B56846FF0DAAE9C1B92A484F97E6A237 /* AMapLocationKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		805F3DC42C02EBA8AF1DE8FF2768D204 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33EBACF42BCC7FB47178BD80FC8533EB /* AMapNavi.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		806D4DB37D150B87793EB55C8D3F2866 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				036CF09E85B18D712927A16AE6CF9F2E /* Info.plist */,
+				78BA54DD46BB459BC2149105B2D782A6 /* YLBanner.modulemap */,
+				E6F54412A8076A1517D197D807F32B18 /* YLBanner.xcconfig */,
+				561E4E3823E2EC06079EDEBB48D7D201 /* YLBanner-dummy.m */,
+				C8C94A0B65391ED0D8C08C90F9481E42 /* YLBanner-prefix.pch */,
+				EA99F0D097318466F82281225F339006 /* YLBanner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YLBanner";
+			sourceTree = "<group>";
+		};
+		9B9BD0F038B7E966798323C514835628 /* YLRecordingVideo */ = {
+			isa = PBXGroup;
+			children = (
+				1DE2E6AFDF49ED9190A4273DEB523BCA /* YLProgressView.swift */,
+				0427B69F8FD4439D28E8E2F7624323BE /* YLRecordControlView.swift */,
+				D7F524FC4C3C1493E948870697F3420F /* YLRecordVideoManager.swift */,
+				1BDB875605BDEFF382CC1C382EE559CC /* YLRecordVideoStlye.swift */,
+				AFEAEEB3623FC83481457216F448510E /* YLRecordVideoViewController.swift */,
+				A6C314C32DF7320DD783B33561981E3F /* Support Files */,
 			);
 			name = YLRecordingVideo;
 			path = YLRecordingVideo;
 			sourceTree = "<group>";
 		};
-		C7B81EB86CA5134A6B858247521097E9 /* Support Files */ = {
+		A230C14BAD45B818EB43393A7F861B16 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E44AD1D5E19A3323DD29C132A53E1B41 /* BabyBluetooth.modulemap */,
-				756C3C88F5880579DD2395694FA9B145 /* BabyBluetooth.xcconfig */,
-				7F939E57AB4F2425DBAF3CB8CFE9B6E9 /* BabyBluetooth-dummy.m */,
-				4AB4C33D1E62495E282C1BF17BCE5E83 /* BabyBluetooth-prefix.pch */,
-				2C3270856C2CE9D399B7261EB4900150 /* BabyBluetooth-umbrella.h */,
-				2DC91DC1F4E21E41809168298AACBCE6 /* Info.plist */,
+				A2DC1BDCF15D315AC2C314F0EC4E9270 /* BabyBluetooth.modulemap */,
+				BE157F874614D0BADC78204975370FEE /* BabyBluetooth.xcconfig */,
+				08675F612059AE716074924213465CF8 /* BabyBluetooth-dummy.m */,
+				7D975B0879A386C2365ED75AAA2E6E4F /* BabyBluetooth-prefix.pch */,
+				3215B091596B747F035ADB4375F6DF64 /* BabyBluetooth-umbrella.h */,
+				D434D09B85C4743BEF526CE2314A2739 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BabyBluetooth";
 			sourceTree = "<group>";
 		};
-		EDDB36C01B29C589CF1130117AE11B12 /* Support Files */ = {
+		A6C314C32DF7320DD783B33561981E3F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				92F59373E7E5AEB757C89E792E357307 /* Info.plist */,
-				3BCDB94FD49D2354747DF7D9208A6418 /* YLRecordingVideo.modulemap */,
-				005AD58C7D8FDF1C5D393F6EA13E9900 /* YLRecordingVideo.xcconfig */,
-				51A2E857DE9221CFAA3D529CBCD1DE04 /* YLRecordingVideo-dummy.m */,
-				92F9A73636A0F11942819932F6AE4E26 /* YLRecordingVideo-prefix.pch */,
-				34B3BA369C1C29E4713FB714ECEC7E8A /* YLRecordingVideo-umbrella.h */,
+				6E194054A9BAEE25A2BAAF58B3665477 /* Info.plist */,
+				CA98460C15598447F9ADE1F5DB836155 /* YLRecordingVideo.modulemap */,
+				E061A33F20936570E792AED85139BCD2 /* YLRecordingVideo.xcconfig */,
+				8DA303DDA196FC664B20CA1F6C7C0AC9 /* YLRecordingVideo-dummy.m */,
+				FADA5DB9C52CD5EF00207E293D7B6362 /* YLRecordingVideo-prefix.pch */,
+				BB1393D9D8BC4DD3FF2186A7603A4FE7 /* YLRecordingVideo-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YLRecordingVideo";
+			sourceTree = "<group>";
+		};
+		A81B9AEC5173881E5265D50CD2314C0C /* AMapLocation */ = {
+			isa = PBXGroup;
+			children = (
+				50D846FDEA5ECEE1A2A7743E2755C567 /* AMapGeoFenceError.h */,
+				F71CCA8F50EB4ACD117B00A1AC0C0628 /* AMapGeoFenceManager.h */,
+				FD1A17D290A8AA34DF44D432A4DE0F90 /* AMapGeoFenceRegionObj.h */,
+				770B4AEF3E4AA6DBFFB7100FB146E74A /* AMapLocationCommonObj.h */,
+				991E1C1542004F87ECD39379CBE12435 /* AMapLocationKit.h */,
+				F6B338F63DDE586516CA5688CC88DBFD /* AMapLocationManager.h */,
+				30381F64D50A59DD21FA48D03DB9124B /* AMapLocationRegionObj.h */,
+				70B4246B165D9982A4C2DE86BD3863CB /* AMapLocationVersion.h */,
+				7F689E1678A7B259C8C9BD10AD9A037C /* Frameworks */,
+			);
+			name = AMapLocation;
+			path = AMapLocation;
+			sourceTree = "<group>";
+		};
+		A972D4F0E2615F9C991F13AB5D6401E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				283B1C2823EB8864DF80295337442465 /* MAMapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF47FF7E3BEF08C051691262E7992D77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F0422E6BEB2A4D4B955A871230C5C17 /* AMapSearchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDA3B55BFF3A55CCE93A33D40D71C7EE /* AMapSearch */ = {
+			isa = PBXGroup;
+			children = (
+				ED4167E258DA1DE6791DC0E122295E6B /* AMapCommonObj.h */,
+				F3DECCEFB9CE972F1823DD56AEB7DE66 /* AMapNearbySearchManager.h */,
+				E29452ADD2637E0C2A95B362BB4BC8DA /* AMapNearbyUploadInfo.h */,
+				5CEE6780B1830AFCE43022558A75E8FD /* AMapSearchAPI.h */,
+				A58B89A2EB8530AD4E1C1A88EA3D27AD /* AMapSearchError.h */,
+				B4452F64AF835DAEF3CA678BF9FF3FE8 /* AMapSearchKit.h */,
+				49387E240CDD9356B03908AE623DBE70 /* AMapSearchObj.h */,
+				0CA81BC301A180D5C3C91367340E67FC /* AMapSearchVersion.h */,
+				AF47FF7E3BEF08C051691262E7992D77 /* Frameworks */,
+			);
+			name = AMapSearch;
+			path = AMapSearch;
+			sourceTree = "<group>";
+		};
+		D5A5B0EF8DC6651812BBFD7F5B32CD85 /* AMap3DMap */ = {
+			isa = PBXGroup;
+			children = (
+				7348B4B035BD707ABEAA83C9707C8543 /* MAAnimatedAnnotation.h */,
+				0AC0430D43C22FDABCC7E95CED6B3D88 /* MAAnnotation.h */,
+				C811C9244139A87CE16ED0913703FFE2 /* MAAnnotationMoveAnimation.h */,
+				F002A40D6B6148AD199924F20E717194 /* MAAnnotationView.h */,
+				DA37590B3DCA5226CA527179C334199F /* MACircle.h */,
+				1EB71893F338F87E5C820E7AE976454C /* MACircleRenderer.h */,
+				B0B7B40B6CCA04E56B9280688A4C14B0 /* MAConfig.h */,
+				144F490E75CDB1098743E781AAEB9DA3 /* MAGeodesicPolyline.h */,
+				C0E035B839FC1EA1BE224385D6B98662 /* MAGeometry.h */,
+				20947D381D855C85E71AC60DA24FBC4D /* MAGroundOverlay.h */,
+				EA77E8DE662E8D0EC12D3FCD2CD9D8FF /* MAGroundOverlayRenderer.h */,
+				D4F57C191409204F22DE087E89AFF3DE /* MAHeatMapTileOverlay.h */,
+				DA9E391E02D2D94C9FB93A839757A7E1 /* MAIndoorInfo.h */,
+				495AE03097702AE81D8608AA2C8030A1 /* MALineDrawType.h */,
+				4FAF196C38240D72F592E40C6C6E11EE /* MAMapKit.h */,
+				C6E56E7BF689BBB8304962FC84EB9426 /* MAMapStatus.h */,
+				EE674DCBC5FBB39310482AC1832820D3 /* MAMapVersion.h */,
+				CA5ABE6FAF1D929F65E2D05722E5F86D /* MAMapView.h */,
+				8A149C3B16B4A29345C22E7EABCD7285 /* MAMultiColoredPolylineRenderer.h */,
+				9ED511FB0BA86FBD07EBA8CCECFB0178 /* MAMultiPoint.h */,
+				E45EDB316B747FC83248664FDBACBFEC /* MAMultiPolyline.h */,
+				B4E2A08DEBECF3C6521FEC03A0DE5ACE /* MAMultiTexturePolylineRenderer.h */,
+				02A274D2DD9964182717B87761FC7319 /* MAOfflineCity.h */,
+				7F3DD9763BBC0AE34302136A558AED79 /* MAOfflineItem.h */,
+				02B75413D7646E8168074C6FF9831182 /* MAOfflineItemCommonCity.h */,
+				A7EFFEBB504DA5AC105E5A826A304A04 /* MAOfflineItemMunicipality.h */,
+				9A62CDA5A480C3E58250917211DD7554 /* MAOfflineItemNationWide.h */,
+				5B06445C6800D52C6576C1C46A8D4186 /* MAOfflineMap.h */,
+				41E13F48CD7B38B524FDA05BC1D47CDC /* MAOfflineProvince.h */,
+				E584F1A2C9A0E23D299DE6000A89879E /* MAOverlay.h */,
+				623A61BE5C20C92B99D0055CD84E1F90 /* MAOverlayPathRenderer.h */,
+				B3BC7F8AE71627285560F46D6A2FB1FF /* MAOverlayRenderer.h */,
+				B700C9814949C3DC3C74E43B87CA1E16 /* MAPinAnnotationView.h */,
+				3D484FE6A51CF02DE8D4C522E95E98A7 /* MAPointAnnotation.h */,
+				7E200147C416DBC098CDEDCD219363BC /* MAPolygon.h */,
+				D9F590702D8EDE66581C3A5535377918 /* MAPolygonRenderer.h */,
+				FF0ABC6D0B9AF8FFB32C3FB26C4630B7 /* MAPolyline.h */,
+				D2CC6A0B9588A80CB44E1D15709CB683 /* MAPolylineRenderer.h */,
+				9E2A9AD5E361D8F9A2C3A2730291EBC7 /* MAShape.h */,
+				FA409D6F56F13C12018F40AC5433A3DD /* MATileOverlay.h */,
+				4F0545BE5F432677B64F74A79BF96234 /* MATileOverlayRenderer.h */,
+				3BBA04B89E7152EAE166FEFB091E545F /* MATouchPoi.h */,
+				4E5B12DDC604AC88B7CA4808A55E46DF /* MATraceLocation.h */,
+				A5152FA3882C84AEC5CEA6629F809304 /* MATraceManager.h */,
+				48C48DAABB965CA280E0FC19B500B4CC /* MAUserLocation.h */,
+				DE01544814D260429E8BFC5B48AC60A3 /* MAUserLocationRepresentation.h */,
+				A972D4F0E2615F9C991F13AB5D6401E5 /* Frameworks */,
+				EBC6DA66F0E6713D90C130792B8F97C8 /* Resources */,
+			);
+			name = AMap3DMap;
+			path = AMap3DMap;
+			sourceTree = "<group>";
+		};
+		E80183CD9CA9214D5FC59871208D71D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E73E2BEE0478EA5C8C1DAA57524C946 /* qrcode_scan_btn_flash_down@2x.png */,
+				E349749A533EE21D4B410F0C427C43D0 /* qrcode_scan_btn_flash_nor@2x.png */,
+				8E112B410959B82AF43945D3C2E3CDEE /* qrcode_scan_full_net.png */,
+				A8CA5B322239A5552D753E181ECB0820 /* qrcode_scan_light_green@2x.png */,
+				5BDBA5702688FBCF2D7D593A530543B2 /* qrcode_scan_part_net.png */,
+				0FDCA9CC043DFC2410D648223521F91B /* qrcode_Scan_weixin_Line@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EBC6DA66F0E6713D90C130792B8F97C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42EE4F708C7FCB5CDD7F11E8680EB7D3 /* AMap.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EFAF27C5E9E96DEAF2501F902EB68DED /* AMapFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				AF39C1F56CC2BD7F058D0B5326A70B34 /* AMapFoundationKit.h */,
+				35EAEBE50B3B35EB2E257C2332B4A110 /* AMapFoundationVersion.h */,
+				4982D5EB3E4774CDAA400DF640E2FCEE /* AMapServices.h */,
+				60A820B7B2B8DBD93E65556A275B5D44 /* AMapURLSearch.h */,
+				B061A379AB4132B145277A6B270A815A /* AMapURLSearchConfig.h */,
+				367904A7415885D1D3AB6D9FF502F7E7 /* AMapURLSearchType.h */,
+				21F1FABC4C5C59F03B14D68BC4A9FD56 /* AMapUtility.h */,
+				5A9BA8B9A3FDD34409EF5A9447E48BB5 /* Frameworks */,
+			);
+			name = AMapFoundation;
+			path = AMapFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -954,7 +1245,7 @@
 /* Begin XCBuildConfiguration section */
 		052DB2A2AF32B8E44644B7797400E71E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 756C3C88F5880579DD2395694FA9B145 /* BabyBluetooth.xcconfig */;
+			baseConfigurationReference = BE157F874614D0BADC78204975370FEE /* BabyBluetooth.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -986,7 +1277,7 @@
 		};
 		0C63CA81D28EC0156135A752B68C4BC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */;
+			baseConfigurationReference = 11937A62213827491E2F2C899B61BA4D /* YLSwiftScan.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1018,7 +1309,7 @@
 		};
 		109D25166920653027E9614D2C07EB40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 166DE8C11A965EBD7DC85DB2F3006945 /* YLBanner.xcconfig */;
+			baseConfigurationReference = E6F54412A8076A1517D197D807F32B18 /* YLBanner.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1050,7 +1341,7 @@
 		};
 		2A4BABFF8E77E22A9EBD14AC450AF868 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 166DE8C11A965EBD7DC85DB2F3006945 /* YLBanner.xcconfig */;
+			baseConfigurationReference = E6F54412A8076A1517D197D807F32B18 /* YLBanner.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1198,7 +1489,7 @@
 		};
 		6D9A6BC3A4B466B4BB5506906516F2E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */;
+			baseConfigurationReference = 11937A62213827491E2F2C899B61BA4D /* YLSwiftScan.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1231,7 +1522,7 @@
 		};
 		6DEACBCCD912E22B3DA7007671C939F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 005AD58C7D8FDF1C5D393F6EA13E9900 /* YLRecordingVideo.xcconfig */;
+			baseConfigurationReference = E061A33F20936570E792AED85139BCD2 /* YLRecordingVideo.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1263,7 +1554,7 @@
 		};
 		857E16DFB255F56FE6AF2C27D0D49AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1ACF408F9F13A0BC2574C3ED0B769DC5 /* YLAuxiliaryKit.xcconfig */;
+			baseConfigurationReference = 917F6EF6206548AF2D4E785ED12F41F5 /* YLAuxiliaryKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1296,7 +1587,7 @@
 		};
 		9DC22CA0753B53876E3BD93061F516A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1ACF408F9F13A0BC2574C3ED0B769DC5 /* YLAuxiliaryKit.xcconfig */;
+			baseConfigurationReference = 917F6EF6206548AF2D4E785ED12F41F5 /* YLAuxiliaryKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1328,7 +1619,7 @@
 		};
 		B18D4DE0A4F8B1E381873AF8CAA14D2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */;
+			baseConfigurationReference = 11937A62213827491E2F2C899B61BA4D /* YLSwiftScan.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YLSwiftScan";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1385,7 +1676,7 @@
 		};
 		DDC5BE0C93379B32BD43694C1D59A993 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 756C3C88F5880579DD2395694FA9B145 /* BabyBluetooth.xcconfig */;
+			baseConfigurationReference = BE157F874614D0BADC78204975370FEE /* BabyBluetooth.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1417,7 +1708,7 @@
 		};
 		E23208C5B02EC52C4C9E051A0F091BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D29638E155BDE6C6FAD7919358C605F /* YLSwiftScan.xcconfig */;
+			baseConfigurationReference = 11937A62213827491E2F2C899B61BA4D /* YLSwiftScan.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YLSwiftScan";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1434,7 +1725,7 @@
 		};
 		F73F0E5423C276208F3AFF23FA5EFA4D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 005AD58C7D8FDF1C5D393F6EA13E9900 /* YLRecordingVideo.xcconfig */;
+			baseConfigurationReference = E061A33F20936570E792AED85139BCD2 /* YLRecordingVideo.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

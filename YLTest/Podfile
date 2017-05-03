@@ -14,4 +14,9 @@ target ‘YLTestCode’ do
     pod 'BabyBluetooth'
     pod 'YLAuxiliaryKit'
     
+    pod 'AMap3DMap'
+    pod 'AMapLocation'
+    pod 'AMapNavi'
+    pod 'AMapSearch'
+    
 end

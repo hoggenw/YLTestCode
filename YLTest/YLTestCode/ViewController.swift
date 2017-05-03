@@ -18,10 +18,10 @@ class ViewController: UIViewController {
     //var baby: BabyBluetooth?
     override func viewDidLoad() {
         super.viewDidLoad()
-        dictionaryReduceTest()
+        //dictionaryReduceTest()
         
 //        baby = BabyBluetooth.shareBabyBluetooth()
-//        intialUI()
+         intialUI()
 //        let minius = { () -> Int in
 //            return 10
 //        }
@@ -70,6 +70,19 @@ class ViewController: UIViewController {
         button2.titleLabel?.textColor = UIColor.white
         self.view.addSubview(button2)
         button2.addTarget(self, action: #selector(turnToRecordController), for: .touchUpInside)
+        
+        let button3 = UIButton()
+        button3.backgroundColor = UIColor.brown
+        button3.frame = CGRect(x: view.bounds.size.width/2 - 30, y: view.bounds.size.height/2 + 100 , width: 60, height: 50)
+        button3.setTitle("地图", for: .normal)
+        button3.titleLabel?.textColor = UIColor.white
+        self.view.addSubview(button3)
+        button3.addTarget(self, action: #selector(button3Action), for: .touchUpInside)
+    }
+    
+    func button3Action() {
+        let vc = MapViewController();
+        self.navigationController?.pushViewController(vc, animated: true);
     }
     
     func scanQRcode() {
