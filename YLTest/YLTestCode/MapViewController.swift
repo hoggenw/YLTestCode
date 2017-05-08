@@ -23,6 +23,13 @@ class MapViewController: UIViewController {
      let mapView =  MAMapView(frame: UIScreen.main.bounds);
     //搜索初始化
      let search = AMapSearchAPI()
+    //当前位置
+    var userCurrentLocation:MAUserLocation?
+    //行走坐标Array
+    var pointArray: [MAPointAnnotation] = [MAPointAnnotation]()
+    //行走曲线
+    var routeLine: MAPolyline?
+    
     
 
     
@@ -34,6 +41,13 @@ class MapViewController: UIViewController {
     
     
     //MARK:Override Methods
+    deinit {
+        self.mapView.showsUserLocation = false;
+        mapView.delegate = nil;
+        mapView.removeAnnotations(mapView.annotations)
+       // mapView.remove(mapView.overlays as! MAOverlay);
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,7 +90,7 @@ class MapViewController: UIViewController {
         //设置定位精度
         mapView.desiredAccuracy = kCLLocationAccuracyBest;
         //设置定位距离
-        mapView.distanceFilter = 1.0;
+        //mapView.distanceFilter = 1.0;
         //普通样式
         mapView.mapType = .standard;
         //防止系统自动杀掉定位 -- 后台定位
@@ -87,7 +101,6 @@ class MapViewController: UIViewController {
         mapView.showsUserLocation = true;
         mapView.userTrackingMode = .follow
 
-        
         //MAKE: screenshot test
         let button3 = UIButton()
         button3.backgroundColor = UIColor.brown
@@ -100,6 +113,33 @@ class MapViewController: UIViewController {
     }
     
     //MARK:User Events
+    
+    func dealUserPointArray() {
+        guard userCurrentLocation?.location.coordinate.latitude != 0 && userCurrentLocation?.location.coordinate.longitude != 0 else {
+            return;
+        }
+        let point = MAPointAnnotation();
+        point.coordinate = (userCurrentLocation?.location.coordinate)!;
+        pointArray.append(point)
+        drawLine();
+        
+        
+    }
+    
+    func drawLine() {
+        guard pointArray.count > 0 else {
+            return;
+        }
+        var mapPointArray: [CLLocationCoordinate2D] = pointArray.map({ (point) -> CLLocationCoordinate2D in
+            return point.coordinate
+        });
+        if routeLine != nil {
+            mapView.remove(routeLine);
+        }
+        
+        routeLine = MAPolyline(coordinates: &mapPointArray, count: UInt(mapPointArray.count))
+        mapPointArray.removeAll();
+    }
     
     func userLocation() {
         let userLocation = mapView.userLocation.coordinate;
@@ -133,37 +173,74 @@ class MapViewController: UIViewController {
 extension MapViewController: MAMapViewDelegate {
     //实时监控用户位置
     func mapView(_ mapView: MAMapView!, didUpdate userLocation: MAUserLocation!, updatingLocation: Bool) {
+        //location数据是否更新
         if (updatingLocation) {
-            NSLog("latitude : %f , longitude : %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+            guard userCurrentLocation != nil else {
+                print("first in")
+                userCurrentLocation = userLocation;
+                dealUserPointArray();
+                return;
+            }
+            let pointNew: MAMapPoint = MAMapPointForCoordinate(CLLocationCoordinate2DMake(userLocation.coordinate.latitude, userLocation.coordinate.longitude));
+            let pointCurrent:MAMapPoint = MAMapPointForCoordinate(CLLocationCoordinate2DMake((userCurrentLocation?.coordinate.latitude)!, (userCurrentLocation?.coordinate.longitude)!));
+            let distance: CLLocationDistance = MAMetersBetweenMapPoints(pointNew, pointCurrent)
+            
+            print("begin location distance = \(distance)")
+            YLHintView.showMessageOnThisPage("distance = \(distance)")
+            
+            
+            if  distance < 1{
+                return;
+            }else {
+                print("userCurrentLocation")
+                userCurrentLocation = userLocation;
+            }
+            dealUserPointArray();
         }
     }
+    //绘制关键代理
+    func mapView(_ mapView: MAMapView!, rendererFor overlay: MAOverlay!) -> MAOverlayRenderer! {
+        if overlay.isKind(of: MAPolyline.self) {
+            let polylineView: MAPolylineRenderer = MAPolylineRenderer(overlay: overlay);
+            polylineView.lineWidth = 8;
+            polylineView.strokeColor = UIColor.green;
+            return polylineView;
+        }
+        return nil
+    }
+  
+    //定位失败
+    func aMapSearchRequest(_ request: Any!, didFailWithError error: Error!) {
+        
+    }
+    
     //大头针代理
     func mapView(_ mapView: MAMapView!, viewFor annotation: MAAnnotation!) -> MAAnnotationView! {
         if annotation.isKind(of: MAPointAnnotation.self) {
             let pointReuseIndetifier = "pointReuseIndetifier";
-            //自定义
-            var annotationView: CustomAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: pointReuseIndetifier) as! CustomAnnotationView?
-            if annotationView == nil {
-                annotationView = CustomAnnotationView(annotation: annotation, reuseIdentifier: pointReuseIndetifier);
-            }
-            annotationView?.image = UIImage(named: "test");
-            // 设置为NO，用以调用自定义的calloutView
-            annotationView?.canShowCallout = false
-            let button = UIButton(type: .detailDisclosure)
-            annotationView?.rightCalloutAccessoryView = button;
-            annotationView?.setSelected(true, animated: true)
-            // 设置中心点偏移，使得标注底部中间点成为经纬度对应点
-            annotationView!.centerOffset = CGPoint(x: -10, y: 0)
-            //系统
-//            var annottationView: MAPinAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: pointReuseIndetifier) as! MAPinAnnotationView?
-//            if  annottationView == nil {
-//                annottationView = MAPinAnnotationView(annotation: annotation, reuseIdentifier: pointReuseIndetifier);
+//            //自定义
+//            var annotationView: CustomAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: pointReuseIndetifier) as! CustomAnnotationView?
+//            if annotationView == nil {
+//                annotationView = CustomAnnotationView(annotation: annotation, reuseIdentifier: pointReuseIndetifier);
 //            }
-//            annottationView?.canShowCallout = true;
-//            annottationView?.animatesDrop = true;
-//            annottationView?.isDraggable = true;
-//            annottationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-             return annotationView!
+//            annotationView?.image = UIImage(named: "test");
+//            // 设置为NO，用以调用自定义的calloutView
+//            annotationView?.canShowCallout = false
+//            let button = UIButton(type: .detailDisclosure)
+//            annotationView?.rightCalloutAccessoryView = button;
+//            annotationView?.setSelected(true, animated: true)
+//            // 设置中心点偏移，使得标注底部中间点成为经纬度对应点
+//            annotationView!.centerOffset = CGPoint(x: -10, y: 0)
+            //系统
+            var annottationView: MAPinAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: pointReuseIndetifier) as! MAPinAnnotationView?
+            if  annottationView == nil {
+                annottationView = MAPinAnnotationView(annotation: annotation, reuseIdentifier: pointReuseIndetifier);
+            }
+            annottationView?.canShowCallout = true;
+            annottationView?.animatesDrop = true;
+            annottationView?.isDraggable = true;
+            annottationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+             return annottationView!
         }
         
         return nil

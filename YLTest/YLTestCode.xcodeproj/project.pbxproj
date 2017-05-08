@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113B80EF1EBD6661000FEB69 /* YLHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113B80EE1EBD6661000FEB69 /* YLHintView.swift */; };
+		113B80F11EBD6779000FEB69 /* YLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113B80F01EBD6779000FEB69 /* YLLabel.swift */; };
 		11447F801EB9ADE800534A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11447F7F1EB9ADE800534A2D /* MapViewController.swift */; };
 		1144C0791EBC506F00B98DB2 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144C0781EBC506F00B98DB2 /* CustomCalloutView.swift */; };
 		1144C07B1EBC5BA700B98DB2 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113B80EE1EBD6661000FEB69 /* YLHintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLHintView.swift; sourceTree = "<group>"; };
+		113B80F01EBD6779000FEB69 /* YLLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLLabel.swift; sourceTree = "<group>"; };
 		11447F7F1EB9ADE800534A2D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1144C0781EBC506F00B98DB2 /* CustomCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
 		1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		11BD9AE91E5A72C900E93FA8 /* YLTestCode */ = {
 			isa = PBXGroup;
 			children = (
+				113B80F01EBD6779000FEB69 /* YLLabel.swift */,
+				113B80EE1EBD6661000FEB69 /* YLHintView.swift */,
 				112574991E8A2E4700969A34 /* Extension */,
 				11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */,
 				11BD9AEC1E5A72C900E93FA8 /* ViewController.swift */,
@@ -306,7 +312,9 @@
 				11BD9AEB1E5A72C900E93FA8 /* AppDelegate.swift in Sources */,
 				11447F801EB9ADE800534A2D /* MapViewController.swift in Sources */,
 				1144C07B1EBC5BA700B98DB2 /* CustomAnnotationView.swift in Sources */,
+				113B80F11EBD6779000FEB69 /* YLLabel.swift in Sources */,
 				1144C0791EBC506F00B98DB2 /* CustomCalloutView.swift in Sources */,
+				113B80EF1EBD6661000FEB69 /* YLHintView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

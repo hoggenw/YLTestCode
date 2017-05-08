@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YLAuxiliaryKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>323FA71E6EAAB368A7D7832AC60D1573</key>
+		<key>09ECDCCFBD4F2207CF5EA8EA310C6C8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>931910E35420C99E47B6B2313E207FF3</key>
+		<key>511B384B499EEFFA83379103C60D8B82</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AEF9B45E6D785B34C8411F7F1108B977</key>
+		<key>586A6CD4BDBD4D2A2FDA884487A5EA2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D5DFC697E20B5FC3CC46D99C9CFC2866</key>
+		<key>60707476DA3921DDCBF39DFDD7B65910</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E178DCB53A466176089BA0AF55CDF812</key>
+		<key>6CCFEE3570391998687E49DCC8AE32D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>932E2BE95C0D3FC835FDD397C747F141</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BFFF417074D995038D5D79905C0BEA30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>F4B1A0F40902F9533C324157F3F2703D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FA2D0999EB5697336353A5CAF0D1F3BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
