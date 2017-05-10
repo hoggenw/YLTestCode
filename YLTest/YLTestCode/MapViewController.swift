@@ -11,7 +11,7 @@
 //
 
 import UIKit
-import MapKit
+
 
 
 class MapViewController: UIViewController {
@@ -124,8 +124,6 @@ class MapViewController: UIViewController {
         point.coordinate = (userCurrentLocation?.location.coordinate)!;
         pointArray.append(point)
         drawLine();
-        
-        
     }
     
     func drawLine() {
@@ -192,6 +190,7 @@ extension MapViewController: MAMapViewDelegate {
             
             
             if  distance < 1{
+                print("RETURN")
                 return;
             }else {
                 print("userCurrentLocation")

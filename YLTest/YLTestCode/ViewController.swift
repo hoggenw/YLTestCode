@@ -90,11 +90,14 @@ class ViewController: UIViewController {
     }
     
     func callApp() {
-        let url = URL(string: "alipay://");
-        if UIApplication.shared.canOpenURL(url!) {
-            UIApplication.shared.openURL(url!);
-        }
         
+//        //跳转其他app
+//        let url = URL(string: "alipay://");
+//        if UIApplication.shared.canOpenURL(url!) {
+//            UIApplication.shared.openURL(url!);
+//        }
+        let vc = TestMapViewController();
+        self.navigationController?.pushViewController(vc, animated: true);
     }
 
     
