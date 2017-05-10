@@ -50,5 +50,13 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>weixin</string>
+        <string>baidu</string>
+        <string>alipay</string>
+        <string>weico</string>
+        <string>mqq</string>
+    </array>
 </dict>
 </plist>

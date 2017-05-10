@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         
 //        baby = BabyBluetooth.shareBabyBluetooth()
          intialUI()
+         reduceTest()
 //        let minius = { () -> Int in
 //            return 10
 //        }
@@ -78,11 +79,47 @@ class ViewController: UIViewController {
         button3.titleLabel?.textColor = UIColor.white
         self.view.addSubview(button3)
         button3.addTarget(self, action: #selector(button3Action), for: .touchUpInside)
+        
+        let button4 = UIButton()
+        button4.backgroundColor = UIColor.brown
+        button4.frame = CGRect(x: view.bounds.size.width/2 - 30, y: view.bounds.size.height/2 + 200 , width: 60, height: 50)
+        button4.setTitle("跳转", for: .normal)
+        button4.titleLabel?.textColor = UIColor.white
+        self.view.addSubview(button4)
+        button4.addTarget(self, action: #selector(callApp), for: .touchUpInside)
     }
+    
+    func callApp() {
+        let url = URL(string: "alipay://");
+        if UIApplication.shared.canOpenURL(url!) {
+            UIApplication.shared.openURL(url!);
+        }
+        
+    }
+
     
     func button3Action() {
         let vc = MapViewController();
         self.navigationController?.pushViewController(vc, animated: true);
+    }
+    
+    //reduce测试
+    func reduceTest() {
+//        let dictionary: [String: Int] = ["1":11,"2":12,"3":13,"4":14,"5":15];
+//        let result = dictionary.reduce([:]) { (result, element) -> [String: String] in
+//            print("\(element.0 ) = \(element.1)")
+//            guard
+//                let key =  element.0 as? String,
+//                let value = element.1 as? Int
+//                else {
+//                    
+//                    return result
+//            }
+//            
+//            var result = result
+//            result[key] = value.description
+//            return result
+//        }
     }
     
     func scanQRcode() {
