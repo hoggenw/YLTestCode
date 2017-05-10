@@ -10,6 +10,7 @@ import UIKit
 import YLSwiftScan
 import YLRecordingVideo
 import YLAuxiliaryKit
+import MapKit
 
 
 class ViewController: UIViewController {
@@ -91,13 +92,26 @@ class ViewController: UIViewController {
     
     func callApp() {
         
-//        //跳转其他app
-//        let url = URL(string: "alipay://");
+        //跳转其他app
+//        NSString *urlString = [[NSString stringWithFormat:,coordinate.latitude, coordinate.longitude] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//       
+//        let uslString = String(format: "baidumap://map/direction?origin={{我的位置}}&destination=latlng:,|name=目的地&mode=driving&coord_type=gcj02").removingPercentEncoding
+//        let url = URL(string: uslString!);
 //        if UIApplication.shared.canOpenURL(url!) {
 //            UIApplication.shared.openURL(url!);
+//        }else{
+//            YLHintView.showMessageOnThisPage("你没有安装该app")
 //        }
-        let vc = TestMapViewController();
-        self.navigationController?.pushViewController(vc, animated: true);
+
+        let loc : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 30.665291, longitude: 104.077502);
+        let lll: CLLocation = CLLocation.init(latitude:  loc.latitude, longitude:  loc.longitude)
+        lll.locationMarsFromBearPaw();
+        let currentLocation = MKMapItem.forCurrentLocation();
+        let toLocation = MKMapItem(placemark: MKPlacemark(coordinate: lll.coordinate, addressDictionary: nil));
+        MKMapItem.openMaps(with: [currentLocation,toLocation], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving,MKLaunchOptionsShowsTrafficKey: true])
+       
+//        let vc = TestMapViewController();
+//        self.navigationController?.pushViewController(vc, animated: true);
     }
 
     
@@ -201,5 +215,14 @@ extension ViewController: YLRecordVideoChoiceDelegate {
 extension ViewController: YLScanViewManagerDelegate {
     func scanSuccessWith(result: YLScanResult) {
         print("wlg====%@",result.strScanned!)
+    }
+}
+
+extension String {
+
+    func utf8encodedString() ->String {
+        var arr = [UInt8]()
+        arr += self.utf8
+        return String(bytes: arr,encoding: String.Encoding.utf8)!
     }
 }

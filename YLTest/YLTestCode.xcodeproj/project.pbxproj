@@ -13,6 +13,7 @@
 		1144C0791EBC506F00B98DB2 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144C0781EBC506F00B98DB2 /* CustomCalloutView.swift */; };
 		1144C07B1EBC5BA700B98DB2 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */; };
 		119591D61EC298E0005B4BE0 /* TestMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119591D51EC298E0005B4BE0 /* TestMapViewController.swift */; };
+		119591D91EC298E0005B4BE0 /* CLLocation+Sino.m in Sources */ = {isa = PBXBuildFile; fileRef = 119591D71EC298E0005B4BE0 /* CLLocation+Sino.m */; };
 		11BD9AEB1E5A72C900E93FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */; };
 		11BD9AED1E5A72C900E93FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD9AEC1E5A72C900E93FA8 /* ViewController.swift */; };
 		11BD9AF01E5A72C900E93FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD9AEE1E5A72C900E93FA8 /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 		1144C0781EBC506F00B98DB2 /* CustomCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
 		1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		119591D51EC298E0005B4BE0 /* TestMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMapViewController.swift; sourceTree = "<group>"; };
+		119591D71EC298E0005B4BE0 /* CLLocation+Sino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Sino.m"; sourceTree = "<group>"; };
+		119591D81EC298E0005B4BE0 /* CLLocation+Sino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Sino.h"; sourceTree = "<group>"; };
 		11BD9AE71E5A72C900E93FA8 /* YLTestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLTestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BD9AEC1E5A72C900E93FA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 		11BD9AE91E5A72C900E93FA8 /* YLTestCode */ = {
 			isa = PBXGroup;
 			children = (
+				119591D71EC298E0005B4BE0 /* CLLocation+Sino.m */,
+				119591D81EC298E0005B4BE0 /* CLLocation+Sino.h */,
 				113B80F01EBD6779000FEB69 /* YLLabel.swift */,
 				113B80EE1EBD6661000FEB69 /* YLHintView.swift */,
 				112574991E8A2E4700969A34 /* Extension */,
@@ -312,6 +317,7 @@
 			files = (
 				11BD9AED1E5A72C900E93FA8 /* ViewController.swift in Sources */,
 				119591D61EC298E0005B4BE0 /* TestMapViewController.swift in Sources */,
+				119591D91EC298E0005B4BE0 /* CLLocation+Sino.m in Sources */,
 				11CC0D6D1E5A7548002994CB /* Oc.m in Sources */,
 				11BD9AEB1E5A72C900E93FA8 /* AppDelegate.swift in Sources */,
 				11447F801EB9ADE800534A2D /* MapViewController.swift in Sources */,
