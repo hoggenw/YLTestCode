@@ -87,7 +87,12 @@ class ViewController: UIViewController {
         button4.setTitle("跳转", for: .normal)
         button4.titleLabel?.textColor = UIColor.white
         self.view.addSubview(button4)
-        button4.addTarget(self, action: #selector(callApp), for: .touchUpInside)
+        button4.addTarget(self, action: #selector(drawMap), for: .touchUpInside)
+    }
+    
+    func drawMap() {
+        let vc = DrawMapViewController();
+        self.navigationController?.pushViewController(vc, animated: true);
     }
     
     func callApp() {

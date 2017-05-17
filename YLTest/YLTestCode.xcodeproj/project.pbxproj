@@ -12,6 +12,7 @@
 		11447F801EB9ADE800534A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11447F7F1EB9ADE800534A2D /* MapViewController.swift */; };
 		1144C0791EBC506F00B98DB2 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144C0781EBC506F00B98DB2 /* CustomCalloutView.swift */; };
 		1144C07B1EBC5BA700B98DB2 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */; };
+		114FD3D51ECAE61E00B0F796 /* DrawMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FD3D41ECAE61E00B0F796 /* DrawMapViewController.swift */; };
 		119591D61EC298E0005B4BE0 /* TestMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119591D51EC298E0005B4BE0 /* TestMapViewController.swift */; };
 		119591D91EC298E0005B4BE0 /* CLLocation+Sino.m in Sources */ = {isa = PBXBuildFile; fileRef = 119591D71EC298E0005B4BE0 /* CLLocation+Sino.m */; };
 		11BD9AEB1E5A72C900E93FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		11447F7F1EB9ADE800534A2D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1144C0781EBC506F00B98DB2 /* CustomCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
 		1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		114FD3D41ECAE61E00B0F796 /* DrawMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawMapViewController.swift; sourceTree = "<group>"; };
 		119591D51EC298E0005B4BE0 /* TestMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMapViewController.swift; sourceTree = "<group>"; };
 		119591D71EC298E0005B4BE0 /* CLLocation+Sino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Sino.m"; sourceTree = "<group>"; };
 		119591D81EC298E0005B4BE0 /* CLLocation+Sino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Sino.h"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				11BD9AEC1E5A72C900E93FA8 /* ViewController.swift */,
 				11447F7F1EB9ADE800534A2D /* MapViewController.swift */,
 				119591D51EC298E0005B4BE0 /* TestMapViewController.swift */,
+				114FD3D41ECAE61E00B0F796 /* DrawMapViewController.swift */,
 				1144C0781EBC506F00B98DB2 /* CustomCalloutView.swift */,
 				1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */,
 				11CC0D6B1E5A7548002994CB /* Oc.h */,
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BD9AED1E5A72C900E93FA8 /* ViewController.swift in Sources */,
+				114FD3D51ECAE61E00B0F796 /* DrawMapViewController.swift in Sources */,
 				119591D61EC298E0005B4BE0 /* TestMapViewController.swift in Sources */,
 				119591D91EC298E0005B4BE0 /* CLLocation+Sino.m in Sources */,
 				11CC0D6D1E5A7548002994CB /* Oc.m in Sources */,

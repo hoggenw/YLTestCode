@@ -187,38 +187,38 @@ extension MapViewController: MAMapViewDelegate {
             return
         }
         let location: CLLocation? = userLocation.location;
-        guard userCurrentLocations.count > 0 && location != nil else {
-            print("first in")
-            userCurrentLocations.append(userLocation);
-            return;
-        }
-        if Double((location?.horizontalAccuracy)!) < 100.0 && Double((location?.horizontalAccuracy)!) > 0 {
-             let distance: CLLocationDistance = userLocation.location.distance(from: (userCurrentLocations.last?.location)!)
-            print("begin location distance = \(distance)")
-            YLHintView.showMessageOnThisPage("distance = \(distance)")
-            if distance < 0.0 || distance > 5 {
-                //大头针
-                let pointAnnotation = MAPointAnnotation();
-                pointAnnotation.coordinate = userLocation.location.coordinate
-                pointAnnotation.title = "天府广场";
-                pointAnnotation.subtitle = "跟踪";
-                mapView.addAnnotation(pointAnnotation);
-                userCurrentLocations.append(userLocation)
-                if self.routeLine != nil {
-                    mapView.remove(routeLine);
-//                    self.routeLine = MAPolyline(coordinates: nil, count: 0);
+//        guard userCurrentLocations.count > 0 && location != nil else {
+//            print("first in")
+//            userCurrentLocations.append(userLocation);
+//            return;
+//        }
+//        if Double((location?.horizontalAccuracy)!) < 100.0 && Double((location?.horizontalAccuracy)!) > 0 {
+//             let distance: CLLocationDistance = userLocation.location.distance(from: (userCurrentLocations.last?.location)!)
+//            print("begin location distance = \(distance)")
+//            YLHintView.showMessageOnThisPage("distance = \(distance)")
+//            if distance < 0.0 || distance > 5 {
+//                //大头针
+//                let pointAnnotation = MAPointAnnotation();
+//                pointAnnotation.coordinate = userLocation.location.coordinate
+//                pointAnnotation.title = "天府广场";
+//                pointAnnotation.subtitle = "跟踪";
+//                mapView.addAnnotation(pointAnnotation);
+//                userCurrentLocations.append(userLocation)
+//                if self.routeLine != nil {
+//                    mapView.remove(routeLine);
+////                    self.routeLine = MAPolyline(coordinates: nil, count: 0);
+////                    mapView.add(routeLine);
+//                }
+//                var coordinates = getcoordinates();
+//                if coordinates.count > 0 {
+//                    self.routeLine = MAPolyline(coordinates: &coordinates, count: UInt(coordinates.count))
 //                    mapView.add(routeLine);
-                }
-                var coordinates = getcoordinates();
-                if coordinates.count > 0 {
-                    self.routeLine = MAPolyline(coordinates: &coordinates, count: UInt(coordinates.count))
-                    mapView.add(routeLine);
-                }
-                mapView.setCenter(userLocation.location.coordinate, animated: true)
-                
-            }
-        }
-//        
+//                }
+//                mapView.setCenter(userLocation.location.coordinate, animated: true)
+//                
+//            }
+//        }
+//
 //        let pointNew: MAMapPoint = MAMapPointForCoordinate(CLLocationCoordinate2DMake(userLocation.coordinate.latitude, userLocation.coordinate.longitude));
 //        let pointCurrent:MAMapPoint = MAMapPointForCoordinate(CLLocationCoordinate2DMake((userCurrentLocation?.coordinate.latitude)!, (userCurrentLocation?.coordinate.longitude)!));
     }
@@ -296,15 +296,15 @@ extension MapViewController: AMapSearchDelegate{
             pointAnnotation.subtitle = geocode.formattedAddress
             //"iosamap://navi?sourceApplication=%@&backScheme=%@&lat=%f&lon=%f&dev=0&style=2","千机网","testwangliugen",pointAnnotation.coordinate.latitude,pointAnnotation.coordinate.longitude
             //
-            let lll: CLLocation = CLLocation.init(latitude:  30.665291, longitude:  104.077502)
-            lll.locationMarsFromBearPaw();
-            let uslString = String(format: "baidumap://map/direction?origin={{我的位置}}&destination=latlng:%f,%f|name=%@&mode=driving&coord_type=gcj02",lll.coordinate.latitude,lll.coordinate.longitude,"千机网赛格旗舰店").addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-            let url = URL(string: uslString!);
-            if UIApplication.shared.canOpenURL(url!) {
-                UIApplication.shared.openURL(url!);
-            }else{
-                YLHintView.showMessageOnThisPage("你没有安装该app")
-            }
+//            let lll: CLLocation = CLLocation.init(latitude:  30.665291, longitude:  104.077502)
+//            lll.locationMarsFromBearPaw();
+//            let uslString = String(format: "baidumap://map/direction?origin={{我的位置}}&destination=latlng:%f,%f|name=%@&mode=driving&coord_type=gcj02",lll.coordinate.latitude,lll.coordinate.longitude,"千机网赛格旗舰店").addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+//            let url = URL(string: uslString!);
+//            if UIApplication.shared.canOpenURL(url!) {
+//                UIApplication.shared.openURL(url!);
+//            }else{
+//                YLHintView.showMessageOnThisPage("你没有安装该app")
+//            }
             mapView.addAnnotation(pointAnnotation);
         }
         
