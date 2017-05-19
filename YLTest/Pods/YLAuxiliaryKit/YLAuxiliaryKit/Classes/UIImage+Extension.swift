@@ -10,8 +10,8 @@ import UIKit
 
 extension UIImage {
     public class func imageWith(color: UIColor)-> UIImage {
-        let imageW: CGFloat = 1
-        let imageH: CGFloat = 1
+        let imageW: CGFloat = 6
+        let imageH: CGFloat = 6
         // 1.开启基于位图的图形上下文
         UIGraphicsBeginImageContextWithOptions(CGSize(width: imageW, height: imageH), false, 0.0)
         

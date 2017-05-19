@@ -90,7 +90,7 @@ class MapViewController: UIViewController {
         //设置定位精度
         mapView.desiredAccuracy = kCLLocationAccuracyBest;
         //设置定位距离
-        mapView.distanceFilter = 5.0;
+        mapView.distanceFilter = 3.0;
         //普通样式
         mapView.mapType = .standard;
         //防止系统自动杀掉定位 -- 后台定位
@@ -187,37 +187,49 @@ extension MapViewController: MAMapViewDelegate {
             return
         }
         let location: CLLocation? = userLocation.location;
-//        guard userCurrentLocations.count > 0 && location != nil else {
-//            print("first in")
-//            userCurrentLocations.append(userLocation);
-//            return;
-//        }
-//        if Double((location?.horizontalAccuracy)!) < 100.0 && Double((location?.horizontalAccuracy)!) > 0 {
-//             let distance: CLLocationDistance = userLocation.location.distance(from: (userCurrentLocations.last?.location)!)
-//            print("begin location distance = \(distance)")
-//            YLHintView.showMessageOnThisPage("distance = \(distance)")
-//            if distance < 0.0 || distance > 5 {
-//                //大头针
-//                let pointAnnotation = MAPointAnnotation();
-//                pointAnnotation.coordinate = userLocation.location.coordinate
-//                pointAnnotation.title = "天府广场";
-//                pointAnnotation.subtitle = "跟踪";
-//                mapView.addAnnotation(pointAnnotation);
-//                userCurrentLocations.append(userLocation)
-//                if self.routeLine != nil {
-//                    mapView.remove(routeLine);
-////                    self.routeLine = MAPolyline(coordinates: nil, count: 0);
-////                    mapView.add(routeLine);
-//                }
-//                var coordinates = getcoordinates();
-//                if coordinates.count > 0 {
-//                    self.routeLine = MAPolyline(coordinates: &coordinates, count: UInt(coordinates.count))
+        guard userCurrentLocations.count > 0 && location != nil else {
+            print("first in")
+            userCurrentLocations.append(userLocation);
+            return;
+        }
+        if Double((location?.horizontalAccuracy)!) < 100.0 && Double((location?.horizontalAccuracy)!) > 0 {
+            
+            //1.将两个经纬度点转成投影点
+            
+            let point1 = MAMapPointForCoordinate(userLocation.location.coordinate);
+            
+            let point2 = MAMapPointForCoordinate((userCurrentLocations.last?.location.coordinate)!);
+     
+            //2.计算距离
+            
+            let distance = MAMetersBetweenMapPoints(point1,point2);
+            //let distance: CLLocationDistance = userLocation.location.distance(from: (userCurrentLocations.last?.location)!)
+            print("begin location distance = \(distance)  ：：\(userCurrentLocations.count)")
+            YLHintView.showMessageOnThisPage("distance = \(distance)")
+            
+            if distance < 0.0 || distance > 5 {
+                //大头针
+                let pointAnnotation = MAPointAnnotation();
+                pointAnnotation.coordinate = userLocation.location.coordinate
+                pointAnnotation.title = "跟踪";
+                pointAnnotation.subtitle = "跟踪";
+                mapView.addAnnotation(pointAnnotation);
+                userCurrentLocations.append(userLocation)
+                if self.routeLine != nil {
+                    mapView.remove(routeLine);
+//                    self.routeLine = MAPolyline(coordinates: nil, count: 0);
 //                    mapView.add(routeLine);
-//                }
-//                mapView.setCenter(userLocation.location.coordinate, animated: true)
-//                
-//            }
-//        }
+                }
+                var coordinates:[CLLocationCoordinate2D] = getcoordinates();
+                if coordinates.count > 1 {
+                    mapView.removeOverlays(mapView.overlays)
+                    self.routeLine = MAPolyline(coordinates: &coordinates, count: UInt(coordinates.count))
+                    mapView.add(routeLine);
+                }
+                mapView.setCenter(userLocation.location.coordinate, animated: true)
+                
+            }
+        }
 //
 //        let pointNew: MAMapPoint = MAMapPointForCoordinate(CLLocationCoordinate2DMake(userLocation.coordinate.latitude, userLocation.coordinate.longitude));
 //        let pointCurrent:MAMapPoint = MAMapPointForCoordinate(CLLocationCoordinate2DMake((userCurrentLocation?.coordinate.latitude)!, (userCurrentLocation?.coordinate.longitude)!));
@@ -242,7 +254,7 @@ extension MapViewController: MAMapViewDelegate {
     func mapView(_ mapView: MAMapView!, viewFor annotation: MAAnnotation!) -> MAAnnotationView! {
         if annotation.isKind(of: MAPointAnnotation.self) {
             let pointReuseIndetifier = "pointReuseIndetifier";
-//            //自定义
+            //自定义
 //            var annotationView: CustomAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: pointReuseIndetifier) as! CustomAnnotationView?
 //            if annotationView == nil {
 //                annotationView = CustomAnnotationView(annotation: annotation, reuseIdentifier: pointReuseIndetifier);
@@ -264,7 +276,7 @@ extension MapViewController: MAMapViewDelegate {
             annottationView?.animatesDrop = true;
             annottationView?.isDraggable = true;
             annottationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-             return annottationView!
+             return annottationView
         }
         
         return nil

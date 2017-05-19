@@ -14,6 +14,8 @@
 		1143BA781E5D7F01002CD06B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1143BA771E5D7F01002CD06B /* Assets.xcassets */; };
 		1143BA7B1E5D7F01002CD06B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1143BA791E5D7F01002CD06B /* LaunchScreen.storyboard */; };
 		1143BA861E5D7F01002CD06B /* YLAudioFrequecyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA851E5D7F01002CD06B /* YLAudioFrequecyTests.m */; };
+		114F02851ECE80040039F60C /* TestRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F02841ECE80040039F60C /* TestRuntime.m */; };
+		114F02881ECECD8D0039F60C /* FooView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F02871ECECD8D0039F60C /* FooView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		1143BA811E5D7F01002CD06B /* YLAudioFrequecyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLAudioFrequecyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1143BA851E5D7F01002CD06B /* YLAudioFrequecyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAudioFrequecyTests.m; sourceTree = "<group>"; };
 		1143BA871E5D7F01002CD06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114F02831ECE80040039F60C /* TestRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRuntime.h; sourceTree = "<group>"; };
+		114F02841ECE80040039F60C /* TestRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRuntime.m; sourceTree = "<group>"; };
+		114F02861ECECD8D0039F60C /* FooView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooView.h; sourceTree = "<group>"; };
+		114F02871ECECD8D0039F60C /* FooView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +91,15 @@
 				1143BA6F1E5D7F01002CD06B /* AppDelegate.m */,
 				1143BA711E5D7F01002CD06B /* ViewController.h */,
 				1143BA721E5D7F01002CD06B /* ViewController.m */,
+				114F02831ECE80040039F60C /* TestRuntime.h */,
+				114F02841ECE80040039F60C /* TestRuntime.m */,
 				1143BA741E5D7F01002CD06B /* Main.storyboard */,
 				1143BA771E5D7F01002CD06B /* Assets.xcassets */,
 				1143BA791E5D7F01002CD06B /* LaunchScreen.storyboard */,
 				1143BA7C1E5D7F01002CD06B /* Info.plist */,
 				1143BA6B1E5D7F01002CD06B /* Supporting Files */,
+				114F02861ECECD8D0039F60C /* FooView.h */,
+				114F02871ECECD8D0039F60C /* FooView.m */,
 			);
 			path = YLAudioFrequecy;
 			sourceTree = "<group>";
@@ -215,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114F02851ECE80040039F60C /* TestRuntime.m in Sources */,
+				114F02881ECECD8D0039F60C /* FooView.m in Sources */,
 				1143BA731E5D7F01002CD06B /* ViewController.m in Sources */,
 				1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */,
 				1143BA6D1E5D7F01002CD06B /* main.m in Sources */,
@@ -418,6 +430,7 @@
 				1143BA8C1E5D7F01002CD06B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1143BA8D1E5D7F01002CD06B /* Build configuration list for PBXNativeTarget "YLAudioFrequecyTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				1143BA8F1E5D7F01002CD06B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

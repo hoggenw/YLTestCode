@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController =  UINavigationController(rootViewController: ViewController())
-        // 微信注册
-        WXApi.registerApp("wx51208442ace2ca73")
+        // wx51208442ace2ca73微信注册
+        WXApi.registerApp("wx89e14834538c5665")
         window?.makeKeyAndVisible()
         
         // Override point for customization after application launch.

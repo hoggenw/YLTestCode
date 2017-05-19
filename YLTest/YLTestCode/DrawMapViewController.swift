@@ -17,6 +17,11 @@ class DrawMapViewController: UIViewController {
     //存放点击点
     fileprivate var pointArray: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
     
+    let commitButton = UIButton()
+    
+    let sureButton = UIButton()
+    
+    let cancelButton = UIButton()
     //MARK:Public Methods
     
     
@@ -66,39 +71,98 @@ class DrawMapViewController: UIViewController {
         //确保定位和跟随设置不被覆盖
         mapView.showsUserLocation = true;
         mapView.userTrackingMode = .follow
+        creatBottomView()
         
     }
+    
+    func creatBottomView() {
+        let bottomView = UIView()
+        bottomView.backgroundColor = UIColor.white;
+        self.view.addSubview(bottomView)
+        bottomView.snp.makeConstraints { (make) in
+            make.bottom.left.right.equalTo(self.view)
+            make.height.equalTo(40)
+        }
+        
+        let width = UIScreen.main.bounds.width;
+        
+        
+        cancelButton.setBackgroundImage(UIImage.imageWith(color: UIColor.brown), for: .normal)
+        cancelButton.setBackgroundImage(UIImage.imageWith(color: UIColor.gray), for: .disabled)
+        cancelButton.frame = CGRect(x: 0, y: 0 , width: width/3 - 1, height: 40)
+        cancelButton.setTitle("取  消", for: .normal)
+        cancelButton.titleLabel?.textColor = UIColor.white
+        cancelButton.isEnabled = false
+        bottomView.addSubview(cancelButton)
+        cancelButton.addTarget(self, action: #selector(cancelButtonAction), for: .touchUpInside)
+        
+        sureButton.setBackgroundImage(UIImage.imageWith(color: UIColor.brown), for: .normal)
+        sureButton.setBackgroundImage(UIImage.imageWith(color: UIColor.gray), for: .disabled)
+        sureButton.frame = CGRect(x: width/3, y: 0 , width: width/3 - 1, height: 40)
+        sureButton.setTitle("确  认", for: .normal)
+        sureButton.titleLabel?.textColor = UIColor.white
+        sureButton.isEnabled = false
+        bottomView.addSubview(sureButton)
+        sureButton.addTarget(self, action: #selector(sureButtonAction), for: .touchUpInside)
+        
 
+        commitButton.backgroundColor = UIColor.brown
+        commitButton.setBackgroundImage(UIImage.imageWith(color: UIColor.brown), for: .normal)
+        commitButton.setBackgroundImage(UIImage.imageWith(color: UIColor.gray), for: .disabled)
+        commitButton.frame = CGRect(x: width/3 * 2, y: 0 , width: width/3, height: 40)
+        commitButton.setTitle("提  交", for: .normal)
+        commitButton.titleLabel?.textColor = UIColor.white
+        commitButton.isEnabled = false
+        bottomView.addSubview(commitButton)
+        commitButton.addTarget(self, action: #selector(commitButtonAction), for: .touchUpInside)
+    }
+
+    func cancelButtonAction() {
+        if pointArray.count > 0 {
+            pointArray.removeLast();
+            tapMap()
+            if pointArray.count == 0 {
+               cancelButton.isEnabled = false;
+            }
+        }
+        commitButton.isEnabled = false
+    }
+    
+    func sureButtonAction() {
+        commitButton.isEnabled = true
+    }
+    
+    func commitButtonAction() {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
     
     fileprivate func tapMap() {
+        mapView.removeOverlays(mapView.overlays)
+        mapView.removeAnnotations(mapView.annotations)
         guard pointArray.count > 0 else {
             return
         }
         if pointArray.count == 1 {
+            cancelButton.isEnabled = true
+            sureButton.isEnabled = false
             //大头针
             let pointAnnotation = MAPointAnnotation();
-            print(" 11111111")
             pointAnnotation.coordinate = pointArray.first!;
             pointAnnotation.title = "起始点";
             mapView.addAnnotation(pointAnnotation);
         }else if pointArray.count == 2 {
-            print(" 2222222")
-            mapView.removeAnnotations(mapView.annotations)
+            sureButton.isEnabled = false
             let polyline: MAPolyline = MAPolyline(coordinates: &pointArray, count: UInt(pointArray.count))
             mapView.add(polyline)
         }else if pointArray.count >= 3 {
-            mapView.removeOverlays(mapView.overlays)
-             print(" 3333333")
-//            let firstPoint = pointArray.first
-//            pointArray.append(firstPoint!);
+            sureButton.isEnabled = true
             let polygon: MAPolygon = MAPolygon(coordinates: &pointArray, count: UInt(pointArray.count))
-            
             mapView.add(polygon)
-//            pointArray.removeLast();
         }
     }
 
@@ -108,16 +172,6 @@ class DrawMapViewController: UIViewController {
 
 //MARK:Extension Delegate or Protocol
 extension DrawMapViewController: MAMapViewDelegate {
-    
-//    func mapView(_ mapView: MAMapView!, didTouchPois pois: [Any]!) {
-//        let array:[MATouchPoi] = pois as! [MATouchPoi]
-//        for point in array {
-//            print("name:\(point.name) ====latitude: \(point.coordinate.latitude) ,longitude: \(point.coordinate.longitude)")
-//        }
-//        let point = array.first
-//       // pointArray.append((point?.coordinate)!)
-//        
-//    }
     
     func mapView(_ mapView: MAMapView!, didSingleTappedAt coordinate: CLLocationCoordinate2D) {
         print(" ====latitude: \(coordinate.latitude) ,longitude: \(coordinate.longitude)")
@@ -162,14 +216,15 @@ extension DrawMapViewController: MAMapViewDelegate {
     func mapView(_ mapView: MAMapView!, viewFor annotation: MAAnnotation!) -> MAAnnotationView! {
         if annotation.isKind(of: MAPointAnnotation.self) {
             let pointReuseIndetifier = "pointReuseIndetifier";
-            var annottationView: MAPinAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: pointReuseIndetifier) as! MAPinAnnotationView?
+            var annottationView: DrawAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: pointReuseIndetifier) as! DrawAnnotationView?
             if  annottationView == nil {
-                annottationView = MAPinAnnotationView(annotation: annotation, reuseIdentifier: pointReuseIndetifier);
+                annottationView = DrawAnnotationView(annotation: annotation, reuseIdentifier: pointReuseIndetifier);
             }
-            annottationView?.canShowCallout = true;
-            annottationView?.animatesDrop = true;
-            annottationView?.isDraggable = true;
-            annottationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            annottationView?.image = UIImage.imageWith(color: UIColor.green)
+            annottationView?.canShowCallout = false;
+            annottationView?.isDraggable = false;
+            annottationView?.layer.cornerRadius = 3;
+            annottationView?.clipsToBounds = true;
             return annottationView!
         }
         
@@ -192,15 +247,6 @@ extension DrawMapViewController: AMapSearchDelegate{
     func onGeocodeSearchDone(_ request: AMapGeocodeSearchRequest!, response: AMapGeocodeSearchResponse!) {
         guard response.geocodes.count != 0 else {
             return;
-        }
-        for geocode in response.geocodes {
-            print("latitude: \(geocode.location.latitude) ,longitude: \(geocode.location.longitude)");
-            //大头针
-            let pointAnnotation = MAPointAnnotation();
-            pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(geocode.location.latitude), longitude: CLLocationDegrees(geocode.location.longitude))
-            pointAnnotation.title = "天府广场";
-            pointAnnotation.subtitle = geocode.formattedAddress
-            mapView.addAnnotation(pointAnnotation);
         }
         
     }
