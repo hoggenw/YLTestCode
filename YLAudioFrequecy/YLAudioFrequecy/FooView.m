@@ -7,15 +7,88 @@
 //
 
 #import "FooView.h"
+#import <objc/message.h>
+
+@interface FooView ()
+@property (nonatomic,copy) NSString * kDTActionHandlerTapGestureKey;
+@property (nonatomic,copy) NSString * kDTActionHandlerTapBlockKey;
+@end
 
 @implementation FooView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.kDTActionHandlerTapGestureKey = @"kDTActionHandlerTapGestureKey";
+        self.kDTActionHandlerTapBlockKey = @"kDTActionHandlerTapBlockKey";
+    }
+    
+    
+    return  self;
 }
-*/
+
+-(void)setTapActionWithBlock:(void (^)(void))block {
+    UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &_kDTActionHandlerTapGestureKey);
+    if (!gesture) {
+        gesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(__handleActionForTapGesture:)];
+        [self addGestureRecognizer:gesture];
+        objc_setAssociatedObject(self, &_kDTActionHandlerTapGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
+    }
+    objc_setAssociatedObject(self, &_kDTActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_RETAIN);
+    
+    
+    // 移除关联对象
+    void objc_removeAssociatedObjects ( id object );
+}
+
+- (void)__handleActionForTapGesture:(UITapGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateRecognized)
+    {
+        void(^action)(void) = objc_getAssociatedObject(self, &_kDTActionHandlerTapBlockKey);
+        
+        if (action)
+        {
+            action();
+        }
+    }
+}
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

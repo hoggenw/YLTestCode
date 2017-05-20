@@ -10,4 +10,6 @@
 
 @interface FooView : UIView
 
+-(void)setTapActionWithBlock:(void (^)(void))block;
+
 @end

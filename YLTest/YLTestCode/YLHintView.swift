@@ -58,7 +58,7 @@ class YLHintView: UIView {
         YLHintView.hintView.hintLabel?.textColor = UIColor.white
         YLHintView.hintView.hintLabel?.text = message
         YLHintView.hintView.hintLabel?.numberOfLines = 0
-        YLHintView.hintView.timer = Timer(timeInterval: 2, target: self, selector: #selector(hintViewRemoveFromSuperview), userInfo: nil, repeats: false)
+        YLHintView.hintView.timer = Timer(timeInterval: 30, target: self, selector: #selector(hintViewRemoveFromSuperview), userInfo: nil, repeats: false)
         RunLoop.current.add(YLHintView.hintView.timer!, forMode: .defaultRunLoopMode)
         
     }

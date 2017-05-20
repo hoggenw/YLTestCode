@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "TestRuntime.h"
 #import <objc/runtime.h>
+#import "FooView.h"
 
 @interface ViewController ()
 
@@ -17,12 +18,23 @@
 
 @implementation ViewController
 
+
+//我们可以在运行时添加新的selector，也可以在运行时获取已存在的selector，我们可以通过下面三种方法来获取SEL:
+//
+//sel_registerName函数
+//
+//Objective-C编译器提供的@selector()
+//
+//NSSelectorFromString()方法
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSURL * url = [NSURL URLWithString:@"http://fdfs.xmcdn.com/group25/M0B/92/53/wKgJNlims-vgpIJLADSwZ4QElcA333.mp3"];
-    AVPlayerItem * songItem = [[AVPlayerItem alloc] initWithURL:url];
-    AVPlayer * player = [[AVPlayer alloc] initWithPlayerItem:songItem];
-    [player play];
+    FooView * fooView = [[FooView alloc]initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width,200)];
+    fooView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:fooView];
+    [fooView setTapActionWithBlock:^{
+        NSLog(@"say something baby");
+    }];
+    
 
     // 获取类的类名
     const char *class_getName(Class cls);
@@ -198,8 +210,101 @@
     // 返回指定类的元类
     Class objc_getMetaClass ( const char *name );
     
-
     
+    // 调用指定方法的实现
+    //id method_invoke ( id receiver, Method m, ... );
+    
+    // 调用返回一个数据结构的方法的实现
+   // void method_invoke_stret ( id receiver, Method m, ... );
+    
+    // 获取方法名
+    SEL method_getName ( Method m );
+    
+    // 返回方法的实现
+    IMP method_getImplementation ( Method m );
+    
+    // 获取描述方法参数和返回值类型的字符串
+    const char * method_getTypeEncoding ( Method m );
+    
+    // 获取方法的返回值类型的字符串
+    char * method_copyReturnType ( Method m );
+    
+    // 获取方法的指定位置参数的类型字符串
+    char * method_copyArgumentType ( Method m, unsigned int index );
+    
+    // 通过引用返回方法的返回值类型字符串
+    void method_getReturnType ( Method m, char *dst, size_t dst_len );
+    
+    // 返回方法的参数的个数
+    unsigned int method_getNumberOfArguments ( Method m );
+    
+    // 通过引用返回方法指定位置参数的类型字符串
+    void method_getArgumentType ( Method m, unsigned int index, char *dst, size_t dst_len );
+    
+    // 返回指定方法的方法描述结构体
+    struct objc_method_description * method_getDescription ( Method m );
+    
+    // 设置方法的实现
+    IMP method_setImplementation ( Method m, IMP imp );
+    
+    // 交换两个方法的实现
+    void method_exchangeImplementations ( Method m1, Method m2 );
+
+    // 返回给定选择器指定的方法的名称
+    const char * sel_getName ( SEL sel );
+    
+    // 在Objective-C Runtime系统中注册一个方法，将方法名映射到一个选择器，并返回这个选择器
+    SEL sel_registerName ( const char *str );
+    
+    // 在Objective-C Runtime系统中注册一个方法
+    SEL sel_getUid ( const char *str );
+    
+    // 比较两个选择器
+    BOOL sel_isEqual ( SEL lhs, SEL rhs );
+    // 返回指定的协议
+    Protocol * objc_getProtocol ( const char *name );
+    
+    // 获取运行时所知道的所有协议的数组
+  //  Protocol ** objc_copyProtocolList ( unsigned int *outCount );
+    
+    // 创建新的协议实例
+    Protocol * objc_allocateProtocol ( const char *name );
+    
+    // 在运行时中注册新创建的协议
+    void objc_registerProtocol ( Protocol *proto );
+    
+    // 为协议添加方法
+    void protocol_addMethodDescription ( Protocol *proto, SEL name, const char *types, BOOL isRequiredMethod, BOOL isInstanceMethod );
+    
+    // 添加一个已注册的协议到协议中
+    void protocol_addProtocol ( Protocol *proto, Protocol *addition );
+    
+    // 为协议添加属性
+    void protocol_addProperty ( Protocol *proto, const char *name, const objc_property_attribute_t *attributes, unsigned int attributeCount, BOOL isRequiredProperty, BOOL isInstanceProperty );
+    
+    // 返回协议名
+    const char * protocol_getName ( Protocol *p );
+    
+    // 测试两个协议是否相等
+    BOOL protocol_isEqual ( Protocol *proto, Protocol *other );
+    
+    // 获取协议中指定条件的方法的方法描述数组
+    struct objc_method_description * protocol_copyMethodDescriptionList ( Protocol *p, BOOL isRequiredMethod, BOOL isInstanceMethod, unsigned int *outCount );
+    
+    // 获取协议中指定方法的方法描述
+    struct objc_method_description protocol_getMethodDescription ( Protocol *p, SEL aSel, BOOL isRequiredMethod, BOOL isInstanceMethod );
+    
+    // 获取协议中的属性列表
+    objc_property_t * protocol_copyPropertyList ( Protocol *proto, unsigned int *outCount );
+    
+    // 获取协议的指定属性
+    objc_property_t protocol_getProperty ( Protocol *proto, const char *name, BOOL isRequiredProperty, BOOL isInstanceProperty );
+    
+    // 获取协议采用的协议
+   // Protocol ** protocol_copyProtocolList ( Protocol *proto, unsigned int *outCount );
+    
+    // 查看协议是否采用了另一个协议
+    BOOL protocol_conformsToProtocol ( Protocol *proto, Protocol *other );
 }
 
 -(void)typeEncoding{

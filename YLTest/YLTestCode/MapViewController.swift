@@ -205,7 +205,7 @@ extension MapViewController: MAMapViewDelegate {
             let distance = MAMetersBetweenMapPoints(point1,point2);
             //let distance: CLLocationDistance = userLocation.location.distance(from: (userCurrentLocations.last?.location)!)
             print("begin location distance = \(distance)  ：：\(userCurrentLocations.count)")
-            YLHintView.showMessageOnThisPage("distance = \(distance)")
+            YLHintView.showMessageOnThisPage("distance = \(distance),::::: \(userLocation.location.coordinate.latitude)====\(userLocation.location.coordinate.longitude) :::: \(String(describing: userCurrentLocations.last?.location.coordinate.latitude)) ===\(String(describing: userCurrentLocations.last?.location.coordinate.longitude)) ")
             
             if distance < 0.0 || distance > 5 {
                 //大头针
