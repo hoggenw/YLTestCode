@@ -11,6 +11,7 @@
 #import "TestRuntime.h"
 #import <objc/runtime.h>
 #import "FooView.h"
+#import "TestGCD.h"
 
 @interface ViewController ()
 
@@ -28,6 +29,16 @@
 //NSSelectorFromString()方法
 - (void)viewDidLoad {
     [super viewDidLoad];
+    TestGCD * test = [[TestGCD alloc] init];
+    [test test];
+    
+    
+    
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+
+-(void)test{
     FooView * fooView = [[FooView alloc]initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width,200)];
     fooView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:fooView];
@@ -35,7 +46,7 @@
         NSLog(@"say something baby");
     }];
     
-
+    
     // 获取类的类名
     const char *class_getName(Class cls);
     // 获取类的父类
@@ -117,14 +128,14 @@
         objc_property_t property = properties[i];
         NSLog(@"property's name: %s at index: %d",property_getName(property),i);
     }
-
+    
     free(properties);
     objc_property_t array = class_getProperty(cls, "array");
     if (array != NULL) {
         NSLog(@"property %s",property_getName(array));
     }
     NSLog(@"==========================================================\n");
-
+    
     //方法操作
     Method *methods = class_copyMethodList(cls, &outCount);
     for (int i = 0; i < outCount; i++){
@@ -160,11 +171,6 @@
     [self aboutClass];
     [self typeEncoding];
     
-
-    
-    
-    
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)aboutClass {

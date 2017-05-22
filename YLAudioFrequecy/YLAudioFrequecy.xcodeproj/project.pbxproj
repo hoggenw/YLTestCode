@@ -17,6 +17,7 @@
 		114F02851ECE80040039F60C /* TestRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F02841ECE80040039F60C /* TestRuntime.m */; };
 		114F02881ECECD8D0039F60C /* FooView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F02871ECECD8D0039F60C /* FooView.m */; };
 		114F028B1ECEDAB90039F60C /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F028A1ECEDAB90039F60C /* MyObject.m */; };
+		114F028E1ED271080039F60C /* TestGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F028D1ED271080039F60C /* TestGCD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		114F02871ECECD8D0039F60C /* FooView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooView.m; sourceTree = "<group>"; };
 		114F02891ECEDAB90039F60C /* MyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
 		114F028A1ECEDAB90039F60C /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
+		114F028C1ED271080039F60C /* TestGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCD.h; sourceTree = "<group>"; };
+		114F028D1ED271080039F60C /* TestGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				1143BA791E5D7F01002CD06B /* LaunchScreen.storyboard */,
 				1143BA7C1E5D7F01002CD06B /* Info.plist */,
 				1143BA6B1E5D7F01002CD06B /* Supporting Files */,
+				114F028C1ED271080039F60C /* TestGCD.h */,
+				114F028D1ED271080039F60C /* TestGCD.m */,
 			);
 			path = YLAudioFrequecy;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				114F028B1ECEDAB90039F60C /* MyObject.m in Sources */,
 				1143BA731E5D7F01002CD06B /* ViewController.m in Sources */,
 				1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */,
+				114F028E1ED271080039F60C /* TestGCD.m in Sources */,
 				1143BA6D1E5D7F01002CD06B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
