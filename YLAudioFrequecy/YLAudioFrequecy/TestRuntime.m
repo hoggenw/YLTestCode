@@ -21,6 +21,15 @@
 
 @implementation TestRuntime
 
++ (TestRuntime *)shareRuntimer{
+    static TestRuntime *share = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        share = [[self alloc] init];
+    });
+    return share;
+}
+
 +(void)classMethod1 {
     
 }
