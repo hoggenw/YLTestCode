@@ -12,9 +12,9 @@
 
 -(void)test {
    // [self creatQueue];
-    //[self testCommunication];
+   //[self testCommunication];
    // [self barrier];
-    [self groub];
+    [self testMain];
 }
 
 -(void)groub {
@@ -100,6 +100,11 @@
             NSLog(@"1------%@",[NSThread currentThread]);
         }
     });
+    dispatch_block_t block = ^{
+        NSLog(@"block------%@",[NSThread currentThread]);
+        NSLog(@"new block message");
+    };
+    dispatch_async(queue, block);
     dispatch_async(queue, ^{
         for (int i = 0; i < 2; ++i) {
             NSLog(@"2------%@",[NSThread currentThread]);
