@@ -101,6 +101,8 @@
 				114F02841ECE80040039F60C /* TestRuntime.m */,
 				114F02861ECECD8D0039F60C /* FooView.h */,
 				114F02871ECECD8D0039F60C /* FooView.m */,
+				114F028C1ED271080039F60C /* TestGCD.h */,
+				114F028D1ED271080039F60C /* TestGCD.m */,
 				114F02891ECEDAB90039F60C /* MyObject.h */,
 				114F028A1ECEDAB90039F60C /* MyObject.m */,
 				1143BA741E5D7F01002CD06B /* Main.storyboard */,
@@ -108,8 +110,6 @@
 				1143BA791E5D7F01002CD06B /* LaunchScreen.storyboard */,
 				1143BA7C1E5D7F01002CD06B /* Info.plist */,
 				1143BA6B1E5D7F01002CD06B /* Supporting Files */,
-				114F028C1ED271080039F60C /* TestGCD.h */,
-				114F028D1ED271080039F60C /* TestGCD.m */,
 			);
 			path = YLAudioFrequecy;
 			sourceTree = "<group>";
