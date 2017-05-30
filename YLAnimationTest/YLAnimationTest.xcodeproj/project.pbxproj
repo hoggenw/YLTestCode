@@ -13,6 +13,7 @@
 		114F02A31ED3DEFF0039F60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114F02A21ED3DEFF0039F60C /* Assets.xcassets */; };
 		114F02A61ED3DEFF0039F60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114F02A41ED3DEFF0039F60C /* LaunchScreen.storyboard */; };
 		114F02B11ED3DEFF0039F60C /* YLAnimationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F02B01ED3DEFF0039F60C /* YLAnimationTestTests.swift */; };
+		FAB7D1E40605008F1E1FAF79 /* Pods_YLAnimationTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1790FA62D47B620EB532B57B /* Pods_YLAnimationTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		114F02AC1ED3DEFF0039F60C /* YLAnimationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLAnimationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114F02B01ED3DEFF0039F60C /* YLAnimationTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAnimationTestTests.swift; sourceTree = "<group>"; };
 		114F02B21ED3DEFF0039F60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1790FA62D47B620EB532B57B /* Pods_YLAnimationTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLAnimationTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D5A5689934931E33B53ADF /* Pods-YLAnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLAnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLAnimationTest/Pods-YLAnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		EF6032B1A53CCA4B96B8D0C0 /* Pods-YLAnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLAnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLAnimationTest/Pods-YLAnimationTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB7D1E40605008F1E1FAF79 /* Pods_YLAnimationTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 				114F029A1ED3DEFE0039F60C /* YLAnimationTest */,
 				114F02AF1ED3DEFF0039F60C /* YLAnimationTestTests */,
 				114F02991ED3DEFE0039F60C /* Products */,
+				48BCE396273DB27BFEB44C66 /* Pods */,
+				1DC331D8363C2866F947C6B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +111,23 @@
 			name = RefreshCircle;
 			sourceTree = "<group>";
 		};
+		1DC331D8363C2866F947C6B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1790FA62D47B620EB532B57B /* Pods_YLAnimationTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48BCE396273DB27BFEB44C66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4D5A5689934931E33B53ADF /* Pods-YLAnimationTest.debug.xcconfig */,
+				EF6032B1A53CCA4B96B8D0C0 /* Pods-YLAnimationTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 114F02B51ED3DEFF0039F60C /* Build configuration list for PBXNativeTarget "YLAnimationTest" */;
 			buildPhases = (
+				864EC764FB9E1899A6A10EF3 /* [CP] Check Pods Manifest.lock */,
 				114F02941ED3DEFE0039F60C /* Sources */,
 				114F02951ED3DEFE0039F60C /* Frameworks */,
 				114F02961ED3DEFE0039F60C /* Resources */,
+				7662FBC4A6AFFD7C0A2E9AA5 /* [CP] Embed Pods Frameworks */,
+				4ABDE1D2D74F762EC2314E50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +230,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ABDE1D2D74F762EC2314E50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLAnimationTest/Pods-YLAnimationTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7662FBC4A6AFFD7C0A2E9AA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLAnimationTest/Pods-YLAnimationTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		864EC764FB9E1899A6A10EF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		114F02941ED3DEFE0039F60C /* Sources */ = {
@@ -347,6 +422,7 @@
 		};
 		114F02B61ED3DEFF0039F60C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D5A5689934931E33B53ADF /* Pods-YLAnimationTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KD59NK3467;
@@ -361,6 +437,7 @@
 		};
 		114F02B71ED3DEFF0039F60C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF6032B1A53CCA4B96B8D0C0 /* Pods-YLAnimationTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KD59NK3467;
