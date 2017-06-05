@@ -14,7 +14,7 @@ let progressKey = "progressKey"
 class ViewController: UIViewController {
 
     var webView: WKWebView!
-    let strUrl = "http://api.qjtv2.pisendev.com:8011/xin/index?token="
+    let strUrl = "http://192.168.0.102:8080/"
     //"https://www.baidu.com/"
     //
 //   // var webView: UIWebView!
@@ -51,6 +51,11 @@ class ViewController: UIViewController {
         webView.navigationDelegate = self;
         webView.uiDelegate = self;
         view.addSubview(webView)
+        let image = UIImage(named: "back")
+        let leftItem: UIBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(canBack))
+        self.navigationItem.leftBarButtonItem = {leftItem}();
+       // [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"gobackItem.png"] style:UIBarButtonItemStylePlain target:self action:@selector(backViewcontroller)];
+        
        
 //        webView.configuration.userContentController.addUserScript(WKUserScript(source: "window.webkit.messageHandlers.openItemDetail.postMessage({body: ''});", injectionTime: .atDocumentEnd, forMainFrameOnly: false))
         configuretion.userContentController.add(self, name: "openItemDetail");
@@ -84,6 +89,12 @@ class ViewController: UIViewController {
 //        }
 //    }
 
+    func canBack() {
+        if webView.canGoBack {
+            webView.goBack()
+        }
+        
+    }
 
 }
 
@@ -98,7 +109,7 @@ extension ViewController: WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        
+        print("load didFinish")
     }
 //    
 //    // 决定导航的动作，通常用于处理跨域的链接能否导航。WebKit对跨域进行了安全检查限制，不允许跨域，因此我们要对不能跨域的链接

@@ -333,12 +333,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = KD59NK3467;
 				INFOPLIST_FILE = WKWebViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangliugen.WKWebViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -346,12 +348,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = KD59NK3467;
 				INFOPLIST_FILE = WKWebViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangliugen.WKWebViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
@@ -404,6 +408,7 @@
 				1139B7A11EB4219D0041C71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1139B7A21EB4219D0041C71F /* Build configuration list for PBXNativeTarget "WKWebViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +417,7 @@
 				1139B7A41EB4219D0041C71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
