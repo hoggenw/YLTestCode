@@ -14,7 +14,7 @@ let progressKey = "progressKey"
 class ViewController: UIViewController {
 
     var webView: WKWebView!
-    let strUrl = "http://192.168.0.102:8080/"
+    let strUrl = "http://192.168.0.102:8080/greeting"
     //"https://www.baidu.com/"
     //
 //   // var webView: UIWebView!
