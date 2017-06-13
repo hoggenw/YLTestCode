@@ -79,6 +79,11 @@
 }
 
 -(void)testCommunication{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_async( dispatch_get_main_queue(), ^{
+            
+        });
+    });
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             for (int i = 0; i < 2; ++i) {
                 NSLog(@"1------%@",[NSThread currentThread]);
@@ -104,6 +109,7 @@
         NSLog(@"block------%@",[NSThread currentThread]);
         NSLog(@"new block message");
     };
+    
     dispatch_async(queue, block);
     dispatch_async(queue, ^{
         for (int i = 0; i < 2; ++i) {

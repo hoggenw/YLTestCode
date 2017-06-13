@@ -45,6 +45,7 @@
     [fooView setTapActionWithBlock:^{
         NSLog(@"say something baby");
     }];
+
     
     
     // 获取类的类名

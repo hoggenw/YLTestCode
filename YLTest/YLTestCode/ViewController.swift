@@ -65,6 +65,19 @@ class ViewController: UIViewController {
 //        button1.addLineWithSide(.outRight, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
 //        button1.addLineWithSide(.outTop, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
         
+        let array: [Int] = [1,2,3,4];
+
+        var addOne = array.map { (value) -> Int in
+             print("array number " +  String.init(format: "%d", value) );
+            return value * 2
+        }
+        //var ddidid: [String] = [String]();
+        swap(&addOne, 0, 1);
+        
+        for index in 0 ..< addOne.count {
+            print("changed number " +  String.init(format: "%d", addOne[index]) );
+        }
+        
         let button2 = UIButton()
         button2.backgroundColor = UIColor.brown
         button2.frame = CGRect(x: view.bounds.size.width/2 - 30, y: view.bounds.size.height/2 , width: 60, height: 50)
@@ -88,6 +101,14 @@ class ViewController: UIViewController {
         button4.titleLabel?.textColor = UIColor.white
         self.view.addSubview(button4)
         button4.addTarget(self, action: #selector(drawMap), for: .touchUpInside)
+    }
+    
+    func swap<T>(_ nums: inout [T], _ p: Int, _ q: Int) {
+        (nums[p], nums[q]) = (nums[q], nums[p])
+    }
+    
+    func swap2<T>(nums: inout[T], p: Int, q: Int) {
+        (nums[p],nums[q]) = (nums[q],nums[p])
     }
     
     func drawMap() {
