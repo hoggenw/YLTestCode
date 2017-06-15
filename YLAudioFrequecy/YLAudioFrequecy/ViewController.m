@@ -13,6 +13,11 @@
 #import "FooView.h"
 #import "TestGCD.h"
 
+#define Mask8(x) ( (x) & 0xFF )
+#define R(x) ( Mask8(x) )
+#define G(x) ( Mask8(x >> 8 ) )
+#define B(x) ( Mask8(x >> 16) )
+
 @interface ViewController ()
 
 @end
@@ -29,12 +34,99 @@
 //NSSelectorFromString()方法
 - (void)viewDidLoad {
     [super viewDidLoad];
-    TestGCD * test = [[TestGCD alloc] init];
-    [test test];
+    UIImageView * showImage = [UIImageView new];
+    UIImage * womanImage = [UIImage imageNamed:@"woman"];
+    UIImage * image = [UIImage imageNamed:@"test"];
+    showImage.image = [self turnImage:womanImage];
+    showImage.frame = CGRectMake(0, 177, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height - 277);
+    [self.view addSubview:showImage];
+    
+    
+    
+//    TestGCD * test = [[TestGCD alloc] init];
+//    [test test];
     
     
     
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (UIImage *)addImage:(UIImage *) image {
+    UIImage * womanImage = [UIImage imageNamed:@"woman"];
+    CGImageRef ghostImage = [image CGImage];
+    NSUInteger width =                 CGImageGetWidth(ghostImage);
+    NSUInteger height = CGImageGetHeight(ghostImage);
+    CGFloat ghostImageAspectRatio = width / height;
+    NSInteger targetGhostWidth = width * 0.25;
+    CGSize ghostSize =     CGSizeMake(targetGhostWidth, targetGhostWidth / ghostImageAspectRatio);
+    CGPoint ghostOrigin =     CGPointMake(width * 0.5, width *     0.2);
+    
+    // 2.你需要定义一些参数bytesPerPixel（每像素大小)   =======
+    NSUInteger bytesPerPixel = 4;
+    //然后计算图像bytesPerRow（每行有大）
+    NSUInteger bytesPerRow = bytesPerPixel *     width;
+    //bitsPerComponent（每个颜色通道大小）
+    NSUInteger bitsPerComponent = 8;
+    NSUInteger ghostBytesPerRow = bytesPerPixel * ghostSize.width;
+    
+    // 3.创建一个RGB模式的颜色空间CGColorSpace和一个容器CGBitmapContext,将像素指针参数传递到容器中缓存进行存储。
+    CGColorSpaceRef colorSpace =     CGColorSpaceCreateDeviceRGB();
+    
+    UInt32 * ghostPixels = (UInt32     *)calloc(ghostSize.width * ghostSize.height,sizeof(UInt32));
+    
+    CGContextRef ghostContext =     CGBitmapContextCreate(ghostPixels,ghostSize.width, ghostSize.height,
+                                                          bitsPerComponent, ghostBytesPerRow, colorSpace,
+                                                          kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGContextDrawImage(ghostContext,     CGRectMake(0, 0, ghostSize.width,     ghostSize.height),ghostImage);
+    
+}
+
+- (UIImage *)turnImage:(UIImage *)image {
+    // 1.获取图像宽高
+    CGImageRef inputCGImage = [image CGImage];
+    NSUInteger width =                 CGImageGetWidth(inputCGImage);
+    NSUInteger height = CGImageGetHeight(inputCGImage);
+    
+    // 2.你需要定义一些参数bytesPerPixel（每像素大小)   =======
+    NSUInteger bytesPerPixel = 4;
+    //然后计算图像bytesPerRow（每行有大）
+    NSUInteger bytesPerRow = bytesPerPixel *     width;
+    //bitsPerComponent（每个颜色通道大小）
+    NSUInteger bitsPerComponent = 8;
+    
+    UInt32 * pixels;
+    //最后，使用一个数组来存储像素的值。
+    pixels = (UInt32 *) calloc(height * width,     sizeof(UInt32));
+    
+    // 3.创建一个RGB模式的颜色空间CGColorSpace和一个容器CGBitmapContext,将像素指针参数传递到容器中缓存进行存储。
+    CGColorSpaceRef colorSpace =     CGColorSpaceCreateDeviceRGB();
+    CGContextRef context =     CGBitmapContextCreate(pixels, width, height,     bitsPerComponent, bytesPerRow, colorSpace,     kCGImageAlphaPremultipliedLast |     kCGBitmapByteOrder32Big);
+    
+    // 4.把缓存中的图形绘制到显示器上。像素的填充格式是由你在创建context的时候进行指定的。
+    CGContextDrawImage(context, CGRectMake(0,     0, width, height), inputCGImage);
+    
+    // 5. Cleanup 清除colorSpace和context.
+    CGColorSpaceRelease(colorSpace); 
+    CGContextRelease(context);
+    
+    
+//    //定义了一些简单处理32位像素的宏。为了得到红色通道的值，你需要得到前8位。为了得到其它的颜色通道值，你需要进行位移并取截取。(define 里面)
+//    NSLog(@"Brightness of image:");
+//    // 2.定义一个指向第一个像素的指针，并使用2个for循环来遍历像素。其实也可以使用一个for循环从0遍历到width*height，但是这样写更容易理解图形是二维的。
+//    UInt32 * currentPixel = pixels;
+//    for (NSUInteger j = 0; j < height; j++) {
+//        for (NSUInteger i = 0; i < width; i++) {
+//            // 3.得到当前像素的值赋值给currentPixel并把它的亮度值打印出来。
+//            UInt32 color = *currentPixel;
+//            printf("%3.0f ",     (R(color)+G(color)+B(color))/3.0);
+//            // 4.增加currentPixel的值，使它指向下一个像素。如果你对指针的运算比较生疏，记住这个：currentPixel是一个指向UInt32的变量，当你把它加1后，它就会向前移动4字节（32位），然后指向了下一个像素的值。
+//            currentPixel++; 
+//        } 
+//        printf("\n"); 
+//    }
+//    
+    UIImage * returnImage = [UIImage imageWithCGImage:inputCGImage];
+    return returnImage;
 }
 
 

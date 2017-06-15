@@ -455,6 +455,7 @@ extension YLRecordVideoViewController: YLRecordVideoControlDelegate {
         calculationFileSize(path: customVideoPath)
         playerLayer.player?.pause()
         if delegate != nil {
+            calculationFileSize(path: customVideoPath);
             delegate?.choiceVideoWith(path: customVideoPath)
         }
         cancelViewControler()
