@@ -14,10 +14,7 @@
 #import "TestGCD.h"
 #import "TestImage.h"
 
-#define Mask8(x) ( (x) & 0xFF )
-#define R(x) ( Mask8(x) )
-#define G(x) ( Mask8(x >> 8 ) )
-#define B(x) ( Mask8(x >> 16) )
+
 
 @interface ViewController ()
 
