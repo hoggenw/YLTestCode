@@ -19,6 +19,8 @@
 		114F028B1ECEDAB90039F60C /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F028A1ECEDAB90039F60C /* MyObject.m */; };
 		114F028E1ED271080039F60C /* TestGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F028D1ED271080039F60C /* TestGCD.m */; };
 		87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FE21EF3BB81009D4CF6 /* TestImage.m */; };
+		87127FE61EF4FD69009D4CF6 /* Quartz2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FE51EF4FD69009D4CF6 /* Quartz2D.m */; };
+		87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FEC1EF605B1009D4CF6 /* QuartzView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		114F028D1ED271080039F60C /* TestGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCD.m; sourceTree = "<group>"; };
 		87127FE11EF3BB81009D4CF6 /* TestImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestImage.h; sourceTree = "<group>"; };
 		87127FE21EF3BB81009D4CF6 /* TestImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestImage.m; sourceTree = "<group>"; };
+		87127FE41EF4FD69009D4CF6 /* Quartz2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2D.h; sourceTree = "<group>"; };
+		87127FE51EF4FD69009D4CF6 /* Quartz2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2D.m; sourceTree = "<group>"; };
+		87127FEB1EF605B1009D4CF6 /* QuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzView.h; sourceTree = "<group>"; };
+		87127FEC1EF605B1009D4CF6 /* QuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 		1143BA6A1E5D7F01002CD06B /* YLAudioFrequecy */ = {
 			isa = PBXGroup;
 			children = (
+				87127FE71EF60521009D4CF6 /* Quartz2D */,
 				1143BA6E1E5D7F01002CD06B /* AppDelegate.h */,
 				1143BA6F1E5D7F01002CD06B /* AppDelegate.m */,
 				1143BA711E5D7F01002CD06B /* ViewController.h */,
@@ -115,6 +122,8 @@
 				1143BA791E5D7F01002CD06B /* LaunchScreen.storyboard */,
 				1143BA7C1E5D7F01002CD06B /* Info.plist */,
 				1143BA6B1E5D7F01002CD06B /* Supporting Files */,
+				87127FE41EF4FD69009D4CF6 /* Quartz2D.h */,
+				87127FE51EF4FD69009D4CF6 /* Quartz2D.m */,
 			);
 			path = YLAudioFrequecy;
 			sourceTree = "<group>";
@@ -134,6 +143,15 @@
 				1143BA871E5D7F01002CD06B /* Info.plist */,
 			);
 			path = YLAudioFrequecyTests;
+			sourceTree = "<group>";
+		};
+		87127FE71EF60521009D4CF6 /* Quartz2D */ = {
+			isa = PBXGroup;
+			children = (
+				87127FEB1EF605B1009D4CF6 /* QuartzView.h */,
+				87127FEC1EF605B1009D4CF6 /* QuartzView.m */,
+			);
+			name = Quartz2D;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87127FE61EF4FD69009D4CF6 /* Quartz2D.m in Sources */,
 				114F02851ECE80040039F60C /* TestRuntime.m in Sources */,
 				87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */,
+				87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */,
 				114F02881ECECD8D0039F60C /* FooView.m in Sources */,
 				114F028B1ECEDAB90039F60C /* MyObject.m in Sources */,
 				1143BA731E5D7F01002CD06B /* ViewController.m in Sources */,

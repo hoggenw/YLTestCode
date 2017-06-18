@@ -13,6 +13,8 @@
 #import "FooView.h"
 #import "TestGCD.h"
 #import "TestImage.h"
+#import "Quartz2D.h"
+#import "QuartzView.h"
 
 
 
@@ -32,13 +34,15 @@
 //NSSelectorFromString()方法
 - (void)viewDidLoad {
     [super viewDidLoad];
-    TestImage * model = [TestImage new];
-    
-    UIImageView * showImage = [UIImageView new];
-
-    showImage.image = [model resultImage];
-    showImage.frame = CGRectMake(0, 177, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height - 277);
-    [self.view addSubview:showImage];
+    QuartzView * view = [[QuartzView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [self.view addSubview: view];
+//    TestImage * model = [TestImage new];
+//    
+//    UIImageView * showImage = [UIImageView new];
+//
+//    showImage.image = [model resultImage];
+//    showImage.frame = CGRectMake(0, 177, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height - 277);
+//    [self.view addSubview:showImage];
     
     
     
