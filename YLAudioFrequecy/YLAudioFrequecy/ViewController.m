@@ -15,10 +15,14 @@
 #import "TestImage.h"
 #import "Quartz2D.h"
 #import "QuartzView.h"
+#import "QuartzShadowAndGradient.h"
+#import "Bitmap.h"
+#import "AssetsLibraryTest.h"
 
 
 
 @interface ViewController ()
+@property(nonatomic, strong)UIImageView * showImage;
 
 @end
 
@@ -34,24 +38,115 @@
 //NSSelectorFromString()方法
 - (void)viewDidLoad {
     [super viewDidLoad];
-    QuartzView * view = [[QuartzView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [self.view addSubview: view];
-//    TestImage * model = [TestImage new];
-//    
-//    UIImageView * showImage = [UIImageView new];
+//    QuartzShadowAndGradient * view = [[QuartzShadowAndGradient alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    [self.view addSubview: view];
+//    Bitmap * bitmap = [Bitmap new];
+//    UIImageView * imageView = [[UIImageView alloc] initWithImage: [bitmap test]];
+//    imageView.center = self.view.center;
+//    [self.view addSubview:imageView];
 //
-//    showImage.image = [model resultImage];
-//    showImage.frame = CGRectMake(0, 177, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height - 277);
-//    [self.view addSubview:showImage];
+    
+//    AssetsLibraryTest *model = [AssetsLibraryTest new];
+//    [model test1];
+    
+//    TestImage * model = [TestImage new];
+    
+//    self.showImage = [UIImageView new];
+//
+//    self.showImage.image = [model resultImage];
+//    self.showImage.frame = CGRectMake(0, 0, 100, 100);
+//    [self.view addSubview: self.showImage];
+//    [self animate1];
     
     
     
     //    TestGCD * test = [[TestGCD alloc] init];
     //    [test test];
     
-    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
     
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self becomeFirstResponder];
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        // FlyElephant  http://www.cnblogs.com/xiaofeixiang
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"FlyElephant" object:self];
+    }
+}
+
+- (void)orientationChanged:(NSNotification *)notification {
+    NSLog(@"关于通知的引用问题");
+    // Respond to changes in device orientation
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+    
+}
+
+- (void)animate1 {
+    self.showImage.center = self.view.center;
+    self.showImage.transform = CGAffineTransformMakeScale(0.2,0.2);
+    self.showImage.alpha = 0.0;
+    [UIView animateWithDuration:1.0
+                     animations:^{
+                         self.showImage.transform = CGAffineTransformMakeScale(1.0, 1.0);
+                         self.showImage.alpha = 1.0;
+                     }
+                     completion:^(BOOL finished) {
+                         if (finished) {
+                             [UIView animateWithDuration:1.0
+                                                   delay:2.0
+                                                 options:UIViewAnimationOptionCurveEaseIn
+                                              animations:^{
+                                                  self.showImage.center = CGPointMake(self.showImage.center.x + CGRectGetWidth(self.view.frame), self.showImage.center.y);
+                                              }
+                                              completion:^(BOOL finished) {
+                                                  [self.showImage removeFromSuperview];
+                                                 
+                                              }];
+                         }
+                     }];
+}
+
+- (void)animate2 {
+    [UIView beginAnimations:@"Animate 2" context:nil];
+    //配置动画的执行属性
+    [UIView setAnimationDelay:0.5];//延迟时间
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationWillStartSelector:@selector(willStart)];//监听开始的事件
+    [UIView setAnimationDidStopSelector:@selector(didStop)];//监听结束的事件
+    [UIView setAnimationDuration:2.0];//执行时间
+    [UIView setAnimationRepeatAutoreverses:YES];//自动复原
+    [UIView setAnimationRepeatCount:1.5];//重复次数
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];//执行的加速过程（加速开始，减速结束）
+    [UIView setAnimationBeginsFromCurrentState:YES];//是否由当前动画状态开始执行（处理同一个控件上一次动画还没有结束，这次动画就要开始的情况）
+    //实际执行的动画
+    self.showImage.center = self.view.center;
+    self.showImage.transform = CGAffineTransformConcat(CGAffineTransformMakeRotation(M_PI), CGAffineTransformMakeScale(2.0, 2.0));
+    self.showImage.alpha = 0.5;
+    //提交动画
+    [UIView commitAnimations];
+}
+-(void)willStart{
+    NSLog(@"will start");
+}
+//这个有点问题
+-(void)didStop{
+    NSLog(@"did stop");
 }
 
 

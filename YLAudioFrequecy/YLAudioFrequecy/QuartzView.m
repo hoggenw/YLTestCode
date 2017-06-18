@@ -18,6 +18,140 @@
  }
  */
 
+/**Quartz默认采用设备无关的user space来进行绘图，当context（画板）建立之后，默认的坐标系原点以及方向也就确认了
+ ，可以通过CTM（current transformation matrix）来修坐标系的原点。
+ 从数组图像处理的角度来说，就是对当前context state乘以一个状态矩阵。其中的矩阵运算开发者可以不了解。
+ */
+
+/**
+Affine Transforms
+
+可以通过以下方法先创建放射矩阵，然后然后再把放射矩阵映射到CTM
+
+CGAffineTransform
+CGAffineTransformTranslate
+CGAffineTransformMakeRotation
+CGAffineTransformRotate
+CGAffineTransformMakeScale
+CGAffineTransformScale
+*/
+
+//坐标位移，旋转，scale
+- (void)drawRect:(CGRect)rect {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    //保存状态，入栈
+    CGContextSaveGState(context);
+    
+    
+    //移动坐标系
+    CGContextTranslateCTM(context, 10, 10);
+    //旋转坐标系
+    CGContextRotateCTM(context, M_PI_4);
+    //scale 比例
+    CGContextScaleCTM(context, 0.5, 1);
+    CGContextAddRect(context, CGRectMake(10,10,40, 20));
+    CGContextSetFillColorWithColor(context,[UIColor blueColor].CGColor);
+    CGContextFillPath(context);
+    //在复杂的绘图中，我们可能只是想对一个subpath进行旋转移动，缩放。这时候，状态堆栈就起到作用了。
+    //推出栈顶部状态
+    CGContextRestoreGState(context);
+    
+    //这里已经回到最开始的状态
+    CGContextAddRect(context, CGRectMake(0, 0, 10, 10));
+    CGContextFillPath(context);
+    
+    CGContextRelease(context);
+    
+    
+    
+}
+-(instancetype)initWithFrame:(CGRect)frame{
+    if (self = [super initWithFrame:frame]) {
+        self.opaque = NO;
+        self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        self.layer.borderWidth = 1.0;
+    }
+    return self;
+}
+
+
+//-(instancetype)initWithFrame:(CGRect)frame{
+//    if (self = [super initWithFrame:frame]) {
+//        self.opaque = NO;
+//    }
+//    return self;
+//}
+//
+////切割
+//- (void)drawRect:(CGRect)rect {
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    //很简单，在stroke/fill或者CGContextBeginPath/CGContextClosePath以后就新开启一个子路径
+//    CGContextBeginPath(context);
+//    CGContextAddArc(context, 50, 50, 20, 0, M_PI * 2, 1);
+//    CGContextClosePath(context);
+//    CGContextClip(context);
+//    CGContextSetFillColorWithColor(context, [UIColor lightGrayColor].CGColor);
+//    CGContextFillRect(context, rect);
+//    //New Code
+//    CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
+//
+//    CGContextMoveToPoint(context,10,10);
+//    CGContextAddLineToPoint(context, 50, 50);
+//    CGContextAddLineToPoint(context, 10, 90);
+//
+//    CGContextSetLineWidth(context, 10.0);
+//    CGContextSetLineJoin(context, kCGLineJoinMiter);
+//    CGContextSetMiterLimit(context,20.0);
+//    CGContextStrokePath(context);
+//
+//    CGContextRelease(context);
+//
+//    /**
+//     CGContextClip 按照nonzero winding number rule规则切割
+//     CGContextEOClip 按照even-odd规则切割
+//     CGContextClipToRect 切割到指定矩形
+//     CGContextClipToRects 切割到指定矩形组
+//     CGContextClipToMask 切割到mask
+//     */
+//}
+
+
+
+
+//- (void)drawRect:(CGRect)rect {
+//    //获得当前context
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    //设置颜色
+//    CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
+//    CGContextSetStrokeColorWithColor(context, [UIColor lightGrayColor].CGColor);
+//    //为了颜色更好区分，对矩形描边
+//    CGContextFillRect(context, rect);
+//    CGContextStrokeRect(context, rect);
+//    CGContextMoveToPoint(context,10,10);
+//    CGContextAddLineToPoint(context, 50, 50);
+//    CGContextAddLineToPoint(context, 10, 90);
+//    CGContextSetLineWidth(context, 10.0);
+//    CGContextSetLineJoin(context, kCGLineJoinMiter);
+//    CGContextSetMiterLimit(context,20.0);
+//    CGContextStrokePath(context);
+//    CGContextRelease(context);
+//}
+
+//填充
+/**
+ Quartz填充的时候会认为subpath是封闭的，然后根据规则来填充。有两种规则：
+ 
+ nonzero winding number rule.沿着当前点，画一条直线到区域外，检查交叉点，如果交叉点从左到右，则加一，从右到左，则减去一。如果结果不为0，则绘制。
+ 
+ even-odd rule,沿着当前点，花一条线到区域外，然后检查相交的路径，偶数则绘制，奇数则不绘制。
+ CGContextEOFillPath － 用even-odd rule来填充
+ CGContextFillPath － 用nonzero winding number rule方式填充
+ CGContextFillRect/CGContextFillRects － 填充指定矩形区域内path
+ CGContextFillEllipseInRect － 填充椭圆
+ CGContextDrawPath － 绘制当前path（根据参数stroke/fill）
+ */
+
+
 
 /**
  void CGContextAddCurveToPoint (
@@ -49,33 +183,33 @@
  */
 
 //椭圆与曲线
-- (void)drawRect:(CGRect)rect {
-    //获得当前context
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    //设置颜色
-    CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
-    CGContextSetStrokeColorWithColor(context, [UIColor lightGrayColor].CGColor);
-    //为了颜色更好区分，对矩形描边
-    CGContextFillRect(context, rect);
-    CGContextStrokeRect(context, rect);
-    
-    
-    CGContextStrokePath(context);
-    
-    CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
-    CGContextAddEllipseInRect(context, CGRectMake(10, 10, 40, 20));
-    CGContextAddRect(context, CGRectMake(10, 10, 40, 20));
-    
-    CGContextMoveToPoint(context, 0, 50);
-    CGContextAddCurveToPoint(context, 25, 0, 75, 100, 100, 50);
-    CGContextMoveToPoint(context, 0, 50);
-    CGContextAddQuadCurveToPoint(context, 50, 0, 100, 50);
-    
-    CGContextStrokePath(context);
-    
-    CGContextRelease(context);
-    
-}
+//- (void)drawRect:(CGRect)rect {
+//    //获得当前context
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    //设置颜色
+//    CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
+//    CGContextSetStrokeColorWithColor(context, [UIColor lightGrayColor].CGColor);
+//    //为了颜色更好区分，对矩形描边
+//    CGContextFillRect(context, rect);
+//    CGContextStrokeRect(context, rect);
+//
+//
+//    CGContextStrokePath(context);
+//
+//    CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
+//    CGContextAddEllipseInRect(context, CGRectMake(10, 10, 40, 20));
+//    CGContextAddRect(context, CGRectMake(10, 10, 40, 20));
+//
+//    CGContextMoveToPoint(context, 0, 50);
+//    CGContextAddCurveToPoint(context, 25, 0, 75, 100, 100, 50);
+//    CGContextMoveToPoint(context, 0, 50);
+//    CGContextAddQuadCurveToPoint(context, 50, 0, 100, 50);
+//
+//    CGContextStrokePath(context);
+//
+//    CGContextRelease(context);
+//
+//}
 
 
 
@@ -164,6 +298,16 @@
 //    CGContextFillRect(context, rect);
 //    CGContextStrokeRect(context, rect);
 //    //实际line和point的代码
+//    /**
+//     线的宽度－CGContextSetLineWidth
+//     交叉线的处理方式－CGContextSetLineJoin
+//     线顶端的处理方式－CGContextSetLineCap
+//     进一步限制交叉线的处理方式 －CGContextSetMiterLimit
+//     是否要虚线－Line dash pattern
+//     颜色控件－CGContextSetStrokeColorSpace
+//     画笔颜色－CGContextSetStrokeColor/CGContextSetStrokeColorWithColor
+//     描边模式－CGContextSetStrokePattern
+//     */
 //    CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);// 设置描边颜色
 //    CGContextSetLineWidth(context, 4.0);//线的宽度
 //    CGContextSetLineCap(context, kCGLineCapRound);//线的顶端

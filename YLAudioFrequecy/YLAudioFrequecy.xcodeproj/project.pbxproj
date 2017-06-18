@@ -21,6 +21,9 @@
 		87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FE21EF3BB81009D4CF6 /* TestImage.m */; };
 		87127FE61EF4FD69009D4CF6 /* Quartz2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FE51EF4FD69009D4CF6 /* Quartz2D.m */; };
 		87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FEC1EF605B1009D4CF6 /* QuartzView.m */; };
+		87127FF01EF620A8009D4CF6 /* QuartzShadowAndGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FEF1EF620A8009D4CF6 /* QuartzShadowAndGradient.m */; };
+		87127FF31EF6296E009D4CF6 /* Bitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FF21EF6296E009D4CF6 /* Bitmap.m */; };
+		87127FF71EF6B471009D4CF6 /* AssetsLibraryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FF61EF6B471009D4CF6 /* AssetsLibraryTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		87127FE51EF4FD69009D4CF6 /* Quartz2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2D.m; sourceTree = "<group>"; };
 		87127FEB1EF605B1009D4CF6 /* QuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzView.h; sourceTree = "<group>"; };
 		87127FEC1EF605B1009D4CF6 /* QuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzView.m; sourceTree = "<group>"; };
+		87127FEE1EF620A8009D4CF6 /* QuartzShadowAndGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzShadowAndGradient.h; sourceTree = "<group>"; };
+		87127FEF1EF620A8009D4CF6 /* QuartzShadowAndGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzShadowAndGradient.m; sourceTree = "<group>"; };
+		87127FF11EF6296E009D4CF6 /* Bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bitmap.h; sourceTree = "<group>"; };
+		87127FF21EF6296E009D4CF6 /* Bitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bitmap.m; sourceTree = "<group>"; };
+		87127FF51EF6B471009D4CF6 /* AssetsLibraryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsLibraryTest.h; sourceTree = "<group>"; };
+		87127FF61EF6B471009D4CF6 /* AssetsLibraryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsLibraryTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +111,7 @@
 		1143BA6A1E5D7F01002CD06B /* YLAudioFrequecy */ = {
 			isa = PBXGroup;
 			children = (
+				87127FF41EF6B45B009D4CF6 /* AssetsLibrary */,
 				87127FE71EF60521009D4CF6 /* Quartz2D */,
 				1143BA6E1E5D7F01002CD06B /* AppDelegate.h */,
 				1143BA6F1E5D7F01002CD06B /* AppDelegate.m */,
@@ -150,8 +160,21 @@
 			children = (
 				87127FEB1EF605B1009D4CF6 /* QuartzView.h */,
 				87127FEC1EF605B1009D4CF6 /* QuartzView.m */,
+				87127FEE1EF620A8009D4CF6 /* QuartzShadowAndGradient.h */,
+				87127FEF1EF620A8009D4CF6 /* QuartzShadowAndGradient.m */,
+				87127FF11EF6296E009D4CF6 /* Bitmap.h */,
+				87127FF21EF6296E009D4CF6 /* Bitmap.m */,
 			);
 			name = Quartz2D;
+			sourceTree = "<group>";
+		};
+		87127FF41EF6B45B009D4CF6 /* AssetsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				87127FF51EF6B471009D4CF6 /* AssetsLibraryTest.h */,
+				87127FF61EF6B471009D4CF6 /* AssetsLibraryTest.m */,
+			);
+			name = AssetsLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +287,11 @@
 				87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */,
 				114F02881ECECD8D0039F60C /* FooView.m in Sources */,
 				114F028B1ECEDAB90039F60C /* MyObject.m in Sources */,
+				87127FF71EF6B471009D4CF6 /* AssetsLibraryTest.m in Sources */,
 				1143BA731E5D7F01002CD06B /* ViewController.m in Sources */,
 				1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */,
+				87127FF31EF6296E009D4CF6 /* Bitmap.m in Sources */,
+				87127FF01EF620A8009D4CF6 /* QuartzShadowAndGradient.m in Sources */,
 				114F028E1ED271080039F60C /* TestGCD.m in Sources */,
 				1143BA6D1E5D7F01002CD06B /* main.m in Sources */,
 			);
@@ -403,7 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9GH6UJW25X;
 				INFOPLIST_FILE = YLAudioFrequecy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangliugen.YLAudioFrequecy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,7 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9GH6UJW25X;
 				INFOPLIST_FILE = YLAudioFrequecy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangliugen.YLAudioFrequecy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
