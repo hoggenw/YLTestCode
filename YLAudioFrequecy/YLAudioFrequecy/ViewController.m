@@ -65,8 +65,21 @@
     
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
-    
+    [self testGCD];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)testGCD {
+
+    NSLog(@"0");
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"1");
+       dispatch_sync(dispatch_get_main_queue(), ^{
+           NSLog(@"2");
+       });
+         NSLog(@"3");
+    });
+     NSLog(@"24");
 }
 
 - (BOOL)canBecomeFirstResponder {
