@@ -19,5 +19,6 @@ target ‘YLTestCode’ do
     pod 'AMapNavi'
     pod 'AMapSearch'
     pod 'SnapKit'
+    pod 'XHLaunchAd'
     
 end
