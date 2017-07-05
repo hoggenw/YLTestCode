@@ -7,4 +7,4 @@
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
 #import "CLLocation+Sino.h"
-#import "XHLaunchAd.h"
+//#import "XHLaunchAd.h"
