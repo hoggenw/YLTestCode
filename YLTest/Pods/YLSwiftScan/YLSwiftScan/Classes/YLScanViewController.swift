@@ -25,6 +25,12 @@ open class YLScanViewController: UIViewController, UIImagePickerControllerDelega
     //闪光灯
     var btnFlash:UIButton = UIButton()
     
+    //返回
+    var buttonBcak: UIButton = UIButton()
+    
+    //相册
+    var
+    
     //识别码的类型
     var arrayCodeType: [String]?
     
@@ -41,6 +47,7 @@ open class YLScanViewController: UIViewController, UIImagePickerControllerDelega
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black
         self.edgesForExtendedLayout = UIRectEdge(rawValue: 0)
+        self.navigationController?.navigationBar.isHidden = true;
 
         // Do any additional setup after loading the view.
     }
@@ -87,6 +94,8 @@ open class YLScanViewController: UIViewController, UIImagePickerControllerDelega
         btnFlash.setImage(YLScanViewSetting.imageFromBundleWithName(name:  "qrcode_scan_btn_flash_nor@2x"), for:UIControlState.normal)
         btnFlash.setImage(YLScanViewSetting.imageFromBundleWithName(name:  "qrcode_scan_btn_flash_down@2x"), for:UIControlState.selected)
         btnFlash.addTarget(self, action: #selector(openOrCloseFlash(sender:)), for: UIControlEvents.touchUpInside)
+        
+        
         self.view.addSubview(btnFlash)
     }
     //开关闪光灯
