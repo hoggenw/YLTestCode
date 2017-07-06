@@ -29,7 +29,7 @@ open class YLScanViewController: UIViewController, UIImagePickerControllerDelega
     var buttonBcak: UIButton = UIButton()
     
     //相册
-    var
+    var buttonPhone: UIButton = UIButton()
     
     //识别码的类型
     var arrayCodeType: [String]?
@@ -94,9 +94,19 @@ open class YLScanViewController: UIViewController, UIImagePickerControllerDelega
         btnFlash.setImage(YLScanViewSetting.imageFromBundleWithName(name:  "qrcode_scan_btn_flash_nor@2x"), for:UIControlState.normal)
         btnFlash.setImage(YLScanViewSetting.imageFromBundleWithName(name:  "qrcode_scan_btn_flash_down@2x"), for:UIControlState.selected)
         btnFlash.addTarget(self, action: #selector(openOrCloseFlash(sender:)), for: UIControlEvents.touchUpInside)
+         self.view.addSubview(btnFlash)
         
+        let sizeBack = CGSize(width: 60, height: 60);
+        buttonBcak.bounds = CGRect(x: 0, y: 0, width: sizeBack.width, height: sizeBack.height)
+        buttonBcak.center = CGPoint(x: 50, y: 60)
+        buttonBcak.layer.cornerRadius = 30
+        buttonBcak.clipsToBounds = true;
+        buttonBcak.backgroundColor = UIColor.black;
+        buttonBcak.alpha = 0.5
+        buttonBcak.setImage(UIImage(named: "qrcode_scan_btn_flash_nor"), for:UIControlState.normal)
+        buttonBcak.addTarget(self, action: #selector(openOrCloseFlash(sender:)), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(buttonBcak)
         
-        self.view.addSubview(btnFlash)
     }
     //开关闪光灯
     func openOrCloseFlash(sender:UIButton){
