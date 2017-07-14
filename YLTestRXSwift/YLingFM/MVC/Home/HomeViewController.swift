@@ -71,7 +71,7 @@ class HomeViewController: UIViewController {
 //                .throttle(0.3, scheduler: MainScheduler.instance)
 //                .distinctUntilChanged()
             
-       #elseif true
+       #elseif false
             //共享监听Sharing subscription－shareReplay
             let nameObserable = inputTextFeild.rx.text.shareReplay(1).map({($0?.characters.count)! >= 6})
             let pwdObserable = secondTextFeild.rx.text.shareReplay(1).map({ (stringText) -> Bool in

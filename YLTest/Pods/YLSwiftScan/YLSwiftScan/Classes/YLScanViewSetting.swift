@@ -594,7 +594,7 @@ open class YLScanViewSetting: NSObject ,AVCaptureMetadataOutputObjectsDelegate {
         
         switch (orientation) {
         case UIImageOrientation.left:
-            rotate = Double.pi/2;
+            rotate = Double.pi / 2;
             rect = CGRect(x: 0, y: 0, width: image.size.height, height: image.size.width);
             translateX = 0;
             translateY = -rect.size.width;
@@ -602,7 +602,7 @@ open class YLScanViewSetting: NSObject ,AVCaptureMetadataOutputObjectsDelegate {
             scaleX = rect.size.height/rect.size.width;
             break;
         case UIImageOrientation.right:
-            rotate = 3 * Double.pi/2;
+            rotate = 3 * Double.pi / 2;
             rect = CGRect(x: 0, y: 0, width: image.size.height, height: image.size.width);
             translateX = -rect.size.height;
             translateY = 0;

@@ -112,8 +112,8 @@ class ViewController: UIViewController {
     }
     
     func drawMap() {
-        let vc = DrawMapViewController();
-        self.navigationController?.pushViewController(vc, animated: true);
+//        let vc = DrawMapViewController();
+//        self.navigationController?.pushViewController(vc, animated: true);
     }
     
     func callApp() {
@@ -142,8 +142,8 @@ class ViewController: UIViewController {
 
     
     func button3Action() {
-        let vc = MapViewController();
-        self.navigationController?.pushViewController(vc, animated: true);
+//        let vc = MapViewController();
+//        self.navigationController?.pushViewController(vc, animated: true);
     }
     
     //reduce测试
@@ -166,6 +166,7 @@ class ViewController: UIViewController {
     }
     
     func scanQRcode() {
+        
         
         manager.isNeedShowRetangle = true
         // manager.whRatio = 0.5

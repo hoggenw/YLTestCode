@@ -11,14 +11,14 @@ target ‘YLTestCode’ do
     pod 'YLSwiftScan'
     pod 'YLBanner'
     pod 'YLRecordingVideo'
-    pod 'BabyBluetooth'
+#    pod 'BabyBluetooth'
     pod 'YLAuxiliaryKit'
     
-    pod 'AMap3DMap'
-    pod 'AMapLocation'
-    pod 'AMapNavi'
-    pod 'AMapSearch'
-    pod 'SnapKit'
-    pod 'XHLaunchAd'
-    
+#    pod 'AMap3DMap'
+#    pod 'AMapLocation'
+#    pod 'AMapNavi'
+#    pod 'AMapSearch'
+     pod 'SnapKit'
+#    pod 'XHLaunchAd'
+#    
 end

@@ -53,7 +53,6 @@ public class YLRecordVideoManager: NSObject {
 extension YLRecordVideoManager: YLRecordVideoChoiceDelegate {
     public func choiceVideoWith(path: String) {
         if delegate != nil {
-            
             delegate?.choiceVideoWith(path: path)
         }
     }

@@ -34,7 +34,7 @@ public struct YLScanViewSytle {
     /**
      @brief  矩形框(视频显示透明区)域向上移动偏移量，0表示扫码透明区域在当前视图中心位置，如果负值表示扫码区域下移
      */
-    public var centerUpOffset:CGFloat = 84
+    public var centerUpOffset:CGFloat = 44
     /**
      *  矩形框(视频显示透明区)域离界面左边及右边距离，默认60
      */

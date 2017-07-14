@@ -4,146 +4,75 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BabyBluetooth.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>Pods-YLTestCode.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>XHLaunchAd.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
 		<key>YLAuxiliaryKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>YLBanner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>YLRecordingVideo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>YLSwiftScan-YLSwiftScan.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 		<key>YLSwiftScan.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09ECDCCFBD4F2207CF5EA8EA310C6C8C</key>
+		<key>0C167033EC025FF8FE55074DA6E25E4E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A5CD1AA44D06EEF10083C60348B5FA8</key>
+		<key>695ECE8A790B86FE5FB937DE2E15CDCF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2DDBA3EBE982D62E2B90EF7BB706F492</key>
+		<key>A160DE7339ABDEC4F7E38E761EB2428C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4947868F46A5F03E6EF7CDCD0668CF12</key>
+		<key>A3A72A71C53DDA556959E6C65A6D46DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>511B384B499EEFFA83379103C60D8B82</key>
+		<key>BB64D4D9D680CB96C7D98786F93C6A66</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>586A6CD4BDBD4D2A2FDA884487A5EA2D</key>
+		<key>EEB69FE772E559A7DBEF6F518BD0BA35</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60707476DA3921DDCBF39DFDD7B65910</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6CCFEE3570391998687E49DCC8AE32D4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>825FB4B8423281DE43F30EE111CA3853</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>932E2BE95C0D3FC835FDD397C747F141</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BFFF417074D995038D5D79905C0BEA30</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C1058047F40A9BFEDC3414D09B04AA9E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D342FB8BB5817A3E18A2D391D4E7C524</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E4709F2E3F34A93AB3CE9F1F0A900DEA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E692A4E6B9BDF4698448777FE3ED5E39</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F4B1A0F40902F9533C324157F3F2703D</key>
+		<key>F898DFE11895E199E9DCAF3D95B3D50D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,14 +8,14 @@
 
 import UIKit
 
-class DrawAnnotationView: MAAnnotationView {
-
-    override init!(annotation: MAAnnotation!, reuseIdentifier: String!) {
-        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier);
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-}
+//class DrawAnnotationView: MAAnnotationView {
+//
+//    override init!(annotation: MAAnnotation!, reuseIdentifier: String!) {
+//        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier);
+//    }
+//    
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//
+//}
