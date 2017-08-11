@@ -10,6 +10,24 @@ import UIKit
 import WebKit
 
 class YLWKWebView: WKWebView {
+    /*先简单的介绍下CAShapeLayer
+     
+     CAShapeLayer继承自CALayer，可使用CALayer的所有属性
+     CAShapeLayer需要和贝塞尔曲线配合使用才有意义。
+     Shape：形状,贝塞尔曲线可以为其提供形状，而单独使用CAShapeLayer是没有任何意义的。
+     使用CAShapeLayer与贝塞尔曲线可以实现不在view的DrawRect方法中画出一些想要的图形
+     关于CAShapeLayer和DrawRect的比较
+     
+     DrawRect：DrawRect属于CoreGraphic框架，占用CPU，消耗性能大
+     CAShapeLayer：CAShapeLayer属于CoreAnimation框架，通过GPU来渲染图形，节省性能。动画渲染直接提交给手机GPU，不消耗内存
+     
+     贝塞尔曲线与CAShapeLayer的关系
+     
+     CAShapeLayer中shape代表形状的意思，所以需要形状才能生效
+     贝塞尔曲线可以创建基于矢量的路径
+     贝塞尔曲线给CAShapeLayer提供路径，CAShapeLayer在提供的路径中进行渲染。路径会闭环，所以绘制出了Shape
+     用于CAShapeLayer的贝塞尔曲线作为Path，其path是一个首尾相接的闭环的曲线，即使该贝塞尔曲线不是一个闭环的曲线
+     */
     
     public var progressCorlor: UIColor = UIColor.green;
     private static var progressView = UIView()
@@ -21,11 +39,11 @@ class YLWKWebView: WKWebView {
     }
     
     private func initProgressView() {
-        YLWKWebView.progressView.frame = CGRect(x: 0, y: 64, width: self.bounds.width, height: 3);
+        YLWKWebView.progressView.frame = CGRect(x: 0, y: 64, width: self.bounds.width, height: 4);
         YLWKWebView.progressView.backgroundColor = UIColor.clear;
         self.addSubview(YLWKWebView.progressView);
         progressLayer.borderWidth = 1
-        progressLayer.lineWidth = 3
+        progressLayer.lineWidth = 4
         progressLayer.fillColor = UIColor.clear.cgColor
         tintColorDidChange()
         YLWKWebView.progressView.layer.addSublayer(self.progressLayer)
