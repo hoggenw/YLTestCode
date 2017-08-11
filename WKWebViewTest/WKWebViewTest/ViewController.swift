@@ -13,8 +13,8 @@ let progressKey = "progressKey"
 
 class ViewController: UIViewController {
 
-    var webView: WKWebView!
-    let strUrl = "http://192.168.20.6:8080/protocal"
+    var webView: YLWKWebView!
+    let strUrl = "https://www.ftxmall.net/site/mobile?token="
     //"https://www.baidu.com/"
     //
 //   // var webView: UIWebView!
@@ -40,13 +40,14 @@ class ViewController: UIViewController {
         configuretion.userContentController = WKUserContentController();
         //添加一个名称就可以在js通过这个名称发消息：
         
-        webView = WKWebView(frame: CGRect(x:0, y:0, width:UIScreen.main.bounds.width, height:UIScreen.main.bounds.height),configuration:configuretion)
+        webView = YLWKWebView(frame: CGRect(x:0, y: 0, width:UIScreen.main.bounds.width, height:UIScreen.main.bounds.height),configuration:configuretion)
         webView.addObserver(self, forKeyPath: progressKey, options: .new, context: nil)
         webView.backgroundColor = UIColor.clear
         webView.scrollView.bounces = true
         webView.scrollView.alwaysBounceVertical = true
         webView.allowsBackForwardNavigationGestures = true
         webView.isMultipleTouchEnabled = true
+        webView.progressCorlor = UIColor.red;
        // if #available(iOS 9.0, *) {webView.allowsLinkPreview = true}
         webView.navigationDelegate = self;
         webView.uiDelegate = self;
@@ -70,7 +71,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func viewDidAppear(_ animated: Bool) {
-        webView.load(URLRequest(url: URL(string: strUrl)!))
+        _ = webView.load(URLRequest(url: URL(string: strUrl)!))
     }
 
     override func didReceiveMemoryWarning() {
