@@ -47,7 +47,6 @@ class YLWKWebView: WKWebView {
         progressLayer.fillColor = UIColor.clear.cgColor
         tintColorDidChange()
         YLWKWebView.progressView.layer.addSublayer(self.progressLayer)
-        //print("初始化完成")
     }
     //MARK: - Color
     override open func tintColorDidChange() {
@@ -79,12 +78,8 @@ class YLWKWebView: WKWebView {
                 update(progress: CGFloat(newValue.floatValue))
                 if newValue == 1 {
                     oldValue  = 0;
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-                        self.progressLayer.opacity = 0;
-                    }
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                         self.update(progress: CGFloat(0))
-                        //self.progressLayer.frame = CGRect(x: 0, y: 0, width: 0, height: 3);
                     });
                 }
             }else {
