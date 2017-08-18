@@ -73,8 +73,6 @@ class YLWKWebView: WKWebView {
                     return
                 }
                 oldValue = newValue.floatValue
-                //print("值变化: \(String(describing: change[NSKeyValueChangeKey.newKey]))   旧值：  \(oldValue)");
-                //self.progressLayer.frame = CGRect(x: 0, y: 0, width: self.bounds.size.width * CGFloat(newValue.floatValue), height: 3);
                 update(progress: CGFloat(newValue.floatValue))
                 if newValue == 1 {
                     oldValue  = 0;
@@ -88,7 +86,7 @@ class YLWKWebView: WKWebView {
         }
     }
     
-    open func update(progress: CGFloat) {
+    private func update(progress: CGFloat) {
         CATransaction.begin()
         //显式事务默认开启动画效果,kCFBooleanTrue关闭
         CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
