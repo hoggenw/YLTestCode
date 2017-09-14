@@ -21,6 +21,7 @@
 
 
 
+
 @interface ViewController ()
 @property(nonatomic, strong)UIImageView * showImage;
 
@@ -62,7 +63,7 @@
     
     //    TestGCD * test = [[TestGCD alloc] init];
     //    [test test];
-    
+
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
     [self testGCD];

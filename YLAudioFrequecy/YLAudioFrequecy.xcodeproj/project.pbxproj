@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110911201F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1109111E1F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.m */; };
+		110911211F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1109111F1F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.xib */; };
 		1143BA6D1E5D7F01002CD06B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6C1E5D7F01002CD06B /* main.m */; };
 		1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6F1E5D7F01002CD06B /* AppDelegate.m */; };
 		1143BA731E5D7F01002CD06B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA721E5D7F01002CD06B /* ViewController.m */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1109111D1F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyFudouGoodsDetailView.h; sourceTree = "<group>"; };
+		1109111E1F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlyFudouGoodsDetailView.m; sourceTree = "<group>"; };
+		1109111F1F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnlyFudouGoodsDetailView.xib; sourceTree = "<group>"; };
 		1143BA681E5D7F01002CD06B /* YLAudioFrequecy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLAudioFrequecy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1143BA6C1E5D7F01002CD06B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1143BA6E1E5D7F01002CD06B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +116,9 @@
 		1143BA6A1E5D7F01002CD06B /* YLAudioFrequecy */ = {
 			isa = PBXGroup;
 			children = (
+				1109111D1F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.h */,
+				1109111E1F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.m */,
+				1109111F1F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.xib */,
 				87127FF41EF6B45B009D4CF6 /* AssetsLibrary */,
 				87127FE71EF60521009D4CF6 /* Quartz2D */,
 				1143BA6E1E5D7F01002CD06B /* AppDelegate.h */,
@@ -261,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110911211F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.xib in Resources */,
 				1143BA7B1E5D7F01002CD06B /* LaunchScreen.storyboard in Resources */,
 				1143BA781E5D7F01002CD06B /* Assets.xcassets in Resources */,
 				1143BA761E5D7F01002CD06B /* Main.storyboard in Resources */,
@@ -285,6 +294,7 @@
 				114F02851ECE80040039F60C /* TestRuntime.m in Sources */,
 				87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */,
 				87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */,
+				110911201F6133FA0038F9D9 /* OnlyFudouGoodsDetailView.m in Sources */,
 				114F02881ECECD8D0039F60C /* FooView.m in Sources */,
 				114F028B1ECEDAB90039F60C /* MyObject.m in Sources */,
 				87127FF71EF6B471009D4CF6 /* AssetsLibraryTest.m in Sources */,
