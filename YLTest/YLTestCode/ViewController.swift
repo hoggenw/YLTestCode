@@ -41,6 +41,7 @@ class ViewController: UIViewController {
     
     func intialUI() {
         self.view.backgroundColor = UIColor.white
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "聊天", style: .plain, target: self, action: #selector(toChatViewController));
         let button = UIButton()
         button.backgroundColor = UIColor.brown
         button.frame = CGRect(x: self.view.bounds.width/2 - 30, y: self.view.bounds.height/2 - 200, width: 60, height: 50)
@@ -102,6 +103,12 @@ class ViewController: UIViewController {
         self.view.addSubview(button4)
         button4.addTarget(self, action: #selector(drawMap), for: .touchUpInside)
     }
+    
+    func toChatViewController() {
+        let chatVC = ChatViewController();
+        self.navigationController?.pushViewController(chatVC, animated: true);
+    }
+    
     
     func swap<T>(_ nums: inout [T], _ p: Int, _ q: Int) {
         (nums[p], nums[q]) = (nums[q], nums[p])

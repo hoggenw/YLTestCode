@@ -19,6 +19,10 @@ target ‘YLTestCode’ do
 #    pod 'AMapNavi'
 #    pod 'AMapSearch'
      pod 'SnapKit'
+     pod 'YYKit'
+     pod 'FMDB'
+     pod 'Kingfisher'
+     pod 'TZImagePickerController'
 #    pod 'XHLaunchAd'
 #    
 end

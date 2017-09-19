@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A160DE7339ABDEC4F7E38E761EB2428C'
+               BlueprintIdentifier = '808467AAEDD7B38A0CD5B8E7680BE841'
                BlueprintName = 'YLRecordingVideo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'YLRecordingVideo.framework'>
