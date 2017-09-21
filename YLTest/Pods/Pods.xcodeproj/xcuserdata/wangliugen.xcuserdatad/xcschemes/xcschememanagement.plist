@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-YLTestCode.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,11 +30,6 @@
 			<false/>
 		</dict>
 		<key>TZImagePickerController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>YLAuxiliaryKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -54,15 +54,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>YYKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>091B8EDB2AF09C8E76F1DD03AB85F9B9</key>
+		<key>078E162273824D3352A516FEF648DF7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A6A347578302E153E72625E0A50AE83</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,42 +77,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>320BEC4A8A45940EB43D13860AAB9314</key>
+		<key>3DA5596FCC6E2582151EE38309F0E537</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>62639D85FEBC74432335386DBD6E7CD7</key>
+		<key>9E803079A06C23A22CF5194DF2FC32B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6CC59849DFC7034D68D56A5027096CFC</key>
+		<key>AF987FD8D70733C7BF17884CE33796AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77435A9AAC41A265165E871DC5D6E9CA</key>
+		<key>B04036F667DA8FF308D7B69B4536A2E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77EF2A5D8ABA0E8DD3D80F56360F86C9</key>
+		<key>BB17331CC29A5A54BCF83CD28D38BB1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>808467AAEDD7B38A0CD5B8E7680BE841</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B059649B0636245B4218D0FA408E056F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BF139417B1AAF09C1B0F25707E3DDB41</key>
+		<key>CD6C9FB6B052E1CF663F8A56041EA163</key>
 		<dict>
 			<key>primary</key>
 			<true/>

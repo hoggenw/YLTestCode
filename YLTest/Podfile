@@ -12,17 +12,18 @@ target ‘YLTestCode’ do
     pod 'YLBanner'
     pod 'YLRecordingVideo'
 #    pod 'BabyBluetooth'
-    pod 'YLAuxiliaryKit'
+    #pod 'YLAuxiliaryKit'
     
 #    pod 'AMap3DMap'
 #    pod 'AMapLocation'
 #    pod 'AMapNavi'
 #    pod 'AMapSearch'
      pod 'SnapKit'
-     pod 'YYKit'
+     #pod 'YYKit'
      pod 'FMDB'
      pod 'Kingfisher'
      pod 'TZImagePickerController'
+     pod 'ObjectMapper'
 #    pod 'XHLaunchAd'
 #    
 end

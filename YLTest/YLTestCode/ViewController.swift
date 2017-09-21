@@ -9,7 +9,6 @@
 import UIKit
 import YLSwiftScan
 import YLRecordingVideo
-import YLAuxiliaryKit
 import MapKit
 
 

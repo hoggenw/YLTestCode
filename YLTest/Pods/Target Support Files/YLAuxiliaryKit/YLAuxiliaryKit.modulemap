@@ -1,6 +1,0 @@
-framework module YLAuxiliaryKit {
-  umbrella header "YLAuxiliaryKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

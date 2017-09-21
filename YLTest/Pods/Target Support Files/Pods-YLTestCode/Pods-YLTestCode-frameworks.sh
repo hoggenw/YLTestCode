@@ -100,24 +100,22 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YLAuxiliaryKit/YLAuxiliaryKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLBanner/YLBanner.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLRecordingVideo/YLRecordingVideo.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLSwiftScan/YLSwiftScan.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YLAuxiliaryKit/YLAuxiliaryKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLBanner/YLBanner.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLRecordingVideo/YLRecordingVideo.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLSwiftScan/YLSwiftScan.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
