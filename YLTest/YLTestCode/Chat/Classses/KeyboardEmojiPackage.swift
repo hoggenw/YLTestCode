@@ -19,7 +19,7 @@ class KeyboardEmojiPackage: Mappable {
     /** 当前组所有的表情模型 */
     var emojis: [KeyboardEmojiModel] = [KeyboardEmojiModel]();
     //单例
-     public static let shareInstance: KeyboardEmojiPackage = KeyboardEmojiPackage()
+    public static let shareInstance: KeyboardEmojiPackage = KeyboardEmojiPackage()
     private static  var packages: [KeyboardEmojiPackage] = [KeyboardEmojiPackage]();
     
     

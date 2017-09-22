@@ -225,6 +225,9 @@
 		1144C07B1EBC5BA700B98DB2 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */; };
 		114FD3D51ECAE61E00B0F796 /* DrawMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FD3D41ECAE61E00B0F796 /* DrawMapViewController.swift */; };
 		114FD3D71ECBF26600B0F796 /* DrawAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FD3D61ECBF26600B0F796 /* DrawAnnotationView.swift */; };
+		117C01611F739AD2005B0B3D /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117C01601F739AD2005B0B3D /* KeyboardButton.swift */; };
+		117C01631F739E94005B0B3D /* KeyboardEmojiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117C01621F739E94005B0B3D /* KeyboardEmojiTextView.swift */; };
+		117C01651F74FF3E005B0B3D /* KeyboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117C01641F74FF3E005B0B3D /* KeyboardVC.swift */; };
 		119591D61EC298E0005B4BE0 /* TestMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119591D51EC298E0005B4BE0 /* TestMapViewController.swift */; };
 		119591D91EC298E0005B4BE0 /* CLLocation+Sino.m in Sources */ = {isa = PBXBuildFile; fileRef = 119591D71EC298E0005B4BE0 /* CLLocation+Sino.m */; };
 		11BD9AEB1E5A72C900E93FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */; };
@@ -466,6 +469,9 @@
 		1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		114FD3D41ECAE61E00B0F796 /* DrawMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawMapViewController.swift; sourceTree = "<group>"; };
 		114FD3D61ECBF26600B0F796 /* DrawAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawAnnotationView.swift; sourceTree = "<group>"; };
+		117C01601F739AD2005B0B3D /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		117C01621F739E94005B0B3D /* KeyboardEmojiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardEmojiTextView.swift; sourceTree = "<group>"; };
+		117C01641F74FF3E005B0B3D /* KeyboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVC.swift; sourceTree = "<group>"; };
 		119591D51EC298E0005B4BE0 /* TestMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMapViewController.swift; sourceTree = "<group>"; };
 		119591D71EC298E0005B4BE0 /* CLLocation+Sino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Sino.m"; sourceTree = "<group>"; };
 		119591D81EC298E0005B4BE0 /* CLLocation+Sino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Sino.h"; sourceTree = "<group>"; };
@@ -797,6 +803,7 @@
 		1118AF491F70F8980091D097 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				117C01641F74FF3E005B0B3D /* KeyboardVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -813,6 +820,8 @@
 		1118AF4B1F70F8A50091D097 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				117C01601F739AD2005B0B3D /* KeyboardButton.swift */,
+				117C01621F739E94005B0B3D /* KeyboardEmojiTextView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1314,10 +1323,12 @@
 				11BD9AED1E5A72C900E93FA8 /* ViewController.swift in Sources */,
 				1118AF6A1F7103DF0091D097 /* UIImage+Extension.swift in Sources */,
 				114FD3D51ECAE61E00B0F796 /* DrawMapViewController.swift in Sources */,
+				117C01631F739E94005B0B3D /* KeyboardEmojiTextView.swift in Sources */,
 				119591D61EC298E0005B4BE0 /* TestMapViewController.swift in Sources */,
 				1118AF741F710A110091D097 /* KeyboardEmojiAttachment.swift in Sources */,
 				1118AF641F7103DF0091D097 /* Device.swift in Sources */,
 				1118AF501F70FDE00091D097 /* KeyboardEmojiModel.swift in Sources */,
+				117C01611F739AD2005B0B3D /* KeyboardButton.swift in Sources */,
 				1118AF6E1F7103DF0091D097 /* YLMainTabbarViewController.swift in Sources */,
 				119591D91EC298E0005B4BE0 /* CLLocation+Sino.m in Sources */,
 				11CC0D6D1E5A7548002994CB /* Oc.m in Sources */,
@@ -1340,6 +1351,7 @@
 				113B80EF1EBD6661000FEB69 /* YLHintView.swift in Sources */,
 				1118AF621F7103DF0091D097 /* CGSize+Extension.swift in Sources */,
 				1118AF701F7103DF0091D097 /* YLNavigationController.swift in Sources */,
+				117C01651F74FF3E005B0B3D /* KeyboardVC.swift in Sources */,
 				114FD3D71ECBF26600B0F796 /* DrawAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
