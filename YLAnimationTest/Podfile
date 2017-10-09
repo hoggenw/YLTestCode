@@ -12,5 +12,6 @@ target ‘YLAnimationTest’ do
     pod 'YLBanner'
     pod 'YLRecordingVideo'
     pod 'SnapKit'
+    pod 'Kingfisher'
     
 end

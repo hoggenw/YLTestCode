@@ -7,9 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1104C3711F8B5EA700D5A29F /* CircleAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3701F8B5EA700D5A29F /* CircleAnimationViewController.swift */; };
+		1104C3831F8B5FB600D5A29F /* Array+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3731F8B5FB500D5A29F /* Array+Extension .swift */; };
+		1104C3841F8B5FB600D5A29F /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3741F8B5FB500D5A29F /* CGSize+Extension.swift */; };
+		1104C3851F8B5FB600D5A29F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3751F8B5FB500D5A29F /* Date+Extension.swift */; };
+		1104C3861F8B5FB600D5A29F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3761F8B5FB500D5A29F /* Device.swift */; };
+		1104C3871F8B5FB600D5A29F /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3771F8B5FB500D5A29F /* Dictionary+Extension.swift */; };
+		1104C3881F8B5FB600D5A29F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3781F8B5FB500D5A29F /* String+Extension.swift */; };
+		1104C3891F8B5FB600D5A29F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3791F8B5FB500D5A29F /* Timer+Extension.swift */; };
+		1104C38A1F8B5FB600D5A29F /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C37A1F8B5FB500D5A29F /* UIButton + Extension.swift */; };
+		1104C38B1F8B5FB600D5A29F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C37B1F8B5FB500D5A29F /* UIColor+Extension.swift */; };
+		1104C38C1F8B5FB600D5A29F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C37C1F8B5FB500D5A29F /* UIImage+Extension.swift */; };
+		1104C38D1F8B5FB600D5A29F /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C37D1F8B5FB500D5A29F /* UIImageView+Extension.swift */; };
+		1104C38E1F8B5FB600D5A29F /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C37E1F8B5FB500D5A29F /* UILable+Extension.swift */; };
+		1104C38F1F8B5FB600D5A29F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C37F1F8B5FB500D5A29F /* UIView+Extension.swift */; };
+		1104C3901F8B5FB600D5A29F /* YLMainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3801F8B5FB500D5A29F /* YLMainTabbarViewController.swift */; };
+		1104C3911F8B5FB600D5A29F /* YLMumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3811F8B5FB500D5A29F /* YLMumViewController.swift */; };
+		1104C3921F8B5FB600D5A29F /* YLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3821F8B5FB500D5A29F /* YLNavigationController.swift */; };
+		1104C3941F8B628200D5A29F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3931F8B628200D5A29F /* CircleView.swift */; };
 		114F029C1ED3DEFE0039F60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F029B1ED3DEFE0039F60C /* AppDelegate.swift */; };
 		114F029E1ED3DEFF0039F60C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F029D1ED3DEFF0039F60C /* ViewController.swift */; };
-		114F02A11ED3DEFF0039F60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114F029F1ED3DEFF0039F60C /* Main.storyboard */; };
 		114F02A31ED3DEFF0039F60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114F02A21ED3DEFF0039F60C /* Assets.xcassets */; };
 		114F02A61ED3DEFF0039F60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114F02A41ED3DEFF0039F60C /* LaunchScreen.storyboard */; };
 		114F02B11ED3DEFF0039F60C /* YLAnimationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F02B01ED3DEFF0039F60C /* YLAnimationTestTests.swift */; };
@@ -27,10 +44,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1104C3701F8B5EA700D5A29F /* CircleAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimationViewController.swift; sourceTree = "<group>"; };
+		1104C3731F8B5FB500D5A29F /* Array+Extension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension .swift"; sourceTree = "<group>"; };
+		1104C3741F8B5FB500D5A29F /* CGSize+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
+		1104C3751F8B5FB500D5A29F /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1104C3761F8B5FB500D5A29F /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		1104C3771F8B5FB500D5A29F /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		1104C3781F8B5FB500D5A29F /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		1104C3791F8B5FB500D5A29F /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
+		1104C37A1F8B5FB500D5A29F /* UIButton + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		1104C37B1F8B5FB500D5A29F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1104C37C1F8B5FB500D5A29F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		1104C37D1F8B5FB500D5A29F /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		1104C37E1F8B5FB500D5A29F /* UILable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extension.swift"; sourceTree = "<group>"; };
+		1104C37F1F8B5FB500D5A29F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1104C3801F8B5FB500D5A29F /* YLMainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLMainTabbarViewController.swift; sourceTree = "<group>"; };
+		1104C3811F8B5FB500D5A29F /* YLMumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLMumViewController.swift; sourceTree = "<group>"; };
+		1104C3821F8B5FB500D5A29F /* YLNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNavigationController.swift; sourceTree = "<group>"; };
+		1104C3931F8B628200D5A29F /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		114F02981ED3DEFE0039F60C /* YLAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114F029B1ED3DEFE0039F60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		114F029D1ED3DEFF0039F60C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		114F02A01ED3DEFF0039F60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		114F02A21ED3DEFF0039F60C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114F02A51ED3DEFF0039F60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		114F02A71ED3DEFF0039F60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +95,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1104C3721F8B5FB500D5A29F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1104C3731F8B5FB500D5A29F /* Array+Extension .swift */,
+				1104C3741F8B5FB500D5A29F /* CGSize+Extension.swift */,
+				1104C3751F8B5FB500D5A29F /* Date+Extension.swift */,
+				1104C3761F8B5FB500D5A29F /* Device.swift */,
+				1104C3771F8B5FB500D5A29F /* Dictionary+Extension.swift */,
+				1104C3781F8B5FB500D5A29F /* String+Extension.swift */,
+				1104C3791F8B5FB500D5A29F /* Timer+Extension.swift */,
+				1104C37A1F8B5FB500D5A29F /* UIButton + Extension.swift */,
+				1104C37B1F8B5FB500D5A29F /* UIColor+Extension.swift */,
+				1104C37C1F8B5FB500D5A29F /* UIImage+Extension.swift */,
+				1104C37D1F8B5FB500D5A29F /* UIImageView+Extension.swift */,
+				1104C37E1F8B5FB500D5A29F /* UILable+Extension.swift */,
+				1104C37F1F8B5FB500D5A29F /* UIView+Extension.swift */,
+				1104C3801F8B5FB500D5A29F /* YLMainTabbarViewController.swift */,
+				1104C3811F8B5FB500D5A29F /* YLMumViewController.swift */,
+				1104C3821F8B5FB500D5A29F /* YLNavigationController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		114F028F1ED3DEFE0039F60C = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +141,10 @@
 		114F029A1ED3DEFE0039F60C /* YLAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				1104C3721F8B5FB500D5A29F /* Extension */,
 				114F02BB1ED3DF890039F60C /* RefreshCircle */,
 				114F029B1ED3DEFE0039F60C /* AppDelegate.swift */,
 				114F029D1ED3DEFF0039F60C /* ViewController.swift */,
-				114F029F1ED3DEFF0039F60C /* Main.storyboard */,
 				114F02A21ED3DEFF0039F60C /* Assets.xcassets */,
 				114F02A41ED3DEFF0039F60C /* LaunchScreen.storyboard */,
 				114F02A71ED3DEFF0039F60C /* Info.plist */,
@@ -107,6 +164,8 @@
 		114F02BB1ED3DF890039F60C /* RefreshCircle */ = {
 			isa = PBXGroup;
 			children = (
+				1104C3701F8B5EA700D5A29F /* CircleAnimationViewController.swift */,
+				1104C3931F8B628200D5A29F /* CircleView.swift */,
 			);
 			name = RefreshCircle;
 			sourceTree = "<group>";
@@ -218,7 +277,6 @@
 			files = (
 				114F02A61ED3DEFF0039F60C /* LaunchScreen.storyboard in Resources */,
 				114F02A31ED3DEFF0039F60C /* Assets.xcassets in Resources */,
-				114F02A11ED3DEFF0039F60C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +311,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YLAnimationTest/Pods-YLAnimationTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YLBanner/YLBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/YLRecordingVideo/YLRecordingVideo.framework",
+				"${BUILT_PRODUCTS_DIR}/YLSwiftScan/YLSwiftScan.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLRecordingVideo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLSwiftScan.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -268,13 +337,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLAnimationTest-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -284,8 +356,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1104C38C1F8B5FB600D5A29F /* UIImage+Extension.swift in Sources */,
+				1104C3831F8B5FB600D5A29F /* Array+Extension .swift in Sources */,
+				1104C38F1F8B5FB600D5A29F /* UIView+Extension.swift in Sources */,
+				1104C38D1F8B5FB600D5A29F /* UIImageView+Extension.swift in Sources */,
+				1104C38A1F8B5FB600D5A29F /* UIButton + Extension.swift in Sources */,
+				1104C3881F8B5FB600D5A29F /* String+Extension.swift in Sources */,
+				1104C38B1F8B5FB600D5A29F /* UIColor+Extension.swift in Sources */,
+				1104C3841F8B5FB600D5A29F /* CGSize+Extension.swift in Sources */,
+				1104C38E1F8B5FB600D5A29F /* UILable+Extension.swift in Sources */,
 				114F029E1ED3DEFF0039F60C /* ViewController.swift in Sources */,
+				1104C3921F8B5FB600D5A29F /* YLNavigationController.swift in Sources */,
+				1104C3901F8B5FB600D5A29F /* YLMainTabbarViewController.swift in Sources */,
+				1104C3911F8B5FB600D5A29F /* YLMumViewController.swift in Sources */,
+				1104C3871F8B5FB600D5A29F /* Dictionary+Extension.swift in Sources */,
+				1104C3711F8B5EA700D5A29F /* CircleAnimationViewController.swift in Sources */,
 				114F029C1ED3DEFE0039F60C /* AppDelegate.swift in Sources */,
+				1104C3941F8B628200D5A29F /* CircleView.swift in Sources */,
+				1104C3891F8B5FB600D5A29F /* Timer+Extension.swift in Sources */,
+				1104C3861F8B5FB600D5A29F /* Device.swift in Sources */,
+				1104C3851F8B5FB600D5A29F /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +398,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		114F029F1ED3DEFF0039F60C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				114F02A01ED3DEFF0039F60C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		114F02A41ED3DEFF0039F60C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -499,6 +581,7 @@
 				114F02B71ED3DEFF0039F60C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		114F02B81ED3DEFF0039F60C /* Build configuration list for PBXNativeTarget "YLAnimationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +590,7 @@
 				114F02BA1ED3DEFF0039F60C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

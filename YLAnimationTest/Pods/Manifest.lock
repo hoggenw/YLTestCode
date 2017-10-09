@@ -1,21 +1,24 @@
 PODS:
+  - Kingfisher (3.10.3)
   - SnapKit (3.2.0)
   - YLBanner (0.1.3)
   - YLRecordingVideo (0.1.4)
   - YLSwiftScan (0.2.3)
 
 DEPENDENCIES:
+  - Kingfisher
   - SnapKit
   - YLBanner
   - YLRecordingVideo
   - YLSwiftScan
 
 SPEC CHECKSUMS:
+  Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   YLBanner: c5af38502498d1cc6d952eaf62f55e70a8b0153b
   YLRecordingVideo: aa31e1f904c401e8f68c51dc637f0d08966cff5b
   YLSwiftScan: b5e2e5bc640abc3b6a053d24b1fba0761fb87f82
 
-PODFILE CHECKSUM: b84e55aeb3b24a1b0979d5c0537994b031388ad7
+PODFILE CHECKSUM: 3b907422e5ef1a887642754f422d4978fab87634
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.0.beta.2
