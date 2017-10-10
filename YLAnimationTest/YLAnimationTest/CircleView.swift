@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import QuartzCore
+import Foundation
 
 class CircleView: UIView {
 
@@ -108,7 +110,7 @@ class CircleView: UIView {
     public func beginAnimation() {
         
         installAnimation(baseAnimation: baseAnimation1);
-       // baseAnimation1.beginTime = CACurrentMediaTime() + 0.1;
+        baseAnimation1.beginTime = CACurrentMediaTime() + 0.1;
         installAnimation(baseAnimation: baseAnimation2);
         circleLayer1.add(baseAnimation1, forKey: "baseanimation1");
         circleLayer2.add(baseAnimation2, forKey: "baseanimation2")
@@ -118,7 +120,8 @@ class CircleView: UIView {
         baseAnimation.fromValue = Double.pi * 2;
         baseAnimation.toValue = 0;
         baseAnimation.duration = 3;
-        baseAnimation.repeatCount = Float(NSIntegerMax);
+        baseAnimation.repeatCount = HUGE;
+        baseAnimation.timingFunction =  CAMediaTimingFunction(name:  kCAMediaTimingFunctionEaseOut);//[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     }
 }
 
