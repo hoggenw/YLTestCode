@@ -14,10 +14,19 @@ class CircleView: UIView {
 
     
     var circleLayer1 :CAShapeLayer!
-    var circleLayer2 :CAShapeLayer!
+    var arrows1 : CAShapeLayer!
+    var arrow1StartPath: UIBezierPath!
+    var arrow1EndPath: UIBezierPath!
     
+    var circleLayer2 :CAShapeLayer!
+    var arrows2 : CAShapeLayer!
+    var arrow2StartPath: UIBezierPath!
+    var arrow2EndPath: UIBezierPath!
+   
     let baseAnimation1 = CABasicAnimation(keyPath: "transform.rotation.z");
     let baseAnimation2 = CABasicAnimation(keyPath: "transform.rotation.z");
+    
+    let keyAnimation2 = CAKeyframeAnimation(keyPath: "keyPath2");
     
     var circle2View: UIView = UIView()
     
@@ -39,6 +48,13 @@ class CircleView: UIView {
         circleLayer1.fillColor = UIColor.clear.cgColor
         circleLayer1.lineCap = kCALineCapRound;
         
+        self.arrows1 = CAShapeLayer();
+        arrows1.frame = self.bounds;
+        arrows1.borderWidth = 1
+        arrows1.lineWidth = 3
+        arrows1.fillColor = UIColor.clear.cgColor
+        arrows1.lineCap = kCALineCapRound;
+        
         self.circleLayer2 = CAShapeLayer();
         circleLayer2.frame = self.bounds;
         circleLayer2.borderWidth = 1
@@ -46,9 +62,19 @@ class CircleView: UIView {
         circleLayer2.fillColor = UIColor.clear.cgColor
         circleLayer2.lineCap = kCALineCapRound;
         
+        self.arrows2 = CAShapeLayer();
+        arrows2.frame = self.bounds;
+        arrows2.borderWidth = 1
+        arrows2.lineWidth = 3
+        arrows2.fillColor = UIColor.clear.cgColor
+        arrows2.lineCap = kCALineCapRound;
+        
         tintColorDidChange()
         self.layer.addSublayer(self.circleLayer1)
+        self.circleLayer1.addSublayer( arrows1);
+        
         circle2View.layer.addSublayer(self.circleLayer2)
+        circle2View.layer.addSublayer(arrows2);
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -63,8 +89,14 @@ class CircleView: UIView {
         circleLayer1.strokeColor = UIColor.green.cgColor
         circleLayer1.borderColor = UIColor.clear.cgColor
         
+        arrows1.strokeColor = UIColor.green.cgColor
+        arrows1.borderColor = UIColor.clear.cgColor
+        
         circleLayer2.strokeColor = UIColor.red.cgColor
         circleLayer2.borderColor = UIColor.clear.cgColor
+        
+        arrows2.strokeColor = UIColor.red.cgColor
+        arrows2.borderColor = UIColor.clear.cgColor
 
     }
     
@@ -80,7 +112,7 @@ class CircleView: UIView {
     func circleLayer1Path() -> UIBezierPath {
         
         let startAngle = Double.pi;
-        let endAngle = startAngle + Double.pi * 0.8;
+        let endAngle = startAngle + Double.pi * 0.7;
 
         let width = self.frame.size.width;
         let borderWidth = self.circleLayer1.borderWidth;
@@ -89,13 +121,27 @@ class CircleView: UIView {
         
         path.lineWidth     = borderWidth
         path.lineJoinStyle = .round //终点处理
+        
+        let pointX: CGFloat = 0 ;
+        let pointY = 0 + self.frame.size.height/2;
+        let originPoint = CGPoint(x: pointX + 0.5, y: pointY + 0.5 );
+        let leftPonit = CGPoint(x: pointX - 8, y: pointY - 10);
+        let rightPoint = CGPoint(x: pointX + 12, y: pointY - 8)
+        
+        arrow1StartPath = UIBezierPath();
+        arrow1StartPath.move(to: leftPonit);
+        arrow1StartPath.addLine(to: originPoint);
+        arrow1StartPath.addLine(to: rightPoint);
+        arrow1StartPath.lineJoinStyle = .round //终点处理
+        arrows1.path = arrow1StartPath.cgPath;
+        
         return path;
     }
     
     func circleLayer2Path() -> UIBezierPath {
         
         let startAngle: Double = 0;
-        let endAngle = startAngle + Double.pi * 0.8;
+        let endAngle = startAngle + Double.pi * 0.82;
         
         let width = self.frame.size.width;
         let borderWidth = self.circleLayer1.borderWidth;
@@ -104,6 +150,32 @@ class CircleView: UIView {
         
         path.lineWidth     = borderWidth
         path.lineJoinStyle = .round //终点处理
+        let pointX = 0 + self.frame.size.width;
+        let pointY = 0 + self.frame.size.height/2;
+        let originPoint = CGPoint(x: pointX - 0.5, y: pointY - 0.5 );
+        let leftPonit = CGPoint(x: pointX - 12, y: pointY + 8);
+        let rightPoint = CGPoint(x: pointX + 8, y: pointY + 10)
+        
+        arrow2StartPath = UIBezierPath();
+        arrow2StartPath.move(to: leftPonit);
+        arrow2StartPath.addLine(to: originPoint);
+        arrow2StartPath.addLine(to: rightPoint);
+        arrow2StartPath.lineJoinStyle = .round //终点处理
+        
+        let leftUpPonit = CGPoint(x: pointX - 14, y: pointY - 14 );
+        let rightUPPoint = CGPoint(x: pointX + 6.5, y: pointY - 16)
+        
+        arrow2EndPath = UIBezierPath();
+        arrow2EndPath.move(to: leftUpPonit);
+        arrow2EndPath.addLine(to: originPoint);
+        arrow2EndPath.addLine(to: rightUPPoint);
+        arrow2EndPath.lineJoinStyle = .round //终点处理
+        
+        
+        
+        
+        arrows2.path = arrow2EndPath.cgPath;
+        
         return path;
     }
     
@@ -112,16 +184,30 @@ class CircleView: UIView {
         installAnimation(baseAnimation: baseAnimation1);
         baseAnimation1.beginTime = CACurrentMediaTime() + 0.1;
         installAnimation(baseAnimation: baseAnimation2);
+        let values = [arrow2StartPath.cgPath,arrow2EndPath.cgPath,arrow2EndPath.cgPath];
+        installKeyframeAnimation(keyAnimation: keyAnimation2, values: values);
+        
         circleLayer1.add(baseAnimation1, forKey: "baseanimation1");
-        circleLayer2.add(baseAnimation2, forKey: "baseanimation2")
+        circle2View.layer.add(baseAnimation2, forKey: "baseanimation2")
+        arrows2.add(keyAnimation2, forKey: "keyAnimation2");
     }
     
     private func installAnimation(baseAnimation: CABasicAnimation) {
         baseAnimation.fromValue = Double.pi * 2;
         baseAnimation.toValue = 0;
-        baseAnimation.duration = 3;
+        baseAnimation.duration = 2.5;
         baseAnimation.repeatCount = HUGE;
+        //kCAMediaTimingFunctionEaseInEaseOut 使用该值，动画在开始和结束时速度较慢，中间时间段内速度较快。
         baseAnimation.timingFunction =  CAMediaTimingFunction(name:  kCAMediaTimingFunctionEaseOut);//[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    }
+    
+    private func installKeyframeAnimation(keyAnimation: CAKeyframeAnimation, values: [Any]) {
+        
+        keyAnimation.values = values;
+        keyAnimation.keyTimes = [0.45,0.75, 0.95];
+        keyAnimation.autoreverses = true;
+        keyAnimation.repeatCount = HUGE;
+        keyAnimation.duration = 1;
     }
 }
 
