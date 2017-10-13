@@ -209,7 +209,7 @@ class CircleView: UIView {
     private func installAnimation(baseAnimation: CABasicAnimation) {
         baseAnimation.fromValue = Double.pi * 2;
         baseAnimation.toValue = 0;
-        baseAnimation.duration = 2.5;
+        baseAnimation.duration = 5;
         baseAnimation.repeatCount = HUGE;
         //kCAMediaTimingFunctionEaseInEaseOut 使用该值，动画在开始和结束时速度较慢，中间时间段内速度较快。
         baseAnimation.timingFunction =  CAMediaTimingFunction(name:  kCAMediaTimingFunctionEaseOut);
@@ -220,7 +220,7 @@ class CircleView: UIView {
         keyAnimation.keyTimes = [0.1,0.2,0.3,0.4,0.5];
         keyAnimation.autoreverses = false;
         keyAnimation.repeatCount = HUGE;
-        keyAnimation.duration = 2.5;
+        keyAnimation.duration = 5;
     }
 }
 
