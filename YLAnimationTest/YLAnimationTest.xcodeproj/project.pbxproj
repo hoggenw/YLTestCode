@@ -25,6 +25,8 @@
 		1104C3911F8B5FB600D5A29F /* YLMumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3811F8B5FB500D5A29F /* YLMumViewController.swift */; };
 		1104C3921F8B5FB600D5A29F /* YLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3821F8B5FB500D5A29F /* YLNavigationController.swift */; };
 		1104C3941F8B628200D5A29F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104C3931F8B628200D5A29F /* CircleView.swift */; };
+		110979171FB2DAFD00A22E88 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110979161FB2DAFD00A22E88 /* WaveView.swift */; };
+		110979191FB2DB4C00A22E88 /* WaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110979181FB2DB4C00A22E88 /* WaveViewController.swift */; };
 		114F029C1ED3DEFE0039F60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F029B1ED3DEFE0039F60C /* AppDelegate.swift */; };
 		114F029E1ED3DEFF0039F60C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F029D1ED3DEFF0039F60C /* ViewController.swift */; };
 		114F02A31ED3DEFF0039F60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114F02A21ED3DEFF0039F60C /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		1104C3811F8B5FB500D5A29F /* YLMumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLMumViewController.swift; sourceTree = "<group>"; };
 		1104C3821F8B5FB500D5A29F /* YLNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNavigationController.swift; sourceTree = "<group>"; };
 		1104C3931F8B628200D5A29F /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		110979161FB2DAFD00A22E88 /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		110979181FB2DB4C00A22E88 /* WaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveViewController.swift; sourceTree = "<group>"; };
 		114F02981ED3DEFE0039F60C /* YLAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114F029B1ED3DEFE0039F60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		114F029D1ED3DEFF0039F60C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 			children = (
 				1104C3701F8B5EA700D5A29F /* CircleAnimationViewController.swift */,
 				1104C3931F8B628200D5A29F /* CircleView.swift */,
+				110979161FB2DAFD00A22E88 /* WaveView.swift */,
+				110979181FB2DB4C00A22E88 /* WaveViewController.swift */,
 			);
 			name = RefreshCircle;
 			sourceTree = "<group>";
@@ -361,6 +367,7 @@
 				1104C38F1F8B5FB600D5A29F /* UIView+Extension.swift in Sources */,
 				1104C38D1F8B5FB600D5A29F /* UIImageView+Extension.swift in Sources */,
 				1104C38A1F8B5FB600D5A29F /* UIButton + Extension.swift in Sources */,
+				110979191FB2DB4C00A22E88 /* WaveViewController.swift in Sources */,
 				1104C3881F8B5FB600D5A29F /* String+Extension.swift in Sources */,
 				1104C38B1F8B5FB600D5A29F /* UIColor+Extension.swift in Sources */,
 				1104C3841F8B5FB600D5A29F /* CGSize+Extension.swift in Sources */,
@@ -372,6 +379,7 @@
 				1104C3871F8B5FB600D5A29F /* Dictionary+Extension.swift in Sources */,
 				1104C3711F8B5EA700D5A29F /* CircleAnimationViewController.swift in Sources */,
 				114F029C1ED3DEFE0039F60C /* AppDelegate.swift in Sources */,
+				110979171FB2DAFD00A22E88 /* WaveView.swift in Sources */,
 				1104C3941F8B628200D5A29F /* CircleView.swift in Sources */,
 				1104C3891F8B5FB600D5A29F /* Timer+Extension.swift in Sources */,
 				1104C3861F8B5FB600D5A29F /* Device.swift in Sources */,
