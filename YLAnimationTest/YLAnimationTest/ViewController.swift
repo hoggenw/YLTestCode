@@ -28,21 +28,16 @@ class ViewController: UIViewController {
         button.backgroundColor = UIColor.brown
         button.frame = CGRect(x: self.view.bounds.width/2 - 30, y: self.view.bounds.height/2 - 200, width: 60, height: 50)
         button.setTitle("circleAnimation", for: .normal)
-//        let leftmargin: CGFloat = 0
-//        let rightmargin: CGFloat = 0
+
         button.addTarget(self, action: #selector(circleAnimationAction), for: .touchUpInside)
-//        button.addLineWithSide(.inBottom, color: .red, thickness: 3, margin1: leftmargin, margin2: rightmargin)
-//        button.addLineWithSide(.inLeft, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
-//        button.addLineWithSide(.outBottom, color: .red, thickness: 3, margin1: leftmargin, margin2: rightmargin)
-//        button.addLineWithSide(.outLeft, color: UIColor.randomColor(), thickness: 3, margin1: leftmargin, margin2: rightmargin)
         self.view.addSubview(button)
         
-//        let button1 = UIButton()
-//        button1.backgroundColor = UIColor.brown
-//        button1.frame = CGRect(x: self.view.bounds.width/2 - 30, y: self.view.bounds.height/2 - 100, width: 60, height: 50)
-//        button1.setTitle("生成", for: .normal)
-//        button1.addTarget(self, action: #selector(creatSelfQRcODE), for: .touchUpInside)
-//        self.view.addSubview(button1)
+        let button1 = UIButton()
+        button1.backgroundColor = UIColor.brown
+        button1.frame = CGRect(x: self.view.bounds.width/2 - 30, y: self.view.bounds.height/2 - 100, width: 60, height: 50)
+        button1.setTitle("波浪", for: .normal)
+        button1.addTarget(self, action: #selector(waveAnimationAction), for: .touchUpInside)
+        self.view.addSubview(button1)
 //
 //
 //        for index in 0 ..< addOne.count {
@@ -78,6 +73,11 @@ class ViewController: UIViewController {
     func circleAnimationAction() {
         let circleVC = CircleAnimationViewController()
         self.navigationController?.pushViewController( circleVC, animated:  true);
+    }
+    
+    func waveAnimationAction() {
+        let waveVC = WaveViewController()
+        self.navigationController?.pushViewController( waveVC, animated:  true);
     }
 
 
