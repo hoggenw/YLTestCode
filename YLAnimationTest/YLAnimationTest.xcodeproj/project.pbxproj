@@ -32,6 +32,8 @@
 		114F02A31ED3DEFF0039F60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114F02A21ED3DEFF0039F60C /* Assets.xcassets */; };
 		114F02A61ED3DEFF0039F60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114F02A41ED3DEFF0039F60C /* LaunchScreen.storyboard */; };
 		114F02B11ED3DEFF0039F60C /* YLAnimationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F02B01ED3DEFF0039F60C /* YLAnimationTestTests.swift */; };
+		11C2E4D01FB4408100C6A06E /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C2E4CF1FB4408100C6A06E /* DrawerView.swift */; };
+		11C2E4D21FB4408E00C6A06E /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C2E4D11FB4408E00C6A06E /* DrawerViewController.swift */; };
 		FAB7D1E40605008F1E1FAF79 /* Pods_YLAnimationTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1790FA62D47B620EB532B57B /* Pods_YLAnimationTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		114F02AC1ED3DEFF0039F60C /* YLAnimationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLAnimationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114F02B01ED3DEFF0039F60C /* YLAnimationTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAnimationTestTests.swift; sourceTree = "<group>"; };
 		114F02B21ED3DEFF0039F60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C2E4CF1FB4408100C6A06E /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		11C2E4D11FB4408E00C6A06E /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		1790FA62D47B620EB532B57B /* Pods_YLAnimationTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLAnimationTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D5A5689934931E33B53ADF /* Pods-YLAnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLAnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLAnimationTest/Pods-YLAnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EF6032B1A53CCA4B96B8D0C0 /* Pods-YLAnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLAnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLAnimationTest/Pods-YLAnimationTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				1104C3931F8B628200D5A29F /* CircleView.swift */,
 				110979161FB2DAFD00A22E88 /* WaveView.swift */,
 				110979181FB2DB4C00A22E88 /* WaveViewController.swift */,
+				11C2E4CF1FB4408100C6A06E /* DrawerView.swift */,
+				11C2E4D11FB4408E00C6A06E /* DrawerViewController.swift */,
 			);
 			name = RefreshCircle;
 			sourceTree = "<group>";
@@ -376,8 +382,10 @@
 				1104C3921F8B5FB600D5A29F /* YLNavigationController.swift in Sources */,
 				1104C3901F8B5FB600D5A29F /* YLMainTabbarViewController.swift in Sources */,
 				1104C3911F8B5FB600D5A29F /* YLMumViewController.swift in Sources */,
+				11C2E4D01FB4408100C6A06E /* DrawerView.swift in Sources */,
 				1104C3871F8B5FB600D5A29F /* Dictionary+Extension.swift in Sources */,
 				1104C3711F8B5EA700D5A29F /* CircleAnimationViewController.swift in Sources */,
+				11C2E4D21FB4408E00C6A06E /* DrawerViewController.swift in Sources */,
 				114F029C1ED3DEFE0039F60C /* AppDelegate.swift in Sources */,
 				110979171FB2DAFD00A22E88 /* WaveView.swift in Sources */,
 				1104C3941F8B628200D5A29F /* CircleView.swift in Sources */,

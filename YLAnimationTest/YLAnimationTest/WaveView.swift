@@ -32,8 +32,8 @@ class WaveView: UIView {
         layerB.frame = self.bounds;
         layerB.opacity = 0.5;
         standerPonitY = self.frame.size.height/2;
-        speed = 4;
-        speed2 = 4;
+        speed = 3;
+        speed2 = 3;
         //waveHight = self.frame.size.height/5;
         self.layer.addSublayer(layerA);
         self.layer.addSublayer(layerB);

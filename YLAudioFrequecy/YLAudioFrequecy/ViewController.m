@@ -67,6 +67,21 @@
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
     [self testGCD];
+    
+    UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:@"支付详情" message:@"测试连点" preferredStyle:UIAlertControllerStyleAlert];
+    UIView *subView1 = alertVC.view.subviews[0];
+    UIView *subView2 = subView1.subviews[0];
+    UIView *subView3 = subView2.subviews[0];
+    UIView *subView4 = subView3.subviews[0];
+    UIView *subView5 = subView4.subviews[0];
+    //分别拿到title 和 message 可以分别设置他们的对齐属性
+    UILabel *message = subView5.subviews[1];
+    __weak typeof(self) weakSelf = self;
+    message.textAlignment = NSTextAlignmentLeft;
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"连点");
+    }]];
+    [self presentViewController:alertVC animated:YES completion:nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
