@@ -61,13 +61,27 @@
     
     
     
-    //    TestGCD * test = [[TestGCD alloc] init];
-    //    [test test];
+        TestGCD * test = [[TestGCD alloc] init];
+        [test test];
 
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
     [self testGCD];
     
+    
+    UIButton * testButton = [UIButton new];
+    testButton.frame = CGRectMake(200, 200, 50, 50);
+    [self.view addSubview: testButton];
+    [testButton setTitle:@"测试" forState: UIControlStateNormal];
+    testButton.titleLabel.textColor = [UIColor blackColor];
+    testButton.backgroundColor = [UIColor greenColor];
+    [testButton addTarget:self action:@selector(testActionContinuity) forControlEvents:UIControlEventTouchUpInside];
+    
+
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)testActionContinuity{
     UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:@"支付详情" message:@"测试连点" preferredStyle:UIAlertControllerStyleAlert];
     UIView *subView1 = alertVC.view.subviews[0];
     UIView *subView2 = subView1.subviews[0];
@@ -82,7 +96,6 @@
         NSLog(@"连点");
     }]];
     [self presentViewController:alertVC animated:YES completion:nil];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)testGCD {
