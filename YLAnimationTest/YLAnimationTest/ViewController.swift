@@ -38,6 +38,14 @@ class ViewController: UIViewController {
         button1.setTitle("波浪", for: .normal)
         button1.addTarget(self, action: #selector(waveAnimationAction), for: .touchUpInside)
         self.view.addSubview(button1)
+        
+        
+        let button2 = UIButton()
+        button2.backgroundColor = UIColor.brown
+        button2.frame = CGRect(x: self.view.bounds.width/2 - 30, y: self.view.bounds.height/2 , width: 60, height: 50)
+        button2.setTitle("3D", for: .normal)
+        button2.addTarget(self, action: #selector(Animation3DAction), for: .touchUpInside)
+        self.view.addSubview(button2)
 //
 //
 //        for index in 0 ..< addOne.count {
@@ -78,6 +86,11 @@ class ViewController: UIViewController {
     func waveAnimationAction() {
         let waveVC = WaveViewController()
         self.navigationController?.pushViewController( waveVC, animated:  true);
+    }
+    
+    func Animation3DAction() {
+        let transform3DVC = DrawerViewController();
+        self.navigationController?.pushViewController( transform3DVC, animated:  true);
     }
 
 
