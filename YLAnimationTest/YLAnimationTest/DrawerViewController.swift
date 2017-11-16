@@ -48,21 +48,62 @@ class DrawerViewController: UIViewController {
             let point = gesture.translation(in: self.view);
             let velocity = gesture.velocity(in: self.view);
             let fullHeight:CGFloat = 80;
+            //print("point.x = \(point.x)");//往右为正，往左为负
             let rota: CGFloat = point.x/fullHeight;
             _rota = rota;
-            if(velocity.x>0) {
-                //向右滑动
-                
-            }else{
-                //向左滑动
-                
-            }
-            self.sideMenu.getRota(rota: rota);
+            getRota(rota1: rota);
         }
         if gesture.state == .ended || gesture.state == .cancelled {
             doAnimation();
         }
     }
+    func getRota(rota1: CGFloat) {
+        var tran = CATransform3DIdentity;
+        tran.m34 = -1/500.0;
+        var rota: CGFloat = rota1;
+        if ifChanged == false {
+            if rota <= 0 {
+                rota = 0;
+            }
+            if rota > CGFloat(Double.pi/2) {
+                rota = CGFloat(Double.pi/2)
+            }
+            self.menuButton.transform = CGAffineTransform(rotationAngle: rota);
+            
+            self.sideMenu.gradLayer.colors = [UIColor.clear.cgColor, UIColor.black.withAlphaComponent(((0.5 - rota/2.0) > 0) ? 0.5 - rota/2.0 : 0).cgColor];
+            let contaTran = CATransform3DRotate(tran, -CGFloat(Double.pi/Double(2)) + rota, 0, 1, 0);
+            self.sideMenu.containHelperView.layer.transform = contaTran;
+        
+            let contaTran2 = CATransform3DMakeTranslation(self.sideMenu.containHelperView.frame.size.width - 100, 0, 0);
+            self.sideMenu.containView.layer.transform  = CATransform3DConcat(contaTran, contaTran2);
+            self.containView.transform = CGAffineTransform(translationX: self.sideMenu.containHelperView.frame.size.width, y: 0);
+            //print("x:\(self.sideMenu.containView.frame.origin.x),   y:\(self.sideMenu.containView.frame.origin.y),    width:\(self.sideMenu.containView.frame.size.width),     rota:\(rota),  self.sideMenu.containHelperView.frame.size.width : \(self.sideMenu.containHelperView.frame.size.width)");
+            //self.sideMenu.gestureClose(rota: rota);
+            
+        }else{
+            if rota >= 0 {
+                rota = 0;
+            }
+            if rota < -CGFloat(Double.pi/2) {
+                rota = -CGFloat(Double.pi/2)
+            }
+             self.menuButton.transform = CGAffineTransform(rotationAngle: rota + CGFloat(Double.pi/2));
+            self.sideMenu.gradLayer.colors = [UIColor.clear.cgColor, UIColor.black.withAlphaComponent((( -rota/2.0) < 0.5) ?  -rota/2.0 : 0.5).cgColor];
+            let contaTran = CATransform3DRotate(tran, rota, 0, 1, 0);
+            self.sideMenu.containHelperView.layer.transform = contaTran;
+            
+            let contaTran2 = CATransform3DMakeTranslation(self.sideMenu.containHelperView.frame.size.width - 100, 0, 0);
+            self.sideMenu.containView.layer.transform  = CATransform3DConcat(contaTran, contaTran2);
+            self.containView.transform = CGAffineTransform(translationX: self.sideMenu.containHelperView.frame.size.width, y: 0);
+            //print(" ===x:\(self.sideMenu.containView.frame.origin.x),y:\(self.sideMenu.containView.frame.origin.y),width:\(self.sideMenu.containView.frame.size.width),rota:\(rota)");
+            
+            
+            //self.containView.transform = CGAffineTransform(translationX: self.sideMenu.containHelperView.frame.size.width, y: 0);
+            //self.sideMenu.gestureOpen(rota: rota);
+        }
+        
+    }
+    
     func doAnimation() {
         if ifChanged == false {
             if _rota! > CGFloat(Double.pi/4) {

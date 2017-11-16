@@ -34,7 +34,7 @@ class DrawerView: UIView {
      */
     var containView : UIView!
     var containHelperView: UIView!
-    var rota: CGFloat?
+
     var gradLayer: CAGradientLayer!
     var open: Bool = false;
     
@@ -57,13 +57,8 @@ class DrawerView: UIView {
         intialUI();
     }
     
-    func getRota(rota: CGFloat) {
-        
-    }
+   
     
-    func doAnimation() {
-        
-    }
     
     func intialUI()  {
         let titleLabel = creatLabel();
@@ -77,6 +72,30 @@ class DrawerView: UIView {
         listLabel.frame = CGRect(x: 0, y: 64, width: self.frame.size.width, height: 64);
         listLabel.text = "内容一";
         containView.addSubview( listLabel);
+        
+    }
+    func gestureClose(rota: CGFloat) {
+        var tran = CATransform3DIdentity;
+        tran.m34 = -1/500.0;
+        gradLayer.colors = [UIColor.clear.cgColor, UIColor.black.withAlphaComponent(((0.5 - rota/2.0) > 0) ? 0.5 - rota/2.0 : 0).cgColor];
+        let contaTran = CATransform3DRotate(tran, -CGFloat(Double.pi/Double(2)), 0, 1, 0);
+        containHelperView.layer.transform = contaTran;
+        
+        let contaTran2 = CATransform3DMakeTranslation(containHelperView.frame.size.width - 100, 0, 0);
+        containView.layer.transform  = CATransform3DConcat(contaTran, contaTran2);
+        
+        
+    }
+    
+    func gestureOpen(rota: CGFloat) {
+        var tran = CATransform3DIdentity;
+        tran.m34 = -1/500.0;
+        gradLayer.colors = [UIColor.clear.cgColor, UIColor.black.withAlphaComponent(((0.5 - rota/2.0) > 0) ? -rota/2.0 : 0.5).cgColor];
+        let contaTran = CATransform3DRotate(tran, rota, 0, 1, 0);
+        containHelperView.layer.transform = contaTran;
+        
+        let contaTran2 = CATransform3DMakeTranslation(containHelperView.frame.size.width - 100, 0, 0);
+        containView.layer.transform  = CATransform3DConcat(contaTran, contaTran2);
         
     }
     
