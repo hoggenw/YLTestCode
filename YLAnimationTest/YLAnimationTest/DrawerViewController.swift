@@ -20,14 +20,65 @@ class DrawerViewController: UIViewController {
     var ifChanged: Bool = false;
     var containView : UIView!
     var tvView: UIView!
+    var _rota: CGFloat?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white;
         containView = UIView(frame: view.bounds);
         tvView = UIView(frame: view.bounds);
         initialNavView();
+        self.view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action:
+            #selector(gestureRecognizer(gesture:))));
         // Do any additional setup after loading the view.
     }
+    
+    func gestureRecognizer(gesture: UIPanGestureRecognizer) {
+        //获取手势在相对指定视图的移动距离，即在X,Y轴上移动的像素，应该是没有正负的，
+        //于是考虑用velocityInView:这个方法，这个方法是获取手势在指定视图坐标系统的移动速度，结果发现这个速度是具有方向的，
+        /**
+         CGPoint velocity = [recognizer velocityInView:recognizer.view];
+         if(velocity.x>0) {
+         　　//向右滑动
+         }else{
+             //向左滑动
+         }
+         */
+        if gesture.state == .changed {
+            let point = gesture.translation(in: self.view);
+            let velocity = gesture.velocity(in: self.view);
+            let fullHeight:CGFloat = 80;
+            let rota: CGFloat = point.x/fullHeight;
+            _rota = rota;
+            if(velocity.x>0) {
+                //向右滑动
+                
+            }else{
+                //向左滑动
+                
+            }
+            self.sideMenu.getRota(rota: rota);
+        }
+        if gesture.state == .ended || gesture.state == .cancelled {
+            doAnimation();
+        }
+    }
+    func doAnimation() {
+        if ifChanged == false {
+            if _rota! > CGFloat(Double.pi/4) {
+                open();
+            }else{
+                close();
+            }
+        }else{
+            if _rota! > -CGFloat(Double.pi/4) {
+                open();
+            }else{
+                close();
+            }
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,36 +119,43 @@ class DrawerViewController: UIViewController {
         var tran = CATransform3DIdentity;
         tran.m34 = -1/500.0;
         if ifChanged {
-            ifChanged = false;
-            self.sideMenu.gradLayer.colors = [UIColor.clear.cgColor,UIColor.black.withAlphaComponent(0.5).cgColor];
-            UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions(rawValue: UIViewAnimationOptions.RawValue(3 << 10)), animations: {
-                self.menuButton.transform = CGAffineTransform.identity;
-                self.containView.layer.transform = CATransform3DIdentity;
-                self.sideMenu.initialTrans();
-            }) { (finish) in
-            };
-            
-            
+            close();
         }else{
-            ifChanged = true;
-
-            UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions(rawValue: UIViewAnimationOptions.RawValue(3 << 10)), animations: {
-                self.menuButton.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2));
-            }) { (finish) in
-                self.sideMenu.gradLayer.colors = [UIColor.clear.cgColor,UIColor.clear.cgColor];
-            };
-            let tranAni2 = CABasicAnimation(keyPath: "transform");
-            tranAni2.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseIn);
-            tranAni2.fromValue = NSValue.init(caTransform3D: containView.layer.transform);
-            tranAni2.toValue = NSValue.init(caTransform3D: CATransform3DMakeTranslation(100, 0, 0));
-            tranAni2.duration = 0.5;
-            containView.layer.add(tranAni2, forKey: "openForContainerAni");
-
-            containView.layer.transform = CATransform3DMakeTranslation(100, 0, 0);
-            
+            open();
         }
         
-        self.sideMenu.doOpenOrNot();
+        
+    }
+    
+    func close() {
+        ifChanged = false;
+        self.sideMenu.gradLayer.colors = [UIColor.clear.cgColor,UIColor.black.withAlphaComponent(0.5).cgColor];
+        UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions(rawValue: UIViewAnimationOptions.RawValue(3 << 10)), animations: {
+            self.menuButton.transform = CGAffineTransform.identity;
+            self.containView.layer.transform = CATransform3DIdentity;
+            self.sideMenu.initialTrans();
+        }) { (finish) in
+        };
+        self.sideMenu.closeeFold();
+    }
+    
+    func open() {
+        ifChanged = true;
+        
+        UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions(rawValue: UIViewAnimationOptions.RawValue(3 << 10)), animations: {
+            self.menuButton.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2));
+        }) { (finish) in
+            self.sideMenu.gradLayer.colors = [UIColor.clear.cgColor,UIColor.clear.cgColor];
+        };
+        let tranAni2 = CABasicAnimation(keyPath: "transform");
+        tranAni2.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseIn);
+        tranAni2.fromValue = NSValue.init(caTransform3D: containView.layer.transform);
+        tranAni2.toValue = NSValue.init(caTransform3D: CATransform3DMakeTranslation(100, 0, 0));
+        tranAni2.duration = 0.5;
+        containView.layer.add(tranAni2, forKey: "openForContainerAni");
+        
+        containView.layer.transform = CATransform3DMakeTranslation(100, 0, 0);
+        self.sideMenu.openFold();
     }
     
     

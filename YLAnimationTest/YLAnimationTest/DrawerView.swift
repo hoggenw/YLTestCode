@@ -57,6 +57,14 @@ class DrawerView: UIView {
         intialUI();
     }
     
+    func getRota(rota: CGFloat) {
+        
+    }
+    
+    func doAnimation() {
+        
+    }
+    
     func intialUI()  {
         let titleLabel = creatLabel();
         titleLabel.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 64);
