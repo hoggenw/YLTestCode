@@ -46,6 +46,13 @@ class ViewController: UIViewController {
         button2.setTitle("3D", for: .normal)
         button2.addTarget(self, action: #selector(Animation3DAction), for: .touchUpInside)
         self.view.addSubview(button2)
+        
+        let button3 = UIButton()
+        button3.backgroundColor = UIColor.brown
+        button3.frame = CGRect(x: self.view.bounds.width/2 - 30, y: self.view.bounds.height/2 + 100 , width: 60, height: 50)
+        button3.setTitle("3D_Optimization", for: .normal)
+        button3.addTarget(self, action: #selector(Animation3DViewAction), for: .touchUpInside)
+        self.view.addSubview(button3)
 //
 //
 //        for index in 0 ..< addOne.count {
@@ -90,6 +97,11 @@ class ViewController: UIViewController {
     
     func Animation3DAction() {
         let transform3DVC = DrawerViewController();
+        self.navigationController?.pushViewController( transform3DVC, animated:  true);
+    }
+    
+    func Animation3DViewAction() {
+        let transform3DVC = Menu3DViewController();
         self.navigationController?.pushViewController( transform3DVC, animated:  true);
     }
 

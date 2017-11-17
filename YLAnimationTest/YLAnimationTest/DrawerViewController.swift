@@ -57,6 +57,24 @@ class DrawerViewController: UIViewController {
             doAnimation();
         }
     }
+    
+    func doAnimation() {
+        if ifChanged == false {
+            if _rota! > CGFloat(Double.pi/4) {
+                open();
+            }else{
+                close();
+            }
+        }else{
+            if _rota! > -CGFloat(Double.pi/4) {
+                open();
+            }else{
+                close();
+            }
+        }
+    }
+    
+    
     func getRota(rota1: CGFloat) {
         var tran = CATransform3DIdentity;
         tran.m34 = -1/500.0;
@@ -103,22 +121,7 @@ class DrawerViewController: UIViewController {
         }
         
     }
-    
-    func doAnimation() {
-        if ifChanged == false {
-            if _rota! > CGFloat(Double.pi/4) {
-                open();
-            }else{
-                close();
-            }
-        }else{
-            if _rota! > -CGFloat(Double.pi/4) {
-                open();
-            }else{
-                close();
-            }
-        }
-    }
+   
     
 
     override func didReceiveMemoryWarning() {
@@ -225,6 +228,13 @@ class DrawerViewController: UIViewController {
         UIGraphicsEndImageContext();
         return image;
     }
+    
+    /**
+     优化想法
+         1.所有视图写入一个view中，且操作在view中完成，不在controlller中进行
+         2.手势操作通过接口传入
+         3.方法通过代理传递出来
+     */
     
 
 
