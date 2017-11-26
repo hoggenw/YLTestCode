@@ -15,8 +15,7 @@ class Menu3DViewController: UIViewController {
         super.viewDidLoad()
         menuView = Menu3DView(frame: self.view.bounds);
         self.view.addSubview(menuView);
-        self.view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action:
-            #selector(gestureRecognizer(gesture:))));
+       
 
         // Do any additional setup after loading the view.
     }
@@ -35,29 +34,7 @@ class Menu3DViewController: UIViewController {
         super.viewWillDisappear(animated);
         self.navigationController?.navigationBar.isHidden = false;
     }
-    func gestureRecognizer(gesture: UIPanGestureRecognizer) {
-        //获取手势在相对指定视图的移动距离，即在X,Y轴上移动的像素，应该是没有正负的，
-        //于是考虑用velocityInView:这个方法，这个方法是获取手势在指定视图坐标系统的移动速度，结果发现这个速度是具有方向的，
-        /**
-         CGPoint velocity = [recognizer velocityInView:recognizer.view];
-         if(velocity.x>0) {
-         　　//向右滑动
-         }else{
-         //向左滑动
-         }
-         */
-        if gesture.state == .changed {
-            let point = gesture.translation(in: self.view);
-            let fullHeight:CGFloat = 80;
-            //print("point.x = \(point.x)");//往右为正，往左为负
-            let rato: CGFloat = point.x/fullHeight;
-            menuView.getRato(rato: rato);
-            menuView._rota = rato;
-        }
-        if gesture.state == .ended || gesture.state == .cancelled {
-            menuView.doAnimation();
-        }
-    }
+    
 
     /*
     // MARK: - Navigation

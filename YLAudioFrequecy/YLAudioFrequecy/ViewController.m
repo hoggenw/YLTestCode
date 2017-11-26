@@ -51,7 +51,7 @@
 //    [model test1];
     
 //    TestImage * model = [TestImage new];
-    
+//
 //    self.showImage = [UIImageView new];
 //
 //    self.showImage.image = [model resultImage];
@@ -61,24 +61,26 @@
     
     
     
-        TestGCD * test = [[TestGCD alloc] init];
-        [test test];
-
-    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
-    [self testGCD];
+//        TestGCD * test = [[TestGCD alloc] init];
+//        [test test];
+//    你说到设备："请通知应用程序每次更改时方向"
+//    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
+    //[self testGCD];
     
     
-    UIButton * testButton = [UIButton new];
-    testButton.frame = CGRectMake(200, 200, 50, 50);
-    [self.view addSubview: testButton];
-    [testButton setTitle:@"测试" forState: UIControlStateNormal];
-    testButton.titleLabel.textColor = [UIColor blackColor];
-    testButton.backgroundColor = [UIColor greenColor];
-    [testButton addTarget:self action:@selector(testActionContinuity) forControlEvents:UIControlEventTouchUpInside];
+//    UIButton * testButton = [UIButton new];
+//    testButton.frame = CGRectMake(200, 200, 50, 50);
+//    [self.view addSubview: testButton];
+//    [testButton setTitle:@"测试" forState: UIControlStateNormal];
+//    testButton.titleLabel.textColor = [UIColor blackColor];
+//    testButton.backgroundColor = [UIColor greenColor];
+//    [testButton addTarget:self action:@selector(testActionContinuity) forControlEvents:UIControlEventTouchUpInside];
     
-
+   // [self typeEncoding];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self aboutClass];
 }
 
 -(void)testActionContinuity{
@@ -128,7 +130,8 @@
 }
 
 - (void)orientationChanged:(NSNotification *)notification {
-    NSLog(@"关于通知的引用问题");
+    
+    NSLog(@"关于通知的引用问题 %@", notification.description);
     // Respond to changes in device orientation
 }
 
