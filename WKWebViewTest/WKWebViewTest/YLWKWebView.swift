@@ -11,7 +11,6 @@ import WebKit
 
 class YLWKWebView: WKWebView {
     /*先简单的介绍下CAShapeLayer
-     
      CAShapeLayer继承自CALayer，可使用CALayer的所有属性
      CAShapeLayer需要和贝塞尔曲线配合使用才有意义。
      Shape：形状,贝塞尔曲线可以为其提供形状，而单独使用CAShapeLayer是没有任何意义的。
@@ -22,7 +21,6 @@ class YLWKWebView: WKWebView {
      CAShapeLayer：CAShapeLayer属于CoreAnimation框架，通过GPU来渲染图形，节省性能。动画渲染直接提交给手机GPU，不消耗内存
      
      贝塞尔曲线与CAShapeLayer的关系
-     
      CAShapeLayer中shape代表形状的意思，所以需要形状才能生效
      贝塞尔曲线可以创建基于矢量的路径
      贝塞尔曲线给CAShapeLayer提供路径，CAShapeLayer在提供的路径中进行渲染。路径会闭环，所以绘制出了Shape

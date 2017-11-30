@@ -75,7 +75,7 @@
            *  @brief  dispatch_apply函数是dispatch_sync函数和Dispatch Group的关联API
            *         该函数按指定的次数将指定的Block追加到指定的Dispatch Queue中,并等到全部的处理执行结束
            *
-           *  @param 10    指定重复次数  指定10次
+           *  @param 6    指定重复次数  指定6次
            *  @param queue 追加对象的Dispatch Queue
            *  @param index 带有参数的Block, index的作用是为了按执行的顺序区分各个Block
            *
@@ -198,7 +198,7 @@
 }
 
 -(void)creatQueue{
-    //串行队列的创建方案
+    //串行队列的创建方法
     dispatch_queue_t queueSerial = dispatch_queue_create("test.queue", DISPATCH_QUEUE_SERIAL);
     //并发队列的创建方法
     dispatch_queue_t queueC = dispatch_queue_create("conTest.queue", DISPATCH_QUEUE_CONCURRENT);
