@@ -18,6 +18,8 @@
 		114F02881ECECD8D0039F60C /* FooView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F02871ECECD8D0039F60C /* FooView.m */; };
 		114F028B1ECEDAB90039F60C /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F028A1ECEDAB90039F60C /* MyObject.m */; };
 		114F028E1ED271080039F60C /* TestGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F028D1ED271080039F60C /* TestGCD.m */; };
+		11CC77FE1FCFDC2500BE3017 /* YLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CC77FD1FCFDC2500BE3017 /* YLProgressView.m */; };
+		11CC78011FCFDC8000BE3017 /* YLWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CC78001FCFDC8000BE3017 /* YLWKWebView.m */; };
 		87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FE21EF3BB81009D4CF6 /* TestImage.m */; };
 		87127FE61EF4FD69009D4CF6 /* Quartz2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FE51EF4FD69009D4CF6 /* Quartz2D.m */; };
 		87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FEC1EF605B1009D4CF6 /* QuartzView.m */; };
@@ -58,6 +60,10 @@
 		114F028A1ECEDAB90039F60C /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
 		114F028C1ED271080039F60C /* TestGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCD.h; sourceTree = "<group>"; };
 		114F028D1ED271080039F60C /* TestGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCD.m; sourceTree = "<group>"; };
+		11CC77FC1FCFDC2500BE3017 /* YLProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLProgressView.h; sourceTree = "<group>"; };
+		11CC77FD1FCFDC2500BE3017 /* YLProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLProgressView.m; sourceTree = "<group>"; };
+		11CC77FF1FCFDC8000BE3017 /* YLWKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWKWebView.h; sourceTree = "<group>"; };
+		11CC78001FCFDC8000BE3017 /* YLWKWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWKWebView.m; sourceTree = "<group>"; };
 		87127FE11EF3BB81009D4CF6 /* TestImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestImage.h; sourceTree = "<group>"; };
 		87127FE21EF3BB81009D4CF6 /* TestImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestImage.m; sourceTree = "<group>"; };
 		87127FE41EF4FD69009D4CF6 /* Quartz2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2D.h; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 		1143BA6A1E5D7F01002CD06B /* YLAudioFrequecy */ = {
 			isa = PBXGroup;
 			children = (
+				11CC77FB1FCFDBE800BE3017 /* WKWebView */,
 				87127FF41EF6B45B009D4CF6 /* AssetsLibrary */,
 				87127FE71EF60521009D4CF6 /* Quartz2D */,
 				1143BA6E1E5D7F01002CD06B /* AppDelegate.h */,
@@ -153,6 +160,17 @@
 				1143BA871E5D7F01002CD06B /* Info.plist */,
 			);
 			path = YLAudioFrequecyTests;
+			sourceTree = "<group>";
+		};
+		11CC77FB1FCFDBE800BE3017 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				11CC77FC1FCFDC2500BE3017 /* YLProgressView.h */,
+				11CC77FD1FCFDC2500BE3017 /* YLProgressView.m */,
+				11CC77FF1FCFDC8000BE3017 /* YLWKWebView.h */,
+				11CC78001FCFDC8000BE3017 /* YLWKWebView.m */,
+			);
+			name = WKWebView;
 			sourceTree = "<group>";
 		};
 		87127FE71EF60521009D4CF6 /* Quartz2D */ = {
@@ -283,8 +301,10 @@
 			files = (
 				87127FE61EF4FD69009D4CF6 /* Quartz2D.m in Sources */,
 				114F02851ECE80040039F60C /* TestRuntime.m in Sources */,
+				11CC78011FCFDC8000BE3017 /* YLWKWebView.m in Sources */,
 				87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */,
 				87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */,
+				11CC77FE1FCFDC2500BE3017 /* YLProgressView.m in Sources */,
 				114F02881ECECD8D0039F60C /* FooView.m in Sources */,
 				114F028B1ECEDAB90039F60C /* MyObject.m in Sources */,
 				87127FF71EF6B471009D4CF6 /* AssetsLibraryTest.m in Sources */,

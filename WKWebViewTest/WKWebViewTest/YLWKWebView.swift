@@ -41,7 +41,7 @@ class YLWKWebView: WKWebView {
         YLWKWebView.progressView.backgroundColor = UIColor.clear;
         self.addSubview(YLWKWebView.progressView);
         progressLayer.borderWidth = 1
-        progressLayer.lineWidth = 4
+        progressLayer.lineWidth = 8
         progressLayer.fillColor = UIColor.clear.cgColor
         tintColorDidChange()
         YLWKWebView.progressView.layer.addSublayer(self.progressLayer)
@@ -58,6 +58,7 @@ class YLWKWebView: WKWebView {
     
     override func load(_ request: URLRequest) -> WKNavigation? {
         initProgressView();
+        layoutSubviews();
         self.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil);
         return super.load(request);
     }
@@ -104,7 +105,7 @@ class YLWKWebView: WKWebView {
     func shapeLayerPath() -> UIBezierPath {
         
         let width = self.frame.size.width;
-        let borderWidth = self.progressLayer.borderWidth;
+        let borderWidth = self.progressLayer.lineWidth;
         
         let path = UIBezierPath()
         
