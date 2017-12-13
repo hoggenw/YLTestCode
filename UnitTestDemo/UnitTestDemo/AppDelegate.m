@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  UnitTestDemo
 //
-//  Created by 王留根 on 2017/12/11.
+//  Created by 王留根 on 2017/12/12.
 //  Copyright © 2017年 王留根. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,9 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [UIWindow new];
-    self.window.rootViewController = [ViewController new];
-    [self.window makeKeyAndVisible];
     return YES;
 }
 

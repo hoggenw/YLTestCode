@@ -2,7 +2,7 @@
 //  ViewController.m
 //  UnitTestDemo
 //
-//  Created by 王留根 on 2017/12/11.
+//  Created by 王留根 on 2017/12/12.
 //  Copyright © 2017年 王留根. All rights reserved.
 //
 
@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -26,5 +25,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(int)getMaxNUmber:(int)number {
+    return number;
+}
 
 @end
