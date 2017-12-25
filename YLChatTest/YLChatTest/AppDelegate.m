@@ -8,7 +8,14 @@
 
 #import "AppDelegate.h"
 
+typedef NS_ENUM(NSInteger, YLSex) {
+    YLMan,
+    YLMomen
+};
 @interface AppDelegate ()
+
+@property (nonatomic,assign) YLSex sex;
+
 
 @end
 

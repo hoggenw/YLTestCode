@@ -80,10 +80,27 @@
    // [self typeEncoding];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self aboutClass];
+  //  [self aboutClass];
+   NSString * number = @"1011";
+    
     
     
 }
+
++ (NSInteger)getDecimalByBinary:(NSString *)binary {
+    
+    NSInteger decimal = 0;
+    for (int i=0; i<binary.length; i++) {
+        
+        NSString *number = [binary substringWithRange:NSMakeRange(binary.length - i - 1, 1)];
+        if ([number isEqualToString:@"1"]) {
+            
+            decimal += pow(2, i);
+        }
+    }
+    return decimal;
+}
+
 
 -(void)testActionContinuity{
     UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:@"支付详情" message:@"测试连点" preferredStyle:UIAlertControllerStyleAlert];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111F51B41FEBBA5A00938567 /* NSObject+YLKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 111F51B31FEBBA5A00938567 /* NSObject+YLKVO.m */; };
 		1143BA6D1E5D7F01002CD06B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6C1E5D7F01002CD06B /* main.m */; };
 		1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6F1E5D7F01002CD06B /* AppDelegate.m */; };
 		1143BA731E5D7F01002CD06B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA721E5D7F01002CD06B /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111F51B21FEBBA5A00938567 /* NSObject+YLKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YLKVO.h"; sourceTree = "<group>"; };
+		111F51B31FEBBA5A00938567 /* NSObject+YLKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YLKVO.m"; sourceTree = "<group>"; };
 		1143BA681E5D7F01002CD06B /* YLAudioFrequecy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLAudioFrequecy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1143BA6C1E5D7F01002CD06B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1143BA6E1E5D7F01002CD06B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				1143BA6B1E5D7F01002CD06B /* Supporting Files */,
 				87127FE41EF4FD69009D4CF6 /* Quartz2D.h */,
 				87127FE51EF4FD69009D4CF6 /* Quartz2D.m */,
+				111F51B21FEBBA5A00938567 /* NSObject+YLKVO.h */,
+				111F51B31FEBBA5A00938567 /* NSObject+YLKVO.m */,
 			);
 			path = YLAudioFrequecy;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				87127FE61EF4FD69009D4CF6 /* Quartz2D.m in Sources */,
 				114F02851ECE80040039F60C /* TestRuntime.m in Sources */,
 				11CC78011FCFDC8000BE3017 /* YLWKWebView.m in Sources */,
+				111F51B41FEBBA5A00938567 /* NSObject+YLKVO.m in Sources */,
 				87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */,
 				87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */,
 				11CC77FE1FCFDC2500BE3017 /* YLProgressView.m in Sources */,
