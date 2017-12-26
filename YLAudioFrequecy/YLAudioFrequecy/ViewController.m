@@ -18,12 +18,21 @@
 #import "QuartzShadowAndGradient.h"
 #import "Bitmap.h"
 #import "AssetsLibraryTest.h"
+#import "NSObject+YLKVO.h"
 
+@interface Message : NSObject
 
+@property (nonatomic, copy) NSString *text;
 
+@end
+
+@implementation Message
+
+@end
 
 @interface ViewController ()
 @property(nonatomic, strong)UIImageView * showImage;
+@property(nonatomic, strong)Message *message;
 
 @end
 
@@ -82,7 +91,16 @@
     
   //  [self aboutClass];
    NSString * number = @"1011";
-    
+    self.message = [[Message alloc] init];
+    [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
+                       withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
+                           NSLog(@"%@.%@  oldVlue is %@ newvalue is  now: %@", observedObject, observedKey, oldValue,newValue);
+                           
+                       }];
+    NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
+    for (int  i = 0 ; i < array.count; i++) {
+        self.message.text = array[i];
+    }
     
     
 }
