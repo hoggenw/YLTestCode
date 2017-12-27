@@ -19,6 +19,8 @@
 #import "Bitmap.h"
 #import "AssetsLibraryTest.h"
 #import "NSObject+YLKVO.h"
+#import "NSObject+JSONExtension.h"
+#import "Man.h"
 
 @interface Message : NSObject
 
@@ -71,8 +73,7 @@
     
     
 //        TestGCD * test = [[TestGCD alloc] init];
-//        [test test];
-//    你说到设备："请通知应用程序每次更改时方向"
+#pragma mark - 你说到设备："请通知应用程序每次更改时方向"
 //    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
     //[self testGCD];
@@ -90,17 +91,68 @@
     // Do any additional setup after loading the view, typically from a nib.
     
   //  [self aboutClass];
-   NSString * number = @"1011";
-    self.message = [[Message alloc] init];
-    [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
-                       withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
-                           NSLog(@"%@.%@  oldVlue is %@ newvalue is  now: %@", observedObject, observedKey, oldValue,newValue);
-                           
-                       }];
-    NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
-    for (int  i = 0 ; i < array.count; i++) {
-        self.message.text = array[i];
+    
+    
+#pragma mark - 自己写的kvo test
+//   NSString * number = @"1011";
+//    self.message = [[Message alloc] init];
+//    [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
+//                       withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
+//                           NSLog(@"%@.%@  oldVlue is %@ newvalue is  now: %@", observedObject, observedKey, oldValue,newValue);
+//
+//                       }];
+//    NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
+//    for (int  i = 0 ; i < array.count; i++) {
+//        self.message.text = array[i];
+//    }
+    
+#pragma mark - runtime执行测试
+//    [self runtimeTest];
+#pragma mark - runtime执行模型赋值测试
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
+    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:NULL];
+    Man * model = [Man new];
+    [model setDict: [Man specialArrayJson]];
+    NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.dog);
+    
+}
+
+
+#pragma mark - runtime test
+- (void)runtimeTest {
+    TestRuntime * model = [TestRuntime shareRuntimer];
+    Method class1 = class_getClassMethod([TestRuntime class], @selector(classMethod1));
+    Method class2 = class_getClassMethod([TestRuntime class], @selector(classMethod2));
+    Method instanceMethod1 = class_getInstanceMethod([TestRuntime class], @selector(method1));
+    Method instanceMethod2 = class_getInstanceMethod([TestRuntime class], @selector(method2));
+    //两个类方法的交换
+    method_exchangeImplementations(class1, class2);
+    NSLog(@"类方法交换后，先执行1方法，在执行2方法，结果为：\n");
+    [TestRuntime classMethod1];
+    [TestRuntime classMethod2];
+    NSLog(@"实例方法交换后，先执行1方法，在执行2方法，结果为：\n");
+    method_exchangeImplementations(instanceMethod1, instanceMethod2);
+    [model method1];
+    [model method2];
+    
+    NSLog(@"实例方法1和类方法1交换后，先执行实例方法，在执行类方法，结果为：\n");
+    method_exchangeImplementations(class1, instanceMethod1);
+    [TestRuntime classMethod1];
+    [model method1];
+    
+    //测试系统拦截
+    [UIImage imageNamed: @"dksj"];
+    NSLog(@"取出类中所有成员变量的名字和类型，结果为：\n");
+    unsigned int oucnt = 0;
+    Ivar *lists = class_copyIvarList([TestRuntime class], &oucnt);
+    for (unsigned int i = 0 ; i< oucnt; i ++) {
+        Ivar ivar = lists[i];
+        const char *name = ivar_getName(ivar);
+        const char *type = ivar_getTypeEncoding(ivar);
+        NSLog(@"成员变量名：%s 成员变量类型：%s",name,type);
     }
+    free(lists);
     
     
 }

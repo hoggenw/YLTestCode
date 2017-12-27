@@ -106,7 +106,7 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
     
     NSLog( @"getterForSetter(%@) : %@",key,setterMethodGet(key));
     SEL setterSelector = NSSelectorFromString(setterMethodGet(key));
-    Method setterMethod = class_getInstanceMethod([self class], setterSelector);//用 class_getInstanceMethod 去获得 setKey: 的实现（Method）
+    Method setterMethod = class_getInstanceMethod([self class], setterSelector);//用 class_getInstanceMethod 去获得 setKey: 的实现（Method）获取实例方法
     //NSLog(@"setterMethod = %@", setterMethod);
     if (!setterMethod) {
         NSString * reason = [NSString stringWithFormat:@"Object %@ doesn not have a setter for key %@ ",self,key];
@@ -161,7 +161,7 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
     }
     //不存在这个类，那么久新建它
     Class originClazz =  object_getClass(self);
-    //    分配空间,创建类(仅在 创建之后,注册之前 能够添加成员变量)
+    //    分配空间,创建类(仅在 创建之后,注册之前 能够添加成员变量)、添加类 superclass 类是父类   name 类的名字  size_t 类占的空间
     Class kvoClazz = objc_allocateClassPair(originClazz, kvoClassName.UTF8String, 0);
     //重写了 class 方法。隐藏这个子类的存在。最后 objc_registerClassPair() 告诉 Runtime 这个类的存在。
     Method clazzMethod = class_getInstanceMethod(originClazz, @selector(class));

@@ -8,6 +8,7 @@
 
 #import "TestRuntime.h"
 
+
 @interface TestRuntime() {
     NSInteger _instance1;
     NSString * _instance2;
@@ -30,7 +31,10 @@
 }
 
 +(void)classMethod1 {
-    
+    NSLog(@"call classMethod1");
+}
++(void)classMethod2 {
+    NSLog(@"call classMethod2");
 }
 
 -(void)method1{
@@ -38,7 +42,7 @@
 }
 
 -(void)method2 {
-    
+    NSLog(@"call method method2");
 }
 
 -(void)method3WithArg1:(NSInteger)arg1 arg2:(NSString *)arg2 {

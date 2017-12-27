@@ -14,11 +14,14 @@
 
 @property (nonatomic, copy) NSString *string;
 
++ (TestRuntime *)shareRuntimer;
+
 -(void)method1;
 
 -(void)method2;
 
 +(void)classMethod1;
++(void)classMethod2;
 
 @end
 
