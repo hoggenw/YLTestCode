@@ -62,7 +62,8 @@ static NSString * setterMethodGet(NSString * getter) {
 static Class kvo_class(id self, SEL _cmd)
 {
     //// 获取类的父类
-    return class_getSuperclass(object_getClass(self));
+    // NSLog(@" class name  :   %@",[class_getSuperclass(object_getClass(self)) class]);
+    return class_getSuperclass(object_getClass(self));//object_getClass(self) ;
 }
 
 static void kvo_setter(id self, SEL _cmd, id newValue) {
@@ -82,11 +83,12 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
     id oldValue = [self valueForKey:getterName];
     //其中receiver是指类的实例，super_class则是指该实例的父类。
     struct objc_super superClazz = {
-        .receiver = self,
-        .super_class = class_getSuperclass(object_getClass(self))
+        .receiver = self,  //这是实际消息接受者
+        .super_class = class_getSuperclass(object_getClass(self))  //方法查找要到YL_类的父类中去找（因为self类名已经被别名为YL开头的kvo；类）
     };
     
     void (*objc_msgSendSuperCasted)(void *, SEL, id) = (void *)objc_msgSendSuper;
+    //为原来的key赋值
     objc_msgSendSuperCasted(&superClazz,_cmd,newValue);
     NSMutableArray *observers = objc_getAssociatedObject(self, &YLKVOAssociateObservers);
     for(YLObservationInfo *temp in observers) {
@@ -107,7 +109,8 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
     NSLog( @"getterForSetter(%@) : %@",key,setterMethodGet(key));
     SEL setterSelector = NSSelectorFromString(setterMethodGet(key));
     Method setterMethod = class_getInstanceMethod([self class], setterSelector);//用 class_getInstanceMethod 去获得 setKey: 的实现（Method）获取实例方法
-    //NSLog(@"setterMethod = %@", setterMethod);
+    [self haseSelector:method_getName(setterMethod)];
+    NSLog(@"setterMethod = %@", NSStringFromSelector(method_getName(setterMethod)));
     if (!setterMethod) {
         NSString * reason = [NSString stringWithFormat:@"Object %@ doesn not have a setter for key %@ ",self,key];
         @throw [NSException exceptionWithName: NSInvalidArgumentException reason: reason userInfo: nil];
@@ -118,14 +121,15 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
     NSString * className = NSStringFromClass(clazz);
     //
     if (![className hasPrefix: YLKVOClassPrefix]) {
+        //创建子类，这时clazz的值已经是子类了
         clazz = [self makeKvoClassWithOriginalClassName:className];
         NSLog(@"创建新的kvo类");
-        //将一个对象设置为别的类类型，
+        //将一个对象设置为别的类类型，这时调用[self class]返回的其实是YL_YL_的子类，由于我们覆写了class的方法返回的使我们新创建kvo类的父类的class，所以看到的还是[self class]的类名
         Class c1 = object_setClass(self, clazz);
-        NSLog(@"cl - %@", [c1 class]);
+        NSLog(@"cl - %@", [clazz class]);
         NSLog(@"self - %@", [self class]);
     }
-    //添加我们自己kvo的类的实现方法，如果被观察的类没有实现它的setter方法
+    //添加我们自己kvo的类的实现方法，如果被观察的类没有实现它的setter方法，这时的self已经被别名了YL_开头的kvo子类，所以里面只有一个新建时添加的class方法
     if (![self haseSelector: setterSelector]) {
         const char * types = method_getTypeEncoding(setterMethod);
         class_addMethod(clazz, setterSelector, (IMP)kvo_setter, types);
@@ -182,7 +186,22 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
 -(BOOL)haseSelector:(SEL)selector {
     Class clazz = object_getClass(self);
     unsigned int methodCount = 0;
+    unsigned int ivarCount = 0;
     Method *methodList = class_copyMethodList(clazz, &methodCount);
+    
+    Ivar * ivars = class_copyIvarList(clazz, &ivarCount);
+    
+    NSLog(@"ivarCount : %@",@(ivarCount));
+    for (unsigned int i = 0; i < ivarCount;  i++) {
+        Ivar tempIvar = ivars[i];
+        NSLog(@"className: %@, ivar_getName : %s ,selector : %@ ",NSStringFromClass(clazz),ivar_getName(tempIvar),NSStringFromSelector(selector));
+    }
+    
+    
+    for (unsigned int i = 0; i < methodCount;  i++) {
+        SEL tempMeothod = method_getName(methodList[i]);
+        NSLog(@"className: %@, tempMeothod : %@ ,selector : %@ ",NSStringFromClass(clazz),NSStringFromSelector(tempMeothod),NSStringFromSelector(selector));
+    }
     for (unsigned int i = 0; i < methodCount;  i++) {
         SEL tempMeothod = method_getName(methodList[i]);
         if (tempMeothod == selector) {

@@ -21,6 +21,8 @@
 #import "NSObject+YLKVO.h"
 #import "NSObject+JSONExtension.h"
 #import "Man.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
 
 @interface Message : NSObject
 
@@ -29,6 +31,18 @@
 @end
 
 @implementation Message
+
+-(void)setText:(NSString *)text {
+    _text = text;
+}
+
+@end
+
+@interface MessageSon : Message
+
+@end
+
+@implementation MessageSon
 
 @end
 
@@ -104,17 +118,20 @@
 //    NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
 //    for (int  i = 0 ; i < array.count; i++) {
 //        self.message.text = array[i];
+//        NSLog(@"self.message.text : %@", self.message.text);
 //    }
+//
+    //NSLog(@" class name  :   %@",[self.message class]);
     
 #pragma mark - runtime执行测试
 //    [self runtimeTest];
 #pragma mark - runtime执行模型赋值测试
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
-    NSData *jsonData = [NSData dataWithContentsOfFile:path];
-    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:NULL];
-    Man * model = [Man new];
-    [model setDict: [Man specialArrayJson]];
-    NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.dog);
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
+//    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+//    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:NULL];
+//    Man * model = [Man new];
+//    [model setDict: [Man specialArrayJson]];
+//    NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.dog);
     
 }
 
