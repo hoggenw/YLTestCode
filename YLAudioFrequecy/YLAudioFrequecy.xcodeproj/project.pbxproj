@@ -17,6 +17,7 @@
 		1143BA781E5D7F01002CD06B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1143BA771E5D7F01002CD06B /* Assets.xcassets */; };
 		1143BA7B1E5D7F01002CD06B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1143BA791E5D7F01002CD06B /* LaunchScreen.storyboard */; };
 		1143BA861E5D7F01002CD06B /* YLAudioFrequecyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA851E5D7F01002CD06B /* YLAudioFrequecyTests.m */; };
+		1144EED61FFDCCAA0096B8BA /* TestRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1144EED51FFDCCAA0096B8BA /* TestRunLoop.m */; };
 		114F02851ECE80040039F60C /* TestRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F02841ECE80040039F60C /* TestRuntime.m */; };
 		114F02881ECECD8D0039F60C /* FooView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F02871ECECD8D0039F60C /* FooView.m */; };
 		114F028B1ECEDAB90039F60C /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F028A1ECEDAB90039F60C /* Man.m */; };
@@ -62,6 +63,8 @@
 		1143BA811E5D7F01002CD06B /* YLAudioFrequecyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLAudioFrequecyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1143BA851E5D7F01002CD06B /* YLAudioFrequecyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAudioFrequecyTests.m; sourceTree = "<group>"; };
 		1143BA871E5D7F01002CD06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1144EED41FFDCCAA0096B8BA /* TestRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRunLoop.h; sourceTree = "<group>"; };
+		1144EED51FFDCCAA0096B8BA /* TestRunLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRunLoop.m; sourceTree = "<group>"; };
 		114F02831ECE80040039F60C /* TestRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRuntime.h; sourceTree = "<group>"; };
 		114F02841ECE80040039F60C /* TestRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRuntime.m; sourceTree = "<group>"; };
 		114F02861ECECD8D0039F60C /* FooView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooView.h; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				114F02871ECECD8D0039F60C /* FooView.m */,
 				114F028C1ED271080039F60C /* TestGCD.h */,
 				114F028D1ED271080039F60C /* TestGCD.m */,
+				1144EED41FFDCCAA0096B8BA /* TestRunLoop.h */,
+				1144EED51FFDCCAA0096B8BA /* TestRunLoop.m */,
 				114F02891ECEDAB90039F60C /* Man.h */,
 				114F028A1ECEDAB90039F60C /* Man.m */,
 				1143BA741E5D7F01002CD06B /* Main.storyboard */,
@@ -262,7 +267,7 @@
 				TargetAttributes = {
 					1143BA671E5D7F01002CD06B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = F8S6Q4UMKL;
+						DevelopmentTeam = 87F6Z4326W;
 						ProvisioningStyle = Automatic;
 					};
 					1143BA801E5D7F01002CD06B = {
@@ -336,6 +341,7 @@
 				87127FF01EF620A8009D4CF6 /* QuartzShadowAndGradient.m in Sources */,
 				114F028E1ED271080039F60C /* TestGCD.m in Sources */,
 				1143BA6D1E5D7F01002CD06B /* main.m in Sources */,
+				1144EED61FFDCCAA0096B8BA /* TestRunLoop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F8S6Q4UMKL;
+				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLAudioFrequecy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -482,7 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F8S6Q4UMKL;
+				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLAudioFrequecy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

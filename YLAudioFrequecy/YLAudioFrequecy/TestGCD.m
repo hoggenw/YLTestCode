@@ -15,7 +15,7 @@
    //[self testCommunication];
     //[self barrier];
      //[self testMain];
-    //[self groub];
+    [self groub];
 //    [self deadThread];
   //  [self deadThread2];
 }
@@ -27,6 +27,9 @@
         NSLog(@"执行耗时操作1");
          NSLog(@"执行耗时操作1------%@",[NSThread currentThread]);
         dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            for (long i = 0 ; i < 7000000; i ++) {
+                long j = i;
+            }
             NSLog(@"内部在异步1");
             NSLog(@"内部在异步1------%@",[NSThread currentThread]);
         });
@@ -34,6 +37,7 @@
             NSLog(@"内部在异步3");
             NSLog(@"内部在异步3------%@",[NSThread currentThread]);
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                sleep(1); //这里线程睡眠1秒钟，模拟异步请求
                 NSLog(@"内部在异步2");
                 NSLog(@"内部在异步2------%@",[NSThread currentThread]);
                 

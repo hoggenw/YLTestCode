@@ -23,6 +23,7 @@
 #import "Man.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import "TestRunLoop.h"
 
 @interface Message : NSObject
 
@@ -49,6 +50,7 @@
 @interface ViewController ()
 @property(nonatomic, strong)UIImageView * showImage;
 @property(nonatomic, strong)Message *message;
+@property(nonatomic, strong)TestRunLoop * testRunLoop;
 
 @end
 
@@ -87,6 +89,7 @@
     
     
 //        TestGCD * test = [[TestGCD alloc] init];
+//    [test test];
 #pragma mark - 你说到设备："请通知应用程序每次更改时方向"
 //    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
@@ -108,6 +111,7 @@
     
     
 #pragma mark - 自己写的kvo test
+    
 //   NSString * number = @"1011";
 //    self.message = [[Message alloc] init];
 //    [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
@@ -121,7 +125,7 @@
 //        NSLog(@"self.message.text : %@", self.message.text);
 //    }
 //
-    //NSLog(@" class name  :   %@",[self.message class]);
+//    NSLog(@" class name  :   %@",[self.message class]);
     
 #pragma mark - runtime执行测试
 //    [self runtimeTest];
@@ -132,10 +136,19 @@
 //    Man * model = [Man new];
 //    [model setDict: [Man specialArrayJson]];
 //    NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.dog);
-    
+ #pragma mark - runloop测试
+    _testRunLoop = [TestRunLoop new];
+    [_testRunLoop logStatusOfRunLoop];
+    [_testRunLoop showRunLoop];
 }
 
-
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self performSelector:@selector(testLoop) onThread: _testRunLoop.thread withObject:@"xyl" waitUntilDone:YES];
+}
+-(void)testLoop{
+    NSLog(@"testtesttest");
+}
 #pragma mark - runtime test
 - (void)runtimeTest {
     TestRuntime * model = [TestRuntime shareRuntimer];
