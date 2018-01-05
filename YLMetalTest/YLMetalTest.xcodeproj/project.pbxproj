@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1144EF141FFE1B790096B8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144EF131FFE1B790096B8BA /* AppDelegate.swift */; };
+		1144EF161FFE1B7A0096B8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144EF151FFE1B7A0096B8BA /* ViewController.swift */; };
+		1144EF191FFE1B7A0096B8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1144EF171FFE1B7A0096B8BA /* Main.storyboard */; };
+		1144EF1B1FFE1B7A0096B8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1144EF1A1FFE1B7A0096B8BA /* Assets.xcassets */; };
+		1144EF1E1FFE1B7A0096B8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1144EF1C1FFE1B7A0096B8BA /* LaunchScreen.storyboard */; };
+		1144EF291FFE1B7A0096B8BA /* YLMetalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144EF281FFE1B7A0096B8BA /* YLMetalTestTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1144EF251FFE1B7A0096B8BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1144EF081FFE1B790096B8BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1144EF0F1FFE1B790096B8BA;
+			remoteInfo = YLMetalTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1144EF101FFE1B790096B8BA /* YLMetalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLMetalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1144EF131FFE1B790096B8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1144EF151FFE1B7A0096B8BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1144EF181FFE1B7A0096B8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1144EF1A1FFE1B7A0096B8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1144EF1D1FFE1B7A0096B8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1144EF1F1FFE1B7A0096B8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1144EF241FFE1B7A0096B8BA /* YLMetalTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLMetalTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1144EF281FFE1B7A0096B8BA /* YLMetalTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLMetalTestTests.swift; sourceTree = "<group>"; };
+		1144EF2A1FFE1B7A0096B8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1144EF0D1FFE1B790096B8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1144EF211FFE1B7A0096B8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1144EF071FFE1B790096B8BA = {
+			isa = PBXGroup;
+			children = (
+				1144EF121FFE1B790096B8BA /* YLMetalTest */,
+				1144EF271FFE1B7A0096B8BA /* YLMetalTestTests */,
+				1144EF111FFE1B790096B8BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1144EF111FFE1B790096B8BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1144EF101FFE1B790096B8BA /* YLMetalTest.app */,
+				1144EF241FFE1B7A0096B8BA /* YLMetalTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1144EF121FFE1B790096B8BA /* YLMetalTest */ = {
+			isa = PBXGroup;
+			children = (
+				1144EF131FFE1B790096B8BA /* AppDelegate.swift */,
+				1144EF151FFE1B7A0096B8BA /* ViewController.swift */,
+				1144EF171FFE1B7A0096B8BA /* Main.storyboard */,
+				1144EF1A1FFE1B7A0096B8BA /* Assets.xcassets */,
+				1144EF1C1FFE1B7A0096B8BA /* LaunchScreen.storyboard */,
+				1144EF1F1FFE1B7A0096B8BA /* Info.plist */,
+			);
+			path = YLMetalTest;
+			sourceTree = "<group>";
+		};
+		1144EF271FFE1B7A0096B8BA /* YLMetalTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				1144EF281FFE1B7A0096B8BA /* YLMetalTestTests.swift */,
+				1144EF2A1FFE1B7A0096B8BA /* Info.plist */,
+			);
+			path = YLMetalTestTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1144EF0F1FFE1B790096B8BA /* YLMetalTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1144EF2D1FFE1B7A0096B8BA /* Build configuration list for PBXNativeTarget "YLMetalTest" */;
+			buildPhases = (
+				1144EF0C1FFE1B790096B8BA /* Sources */,
+				1144EF0D1FFE1B790096B8BA /* Frameworks */,
+				1144EF0E1FFE1B790096B8BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLMetalTest;
+			productName = YLMetalTest;
+			productReference = 1144EF101FFE1B790096B8BA /* YLMetalTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1144EF231FFE1B7A0096B8BA /* YLMetalTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1144EF301FFE1B7A0096B8BA /* Build configuration list for PBXNativeTarget "YLMetalTestTests" */;
+			buildPhases = (
+				1144EF201FFE1B7A0096B8BA /* Sources */,
+				1144EF211FFE1B7A0096B8BA /* Frameworks */,
+				1144EF221FFE1B7A0096B8BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1144EF261FFE1B7A0096B8BA /* PBXTargetDependency */,
+			);
+			name = YLMetalTestTests;
+			productName = YLMetalTestTests;
+			productReference = 1144EF241FFE1B7A0096B8BA /* YLMetalTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1144EF081FFE1B790096B8BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "王留根";
+				TargetAttributes = {
+					1144EF0F1FFE1B790096B8BA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1144EF231FFE1B7A0096B8BA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1144EF0F1FFE1B790096B8BA;
+					};
+				};
+			};
+			buildConfigurationList = 1144EF0B1FFE1B790096B8BA /* Build configuration list for PBXProject "YLMetalTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1144EF071FFE1B790096B8BA;
+			productRefGroup = 1144EF111FFE1B790096B8BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1144EF0F1FFE1B790096B8BA /* YLMetalTest */,
+				1144EF231FFE1B7A0096B8BA /* YLMetalTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1144EF0E1FFE1B790096B8BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1144EF1E1FFE1B7A0096B8BA /* LaunchScreen.storyboard in Resources */,
+				1144EF1B1FFE1B7A0096B8BA /* Assets.xcassets in Resources */,
+				1144EF191FFE1B7A0096B8BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1144EF221FFE1B7A0096B8BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1144EF0C1FFE1B790096B8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1144EF161FFE1B7A0096B8BA /* ViewController.swift in Sources */,
+				1144EF141FFE1B790096B8BA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1144EF201FFE1B7A0096B8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1144EF291FFE1B7A0096B8BA /* YLMetalTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1144EF261FFE1B7A0096B8BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1144EF0F1FFE1B790096B8BA /* YLMetalTest */;
+			targetProxy = 1144EF251FFE1B7A0096B8BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1144EF171FFE1B7A0096B8BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1144EF181FFE1B7A0096B8BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1144EF1C1FFE1B7A0096B8BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1144EF1D1FFE1B7A0096B8BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1144EF2B1FFE1B7A0096B8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1144EF2C1FFE1B7A0096B8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1144EF2E1FFE1B7A0096B8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KD59NK3467;
+				INFOPLIST_FILE = YLMetalTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoggenw.com.YLMetalTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1144EF2F1FFE1B7A0096B8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KD59NK3467;
+				INFOPLIST_FILE = YLMetalTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoggenw.com.YLMetalTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1144EF311FFE1B7A0096B8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KD59NK3467;
+				INFOPLIST_FILE = YLMetalTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoggenw.com.YLMetalTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLMetalTest.app/YLMetalTest";
+			};
+			name = Debug;
+		};
+		1144EF321FFE1B7A0096B8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KD59NK3467;
+				INFOPLIST_FILE = YLMetalTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoggenw.com.YLMetalTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLMetalTest.app/YLMetalTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1144EF0B1FFE1B790096B8BA /* Build configuration list for PBXProject "YLMetalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1144EF2B1FFE1B7A0096B8BA /* Debug */,
+				1144EF2C1FFE1B7A0096B8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1144EF2D1FFE1B7A0096B8BA /* Build configuration list for PBXNativeTarget "YLMetalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1144EF2E1FFE1B7A0096B8BA /* Debug */,
+				1144EF2F1FFE1B7A0096B8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1144EF301FFE1B7A0096B8BA /* Build configuration list for PBXNativeTarget "YLMetalTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1144EF311FFE1B7A0096B8BA /* Debug */,
+				1144EF321FFE1B7A0096B8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1144EF081FFE1B790096B8BA /* Project object */;
+}
