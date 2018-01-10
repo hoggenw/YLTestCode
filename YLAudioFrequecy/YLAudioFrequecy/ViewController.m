@@ -25,6 +25,8 @@
 #import <objc/message.h>
 #import "TestRunLoop.h"
 
+#import "TestDevice.h"
+
 @interface Message : NSObject
 
 @property (nonatomic, copy) NSString *text;
