@@ -124,7 +124,7 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
         //创建子类，这时clazz的值已经是子类了
         clazz = [self makeKvoClassWithOriginalClassName:className];
         NSLog(@"创建新的kvo类");
-        //将一个对象设置为别的类类型，这时调用[self class]返回的其实是YL_YL_的子类，由于我们覆写了class的方法返回的使我们新创建kvo类的父类的class，所以看到的还是[self class]的类名
+        //将一个对象设置为别的类类型，这时调用[self class]返回的其实是YL_的子类，由于我们覆写了class的方法返回的使我们新创建kvo类的父类的class，所以看到的还是[self class]的类名
         Class c1 = object_setClass(self, clazz);
         NSLog(@"cl - %@", [clazz class]);
         NSLog(@"self - %@", [self class]);

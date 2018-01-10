@@ -38,6 +38,7 @@ class Menu3DView: UIView {
     }
     
     func intialSideMenu() {
+        
         containView = UIView(frame: CGRect(x: 50, y: 0, width: sideMenu.frame.size.width, height: sideMenu.frame.size.height));
         containHelperView = UIView(frame: CGRect(x: 50, y: 0, width: sideMenu.frame.size.width, height: sideMenu.frame.size.height));
         sideMenu.addSubview( containView);

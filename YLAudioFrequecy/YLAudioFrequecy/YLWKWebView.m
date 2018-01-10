@@ -39,6 +39,7 @@
     _progressLayer.fillColor = [[UIColor clearColor] CGColor];
     [self tintColorDidChange];
     [self.progressView.layer addSublayer: self.progressLayer];
+    
 }
 
 -(void)tintColorDidChange {
@@ -47,6 +48,7 @@
     }
     _progressLayer.strokeColor = self.progressCorlor.CGColor;
     _progressLayer.borderColor = self.progressCorlor.CGColor;
+    
 }
 
 -(WKNavigation *)loadRequest:(NSURLRequest *)request {
