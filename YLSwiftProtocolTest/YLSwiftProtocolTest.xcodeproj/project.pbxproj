@@ -14,6 +14,7 @@
 		11A106611E6026DF000F9704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A106601E6026DF000F9704 /* Assets.xcassets */; };
 		11A106641E6026DF000F9704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A106621E6026DF000F9704 /* LaunchScreen.storyboard */; };
 		11A1066F1E6026DF000F9704 /* YLSwiftProtocolTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1066E1E6026DF000F9704 /* YLSwiftProtocolTestTests.swift */; };
+		11B4DD97200864BF00D01EEC /* ObjectTemple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B4DD96200864BF00D01EEC /* ObjectTemple.swift */; };
 		11F48DAD1EA0B9880002F6C8 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F48DAC1EA0B9880002F6C8 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		11A1066A1E6026DF000F9704 /* YLSwiftProtocolTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLSwiftProtocolTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A1066E1E6026DF000F9704 /* YLSwiftProtocolTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLSwiftProtocolTestTests.swift; sourceTree = "<group>"; };
 		11A106701E6026DF000F9704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B4DD96200864BF00D01EEC /* ObjectTemple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTemple.swift; sourceTree = "<group>"; };
 		11F48DAC1EA0B9880002F6C8 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				11A106651E6026DF000F9704 /* Info.plist */,
 				11340C281E72473D00530B4B /* YLSwiftProtocolTest-Bridging-Header.h */,
 				11F48DAC1EA0B9880002F6C8 /* TestViewController.swift */,
+				11B4DD96200864BF00D01EEC /* ObjectTemple.swift */,
 			);
 			path = YLSwiftProtocolTest;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B4DD97200864BF00D01EEC /* ObjectTemple.swift in Sources */,
 				11A1065C1E6026DF000F9704 /* ViewController.swift in Sources */,
 				11340C271E72458100530B4B /* String+Extension.swift in Sources */,
 				11F48DAD1EA0B9880002F6C8 /* TestViewController.swift in Sources */,

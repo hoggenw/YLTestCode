@@ -177,22 +177,24 @@ class ViewController: UIViewController {
   
         
         //聊天
-//        manager.isNeedShowRetangle = true
-//        // manager.whRatio = 0.5
-//        //manager.centerUpOffset = 20
-//        // manager.scanViewWidth = 160
-//        //manager.colorRetangleLine = UIColor.red
-//        //manager.photoframeAngleStyle = YLScanViewPhotoframeAngleStyle.Outer
-//        //manager.colorAngle = UIColor.red
-//        //manager.photoframeLineW = 8
-//        manager.imageStyle = YLAnimationImageStyle.secondeNetGrid
-//        manager.delegate = self
-//        manager.showScanView(viewController: self)
+        manager.isNeedShowRetangle = true
+        // manager.whRatio = 0.5
+        //manager.centerUpOffset = 20
+        // manager.scanViewWidth = 160
+        //manager.colorRetangleLine = UIColor.red
+        //manager.photoframeAngleStyle = YLScanViewPhotoframeAngleStyle.Outer
+        //manager.colorAngle = UIColor.red
+        //manager.photoframeLineW = 8
+        manager.imageStyle = YLAnimationImageStyle.secondeNetGrid
+        manager.delegate = self
+        manager.showScanView(viewController: self)
     }
     
     func creatSelfQRcODE() {
         let codeView = manager.produceQRcodeView(frame: CGRect(x: (self.view.bounds.size.width - 200)/2, y: self.view.bounds.size.height/2, width: 200, height: 200), logoIconName: "device_scan",codeMessage: "wlg's test Message")
-        self.view.addSubview(codeView)
+        let showImageView: UIImageView = codeView.subviews.first as! UIImageView;
+        showImageView.beiginRendering();
+        self.view.addSubview(codeView);
         
         
     }

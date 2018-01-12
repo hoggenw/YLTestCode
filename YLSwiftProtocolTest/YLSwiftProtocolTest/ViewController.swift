@@ -13,6 +13,13 @@ protocol TestProtocol: class {
     func notNeedAchieve() ->String
 }
 
+protocol putInProtocol: class {
+    func input(name: String) -> Void
+}
+protocol putOutProtocol: class {
+    func output(name: String) -> Void
+}
+
 extension TestProtocol {
     func notNeedAchieve() ->String {
         return " 不需要实现"
@@ -22,8 +29,16 @@ extension TestProtocol {
 
 class ViewController: UIViewController {
 
+     weak var delegate: putInProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let templet: ObjectTemple = ObjectTemple();
+        templet.delegate = self;
+        self.delegate = templet as putInProtocol;
+        if let delegate = self.delegate {
+            delegate.input(name: "这就是命啊");
+        }
         print("\(needAchieve())")
         print("\(notNeedAchieve())")
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,6 +50,12 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController: putOutProtocol {
+    func output(name: String) {
+        print("name : \(name)");
+    }
 }
 
 extension ViewController: TestProtocol {

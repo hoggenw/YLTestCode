@@ -13,6 +13,7 @@
 		1144EF1B1FFE1B7A0096B8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1144EF1A1FFE1B7A0096B8BA /* Assets.xcassets */; };
 		1144EF1E1FFE1B7A0096B8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1144EF1C1FFE1B7A0096B8BA /* LaunchScreen.storyboard */; };
 		1144EF291FFE1B7A0096B8BA /* YLMetalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144EF281FFE1B7A0096B8BA /* YLMetalTestTests.swift */; };
+		9C3B9C675DE7CC04EC784941 /* Pods_YLMetalTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328111854617F5EDC350F98F /* Pods_YLMetalTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		1144EF241FFE1B7A0096B8BA /* YLMetalTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLMetalTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1144EF281FFE1B7A0096B8BA /* YLMetalTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLMetalTestTests.swift; sourceTree = "<group>"; };
 		1144EF2A1FFE1B7A0096B8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328111854617F5EDC350F98F /* Pods_YLMetalTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLMetalTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7476EEE3E3501AA92DC7DE /* Pods-YLMetalTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLMetalTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLMetalTest/Pods-YLMetalTest.release.xcconfig"; sourceTree = "<group>"; };
+		FD483EE0E70B73FE2BE07AA8 /* Pods-YLMetalTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLMetalTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLMetalTest/Pods-YLMetalTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3B9C675DE7CC04EC784941 /* Pods_YLMetalTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C707F091C77727B6B2E0989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				328111854617F5EDC350F98F /* Pods_YLMetalTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1144EF071FFE1B790096B8BA = {
 			isa = PBXGroup;
 			children = (
 				1144EF121FFE1B790096B8BA /* YLMetalTest */,
 				1144EF271FFE1B7A0096B8BA /* YLMetalTestTests */,
 				1144EF111FFE1B790096B8BA /* Products */,
+				2EC59D8FF0B9AD0D38641321 /* Pods */,
+				0C707F091C77727B6B2E0989 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +111,15 @@
 			path = YLMetalTestTests;
 			sourceTree = "<group>";
 		};
+		2EC59D8FF0B9AD0D38641321 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD483EE0E70B73FE2BE07AA8 /* Pods-YLMetalTest.debug.xcconfig */,
+				DE7476EEE3E3501AA92DC7DE /* Pods-YLMetalTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1144EF2D1FFE1B7A0096B8BA /* Build configuration list for PBXNativeTarget "YLMetalTest" */;
 			buildPhases = (
+				D2D6252D5B6D71076E9CA18B /* [CP] Check Pods Manifest.lock */,
 				1144EF0C1FFE1B790096B8BA /* Sources */,
 				1144EF0D1FFE1B790096B8BA /* Frameworks */,
 				1144EF0E1FFE1B790096B8BA /* Resources */,
+				243366987B2B8EB20A53D28D /* [CP] Embed Pods Frameworks */,
+				24F97FE5B75EE2734398D477 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		243366987B2B8EB20A53D28D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YLMetalTest/Pods-YLMetalTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YLSwiftScan/YLSwiftScan.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLSwiftScan.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLMetalTest/Pods-YLMetalTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24F97FE5B75EE2734398D477 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLMetalTest/Pods-YLMetalTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2D6252D5B6D71076E9CA18B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLMetalTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1144EF0C1FFE1B790096B8BA /* Sources */ = {
@@ -351,11 +432,13 @@
 		};
 		1144EF2E1FFE1B7A0096B8BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD483EE0E70B73FE2BE07AA8 /* Pods-YLMetalTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD59NK3467;
 				INFOPLIST_FILE = YLMetalTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoggenw.com.YLMetalTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,11 +449,13 @@
 		};
 		1144EF2F1FFE1B7A0096B8BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7476EEE3E3501AA92DC7DE /* Pods-YLMetalTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD59NK3467;
 				INFOPLIST_FILE = YLMetalTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoggenw.com.YLMetalTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

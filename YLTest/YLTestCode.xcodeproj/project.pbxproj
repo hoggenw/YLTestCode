@@ -230,6 +230,7 @@
 		117C01651F74FF3E005B0B3D /* KeyboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117C01641F74FF3E005B0B3D /* KeyboardVC.swift */; };
 		119591D61EC298E0005B4BE0 /* TestMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119591D51EC298E0005B4BE0 /* TestMapViewController.swift */; };
 		119591D91EC298E0005B4BE0 /* CLLocation+Sino.m in Sources */ = {isa = PBXBuildFile; fileRef = 119591D71EC298E0005B4BE0 /* CLLocation+Sino.m */; };
+		11B4DD952008507800D01EEC /* VertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 11B4DD942008507800D01EEC /* VertexShader.metal */; };
 		11BD9AEB1E5A72C900E93FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */; };
 		11BD9AED1E5A72C900E93FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD9AEC1E5A72C900E93FA8 /* ViewController.swift */; };
 		11BD9AF01E5A72C900E93FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD9AEE1E5A72C900E93FA8 /* Main.storyboard */; };
@@ -475,6 +476,7 @@
 		119591D51EC298E0005B4BE0 /* TestMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMapViewController.swift; sourceTree = "<group>"; };
 		119591D71EC298E0005B4BE0 /* CLLocation+Sino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Sino.m"; sourceTree = "<group>"; };
 		119591D81EC298E0005B4BE0 /* CLLocation+Sino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Sino.h"; sourceTree = "<group>"; };
+		11B4DD942008507800D01EEC /* VertexShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VertexShader.metal; sourceTree = "<group>"; };
 		11BD9AE71E5A72C900E93FA8 /* YLTestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLTestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BD9AEA1E5A72C900E93FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BD9AEC1E5A72C900E93FA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -913,6 +915,7 @@
 				114FD3D61ECBF26600B0F796 /* DrawAnnotationView.swift */,
 				1144C0781EBC506F00B98DB2 /* CustomCalloutView.swift */,
 				1144C07A1EBC5BA700B98DB2 /* CustomAnnotationView.swift */,
+				11B4DD942008507800D01EEC /* VertexShader.metal */,
 				11CC0D6B1E5A7548002994CB /* Oc.h */,
 				11CC0D6C1E5A7548002994CB /* Oc.m */,
 				11BD9AEE1E5A72C900E93FA8 /* Main.storyboard */,
@@ -1321,6 +1324,7 @@
 				1118AF651F7103DF0091D097 /* Dictionary+Extension.swift in Sources */,
 				1118AF681F7103DF0091D097 /* UIButton + Extension.swift in Sources */,
 				11BD9AED1E5A72C900E93FA8 /* ViewController.swift in Sources */,
+				11B4DD952008507800D01EEC /* VertexShader.metal in Sources */,
 				1118AF6A1F7103DF0091D097 /* UIImage+Extension.swift in Sources */,
 				114FD3D51ECAE61E00B0F796 /* DrawMapViewController.swift in Sources */,
 				117C01631F739E94005B0B3D /* KeyboardEmojiTextView.swift in Sources */,
