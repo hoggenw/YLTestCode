@@ -12,6 +12,7 @@
 @interface FooView ()
 @property (nonatomic,copy) NSString * kDTActionHandlerTapGestureKey;
 @property (nonatomic,copy) NSString * kDTActionHandlerTapBlockKey;
+@property (nonatomic,nonnull) NSString * name;
 @end
 
 @implementation FooView

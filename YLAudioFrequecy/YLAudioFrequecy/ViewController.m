@@ -130,6 +130,7 @@
 //    NSLog(@" class name  :   %@",[self.message class]);
     
 #pragma mark - runtime执行测试
+    [self test];
 //    [self runtimeTest];
 #pragma mark - runtime执行模型赋值测试
 //    NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
@@ -139,9 +140,9 @@
 //    [model setDict: [Man specialArrayJson]];
 //    NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.dog);
  #pragma mark - runloop测试
-    _testRunLoop = [TestRunLoop new];
-    [_testRunLoop logStatusOfRunLoop];
-    [_testRunLoop showRunLoop];
+//    _testRunLoop = [TestRunLoop new];
+//    [_testRunLoop logStatusOfRunLoop];
+//    [_testRunLoop showRunLoop];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -323,6 +324,13 @@
     [fooView setTapActionWithBlock:^{
         NSLog(@"say something baby");
     }];
+    IMP methodPoint = [fooView methodForSelector:@selector(setName:)];
+    void (*objc_msgSendCasted)(id, SEL, id) = (void *)methodPoint;
+    objc_msgSendCasted(fooView,@selector(setName:),@"王大大");
+    NSLog(@"给私有变量赋值:%@",[fooView performSelector:@selector(name)]);
+    //    void (*objc_msgSendCasted)(id, SEL, id) = (void *)objc_msgSend;
+    //    objc_msgSendCasted(self,_cmd,newValue);
+
     
     
     

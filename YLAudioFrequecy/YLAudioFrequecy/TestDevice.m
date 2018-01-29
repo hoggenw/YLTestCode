@@ -7,16 +7,18 @@
 //
 
 #import "TestDevice.h"
+
 #import <sys/utsname.h>
 
 @implementation TestDevice
 
 - (void)logDeviceInformation {
-    NSString * deviceName =  [[UIDevice currentDevice] systemName];
-    NSString * systemVersion =  [[UIDevice currentDevice] systemVersion];
-    NSString * localizedModel =  [[UIDevice currentDevice] localizedModel];
-    NSString * model =  [[UIDevice currentDevice] model];
-    NSString * name =  [[UIDevice currentDevice] name];
+    
+    //    NSString * deviceName =  [[UIDevice currentDevice] systemName];
+//    NSString * systemVersion =  [[UIDevice currentDevice] systemVersion];
+//    NSString * localizedModel =  [[UIDevice currentDevice] localizedModel];
+//    NSString * model =  [[UIDevice currentDevice] model];
+//    NSString * name =  [[UIDevice currentDevice] name];
 }
 
 
