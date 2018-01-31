@@ -29,6 +29,8 @@
 		11093DB91FBD3B4D00AA5284 /* Menu3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11093DB81FBD3B4D00AA5284 /* Menu3DView.swift */; };
 		110979171FB2DAFD00A22E88 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110979161FB2DAFD00A22E88 /* WaveView.swift */; };
 		110979191FB2DB4C00A22E88 /* WaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110979181FB2DB4C00A22E88 /* WaveViewController.swift */; };
+		111CB19F2021B6B80035D245 /* YLVoirceInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111CB19E2021B6B80035D245 /* YLVoirceInputViewController.swift */; };
+		111CB1A12021B7560035D245 /* VioceInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1A02021B7560035D245 /* VioceInputView.swift */; };
 		114F029C1ED3DEFE0039F60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F029B1ED3DEFE0039F60C /* AppDelegate.swift */; };
 		114F029E1ED3DEFF0039F60C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F029D1ED3DEFF0039F60C /* ViewController.swift */; };
 		114F02A31ED3DEFF0039F60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114F02A21ED3DEFF0039F60C /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		11093DB81FBD3B4D00AA5284 /* Menu3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu3DView.swift; sourceTree = "<group>"; };
 		110979161FB2DAFD00A22E88 /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		110979181FB2DB4C00A22E88 /* WaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveViewController.swift; sourceTree = "<group>"; };
+		111CB19E2021B6B80035D245 /* YLVoirceInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLVoirceInputViewController.swift; sourceTree = "<group>"; };
+		111CB1A02021B7560035D245 /* VioceInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VioceInputView.swift; sourceTree = "<group>"; };
 		114F02981ED3DEFE0039F60C /* YLAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114F029B1ED3DEFE0039F60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		114F029D1ED3DEFF0039F60C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				11C2E4D11FB4408E00C6A06E /* DrawerViewController.swift */,
 				11093DB41FBD38FF00AA5284 /* Menu3DViewController.swift */,
 				11093DB81FBD3B4D00AA5284 /* Menu3DView.swift */,
+				111CB19E2021B6B80035D245 /* YLVoirceInputViewController.swift */,
+				111CB1A02021B7560035D245 /* VioceInputView.swift */,
 			);
 			name = RefreshCircle;
 			sourceTree = "<group>";
@@ -390,6 +396,8 @@
 				1104C3901F8B5FB600D5A29F /* YLMainTabbarViewController.swift in Sources */,
 				1104C3911F8B5FB600D5A29F /* YLMumViewController.swift in Sources */,
 				11C2E4D01FB4408100C6A06E /* DrawerView.swift in Sources */,
+				111CB1A12021B7560035D245 /* VioceInputView.swift in Sources */,
+				111CB19F2021B6B80035D245 /* YLVoirceInputViewController.swift in Sources */,
 				1104C3871F8B5FB600D5A29F /* Dictionary+Extension.swift in Sources */,
 				1104C3711F8B5EA700D5A29F /* CircleAnimationViewController.swift in Sources */,
 				11093DB51FBD38FF00AA5284 /* Menu3DViewController.swift in Sources */,

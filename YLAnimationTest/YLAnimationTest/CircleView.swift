@@ -14,6 +14,8 @@ class CircleView: UIView {
 
     
     var circleLayer1 :CAShapeLayer!
+    var circleGradientLayer : CAGradientLayer!
+    
     var arrows1 : CAShapeLayer!
     var arrow1StartPath: UIBezierPath!
     var arrow1EndPath: UIBezierPath!
@@ -49,6 +51,14 @@ class CircleView: UIView {
         circleLayer1.lineWidth = 3
         circleLayer1.fillColor = UIColor.clear.cgColor
         circleLayer1.lineCap = kCALineCapRound;
+//        circleGradientLayer = CAGradientLayer();
+//        circleGradientLayer.frame = self.bounds;
+//        circleGradientLayer.colors = [UIColor.green.cgColor , UIColor.white.cgColor];
+//        circleGradientLayer.locations = [0,1];
+//        circleGradientLayer.startPoint = CGPoint(x: 0, y: 0);
+//        circleGradientLayer.endPoint = CGPoint(x: 0, y: 1);
+//        circleGradientLayer.mask = circleLayer1;
+        
         
         self.arrows1 = CAShapeLayer();
         arrows1.frame = self.bounds;

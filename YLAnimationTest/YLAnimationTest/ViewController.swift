@@ -53,6 +53,15 @@ class ViewController: UIViewController {
         button3.setTitle("3D_Optimization", for: .normal)
         button3.addTarget(self, action: #selector(Animation3DViewAction), for: .touchUpInside)
         self.view.addSubview(button3)
+        
+        //voiceInputViewAction
+        
+        let button4 = UIButton()
+        button4.backgroundColor = UIColor.brown
+        button4.frame = CGRect(x: self.view.bounds.width/2 - 30, y: self.view.bounds.height/2 + 200 , width: 60, height: 50)
+        button4.setTitle("voiceInput", for: .normal)
+        button4.addTarget(self, action: #selector(voiceInputViewAction), for: .touchUpInside)
+        self.view.addSubview(button4)
 //
 //
 //        for index in 0 ..< addOne.count {
@@ -103,6 +112,10 @@ class ViewController: UIViewController {
     func Animation3DViewAction() {
         let transform3DVC = Menu3DViewController();
         self.navigationController?.pushViewController( transform3DVC, animated:  true);
+    }
+    func voiceInputViewAction() {
+        let voiceInputVC = YLVoirceInputViewController();
+        self.navigationController?.pushViewController( voiceInputVC, animated:  true);
     }
 
 
