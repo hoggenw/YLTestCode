@@ -27,6 +27,8 @@
 
 #import "TestDevice.h"
 
+#import "YLVoiceAnimationViewController.h"
+
 @interface Message : NSObject
 
 @property (nonatomic, copy) NSString *text;
@@ -130,7 +132,7 @@
 //    NSLog(@" class name  :   %@",[self.message class]);
     
 #pragma mark - runtime执行测试
-    [self test];
+    //[self test];
 //    [self runtimeTest];
 #pragma mark - runtime执行模型赋值测试
 //    NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
@@ -143,6 +145,35 @@
 //    _testRunLoop = [TestRunLoop new];
 //    [_testRunLoop logStatusOfRunLoop];
 //    [_testRunLoop showRunLoop];
+    
+    //测试语音输入动画
+    UIButton * testVioceButton = [self creatNormalBUttonWithName:@"语音动画" frame: CGRectMake(80, 100, 100, 40)];
+    [testVioceButton addTarget: self action:@selector(voiceAnimation) forControlEvents: UIControlEventTouchUpInside];
+    
+    
+    
+}
+
+-(UIButton *)creatNormalBUttonWithName:(NSString *)name frame:(CGRect)frame {
+    
+    UIButton * button = [UIButton new];
+    button.frame = frame;
+    [self.view addSubview: button];
+    button.titleLabel.textColor = [UIColor blackColor];
+    [button setTitle: name forState: UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState: UIControlStateNormal];
+
+    return button;
+    
+}
+
+#pragma mark - 语音动画
+- (void)voiceAnimation {
+    YLVoiceAnimationViewController * vc = [YLVoiceAnimationViewController new];
+    [self presentViewController: vc animated: true completion:^{
+        
+    }];
+    
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

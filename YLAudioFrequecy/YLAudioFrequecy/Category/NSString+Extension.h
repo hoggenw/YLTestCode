@@ -17,7 +17,7 @@
  *  @param maxSize 最大尺寸
  *  @param lineMargin 行间距
  */
-- (CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize lineMargin:(CGFloat)lineMargin;
+//- (CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize lineMargin:(CGFloat)lineMargin;
 
 
 

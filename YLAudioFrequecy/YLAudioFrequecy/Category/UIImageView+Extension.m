@@ -10,8 +10,8 @@
 
 @implementation UIImageView (Extension)
 
-- (void)setImageWithURL:(nullable NSURL *) url placeholderImage:(nullable UIImage *)image {
-    [self sd_setImageWithURL: url placeholderImage: image];
-}
+//- (void)setImageWithURL:(nullable NSURL *) url placeholderImage:(nullable UIImage *)image {
+//    [self sd_setImageWithURL: url placeholderImage: image];
+//}
 
 @end

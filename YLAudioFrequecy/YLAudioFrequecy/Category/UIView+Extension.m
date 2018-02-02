@@ -135,96 +135,96 @@
  *  @param leftMargin  左侧间距，上下方向时为顶部间距
  *  @param rightMargin 右侧间距，上下方向时为底部间距
  */
-- (void)addLineWithSide:(LineViewSide)side lineColor:(UIColor *)color lineHeight:(CGFloat)height leftMargin:(CGFloat)leftMargin rightMargin:(CGFloat)rightMargin
-{
-    UIView *lineView = [[UIView alloc] init];
-    [self addSubview:lineView];
-    //TODO 这里的约束应修正为最原生的约束，实现完全独立，而不是依赖masonry
-    lineView.backgroundColor = color;
-    [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        switch (side)
-        {
-                /**
-                 *  优化方案：将水平方向 和 竖直方向 分别处理关键位置，然后统一处理水平和竖直即可。
-                 */
-                
-                // 内侧
-                
-                // 线条在view的底部
-            case LineViewSideInBottom:
-                make.bottom.equalTo(self);
-                
-                make.left.equalTo(self).offset(leftMargin);
-                make.right.equalTo(self).offset(-rightMargin);
-                make.height.equalTo(@(height));
-                break;
-                
-                // 顶部
-            case LineViewSideInTop:
-                make.top.equalTo(self);
-                
-                make.left.equalTo(self).offset(leftMargin);
-                make.right.equalTo(self).offset(-rightMargin);
-                make.height.equalTo(@(height));
-                break;
-                
-                // 左侧
-            case LineViewSideInLeft:
-                make.left.equalTo(self);
-                
-                make.top.equalTo(self).offset(leftMargin);
-                make.bottom.equalTo(self).offset(-rightMargin);
-                make.width.equalTo(@(height));
-                break;
-                
-                // 右侧
-            case LineViewSideInRight:
-                make.right.equalTo(self);
-                
-                make.top.equalTo(self).offset(leftMargin);
-                make.bottom.equalTo(self).offset(-rightMargin);
-                make.width.equalTo(@(height));
-                break;
-                
-                // 外侧
-                
-            case LineViewSideOutBottom:
-                make.top.equalTo(self.mas_bottom);
-                
-                make.left.equalTo(self).offset(leftMargin);
-                make.right.equalTo(self).offset(-rightMargin);
-                make.height.equalTo(@(height));
-                break;
-                
-            case LineViewSideOutTop:
-                make.bottom.equalTo(self.mas_top);
-                
-                make.left.equalTo(self).offset(leftMargin);
-                make.right.equalTo(self).offset(-rightMargin);
-                make.height.equalTo(@(height));
-                break;
-                
-            case LineViewSideOutLeft:
-                make.right.equalTo(self.mas_left);
-                
-                make.top.equalTo(self).offset(leftMargin);
-                make.bottom.equalTo(self).offset(-rightMargin);
-                make.width.equalTo(@(height));
-                break;
-                
-            case LineViewSideOutRight:
-                make.left.equalTo(self.mas_right);
-                
-                make.top.equalTo(self).offset(leftMargin);
-                make.bottom.equalTo(self).offset(-rightMargin);
-                make.width.equalTo(@(height));
-                break;
-                
-            default:
-                break;
-        }
-    }];
-}
+//- (void)addLineWithSide:(LineViewSide)side lineColor:(UIColor *)color lineHeight:(CGFloat)height leftMargin:(CGFloat)leftMargin rightMargin:(CGFloat)rightMargin
+//{
+//    UIView *lineView = [[UIView alloc] init];
+//    [self addSubview:lineView];
+//    //TODO 这里的约束应修正为最原生的约束，实现完全独立，而不是依赖masonry
+//    lineView.backgroundColor = color;
+//    [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        switch (side)
+//        {
+//                /**
+//                 *  优化方案：将水平方向 和 竖直方向 分别处理关键位置，然后统一处理水平和竖直即可。
+//                 */
+//                
+//                // 内侧
+//                
+//                // 线条在view的底部
+//            case LineViewSideInBottom:
+//                make.bottom.equalTo(self);
+//                
+//                make.left.equalTo(self).offset(leftMargin);
+//                make.right.equalTo(self).offset(-rightMargin);
+//                make.height.equalTo(@(height));
+//                break;
+//                
+//                // 顶部
+//            case LineViewSideInTop:
+//                make.top.equalTo(self);
+//                
+//                make.left.equalTo(self).offset(leftMargin);
+//                make.right.equalTo(self).offset(-rightMargin);
+//                make.height.equalTo(@(height));
+//                break;
+//                
+//                // 左侧
+//            case LineViewSideInLeft:
+//                make.left.equalTo(self);
+//                
+//                make.top.equalTo(self).offset(leftMargin);
+//                make.bottom.equalTo(self).offset(-rightMargin);
+//                make.width.equalTo(@(height));
+//                break;
+//                
+//                // 右侧
+//            case LineViewSideInRight:
+//                make.right.equalTo(self);
+//                
+//                make.top.equalTo(self).offset(leftMargin);
+//                make.bottom.equalTo(self).offset(-rightMargin);
+//                make.width.equalTo(@(height));
+//                break;
+//                
+//                // 外侧
+//                
+//            case LineViewSideOutBottom:
+//                make.top.equalTo(self.mas_bottom);
+//                
+//                make.left.equalTo(self).offset(leftMargin);
+//                make.right.equalTo(self).offset(-rightMargin);
+//                make.height.equalTo(@(height));
+//                break;
+//                
+//            case LineViewSideOutTop:
+//                make.bottom.equalTo(self.mas_top);
+//                
+//                make.left.equalTo(self).offset(leftMargin);
+//                make.right.equalTo(self).offset(-rightMargin);
+//                make.height.equalTo(@(height));
+//                break;
+//                
+//            case LineViewSideOutLeft:
+//                make.right.equalTo(self.mas_left);
+//                
+//                make.top.equalTo(self).offset(leftMargin);
+//                make.bottom.equalTo(self).offset(-rightMargin);
+//                make.width.equalTo(@(height));
+//                break;
+//                
+//            case LineViewSideOutRight:
+//                make.left.equalTo(self.mas_right);
+//                
+//                make.top.equalTo(self).offset(leftMargin);
+//                make.bottom.equalTo(self).offset(-rightMargin);
+//                make.width.equalTo(@(height));
+//                break;
+//                
+//            default:
+//                break;
+//        }
+//    }];
+//}
 
 // 移除所有子控件
 - (void)removeAllSubViews

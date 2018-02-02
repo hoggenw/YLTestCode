@@ -19,6 +19,13 @@
 		111CB1BF2021D2F10035D245 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1B22021D2F00035D245 /* UIColor+Extension.m */; };
 		111CB1C02021D2F10035D245 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1B32021D2F00035D245 /* NSString+Extension.m */; };
 		111CB1C12021D2F10035D245 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1B72021D2F00035D245 /* UIView+Extension.m */; };
+		111CB1C52022B54F0035D245 /* YLVoiceAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1C42022B54F0035D245 /* YLVoiceAnimationViewController.m */; };
+		111CB1C82022B6660035D245 /* YLVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1C72022B6660035D245 /* YLVoiceView.m */; };
+		111CB1CB2022B8AE0035D245 /* TopArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1CA2022B8AE0035D245 /* TopArcView.m */; };
+		111CB1CE2022BCA80035D245 /* TopViewAnimaton.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1CD2022BCA80035D245 /* TopViewAnimaton.m */; };
+		111CB1D12022E8150035D245 /* MicrophoneTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1D02022E8150035D245 /* MicrophoneTopView.m */; };
+		111CB1D42022E82F0035D245 /* MicrophoneBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1D32022E82F0035D245 /* MicrophoneBottomView.m */; };
+		111CB1D72022ED3D0035D245 /* MicrophoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1D62022ED3D0035D245 /* MicrophoneView.m */; };
 		111F51B41FEBBA5A00938567 /* NSObject+YLKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 111F51B31FEBBA5A00938567 /* NSObject+YLKVO.m */; };
 		1143BA6D1E5D7F01002CD06B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6C1E5D7F01002CD06B /* main.m */; };
 		1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6F1E5D7F01002CD06B /* AppDelegate.m */; };
@@ -80,6 +87,20 @@
 		111CB1B52021D2F00035D245 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
 		111CB1B62021D2F00035D245 /* ExtensionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionHeader.h; sourceTree = "<group>"; };
 		111CB1B72021D2F00035D245 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		111CB1C32022B54F0035D245 /* YLVoiceAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLVoiceAnimationViewController.h; sourceTree = "<group>"; };
+		111CB1C42022B54F0035D245 /* YLVoiceAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLVoiceAnimationViewController.m; sourceTree = "<group>"; };
+		111CB1C62022B6660035D245 /* YLVoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLVoiceView.h; sourceTree = "<group>"; };
+		111CB1C72022B6660035D245 /* YLVoiceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLVoiceView.m; sourceTree = "<group>"; };
+		111CB1C92022B8AE0035D245 /* TopArcView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopArcView.h; sourceTree = "<group>"; };
+		111CB1CA2022B8AE0035D245 /* TopArcView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopArcView.m; sourceTree = "<group>"; };
+		111CB1CC2022BCA80035D245 /* TopViewAnimaton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopViewAnimaton.h; sourceTree = "<group>"; };
+		111CB1CD2022BCA80035D245 /* TopViewAnimaton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopViewAnimaton.m; sourceTree = "<group>"; };
+		111CB1CF2022E8150035D245 /* MicrophoneTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MicrophoneTopView.h; sourceTree = "<group>"; };
+		111CB1D02022E8150035D245 /* MicrophoneTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MicrophoneTopView.m; sourceTree = "<group>"; };
+		111CB1D22022E82F0035D245 /* MicrophoneBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MicrophoneBottomView.h; sourceTree = "<group>"; };
+		111CB1D32022E82F0035D245 /* MicrophoneBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MicrophoneBottomView.m; sourceTree = "<group>"; };
+		111CB1D52022ED3D0035D245 /* MicrophoneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MicrophoneView.h; sourceTree = "<group>"; };
+		111CB1D62022ED3D0035D245 /* MicrophoneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MicrophoneView.m; sourceTree = "<group>"; };
 		111F51B21FEBBA5A00938567 /* NSObject+YLKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YLKVO.h"; sourceTree = "<group>"; };
 		111F51B31FEBBA5A00938567 /* NSObject+YLKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YLKVO.m"; sourceTree = "<group>"; };
 		1143BA681E5D7F01002CD06B /* YLAudioFrequecy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLAudioFrequecy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +196,20 @@
 		111CB1C22021D3530035D245 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				111CB1C32022B54F0035D245 /* YLVoiceAnimationViewController.h */,
+				111CB1C42022B54F0035D245 /* YLVoiceAnimationViewController.m */,
+				111CB1C62022B6660035D245 /* YLVoiceView.h */,
+				111CB1C72022B6660035D245 /* YLVoiceView.m */,
+				111CB1C92022B8AE0035D245 /* TopArcView.h */,
+				111CB1CA2022B8AE0035D245 /* TopArcView.m */,
+				111CB1CC2022BCA80035D245 /* TopViewAnimaton.h */,
+				111CB1CD2022BCA80035D245 /* TopViewAnimaton.m */,
+				111CB1CF2022E8150035D245 /* MicrophoneTopView.h */,
+				111CB1D02022E8150035D245 /* MicrophoneTopView.m */,
+				111CB1D22022E82F0035D245 /* MicrophoneBottomView.h */,
+				111CB1D32022E82F0035D245 /* MicrophoneBottomView.m */,
+				111CB1D52022ED3D0035D245 /* MicrophoneView.h */,
+				111CB1D62022ED3D0035D245 /* MicrophoneView.m */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -402,8 +437,10 @@
 				114F02851ECE80040039F60C /* TestRuntime.m in Sources */,
 				111CB1BF2021D2F10035D245 /* UIColor+Extension.m in Sources */,
 				11CC78011FCFDC8000BE3017 /* YLWKWebView.m in Sources */,
+				111CB1D12022E8150035D245 /* MicrophoneTopView.m in Sources */,
 				111F51B41FEBBA5A00938567 /* NSObject+YLKVO.m in Sources */,
 				87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */,
+				111CB1D42022E82F0035D245 /* MicrophoneBottomView.m in Sources */,
 				1113219F1FF22D5900C0A11D /* NSObject+JSONExtension.m in Sources */,
 				87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */,
 				11CC77FE1FCFDC2500BE3017 /* YLProgressView.m in Sources */,
@@ -413,9 +450,12 @@
 				111CB1BC2021D2F10035D245 /* UIResponder+Extension.m in Sources */,
 				111321971FF1F0B600C0A11D /* UIImage+YL.m in Sources */,
 				114F028B1ECEDAB90039F60C /* Man.m in Sources */,
+				111CB1CE2022BCA80035D245 /* TopViewAnimaton.m in Sources */,
 				87127FF71EF6B471009D4CF6 /* AssetsLibraryTest.m in Sources */,
+				111CB1CB2022B8AE0035D245 /* TopArcView.m in Sources */,
 				1143BA731E5D7F01002CD06B /* ViewController.m in Sources */,
 				111CB1B92021D2F10035D245 /* UIViewController+Extension.m in Sources */,
+				111CB1D72022ED3D0035D245 /* MicrophoneView.m in Sources */,
 				111CB1BA2021D2F10035D245 /* UIImage+Extension.m in Sources */,
 				1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */,
 				87127FF31EF6296E009D4CF6 /* Bitmap.m in Sources */,
@@ -425,6 +465,8 @@
 				1144EED61FFDCCAA0096B8BA /* TestRunLoop.m in Sources */,
 				111CB1BB2021D2F10035D245 /* UIImageView+Extension.m in Sources */,
 				111CB1BD2021D2F10035D245 /* NSDate+Extension.m in Sources */,
+				111CB1C52022B54F0035D245 /* YLVoiceAnimationViewController.m in Sources */,
+				111CB1C82022B6660035D245 /* YLVoiceView.m in Sources */,
 				11B4DD0E2005F61800D01EEC /* TestDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

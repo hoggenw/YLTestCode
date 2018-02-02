@@ -10,8 +10,8 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonHMAC.h>
 #import <CommonCrypto/CommonCryptor.h>
-#import "NSData+Base64.h"
-#import "GTMBase64.h"
+//#import "NSData+Base64.h"
+//#import "GTMBase64.h"
 
 
 static NSString * base64hash=@"T62tz1XHCUjk8NBveQaInA3GMswumo7gc~9VZRdqhbKyiOFlJS-xPfWE04rLY5Dp";
@@ -25,20 +25,20 @@ static NSString * base64hash=@"T62tz1XHCUjk8NBveQaInA3GMswumo7gc~9VZRdqhbKyiOFlJ
  *  @param maxSize 最大尺寸
  *  @param lineMargin 行间距
  */
-- (CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize lineMargin:(CGFloat)lineMargin
-{
-    NSStringDrawingOptions options = NSStringDrawingUsesLineFragmentOrigin;
-    
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.lineSpacing = lineMargin;    // 行间距
-    
-    NSMutableDictionary * attributes = [NSMutableDictionary dictionary];
-    attributes[NSFontAttributeName] = font;
-    attributes[NSParagraphStyleAttributeName] = paragraphStyle;
-    CGRect textBounds = [self boundingRectWithSize:maxSize options:options attributes:attributes context:nil];
-    
-    return textBounds.size;
-}
+//- (CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize lineMargin:(CGFloat)lineMargin
+//{
+//    NSStringDrawingOptions options = NSStringDrawingUsesLineFragmentOrigin;
+//
+//    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+//    paragraphStyle.lineSpacing = lineMargin;    // 行间距
+//
+//    NSMutableDictionary * attributes = [NSMutableDictionary dictionary];
+//    attributes[NSFontAttributeName] = font;
+//    attributes[NSParagraphStyleAttributeName] = paragraphStyle;
+//    CGRect textBounds = [self boundingRectWithSize:maxSize options:options attributes:attributes context:nil];
+//
+//    return textBounds.size;
+//}
 
 
 /**
@@ -114,144 +114,144 @@ static NSString * base64hash=@"T62tz1XHCUjk8NBveQaInA3GMswumo7gc~9VZRdqhbKyiOFlJ
 }
 
 
+//
+//+ (NSString *)encryptDESForString:(NSString *)strOrigin key:(NSString *)key
+//{
+//    return [self encrypt:strOrigin encryptOrDecrypt:kCCEncrypt key:key];
+//}
+//
+//+ (NSString *)decryptDESWithString:(NSString*)strDES key:(NSString*)key
+//{
+//    //    return nil;
+//    
+//    return [self encrypt:strDES encryptOrDecrypt:kCCDecrypt key:key];
+//    
+//}
 
-+ (NSString *)encryptDESForString:(NSString *)strOrigin key:(NSString *)key
-{
-    return [self encrypt:strOrigin encryptOrDecrypt:kCCEncrypt key:key];
-}
-
-+ (NSString *)decryptDESWithString:(NSString*)strDES key:(NSString*)key
-{
-    //    return nil;
-    
-    return [self encrypt:strDES encryptOrDecrypt:kCCDecrypt key:key];
-    
-}
-
-+ (NSString *)encrypt:(NSString *)sText encryptOrDecrypt:(CCOperation)encryptOperation key:(NSString *)key
-{
-    const void *vplainText;
-    size_t plainTextBufferSize;
-    
-    if (encryptOperation == kCCDecrypt)
-    {
-        NSData *decryptData = [GTMBase64 decodeData:[sText dataUsingEncoding:NSUTF8StringEncoding]];
-        plainTextBufferSize = [decryptData length];
-        vplainText = [decryptData bytes];
-    }
-    else
-    {
-        NSData* encryptData = [sText dataUsingEncoding:NSUTF8StringEncoding];
-        plainTextBufferSize = [encryptData length];
-        vplainText = (const void *)[encryptData bytes];
-    }
-    
-    CCCryptorStatus ccStatus;
-    uint8_t *bufferPtr = NULL;
-    size_t bufferPtrSize = 0;
-    size_t movedBytes = 0;
-    
-    bufferPtrSize = (plainTextBufferSize + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
-    bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
-    memset((void *)bufferPtr, 0x0, bufferPtrSize);
-    
-    //    NSString *initVec = @"init Kurodo";
-    //    const void *vinitVec = (const void *) [initVec UTF8String];
-    char iv[8] = {(char)0xef, (char)0x34, (char)0x56, (char)0x78, (char)0x90, (char)0xab, (char)0xcd, (char)0xef};
-    const void *vkey = (const void *) [key UTF8String];
-    
-    ccStatus = CCCrypt(encryptOperation,
-                       kCCAlgorithmDES,
-                       kCCOptionPKCS7Padding,
-                       vkey,
-                       kCCKeySizeDES,
-                       //                       vinitVec,
-                       iv,
-                       vplainText,
-                       plainTextBufferSize,
-                       (void *)bufferPtr,
-                       bufferPtrSize,
-                       &movedBytes);
-    
-    NSString *result = nil;
-    
-    if (encryptOperation == kCCDecrypt)
-    {
-        result = [[NSString alloc] initWithData:[NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)movedBytes] encoding:NSUTF8StringEncoding];
-    }
-    else
-    {
-        NSData *data = [NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)movedBytes];
-        result = [GTMBase64 stringByEncodingData:data];
-    }
-    
-    return result;
-}
-
-
-
-+ (NSString*)encodeStringInBase64:(NSString*)string
-{
-    NSMutableString * strResult=[[NSMutableString alloc] initWithCapacity:10];
-    NSData * bytes=[string dataUsingEncoding:NSUTF8StringEncoding];
-    Byte   * theByte=(Byte*)[bytes bytes];
-    NSInteger length=[bytes length];
-    int mod=0;
-    Byte prev=0;
-    for (int i=0; i<length; i++) {
-        mod=i%3;
-        if (mod==0) {
-            [strResult appendFormat:@"%c",[base64hash characterAtIndex:((theByte[i] >> 2) & 0x3F)]];
-        }else if (mod==1){
-            [strResult appendFormat:@"%c",[base64hash characterAtIndex:((prev << 4 | (theByte[i] >> 4  &0x0F) )& 0x3F)]];
-        }else{
-            [strResult appendFormat:@"%c",[base64hash characterAtIndex:(((theByte[i] >> 6 & 0x03) | prev << 2) & 0x3F)]];
-            [strResult appendFormat:@"%c",[base64hash characterAtIndex:(theByte[i] & 0x3F)]];
-        }
-        prev=theByte[i];
-    }
-    if (mod==0) {
-        [strResult appendFormat:@"%c",[base64hash characterAtIndex:(prev << 4 & 0x3C)]];
-        [strResult appendString:@"=="];
-    }else if (mod==1){
-        [strResult appendFormat:@"%c",[base64hash characterAtIndex:(prev << 2 & 0x3F)]];
-        [strResult appendString:@"="];
-    }
-    return strResult;
-}
-// Base64解码
-+ (NSString*)decodeBase64String:(NSString*)strBase64
-{
-    NSMutableString * result=[[NSMutableString alloc] initWithCapacity:10];
-    for (int i=0; i<[strBase64 length]; i++)
-    {
-        NSRange temp1=[base64hash rangeOfString:[NSString stringWithFormat:@"%c",[strBase64 characterAtIndex:i]]];
-        if (temp1.length==0)
-        {
-            [result appendString:@"000000"];
-        }
-        else
-        {
-            //            NSMutableString * strT=[[NSMutableString alloc] initWithString:[UtilityTool decimalTOBinary:temp1.location backLength:6]];
-            NSMutableString * strT=[[NSMutableString alloc] initWithString:[NSString decimalTOBinary:temp1.location backLength:6]];
-            [result appendString:strT];
-        }
-    }
-    while ([[result substringFromIndex:result.length-8] isEqualToString:@"00000000"])
-    {
-        result=[NSMutableString stringWithString:[result substringWithRange:NSMakeRange(0, result.length-8)]];
-    }
-    Byte * byte2=(Byte*)malloc(result.length/8);
-    for (int i=0; i<(result.length/8); i++)
-    {
-        //        byte2[i]=(Byte)[[UtilityTool toDecimalSystemWithBinarySystem:[result substringWithRange:NSMakeRange(i*8,8)]] integerValue];
-        byte2[i]=(Byte)[[NSString toDecimalSystemWithBinarySystem:[result substringWithRange:NSMakeRange(i*8,8)]] integerValue];
-    }
-    NSData * dTemp=[NSData dataWithBytes:byte2 length:result.length/8];
-    NSString * strTemp = [[NSString alloc] initWithData:dTemp encoding:NSUTF8StringEncoding];
-    free(byte2);
-    return strTemp;
-}
+//+ (NSString *)encrypt:(NSString *)sText encryptOrDecrypt:(CCOperation)encryptOperation key:(NSString *)key
+//{
+//    const void *vplainText;
+//    size_t plainTextBufferSize;
+//    
+//    if (encryptOperation == kCCDecrypt)
+//    {
+//        NSData *decryptData = [GTMBase64 decodeData:[sText dataUsingEncoding:NSUTF8StringEncoding]];
+//        plainTextBufferSize = [decryptData length];
+//        vplainText = [decryptData bytes];
+//    }
+//    else
+//    {
+//        NSData* encryptData = [sText dataUsingEncoding:NSUTF8StringEncoding];
+//        plainTextBufferSize = [encryptData length];
+//        vplainText = (const void *)[encryptData bytes];
+//    }
+//    
+//    CCCryptorStatus ccStatus;
+//    uint8_t *bufferPtr = NULL;
+//    size_t bufferPtrSize = 0;
+//    size_t movedBytes = 0;
+//    
+//    bufferPtrSize = (plainTextBufferSize + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
+//    bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
+//    memset((void *)bufferPtr, 0x0, bufferPtrSize);
+//    
+//    //    NSString *initVec = @"init Kurodo";
+//    //    const void *vinitVec = (const void *) [initVec UTF8String];
+//    char iv[8] = {(char)0xef, (char)0x34, (char)0x56, (char)0x78, (char)0x90, (char)0xab, (char)0xcd, (char)0xef};
+//    const void *vkey = (const void *) [key UTF8String];
+//    
+//    ccStatus = CCCrypt(encryptOperation,
+//                       kCCAlgorithmDES,
+//                       kCCOptionPKCS7Padding,
+//                       vkey,
+//                       kCCKeySizeDES,
+//                       //                       vinitVec,
+//                       iv,
+//                       vplainText,
+//                       plainTextBufferSize,
+//                       (void *)bufferPtr,
+//                       bufferPtrSize,
+//                       &movedBytes);
+//    
+//    NSString *result = nil;
+//    
+//    if (encryptOperation == kCCDecrypt)
+//    {
+//        result = [[NSString alloc] initWithData:[NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)movedBytes] encoding:NSUTF8StringEncoding];
+//    }
+//    else
+//    {
+//        NSData *data = [NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)movedBytes];
+//        result = [GTMBase64 stringByEncodingData:data];
+//    }
+//    
+//    return result;
+//}
+//
+//
+//
+//+ (NSString*)encodeStringInBase64:(NSString*)string
+//{
+//    NSMutableString * strResult=[[NSMutableString alloc] initWithCapacity:10];
+//    NSData * bytes=[string dataUsingEncoding:NSUTF8StringEncoding];
+//    Byte   * theByte=(Byte*)[bytes bytes];
+//    NSInteger length=[bytes length];
+//    int mod=0;
+//    Byte prev=0;
+//    for (int i=0; i<length; i++) {
+//        mod=i%3;
+//        if (mod==0) {
+//            [strResult appendFormat:@"%c",[base64hash characterAtIndex:((theByte[i] >> 2) & 0x3F)]];
+//        }else if (mod==1){
+//            [strResult appendFormat:@"%c",[base64hash characterAtIndex:((prev << 4 | (theByte[i] >> 4  &0x0F) )& 0x3F)]];
+//        }else{
+//            [strResult appendFormat:@"%c",[base64hash characterAtIndex:(((theByte[i] >> 6 & 0x03) | prev << 2) & 0x3F)]];
+//            [strResult appendFormat:@"%c",[base64hash characterAtIndex:(theByte[i] & 0x3F)]];
+//        }
+//        prev=theByte[i];
+//    }
+//    if (mod==0) {
+//        [strResult appendFormat:@"%c",[base64hash characterAtIndex:(prev << 4 & 0x3C)]];
+//        [strResult appendString:@"=="];
+//    }else if (mod==1){
+//        [strResult appendFormat:@"%c",[base64hash characterAtIndex:(prev << 2 & 0x3F)]];
+//        [strResult appendString:@"="];
+//    }
+//    return strResult;
+//}
+//// Base64解码
+//+ (NSString*)decodeBase64String:(NSString*)strBase64
+//{
+//    NSMutableString * result=[[NSMutableString alloc] initWithCapacity:10];
+//    for (int i=0; i<[strBase64 length]; i++)
+//    {
+//        NSRange temp1=[base64hash rangeOfString:[NSString stringWithFormat:@"%c",[strBase64 characterAtIndex:i]]];
+//        if (temp1.length==0)
+//        {
+//            [result appendString:@"000000"];
+//        }
+//        else
+//        {
+//            //            NSMutableString * strT=[[NSMutableString alloc] initWithString:[UtilityTool decimalTOBinary:temp1.location backLength:6]];
+//            NSMutableString * strT=[[NSMutableString alloc] initWithString:[NSString decimalTOBinary:temp1.location backLength:6]];
+//            [result appendString:strT];
+//        }
+//    }
+//    while ([[result substringFromIndex:result.length-8] isEqualToString:@"00000000"])
+//    {
+//        result=[NSMutableString stringWithString:[result substringWithRange:NSMakeRange(0, result.length-8)]];
+//    }
+//    Byte * byte2=(Byte*)malloc(result.length/8);
+//    for (int i=0; i<(result.length/8); i++)
+//    {
+//        //        byte2[i]=(Byte)[[UtilityTool toDecimalSystemWithBinarySystem:[result substringWithRange:NSMakeRange(i*8,8)]] integerValue];
+//        byte2[i]=(Byte)[[NSString toDecimalSystemWithBinarySystem:[result substringWithRange:NSMakeRange(i*8,8)]] integerValue];
+//    }
+//    NSData * dTemp=[NSData dataWithBytes:byte2 length:result.length/8];
+//    NSString * strTemp = [[NSString alloc] initWithData:dTemp encoding:NSUTF8StringEncoding];
+//    free(byte2);
+//    return strTemp;
+//}
 
 
 
