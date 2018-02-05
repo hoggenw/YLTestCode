@@ -196,10 +196,18 @@
 		111CB1C22021D3530035D245 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				111CB1EB202417AD0035D245 /* part one */,
 				111CB1C32022B54F0035D245 /* YLVoiceAnimationViewController.h */,
 				111CB1C42022B54F0035D245 /* YLVoiceAnimationViewController.m */,
 				111CB1C62022B6660035D245 /* YLVoiceView.h */,
 				111CB1C72022B6660035D245 /* YLVoiceView.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		111CB1EB202417AD0035D245 /* part one */ = {
+			isa = PBXGroup;
+			children = (
 				111CB1C92022B8AE0035D245 /* TopArcView.h */,
 				111CB1CA2022B8AE0035D245 /* TopArcView.m */,
 				111CB1CC2022BCA80035D245 /* TopViewAnimaton.h */,
@@ -211,7 +219,7 @@
 				111CB1D52022ED3D0035D245 /* MicrophoneView.h */,
 				111CB1D62022ED3D0035D245 /* MicrophoneView.m */,
 			);
-			name = Animation;
+			name = "part one";
 			sourceTree = "<group>";
 		};
 		1143BA5F1E5D7F01002CD06B = {
