@@ -12,4 +12,6 @@
 
 - (instancetype)initColorAndLineWidthWithRect:(CGRect)frame voiceColor:(UIColor* _Nullable)fColor volumeColor:(UIColor* _Nullable)vColor isColid:(BOOL)isColid lineWidth:(CGFloat)lineWidth;
 
+- (void)updateVoiceViewWithVolume:(float)volume;
+
 @end

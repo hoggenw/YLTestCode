@@ -9,11 +9,17 @@
 #import "YLVoiceAnimationViewController.h"
 #import "YLVoiceView.h"
 #import "ExtensionHeader.h"
-
+#import "YLVoiceCircleView.h"
+#import "YLMicphoneVoiceView.h"
 
 @interface YLVoiceAnimationViewController ()
 
 @property (nonatomic,strong)YLVoiceView * voiceView;
+@property (nonatomic,strong)YLVoiceCircleView * voiceCircleView;
+@property (nonatomic,strong)YLMicphoneVoiceView * micphoneVoiceView;
+
+@property (nonatomic, assign)NSInteger  type;
+@property (nonatomic, strong)UIView * backView;
 
 @end
 
@@ -26,7 +32,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.type = 1;
     _voiceView = [[YLVoiceView alloc] initWithFrame:CGRectZero];
+    
+    //动画type
+    UIButton * animationTypeButton = [self creatNormalBUttonWithName:@"语音I动画" frame: CGRectMake(80, 70, 100, 40)];
+    [animationTypeButton addTarget: self action:@selector(changedAnimationType:) forControlEvents: UIControlEventTouchUpInside];
     
     
     //测试语音开始动画
@@ -49,14 +60,80 @@
 
 #pragma mark - Events
 
+
+- (void)changedAnimationType:(UIButton *) sender {
+    switch (self.type) {
+        case 1:{
+            self.type = 2;
+            [sender setTitle:@"语音II动画" forState:UIControlStateNormal];
+            [_voiceView removeFromSuperview];
+            _voiceView = nil;
+            _voiceCircleView =  [[YLVoiceCircleView alloc] initWithFrame:CGRectZero];;
+            break;
+        }
+            
+        case 2:{
+            self.type = 3;
+            [sender setTitle:@"语音III动画" forState:UIControlStateNormal];
+            [_voiceCircleView removeFromSuperview];
+            _voiceCircleView = nil;
+            _micphoneVoiceView =  [[YLMicphoneVoiceView alloc] initWithFrame:CGRectZero];;
+            break;
+        }
+        case 3:{
+            self.type = 1;
+            [sender setTitle:@"语音I动画" forState:UIControlStateNormal];
+            [_micphoneVoiceView removeFromSuperview];
+            _micphoneVoiceView = nil;
+            _voiceView =  [[YLVoiceView alloc] initWithFrame:CGRectZero];;
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+
 - (void)voiceAnimation {
-    [self.voiceView startAnimation];
+    switch (self.type) {
+        case 1:
+            [self.voiceView startAnimation];
+            break;
+        case 2:
+            [self.voiceCircleView startAnimation];
+            break;
+        case 3:
+            [self.micphoneVoiceView startAnimation];
+            break;
+        default:
+            break;
+    }
+    
 }
 
 - (void)stopVoiceAnimation {
-    [self.voiceView stopArcAnimation];
-    [self.voiceView removeFromSuperview];
-    self.voiceView = nil;
+    
+    switch (self.type) {
+        case 1:{
+            [self.voiceView stopArcAnimation];
+            [self.voiceView removeFromSuperview];
+            self.voiceView = nil;
+            break;
+        }
+        case 2:
+            [self.voiceCircleView startAnimation];
+            [self.voiceCircleView removeFromSuperview];
+            self.voiceCircleView = nil;
+            break;
+        case 3:
+            [self.micphoneVoiceView startAnimation];
+            [self.micphoneVoiceView removeFromSuperview];
+            self.micphoneVoiceView = nil;
+            break;
+        default:
+            break;
+    }
+    
 }
 
 - (YLVoiceView *)voiceView {
@@ -65,6 +142,8 @@
     }
     return _voiceView;
 }
+
+
 
 #pragma mark - Private Methods
 
@@ -80,6 +159,8 @@
     return button;
     
 }
+
+
 #pragma mark - Extension Delegate or Protocol
 
 @end
