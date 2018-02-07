@@ -121,7 +121,7 @@
 
 - (NSTimer *)timer {
     if (_timer == nil) {
-            self.timer = [NSTimer scheduledTimerWithTimeInterval: 0.3 target:self selector:@selector(startARCTopAnimation) userInfo:nil  repeats: YES];
+            _timer = [NSTimer scheduledTimerWithTimeInterval: 0.3 target:self selector:@selector(startARCTopAnimation) userInfo:nil  repeats: YES];
     }
     return _timer;
 }

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface YLVoiceCircleView : UIView
+
+@property(nonatomic,strong)UIView * backGroundView;
 //开始动画
 - (void)startAnimation;
 - (void)stopArcAnimation;

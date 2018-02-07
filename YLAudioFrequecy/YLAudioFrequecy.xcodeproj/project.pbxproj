@@ -29,6 +29,9 @@
 		111F51B41FEBBA5A00938567 /* NSObject+YLKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 111F51B31FEBBA5A00938567 /* NSObject+YLKVO.m */; };
 		11225DF42028573A008DFDB6 /* YLVoiceCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225DF32028573A008DFDB6 /* YLVoiceCircleView.m */; };
 		11225DF7202857BA008DFDB6 /* YLMicphoneVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225DF6202857BA008DFDB6 /* YLMicphoneVoiceView.m */; };
+		11225E0220299E6E008DFDB6 /* YLMicrophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E0120299E6E008DFDB6 /* YLMicrophoneViewController.m */; };
+		11225E052029B742008DFDB6 /* YLVoiceCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E042029B742008DFDB6 /* YLVoiceCircleViewController.m */; };
+		11225E09202AA542008DFDB6 /* YLCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E08202AA542008DFDB6 /* YLCircleView.m */; };
 		1143BA6D1E5D7F01002CD06B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6C1E5D7F01002CD06B /* main.m */; };
 		1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6F1E5D7F01002CD06B /* AppDelegate.m */; };
 		1143BA731E5D7F01002CD06B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA721E5D7F01002CD06B /* ViewController.m */; };
@@ -109,6 +112,12 @@
 		11225DF32028573A008DFDB6 /* YLVoiceCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLVoiceCircleView.m; sourceTree = "<group>"; };
 		11225DF5202857BA008DFDB6 /* YLMicphoneVoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMicphoneVoiceView.h; sourceTree = "<group>"; };
 		11225DF6202857BA008DFDB6 /* YLMicphoneVoiceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMicphoneVoiceView.m; sourceTree = "<group>"; };
+		11225E0020299E6E008DFDB6 /* YLMicrophoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMicrophoneViewController.h; sourceTree = "<group>"; };
+		11225E0120299E6E008DFDB6 /* YLMicrophoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMicrophoneViewController.m; sourceTree = "<group>"; };
+		11225E032029B742008DFDB6 /* YLVoiceCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLVoiceCircleViewController.h; sourceTree = "<group>"; };
+		11225E042029B742008DFDB6 /* YLVoiceCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLVoiceCircleViewController.m; sourceTree = "<group>"; };
+		11225E07202AA542008DFDB6 /* YLCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCircleView.h; sourceTree = "<group>"; };
+		11225E08202AA542008DFDB6 /* YLCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCircleView.m; sourceTree = "<group>"; };
 		1143BA681E5D7F01002CD06B /* YLAudioFrequecy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLAudioFrequecy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1143BA6C1E5D7F01002CD06B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1143BA6E1E5D7F01002CD06B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -202,9 +211,9 @@
 		111CB1C22021D3530035D245 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				11225E06202AA524008DFDB6 /* Part two circle */,
+				11225DFF20299E2B008DFDB6 /* Controllers */,
 				111CB1EB202417AD0035D245 /* part one */,
-				111CB1C32022B54F0035D245 /* YLVoiceAnimationViewController.h */,
-				111CB1C42022B54F0035D245 /* YLVoiceAnimationViewController.m */,
 				111CB1C62022B6660035D245 /* YLVoiceView.h */,
 				111CB1C72022B6660035D245 /* YLVoiceView.m */,
 				11225DF22028573A008DFDB6 /* YLVoiceCircleView.h */,
@@ -230,6 +239,28 @@
 				111CB1D62022ED3D0035D245 /* MicrophoneView.m */,
 			);
 			name = "part one";
+			sourceTree = "<group>";
+		};
+		11225DFF20299E2B008DFDB6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				111CB1C32022B54F0035D245 /* YLVoiceAnimationViewController.h */,
+				111CB1C42022B54F0035D245 /* YLVoiceAnimationViewController.m */,
+				11225E0020299E6E008DFDB6 /* YLMicrophoneViewController.h */,
+				11225E0120299E6E008DFDB6 /* YLMicrophoneViewController.m */,
+				11225E032029B742008DFDB6 /* YLVoiceCircleViewController.h */,
+				11225E042029B742008DFDB6 /* YLVoiceCircleViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		11225E06202AA524008DFDB6 /* Part two circle */ = {
+			isa = PBXGroup;
+			children = (
+				11225E07202AA542008DFDB6 /* YLCircleView.h */,
+				11225E08202AA542008DFDB6 /* YLCircleView.m */,
+			);
+			name = "Part two circle";
 			sourceTree = "<group>";
 		};
 		1143BA5F1E5D7F01002CD06B = {
@@ -450,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				111CB1C12021D2F10035D245 /* UIView+Extension.m in Sources */,
+				11225E09202AA542008DFDB6 /* YLCircleView.m in Sources */,
 				87127FE61EF4FD69009D4CF6 /* Quartz2D.m in Sources */,
 				111CB1BE2021D2F10035D245 /* NSTimer+Extension.m in Sources */,
 				114F02851ECE80040039F60C /* TestRuntime.m in Sources */,
@@ -464,6 +496,7 @@
 				11CC77FE1FCFDC2500BE3017 /* YLProgressView.m in Sources */,
 				111CB1C02021D2F10035D245 /* NSString+Extension.m in Sources */,
 				114F02881ECECD8D0039F60C /* FooView.m in Sources */,
+				11225E0220299E6E008DFDB6 /* YLMicrophoneViewController.m in Sources */,
 				111CB1B82021D2F10035D245 /* UILabel+Extension.m in Sources */,
 				111CB1BC2021D2F10035D245 /* UIResponder+Extension.m in Sources */,
 				111321971FF1F0B600C0A11D /* UIImage+YL.m in Sources */,
@@ -483,6 +516,7 @@
 				11225DF42028573A008DFDB6 /* YLVoiceCircleView.m in Sources */,
 				1143BA6D1E5D7F01002CD06B /* main.m in Sources */,
 				1144EED61FFDCCAA0096B8BA /* TestRunLoop.m in Sources */,
+				11225E052029B742008DFDB6 /* YLVoiceCircleViewController.m in Sources */,
 				111CB1BB2021D2F10035D245 /* UIImageView+Extension.m in Sources */,
 				111CB1BD2021D2F10035D245 /* NSDate+Extension.m in Sources */,
 				111CB1C52022B54F0035D245 /* YLVoiceAnimationViewController.m in Sources */,

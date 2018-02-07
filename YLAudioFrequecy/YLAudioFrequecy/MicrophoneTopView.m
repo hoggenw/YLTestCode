@@ -129,9 +129,9 @@
     CGFloat newHeight = height*volume;
     CGFloat width = self.colidView.width;
     
-    //    NSLog(@"%f",newHeight);
+    //NSLog(@"%f",newHeight);
     self.colidLayer.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, height - newHeight , width , newHeight) cornerRadius:0].CGPath;
-    
+    //[self layoutIfNeeded];
 }
 @end
 

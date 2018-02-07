@@ -1,23 +1,19 @@
 //
-//  YLVoiceAnimationViewController.m
+//  YLMicrophoneViewController.m
 //  YLAudioFrequecy
 //
-//  Created by 王留根 on 2018/2/1.
+//  Created by 王留根 on 2018/2/6.
 //  Copyright © 2018年 ios-mac. All rights reserved.
 //
 
-#import "YLVoiceAnimationViewController.h"
-#import "YLVoiceView.h"
-#import "ExtensionHeader.h"
+#import "YLMicrophoneViewController.h"
+#import "YLMicphoneVoiceView.h"
 
-
-@interface YLVoiceAnimationViewController ()
-
-@property (nonatomic,strong)YLVoiceView * voiceView;
-
+@interface YLMicrophoneViewController ()
+@property (nonatomic,strong)YLMicphoneVoiceView * micphoneVoiceView;
 @end
 
-@implementation YLVoiceAnimationViewController
+@implementation YLMicrophoneViewController
 
 
 #pragma mark - Override Methods
@@ -26,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    _voiceView = [[YLVoiceView alloc] initWithFrame:CGRectZero];
+    _micphoneVoiceView = [[YLMicphoneVoiceView alloc] initWithFrame:CGRectZero];
     
     
     //测试语音开始动画
@@ -54,17 +50,19 @@
 }
 
 - (void)stopVoiceAnimation {
-    [self.voiceView stopArcAnimation];
-    [self.voiceView removeFromSuperview];
-    self.voiceView = nil;
+    [self.micphoneVoiceView stopArcAnimation];
+    [self.micphoneVoiceView removeFromSuperview];
+    self.micphoneVoiceView = nil;
 }
 
-- (YLVoiceView *)voiceView {
-    if (_voiceView == nil) {
-        _voiceView = [[YLVoiceView alloc] initWithFrame:CGRectZero];
+- (YLMicphoneVoiceView *)voiceView {
+    if (_micphoneVoiceView == nil) {
+        _micphoneVoiceView = [[YLMicphoneVoiceView alloc] initWithFrame:CGRectZero];
     }
-    return _voiceView;
+    return _micphoneVoiceView;
 }
+
+
 
 #pragma mark - Private Methods
 
@@ -80,6 +78,9 @@
     return button;
     
 }
+
+
 #pragma mark - Extension Delegate or Protocol
+
 
 @end

@@ -24,10 +24,12 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "TestRunLoop.h"
+#import "YLMicrophoneViewController.h"
 
 #import "TestDevice.h"
 
 #import "YLVoiceAnimationViewController.h"
+#import "YLVoiceCircleViewController.h"
 
 @interface Message : NSObject
 
@@ -149,8 +151,12 @@
     //测试语音输入动画
     UIButton * testVioceButton = [self creatNormalBUttonWithName:@"语音动画" frame: CGRectMake(80, 100, 100, 40)];
     [testVioceButton addTarget: self action:@selector(voiceAnimation) forControlEvents: UIControlEventTouchUpInside];
-    
-    
+    //测试语音输入动画
+    UIButton * micphoneButton = [self creatNormalBUttonWithName:@"micphone动画" frame: CGRectMake(80, 160, 100, 40)];
+    [micphoneButton addTarget: self action:@selector(voiceMicphoneAnimation) forControlEvents: UIControlEventTouchUpInside];
+    //测试语音输入动画
+    UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 40)];
+    [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
     
 }
 
@@ -175,6 +181,22 @@
     }];
     
 }
+
+- (void)voiceMicphoneAnimation {
+    YLMicrophoneViewController * vc = [YLMicrophoneViewController new];
+    [self presentViewController: vc animated: true completion:^{
+        
+    }];
+    
+}
+- (void)voiceCircleAnimation {
+    YLVoiceCircleViewController * vc = [YLVoiceCircleViewController new];
+    [self presentViewController: vc animated: true completion:^{
+        
+    }];
+    
+}
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {

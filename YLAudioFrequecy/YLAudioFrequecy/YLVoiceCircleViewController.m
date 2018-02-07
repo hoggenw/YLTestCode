@@ -1,32 +1,29 @@
 //
-//  YLVoiceAnimationViewController.m
+//  YLVoiceCircleViewController.m
 //  YLAudioFrequecy
 //
-//  Created by 王留根 on 2018/2/1.
+//  Created by 王留根 on 2018/2/6.
 //  Copyright © 2018年 ios-mac. All rights reserved.
 //
 
-#import "YLVoiceAnimationViewController.h"
-#import "YLVoiceView.h"
-#import "ExtensionHeader.h"
+#import "YLVoiceCircleViewController.h"
+#import "YLVoiceCircleView.h"
 
+@interface YLVoiceCircleViewController ()
 
-@interface YLVoiceAnimationViewController ()
-
-@property (nonatomic,strong)YLVoiceView * voiceView;
+@property (nonatomic,strong)YLVoiceCircleView * circleVoiceView;
 
 @end
 
-@implementation YLVoiceAnimationViewController
+@implementation YLVoiceCircleViewController
 
 
 #pragma mark - Override Methods
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    _voiceView = [[YLVoiceView alloc] initWithFrame:CGRectZero];
+    _circleVoiceView = [[YLVoiceCircleView alloc] initWithFrame:CGRectZero];
     
     
     //测试语音开始动画
@@ -50,21 +47,24 @@
 #pragma mark - Events
 
 - (void)voiceAnimation {
-    [self.voiceView startAnimation];
+    [self.circleVoiceView startAnimation];
 }
 
 - (void)stopVoiceAnimation {
-    [self.voiceView stopArcAnimation];
-    [self.voiceView removeFromSuperview];
-    self.voiceView = nil;
+    [self.circleVoiceView stopArcAnimation];
+    [self.circleVoiceView.backGroundView removeFromSuperview];
+    self.circleVoiceView.backGroundView = nil;
+    self.circleVoiceView = nil;
 }
 
-- (YLVoiceView *)voiceView {
-    if (_voiceView == nil) {
-        _voiceView = [[YLVoiceView alloc] initWithFrame:CGRectZero];
+- (YLVoiceCircleView *)circleVoiceView {
+    if (_circleVoiceView == nil) {
+        _circleVoiceView = [[YLVoiceCircleView alloc] initWithFrame:CGRectZero];
     }
-    return _voiceView;
+    return _circleVoiceView;
 }
+
+
 
 #pragma mark - Private Methods
 
@@ -80,6 +80,8 @@
     return button;
     
 }
+
+
 #pragma mark - Extension Delegate or Protocol
 
 @end
