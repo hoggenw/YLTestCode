@@ -16,6 +16,7 @@
 		11A1066F1E6026DF000F9704 /* YLSwiftProtocolTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1066E1E6026DF000F9704 /* YLSwiftProtocolTestTests.swift */; };
 		11B4DD97200864BF00D01EEC /* ObjectTemple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B4DD96200864BF00D01EEC /* ObjectTemple.swift */; };
 		11F48DAD1EA0B9880002F6C8 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F48DAC1EA0B9880002F6C8 /* TestViewController.swift */; };
+		7CCD6CC39514E9C0CAC5EE2B /* Pods_YLSwiftProtocolTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D663A99BC87F095885C99B /* Pods_YLSwiftProtocolTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,9 @@
 		11A106701E6026DF000F9704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11B4DD96200864BF00D01EEC /* ObjectTemple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTemple.swift; sourceTree = "<group>"; };
 		11F48DAC1EA0B9880002F6C8 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		9ABF5BA3EE1CEA6B30825FEA /* Pods-YLSwiftProtocolTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLSwiftProtocolTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLSwiftProtocolTest/Pods-YLSwiftProtocolTest.release.xcconfig"; sourceTree = "<group>"; };
+		C6D663A99BC87F095885C99B /* Pods_YLSwiftProtocolTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLSwiftProtocolTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE65932F4725EACB4A113469 /* Pods-YLSwiftProtocolTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLSwiftProtocolTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLSwiftProtocolTest/Pods-YLSwiftProtocolTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCD6CC39514E9C0CAC5EE2B /* Pods_YLSwiftProtocolTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,8 @@
 				11A106581E6026DF000F9704 /* YLSwiftProtocolTest */,
 				11A1066D1E6026DF000F9704 /* YLSwiftProtocolTestTests */,
 				11A106571E6026DF000F9704 /* Products */,
+				67A8B4DF1AE4ED4B76EFACFB /* Pods */,
+				F13838A381563F83C87198D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +114,23 @@
 			path = YLSwiftProtocolTestTests;
 			sourceTree = "<group>";
 		};
+		67A8B4DF1AE4ED4B76EFACFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE65932F4725EACB4A113469 /* Pods-YLSwiftProtocolTest.debug.xcconfig */,
+				9ABF5BA3EE1CEA6B30825FEA /* Pods-YLSwiftProtocolTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F13838A381563F83C87198D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6D663A99BC87F095885C99B /* Pods_YLSwiftProtocolTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11A106731E6026DF000F9704 /* Build configuration list for PBXNativeTarget "YLSwiftProtocolTest" */;
 			buildPhases = (
+				47DFFD09DF6984D1EA6E315F /* [CP] Check Pods Manifest.lock */,
 				11A106521E6026DF000F9704 /* Sources */,
 				11A106531E6026DF000F9704 /* Frameworks */,
 				11A106541E6026DF000F9704 /* Resources */,
+				3C9349B118415B467A48DF1C /* [CP] Embed Pods Frameworks */,
+				9D26130D44C59A09BE312412 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +234,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C9349B118415B467A48DF1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YLSwiftProtocolTest/Pods-YLSwiftProtocolTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YLSwiftScan/YLSwiftScan.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLSwiftScan.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLSwiftProtocolTest/Pods-YLSwiftProtocolTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47DFFD09DF6984D1EA6E315F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLSwiftProtocolTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D26130D44C59A09BE312412 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLSwiftProtocolTest/Pods-YLSwiftProtocolTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11A106521E6026DF000F9704 /* Sources */ = {
@@ -352,6 +433,7 @@
 		};
 		11A106741E6026DF000F9704 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE65932F4725EACB4A113469 /* Pods-YLSwiftProtocolTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -370,6 +452,7 @@
 		};
 		11A106751E6026DF000F9704 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ABF5BA3EE1CEA6B30825FEA /* Pods-YLSwiftProtocolTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

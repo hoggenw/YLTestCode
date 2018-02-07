@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YLSwiftScan
 
 protocol TestProtocol: class {
     func needAchieve() ->String
