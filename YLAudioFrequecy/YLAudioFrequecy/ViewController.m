@@ -30,6 +30,7 @@
 
 #import "YLVoiceAnimationViewController.h"
 #import "YLVoiceCircleViewController.h"
+#import "Copy&MultableCopyTest.h"
 
 @interface Message : NSObject
 
@@ -147,6 +148,16 @@
 //    _testRunLoop = [TestRunLoop new];
 //    [_testRunLoop logStatusOfRunLoop];
 //    [_testRunLoop showRunLoop];
+    
+    
+#pragma mark -Copy&MultableCopyTest结果
+    
+    Copy_MultableCopyTest * copyTest = [Copy_MultableCopyTest new];
+    [copyTest containerTest];
+    //[copyTest mutableContainerTest];
+    //[copyTest customObjectiveTest];
+    //[copyTest propertyTest];
+    
     
     //测试语音输入动画
     UIButton * testVioceButton = [self creatNormalBUttonWithName:@"语音动画" frame: CGRectMake(80, 100, 100, 40)];

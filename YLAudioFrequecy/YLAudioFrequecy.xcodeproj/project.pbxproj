@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		111321971FF1F0B600C0A11D /* UIImage+YL.m in Sources */ = {isa = PBXBuildFile; fileRef = 111321961FF1F0B600C0A11D /* UIImage+YL.m */; };
 		1113219F1FF22D5900C0A11D /* NSObject+JSONExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1113219E1FF22D5900C0A11D /* NSObject+JSONExtension.m */; };
+		1119AAE12048ECD9000E9E35 /* Copy&MultableCopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1119AAE02048ECD9000E9E35 /* Copy&MultableCopyTest.m */; };
 		111CB1B82021D2F10035D245 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1A82021D2F00035D245 /* UILabel+Extension.m */; };
 		111CB1B92021D2F10035D245 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1AB2021D2F00035D245 /* UIViewController+Extension.m */; };
 		111CB1BA2021D2F10035D245 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 111CB1AC2021D2F00035D245 /* UIImage+Extension.m */; };
@@ -71,6 +72,8 @@
 		111321961FF1F0B600C0A11D /* UIImage+YL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YL.m"; sourceTree = "<group>"; };
 		1113219D1FF22D5900C0A11D /* NSObject+JSONExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONExtension.h"; sourceTree = "<group>"; };
 		1113219E1FF22D5900C0A11D /* NSObject+JSONExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONExtension.m"; sourceTree = "<group>"; };
+		1119AADF2048ECD9000E9E35 /* Copy&MultableCopyTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Copy&MultableCopyTest.h"; sourceTree = "<group>"; };
+		1119AAE02048ECD9000E9E35 /* Copy&MultableCopyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Copy&MultableCopyTest.m"; sourceTree = "<group>"; };
 		111CB1A32021D2F00035D245 /* UIResponder+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Extension.h"; sourceTree = "<group>"; };
 		111CB1A42021D2F00035D245 /* UIImageView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
 		111CB1A52021D2F00035D245 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
@@ -299,6 +302,8 @@
 				114F02841ECE80040039F60C /* TestRuntime.m */,
 				114F02861ECECD8D0039F60C /* FooView.h */,
 				114F02871ECECD8D0039F60C /* FooView.m */,
+				1119AADF2048ECD9000E9E35 /* Copy&MultableCopyTest.h */,
+				1119AAE02048ECD9000E9E35 /* Copy&MultableCopyTest.m */,
 				114F028C1ED271080039F60C /* TestGCD.h */,
 				114F028D1ED271080039F60C /* TestGCD.m */,
 				1144EED41FFDCCAA0096B8BA /* TestRunLoop.h */,
@@ -508,6 +513,7 @@
 				1143BA731E5D7F01002CD06B /* ViewController.m in Sources */,
 				111CB1B92021D2F10035D245 /* UIViewController+Extension.m in Sources */,
 				111CB1D72022ED3D0035D245 /* MicrophoneView.m in Sources */,
+				1119AAE12048ECD9000E9E35 /* Copy&MultableCopyTest.m in Sources */,
 				111CB1BA2021D2F10035D245 /* UIImage+Extension.m in Sources */,
 				1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */,
 				87127FF31EF6296E009D4CF6 /* Bitmap.m in Sources */,
