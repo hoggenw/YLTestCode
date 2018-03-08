@@ -169,6 +169,11 @@
     UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 40)];
     [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
     
+//    [[NSRunLoop currentRunLoop] addTimer:[[NSTimer alloc] initWithFireDate:[NSDate date] interval: 1 repeats: YES block:^(NSTimer * _Nonnull timer) {
+//        NSLog(@"测试双击home后台运行");
+//        //测试结果显示双击home键时，当前程序处于继续运行状态
+//    }] forMode: NSRunLoopCommonModes];
+    
 }
 
 -(UIButton *)creatNormalBUttonWithName:(NSString *)name frame:(CGRect)frame {
