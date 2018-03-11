@@ -174,6 +174,8 @@
 //        //测试结果显示双击home键时，当前程序处于继续运行状态
 //    }] forMode: NSRunLoopCommonModes];
     
+    NSLog(@"%@ ===== %@",[self.parentViewController class],self.parentViewController);
+    
 }
 
 -(UIButton *)creatNormalBUttonWithName:(NSString *)name frame:(CGRect)frame {
