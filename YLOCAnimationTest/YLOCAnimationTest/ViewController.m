@@ -10,6 +10,7 @@
 #import "YLMicrophoneViewController.h"
 #import "YLVoiceAnimationViewController.h"
 #import "YLVoiceCircleViewController.h"
+#import "BaiduMapViewController.h"
 
 @interface ViewController ()
 
@@ -30,6 +31,9 @@
     //测试语音输入动画
     UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 40)];
     [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
+    
+    UIButton * mapButton = [self creatNormalBUttonWithName:@"行车测试" frame: CGRectMake(80, 280, 100, 40)];
+    [mapButton addTarget: self action:@selector(baiduMapButtonAction) forControlEvents: UIControlEventTouchUpInside];
 }
 -(UIButton *)creatNormalBUttonWithName:(NSString *)name frame:(CGRect)frame {
     
@@ -61,6 +65,13 @@
     YLVoiceCircleViewController * vc = [YLVoiceCircleViewController new];
     [self.navigationController pushViewController: vc animated: true];
     
+}
+
+#pragma mark - 地图测试
+
+- (void)baiduMapButtonAction {
+    BaiduMapViewController * vc = [BaiduMapViewController new];
+    [self.navigationController pushViewController: vc animated: true];
 }
 
 

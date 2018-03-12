@@ -35,6 +35,8 @@
 		11225E80202AAEA2008DFDB6 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E73202AAEA2008DFDB6 /* UIColor+Extension.m */; };
 		11225E81202AAEA2008DFDB6 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E74202AAEA2008DFDB6 /* NSString+Extension.m */; };
 		11225E82202AAEA2008DFDB6 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E78202AAEA2008DFDB6 /* UIView+Extension.m */; };
+		11B09C3020566AD900E8346A /* BaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C2F20566AD900E8346A /* BaiduMapViewController.m */; };
+		914BAB6A6BE27080DC88E070 /* libPods-YLOCAnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0055FB0BFAAF6880D4EA248 /* libPods-YLOCAnimationTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,11 @@
 		11225E76202AAEA2008DFDB6 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
 		11225E77202AAEA2008DFDB6 /* ExtensionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionHeader.h; sourceTree = "<group>"; };
 		11225E78202AAEA2008DFDB6 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		11B09C2E20566AD900E8346A /* BaiduMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
+		11B09C2F20566AD900E8346A /* BaiduMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMapViewController.m; sourceTree = "<group>"; };
+		AF608F862D69A6A4C97552CD /* Pods-YLOCAnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLOCAnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLOCAnimationTest/Pods-YLOCAnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F0055FB0BFAAF6880D4EA248 /* libPods-YLOCAnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLOCAnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6016D31BB83A326D580193B /* Pods-YLOCAnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLOCAnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLOCAnimationTest/Pods-YLOCAnimationTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914BAB6A6BE27080DC88E070 /* libPods-YLOCAnimationTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,8 @@
 				11225E15202AA81F008DFDB6 /* YLOCAnimationTest */,
 				11225E2E202AA81F008DFDB6 /* YLOCAnimationTestTests */,
 				11225E14202AA81F008DFDB6 /* Products */,
+				FD542C1ABB5CBA8655100C5A /* Pods */,
+				578BFFA716B7F34787927204 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +156,7 @@
 		11225E15202AA81F008DFDB6 /* YLOCAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				11B09C2D20566AAE00E8346A /* MapTest */,
 				11225E63202AAEA2008DFDB6 /* Category */,
 				11225E3A202AA86D008DFDB6 /* Animation */,
 				11225E16202AA81F008DFDB6 /* AppDelegate.h */,
@@ -260,6 +271,32 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		11B09C2D20566AAE00E8346A /* MapTest */ = {
+			isa = PBXGroup;
+			children = (
+				11B09C2E20566AD900E8346A /* BaiduMapViewController.h */,
+				11B09C2F20566AD900E8346A /* BaiduMapViewController.m */,
+			);
+			path = MapTest;
+			sourceTree = "<group>";
+		};
+		578BFFA716B7F34787927204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0055FB0BFAAF6880D4EA248 /* libPods-YLOCAnimationTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD542C1ABB5CBA8655100C5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF608F862D69A6A4C97552CD /* Pods-YLOCAnimationTest.debug.xcconfig */,
+				F6016D31BB83A326D580193B /* Pods-YLOCAnimationTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,9 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11225E34202AA81F008DFDB6 /* Build configuration list for PBXNativeTarget "YLOCAnimationTest" */;
 			buildPhases = (
+				AFA09659A48C20FBB1FE7AA8 /* [CP] Check Pods Manifest.lock */,
 				11225E0F202AA81F008DFDB6 /* Sources */,
 				11225E10202AA81F008DFDB6 /* Frameworks */,
 				11225E11202AA81F008DFDB6 /* Resources */,
+				91B1FE4218A6C0CCC1A3BA76 /* [CP] Embed Pods Frameworks */,
+				4339A3B0826D1F71F6A2E465 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -356,12 +396,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4339A3B0826D1F71F6A2E465 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YLOCAnimationTest/Pods-YLOCAnimationTest-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLOCAnimationTest/Pods-YLOCAnimationTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91B1FE4218A6C0CCC1A3BA76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLOCAnimationTest/Pods-YLOCAnimationTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFA09659A48C20FBB1FE7AA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLOCAnimationTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11225E0F202AA81F008DFDB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				11225E56202AAD8F008DFDB6 /* YLVoiceView.m in Sources */,
+				11B09C3020566AD900E8346A /* BaiduMapViewController.m in Sources */,
 				11225E1B202AA81F008DFDB6 /* ViewController.m in Sources */,
 				11225E4A202AAC84008DFDB6 /* TopViewAnimaton.m in Sources */,
 				11225E62202AADF9008DFDB6 /* YLVoiceAnimationViewController.m in Sources */,
@@ -525,6 +620,7 @@
 		};
 		11225E35202AA81F008DFDB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF608F862D69A6A4C97552CD /* Pods-YLOCAnimationTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +636,7 @@
 		};
 		11225E36202AA81F008DFDB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6016D31BB83A326D580193B /* Pods-YLOCAnimationTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
