@@ -36,6 +36,7 @@
 		11225E81202AAEA2008DFDB6 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E74202AAEA2008DFDB6 /* NSString+Extension.m */; };
 		11225E82202AAEA2008DFDB6 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E78202AAEA2008DFDB6 /* UIView+Extension.m */; };
 		11B09C3020566AD900E8346A /* BaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C2F20566AD900E8346A /* BaiduMapViewController.m */; };
+		11B09C332057B0A900E8346A /* MapCarAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C322057B0A900E8346A /* MapCarAnnotationView.m */; };
 		914BAB6A6BE27080DC88E070 /* libPods-YLOCAnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0055FB0BFAAF6880D4EA248 /* libPods-YLOCAnimationTest.a */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,8 @@
 		11225E78202AAEA2008DFDB6 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		11B09C2E20566AD900E8346A /* BaiduMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
 		11B09C2F20566AD900E8346A /* BaiduMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMapViewController.m; sourceTree = "<group>"; };
+		11B09C312057B0A900E8346A /* MapCarAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapCarAnnotationView.h; sourceTree = "<group>"; };
+		11B09C322057B0A900E8346A /* MapCarAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapCarAnnotationView.m; sourceTree = "<group>"; };
 		AF608F862D69A6A4C97552CD /* Pods-YLOCAnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLOCAnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLOCAnimationTest/Pods-YLOCAnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F0055FB0BFAAF6880D4EA248 /* libPods-YLOCAnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLOCAnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6016D31BB83A326D580193B /* Pods-YLOCAnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLOCAnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLOCAnimationTest/Pods-YLOCAnimationTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 			children = (
 				11B09C2E20566AD900E8346A /* BaiduMapViewController.h */,
 				11B09C2F20566AD900E8346A /* BaiduMapViewController.m */,
+				11B09C312057B0A900E8346A /* MapCarAnnotationView.h */,
+				11B09C322057B0A900E8346A /* MapCarAnnotationView.m */,
 			);
 			path = MapTest;
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				11225E47202AAC84008DFDB6 /* MicrophoneTopView.m in Sources */,
 				11225E80202AAEA2008DFDB6 /* UIColor+Extension.m in Sources */,
 				11225E81202AAEA2008DFDB6 /* NSString+Extension.m in Sources */,
+				11B09C332057B0A900E8346A /* MapCarAnnotationView.m in Sources */,
 				11225E7F202AAEA2008DFDB6 /* NSTimer+Extension.m in Sources */,
 				11225E57202AAD8F008DFDB6 /* YLMicphoneVoiceView.m in Sources */,
 				11225E61202AADF9008DFDB6 /* YLMicrophoneViewController.m in Sources */,
