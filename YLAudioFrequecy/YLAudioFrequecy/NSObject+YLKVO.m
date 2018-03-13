@@ -79,8 +79,11 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
                                      userInfo:nil];
         return;
     }
-    
-    id oldValue = [self valueForKey:getterName];
+#pragma mark - self属于子类还是父类
+    //如果没有复写子类的clas方法，这里类名是子类类名，但是并不影响类实质上获取getter方法
+    //复写方法后看到类名为message类名
+    //NSLog(@"self属于子类还是父类 : %@",[self class]);
+    id oldValue = [self valueForKey:getterName]; //实质上的类获取方法
     //其中receiver是指类的实例，super_class则是指该实例的父类。
     struct objc_super superClazz = {
         .receiver = self,  //这是实际消息接受者
@@ -109,7 +112,7 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
     NSLog( @"getterForSetter(%@) : %@",key,setterMethodGet(key));
     SEL setterSelector = NSSelectorFromString(setterMethodGet(key));
     Method setterMethod = class_getInstanceMethod([self class], setterSelector);//用 class_getInstanceMethod 去获得 setKey: 的实现（Method）获取实例方法
-    [self haseSelector:method_getName(setterMethod)];
+    //[self haseSelector:method_getName(setterMethod)];
     NSLog(@"setterMethod = %@", NSStringFromSelector(method_getName(setterMethod)));
     if (!setterMethod) {
         NSString * reason = [NSString stringWithFormat:@"Object %@ doesn not have a setter for key %@ ",self,key];
@@ -126,7 +129,7 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
         NSLog(@"创建新的kvo类");
         //将一个对象设置为别的类类型，这时调用[self class]返回的其实是YL_的子类，由于我们覆写了class的方法返回的使我们新创建kvo类的父类的class，所以看到的还是[self class]的类名
         Class c1 = object_setClass(self, clazz);
-        NSLog(@"cl - %@", [clazz class]);
+        NSLog(@"cl - %@", [c1 class]);
         NSLog(@"self - %@", [self class]);
     }
     //添加我们自己kvo的类的实现方法，如果被观察的类没有实现它的setter方法，这时的self已经被别名了YL_开头的kvo子类，所以里面只有一个新建时添加的class方法
@@ -177,7 +180,7 @@ static void kvo_setter(id self, SEL _cmd, id newValue) {
      imp 即 implementation ，表示由编译器生成的、指向实现方法的指针。也就是说，这个指针指向的方法就是我们要添加的方法。
     types 表示我们要添加的方法的返回值和参数。
      */
-    
+
     class_addMethod(kvoClazz, @selector(class), (IMP)kvo_class, types);
     objc_registerClassPair(kvoClazz);
     return kvoClazz;

@@ -119,20 +119,20 @@
     
 #pragma mark - 自己写的kvo test
     
-//   NSString * number = @"1011";
-//    self.message = [[Message alloc] init];
-//    [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
-//                       withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
-//                           NSLog(@"%@.%@  oldVlue is %@ newvalue is  now: %@", observedObject, observedKey, oldValue,newValue);
-//
-//                       }];
-//    NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
-//    for (int  i = 0 ; i < array.count; i++) {
-//        self.message.text = array[i];
-//        NSLog(@"self.message.text : %@", self.message.text);
-//    }
-//
-//    NSLog(@" class name  :   %@",[self.message class]);
+   NSString * number = @"1011";
+    self.message = [[Message alloc] init];
+    [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
+                       withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
+                           NSLog(@"%@.%@  oldVlue is %@ newvalue is  now: %@", observedObject, observedKey, oldValue,newValue);
+
+                       }];
+    NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
+    for (int  i = 0 ; i < array.count; i++) {
+        self.message.text = array[i];
+        NSLog(@"self.message.text : %@", self.message.text);
+    }
+
+    NSLog(@" class name  :   %@",[self.message class]);
     
 #pragma mark - runtime执行测试
     //[self test];
@@ -152,8 +152,8 @@
     
 #pragma mark -Copy&MultableCopyTest结果
     
-    Copy_MultableCopyTest * copyTest = [Copy_MultableCopyTest new];
-    [copyTest containerTest];
+//    Copy_MultableCopyTest * copyTest = [Copy_MultableCopyTest new];
+//    [copyTest containerTest];
     //[copyTest mutableContainerTest];
     //[copyTest customObjectiveTest];
     //[copyTest propertyTest];
@@ -173,8 +173,8 @@
 //        NSLog(@"测试双击home后台运行");
 //        //测试结果显示双击home键时，当前程序处于继续运行状态
 //    }] forMode: NSRunLoopCommonModes];
-    
-    NSLog(@"%@ ===== %@",[self.parentViewController class],self.parentViewController);
+//
+//    NSLog(@"%@ ===== %@",[self.parentViewController class],self.parentViewController);
     
 }
 
