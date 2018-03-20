@@ -15,9 +15,88 @@
    //[self testCommunication];
     //[self barrier];
      //[self testMain];
-    [self groub];
+    //[self groub];
 //    [self deadThread];
   //  [self deadThread2];
+    [self semaphore];
+}
+
+#pragma mark - 信号量测试
+
+- (void)semaphore {
+    NSLog(@"=================semaphore信号量测试======================");
+#pragma mark -semaphore测试内容一：模拟多线程操作时几个任务同时进行，完成后才输出结果
+    dispatch_semaphore_t semaphoreControl = dispatch_semaphore_create(0);
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        NSLog(@"hoggen run task 1");
+        sleep(1);
+        NSLog(@"hoggen complete task 1");
+        dispatch_semaphore_signal(semaphoreControl);
+    });
+    
+    
+    dispatch_async(queue, ^{
+        NSLog(@"hoggen run task 2");
+        sleep(2);
+        NSLog(@"hoggen complete task 2");
+        dispatch_semaphore_signal(semaphoreControl);
+    });
+    
+    
+    dispatch_async(queue, ^{
+        NSLog(@"hoggen run task 3");
+        sleep(3);
+        NSLog(@"hoggen complete task 3");
+        dispatch_semaphore_signal(semaphoreControl);
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"hoggen run task 4");
+        sleep(4);
+        NSLog(@"hoggen complete task 4");
+        dispatch_semaphore_signal(semaphoreControl);
+    });
+    
+    dispatch_async(queue, ^{
+        dispatch_semaphore_wait(semaphoreControl, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphoreControl, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphoreControl, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphoreControl, DISPATCH_TIME_FOREVER);
+        NSLog(@"=================模拟多线程操作时几个任务同时进行，完成后才输出结果======================");
+    });
+    
+    
+#pragma mark -semaphore测试内容一：模拟多线程控制
+    //crate的value表示，最多几个资源可访问
+        dispatch_semaphore_t semaphore = dispatch_semaphore_create(2);
+        dispatch_queue_t queue2 = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        
+        //任务1
+        dispatch_async(queue2, ^{
+            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            NSLog(@"run task 1");
+            sleep(1);
+            NSLog(@"complete task 1");
+            dispatch_semaphore_signal(semaphore);
+        });
+        //任务2
+        dispatch_async(queue2, ^{
+            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            NSLog(@"run task 2");
+            sleep(1);
+            NSLog(@"complete task 2");
+            dispatch_semaphore_signal(semaphore);
+        });
+        //任务3
+        dispatch_async(queue2, ^{
+            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            NSLog(@"run task 3");
+            sleep(1);
+            NSLog(@"complete task 3");
+            dispatch_semaphore_signal(semaphore);
+        });
+    
 }
 
 -(void)groub {

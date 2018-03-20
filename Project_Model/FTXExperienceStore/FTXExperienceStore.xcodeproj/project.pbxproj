@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B09C79205F5DA300E8346A /* JFCityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C64205F5DA300E8346A /* JFCityCollectionViewCell.m */; };
+		11B09C7A205F5DA300E8346A /* JFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C66205F5DA300E8346A /* JFLocation.m */; };
+		11B09C7B205F5DA300E8346A /* JFAreaDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C6A205F5DA300E8346A /* JFAreaDataManager.m */; };
+		11B09C7C205F5DA300E8346A /* JFCityHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C6C205F5DA300E8346A /* JFCityHeaderView.m */; };
+		11B09C7D205F5DA300E8346A /* JFSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C6D205F5DA300E8346A /* JFSearchView.m */; };
+		11B09C7E205F5DA300E8346A /* JFCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C6E205F5DA300E8346A /* JFCityViewController.m */; };
+		11B09C7F205F5DA300E8346A /* JFCityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C6F205F5DA300E8346A /* JFCityTableViewCell.m */; };
+		11B09C80205F5DA300E8346A /* JFCityCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C70205F5DA300E8346A /* JFCityCollectionFlowLayout.m */; };
+		11B09C81205F5DA300E8346A /* JFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C72205F5DA300E8346A /* JFButton.m */; };
+		11B09C82205F5DA300E8346A /* shop_area.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 11B09C76205F5DA300E8346A /* shop_area.sqlite */; };
 		11B4DCB42005ABA000D01EEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B4DCB32005ABA000D01EEC /* main.m */; };
 		11B4DCBE2005ABA000D01EEC /* FTXExperienceStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B4DCBD2005ABA000D01EEC /* FTXExperienceStoreTests.m */; };
 		11B4DCD72005AFBC00D01EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B4DCD42005AFBC00D01EEC /* Assets.xcassets */; };
@@ -46,6 +56,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11B09C63205F5DA300E8346A /* JFCityCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityCollectionFlowLayout.h; sourceTree = "<group>"; };
+		11B09C64205F5DA300E8346A /* JFCityCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityCollectionViewCell.m; sourceTree = "<group>"; };
+		11B09C66205F5DA300E8346A /* JFLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFLocation.m; sourceTree = "<group>"; };
+		11B09C67205F5DA300E8346A /* JFLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFLocation.h; sourceTree = "<group>"; };
+		11B09C69205F5DA300E8346A /* JFAreaDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAreaDataManager.h; sourceTree = "<group>"; };
+		11B09C6A205F5DA300E8346A /* JFAreaDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAreaDataManager.m; sourceTree = "<group>"; };
+		11B09C6B205F5DA300E8346A /* JFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFButton.h; sourceTree = "<group>"; };
+		11B09C6C205F5DA300E8346A /* JFCityHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityHeaderView.m; sourceTree = "<group>"; };
+		11B09C6D205F5DA300E8346A /* JFSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSearchView.m; sourceTree = "<group>"; };
+		11B09C6E205F5DA300E8346A /* JFCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityViewController.m; sourceTree = "<group>"; };
+		11B09C6F205F5DA300E8346A /* JFCityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityTableViewCell.m; sourceTree = "<group>"; };
+		11B09C70205F5DA300E8346A /* JFCityCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityCollectionFlowLayout.m; sourceTree = "<group>"; };
+		11B09C71205F5DA300E8346A /* JFCityCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityCollectionViewCell.h; sourceTree = "<group>"; };
+		11B09C72205F5DA300E8346A /* JFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFButton.m; sourceTree = "<group>"; };
+		11B09C73205F5DA300E8346A /* JFCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityViewController.h; sourceTree = "<group>"; };
+		11B09C74205F5DA300E8346A /* JFCityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityTableViewCell.h; sourceTree = "<group>"; };
+		11B09C76205F5DA300E8346A /* shop_area.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = shop_area.sqlite; sourceTree = "<group>"; };
+		11B09C77205F5DA300E8346A /* JFSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSearchView.h; sourceTree = "<group>"; };
+		11B09C78205F5DA300E8346A /* JFCityHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityHeaderView.h; sourceTree = "<group>"; };
 		11B4DCA12005ABA000D01EEC /* FTXExperienceStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTXExperienceStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B4DCB22005ABA000D01EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11B4DCB32005ABA000D01EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +156,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11B09C62205F5DA300E8346A /* JFCityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				11B09C63205F5DA300E8346A /* JFCityCollectionFlowLayout.h */,
+				11B09C64205F5DA300E8346A /* JFCityCollectionViewCell.m */,
+				11B09C65205F5DA300E8346A /* Location */,
+				11B09C68205F5DA300E8346A /* AreaDataManager */,
+				11B09C6B205F5DA300E8346A /* JFButton.h */,
+				11B09C6C205F5DA300E8346A /* JFCityHeaderView.m */,
+				11B09C6D205F5DA300E8346A /* JFSearchView.m */,
+				11B09C6E205F5DA300E8346A /* JFCityViewController.m */,
+				11B09C6F205F5DA300E8346A /* JFCityTableViewCell.m */,
+				11B09C70205F5DA300E8346A /* JFCityCollectionFlowLayout.m */,
+				11B09C71205F5DA300E8346A /* JFCityCollectionViewCell.h */,
+				11B09C72205F5DA300E8346A /* JFButton.m */,
+				11B09C73205F5DA300E8346A /* JFCityViewController.h */,
+				11B09C74205F5DA300E8346A /* JFCityTableViewCell.h */,
+				11B09C75205F5DA300E8346A /* AreaDB */,
+				11B09C77205F5DA300E8346A /* JFSearchView.h */,
+				11B09C78205F5DA300E8346A /* JFCityHeaderView.h */,
+			);
+			path = JFCityViewController;
+			sourceTree = "<group>";
+		};
+		11B09C65205F5DA300E8346A /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				11B09C66205F5DA300E8346A /* JFLocation.m */,
+				11B09C67205F5DA300E8346A /* JFLocation.h */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		11B09C68205F5DA300E8346A /* AreaDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				11B09C69205F5DA300E8346A /* JFAreaDataManager.h */,
+				11B09C6A205F5DA300E8346A /* JFAreaDataManager.m */,
+			);
+			path = AreaDataManager;
+			sourceTree = "<group>";
+		};
+		11B09C75205F5DA300E8346A /* AreaDB */ = {
+			isa = PBXGroup;
+			children = (
+				11B09C76205F5DA300E8346A /* shop_area.sqlite */,
+			);
+			path = AreaDB;
+			sourceTree = "<group>";
+		};
 		11B4DC982005ABA000D01EEC = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +363,7 @@
 		11B4DCF52005C1EC00D01EEC /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				11B09C62205F5DA300E8346A /* JFCityViewController */,
 				11B4DD32200608E300D01EEC /* Base64 */,
 				11B4DD49200608E300D01EEC /* CLLocation+Sino.h */,
 				11B4DD2D200608E300D01EEC /* CLLocation+Sino.m */,
@@ -454,6 +534,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B09C82205F5DA300E8346A /* shop_area.sqlite in Resources */,
 				11B4DCD72005AFBC00D01EEC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,9 +624,12 @@
 				11B4DD4A200608E300D01EEC /* CLLocation+Sino.m in Sources */,
 				11B4DD4B200608E300D01EEC /* GTMBase64.m in Sources */,
 				11B4DD222006045F00D01EEC /* NSDate+Extension.m in Sources */,
+				11B09C7E205F5DA300E8346A /* JFCityViewController.m in Sources */,
 				11B4DCB42005ABA000D01EEC /* main.m in Sources */,
 				11B4DD5D20060EE500D01EEC /* UIImageView+Extension.m in Sources */,
+				11B09C7F205F5DA300E8346A /* JFCityTableViewCell.m in Sources */,
 				11B4DCF72005C1EC00D01EEC /* YLNavigationController.m in Sources */,
+				11B09C7B205F5DA300E8346A /* JFAreaDataManager.m in Sources */,
 				11B4DD1B200600BB00D01EEC /* YLLabel.m in Sources */,
 				11B4DD052005E56800D01EEC /* UserModel.m in Sources */,
 				11B4DD082005E68F00D01EEC /* AccountManager.m in Sources */,
@@ -553,7 +637,13 @@
 				11B4DD122005FDCE00D01EEC /* LocalSQliteManager.m in Sources */,
 				11B4DD5720060CFE00D01EEC /* UIColor+Extension.m in Sources */,
 				11B4DD292006067600D01EEC /* UIImage+Extension.m in Sources */,
+				11B09C79205F5DA300E8346A /* JFCityCollectionViewCell.m in Sources */,
+				11B09C81205F5DA300E8346A /* JFButton.m in Sources */,
 				11B4DD1C200600BB00D01EEC /* UIView+Extension.m in Sources */,
+				11B09C7C205F5DA300E8346A /* JFCityHeaderView.m in Sources */,
+				11B09C7A205F5DA300E8346A /* JFLocation.m in Sources */,
+				11B09C7D205F5DA300E8346A /* JFSearchView.m in Sources */,
+				11B09C80205F5DA300E8346A /* JFCityCollectionFlowLayout.m in Sources */,
 				11B4DD0B2005F06100D01EEC /* YLDeviceUtil.m in Sources */,
 				11B4DD5A20060DAB00D01EEC /* UIViewController+Extension.m in Sources */,
 				11B4DD1F2006030F00D01EEC /* UILabel+Extension.m in Sources */,
