@@ -168,8 +168,10 @@
     UIButton * micphoneButton = [self creatNormalBUttonWithName:@"micphone动画" frame: CGRectMake(80, 160, 100, 40)];
     [micphoneButton addTarget: self action:@selector(voiceMicphoneAnimation) forControlEvents: UIControlEventTouchUpInside];
     //测试语音输入动画
-    UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 40)];
+    UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 60)];
     [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
+    [circleButton setBackgroundImage:[UIImage imageNamed:@"goods_upload_image"] forState: UIControlStateNormal];
+    
     
 //    [[NSRunLoop currentRunLoop] addTimer:[[NSTimer alloc] initWithFireDate:[NSDate date] interval: 1 repeats: YES block:^(NSTimer * _Nonnull timer) {
 //        NSLog(@"测试双击home后台运行");
