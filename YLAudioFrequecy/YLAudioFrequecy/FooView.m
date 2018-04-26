@@ -25,8 +25,6 @@
         self.kDTActionHandlerTapGestureKey = @"kDTActionHandlerTapGestureKey";
         self.kDTActionHandlerTapBlockKey = @"kDTActionHandlerTapBlockKey";
     }
-    
-    
     return  self;
 }
 

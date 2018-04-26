@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1156AE40208D8C0800C39BBA /* YLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1156AE3F208D8C0800C39BBA /* YLDatabase.m */; };
+		1156AE43208D8D2D00C39BBA /* YLResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1156AE42208D8D2D00C39BBA /* YLResultSet.m */; };
+		1156AE46208D8F1800C39BBA /* YLDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1156AE45208D8F1800C39BBA /* YLDatabasePool.m */; };
+		1156AE49208D919B00C39BBA /* YLDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1156AE48208D919B00C39BBA /* YLDatabaseAdditions.m */; };
+		1156AE4C208D929800C39BBA /* YLDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1156AE4B208D929800C39BBA /* YLDatabaseQueue.m */; };
 		11B09C79205F5DA300E8346A /* JFCityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C64205F5DA300E8346A /* JFCityCollectionViewCell.m */; };
 		11B09C7A205F5DA300E8346A /* JFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C66205F5DA300E8346A /* JFLocation.m */; };
 		11B09C7B205F5DA300E8346A /* JFAreaDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C6A205F5DA300E8346A /* JFAreaDataManager.m */; };
@@ -56,6 +61,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1156AE3D208D8BB200C39BBA /* YLFMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLFMDB.h; sourceTree = "<group>"; };
+		1156AE3E208D8C0800C39BBA /* YLDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDatabase.h; sourceTree = "<group>"; };
+		1156AE3F208D8C0800C39BBA /* YLDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDatabase.m; sourceTree = "<group>"; };
+		1156AE41208D8D2D00C39BBA /* YLResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLResultSet.h; sourceTree = "<group>"; };
+		1156AE42208D8D2D00C39BBA /* YLResultSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLResultSet.m; sourceTree = "<group>"; };
+		1156AE44208D8F1800C39BBA /* YLDatabasePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDatabasePool.h; sourceTree = "<group>"; };
+		1156AE45208D8F1800C39BBA /* YLDatabasePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDatabasePool.m; sourceTree = "<group>"; };
+		1156AE47208D919B00C39BBA /* YLDatabaseAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDatabaseAdditions.h; sourceTree = "<group>"; };
+		1156AE48208D919B00C39BBA /* YLDatabaseAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDatabaseAdditions.m; sourceTree = "<group>"; };
+		1156AE4A208D929800C39BBA /* YLDatabaseQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDatabaseQueue.h; sourceTree = "<group>"; };
+		1156AE4B208D929800C39BBA /* YLDatabaseQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDatabaseQueue.m; sourceTree = "<group>"; };
 		11B09C63205F5DA300E8346A /* JFCityCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityCollectionFlowLayout.h; sourceTree = "<group>"; };
 		11B09C64205F5DA300E8346A /* JFCityCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityCollectionViewCell.m; sourceTree = "<group>"; };
 		11B09C66205F5DA300E8346A /* JFLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFLocation.m; sourceTree = "<group>"; };
@@ -156,6 +172,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1156AE3C208D8B6F00C39BBA /* YLFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				1156AE3D208D8BB200C39BBA /* YLFMDB.h */,
+				1156AE3E208D8C0800C39BBA /* YLDatabase.h */,
+				1156AE3F208D8C0800C39BBA /* YLDatabase.m */,
+				1156AE41208D8D2D00C39BBA /* YLResultSet.h */,
+				1156AE42208D8D2D00C39BBA /* YLResultSet.m */,
+				1156AE44208D8F1800C39BBA /* YLDatabasePool.h */,
+				1156AE45208D8F1800C39BBA /* YLDatabasePool.m */,
+				1156AE47208D919B00C39BBA /* YLDatabaseAdditions.h */,
+				1156AE48208D919B00C39BBA /* YLDatabaseAdditions.m */,
+				1156AE4A208D929800C39BBA /* YLDatabaseQueue.h */,
+				1156AE4B208D929800C39BBA /* YLDatabaseQueue.m */,
+			);
+			path = YLFMDB;
+			sourceTree = "<group>";
+		};
 		11B09C62205F5DA300E8346A /* JFCityViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +397,7 @@
 		11B4DCF52005C1EC00D01EEC /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				1156AE3C208D8B6F00C39BBA /* YLFMDB */,
 				11B09C62205F5DA300E8346A /* JFCityViewController */,
 				11B4DD32200608E300D01EEC /* Base64 */,
 				11B4DD49200608E300D01EEC /* CLLocation+Sino.h */,
@@ -627,7 +662,9 @@
 				11B09C7E205F5DA300E8346A /* JFCityViewController.m in Sources */,
 				11B4DCB42005ABA000D01EEC /* main.m in Sources */,
 				11B4DD5D20060EE500D01EEC /* UIImageView+Extension.m in Sources */,
+				1156AE43208D8D2D00C39BBA /* YLResultSet.m in Sources */,
 				11B09C7F205F5DA300E8346A /* JFCityTableViewCell.m in Sources */,
+				1156AE40208D8C0800C39BBA /* YLDatabase.m in Sources */,
 				11B4DCF72005C1EC00D01EEC /* YLNavigationController.m in Sources */,
 				11B09C7B205F5DA300E8346A /* JFAreaDataManager.m in Sources */,
 				11B4DD1B200600BB00D01EEC /* YLLabel.m in Sources */,
@@ -642,7 +679,10 @@
 				11B4DD1C200600BB00D01EEC /* UIView+Extension.m in Sources */,
 				11B09C7C205F5DA300E8346A /* JFCityHeaderView.m in Sources */,
 				11B09C7A205F5DA300E8346A /* JFLocation.m in Sources */,
+				1156AE4C208D929800C39BBA /* YLDatabaseQueue.m in Sources */,
+				1156AE46208D8F1800C39BBA /* YLDatabasePool.m in Sources */,
 				11B09C7D205F5DA300E8346A /* JFSearchView.m in Sources */,
+				1156AE49208D919B00C39BBA /* YLDatabaseAdditions.m in Sources */,
 				11B09C80205F5DA300E8346A /* JFCityCollectionFlowLayout.m in Sources */,
 				11B4DD0B2005F06100D01EEC /* YLDeviceUtil.m in Sources */,
 				11B4DD5A20060DAB00D01EEC /* UIViewController+Extension.m in Sources */,
