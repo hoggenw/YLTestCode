@@ -7,8 +7,6 @@
 //
 
 import XCTest
-@testable import YLTestCode
-
 class YLTestCodeTests: XCTestCase {
     
     override func setUp() {
