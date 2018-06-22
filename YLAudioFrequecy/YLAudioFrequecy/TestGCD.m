@@ -59,12 +59,12 @@
     });
     
     dispatch_async(queue, ^{
-        dispatch_semaphore_wait(semaphoreControl, DISPATCH_TIME_FOREVER);
-        dispatch_semaphore_wait(semaphoreControl, DISPATCH_TIME_FOREVER);
-        dispatch_semaphore_wait(semaphoreControl, DISPATCH_TIME_FOREVER);
-        dispatch_semaphore_wait(semaphoreControl, DISPATCH_TIME_FOREVER);
+        for(int i = 0; i < 4; i++){
+            dispatch_semaphore_wait(semaphoreControl, DISPATCH_TIME_FOREVER);
+        }
         NSLog(@"=================模拟多线程操作时几个任务同时进行，完成后才输出结果======================");
     });
+
     
     
 #pragma mark -semaphore测试内容一：模拟多线程控制
