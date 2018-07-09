@@ -31,10 +31,13 @@
 #import "YLVoiceAnimationViewController.h"
 #import "YLVoiceCircleViewController.h"
 #import "Copy&MultableCopyTest.h"
+#import "YLWKWebView.h"
 
 @interface Message : NSObject
 
 @property (nonatomic, copy) NSString *text;
+
+
 
 @end
 
@@ -54,10 +57,12 @@
 
 @end
 
-@interface ViewController ()
+@interface ViewController ()<WKNavigationDelegate>
 @property(nonatomic, strong)UIImageView * showImage;
 @property(nonatomic, strong)Message *message;
 @property(nonatomic, strong)TestRunLoop * testRunLoop;
+///
+@property(nonatomic,strong)YLWKWebView *webView;
 
 @end
 
@@ -73,112 +78,119 @@
 //NSSelectorFromString()方法
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    QuartzShadowAndGradient * view = [[QuartzShadowAndGradient alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-//    [self.view addSubview: view];
-//    Bitmap * bitmap = [Bitmap new];
-//    UIImageView * imageView = [[UIImageView alloc] initWithImage: [bitmap test]];
-//    imageView.center = self.view.center;
-//    [self.view addSubview:imageView];
-//
     
-//    AssetsLibraryTest *model = [AssetsLibraryTest new];
-//    [model test1];
+#pragma mark - web相关测试
+//    [self.view addSubview:self.webView];
+//    NSString * strUrl = @"http://192.168.20.14:63342/vedeoJS/AJAX/baidu.html";
+//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[strUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]]] cachePolicy:NSURLRequestReloadRevalidatingCacheData timeoutInterval:30];
+//    //NSLog(@"request.URL == %@",request.URL);
+//    [self.webView loadRequest:request];
+    //    QuartzShadowAndGradient * view = [[QuartzShadowAndGradient alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    //    [self.view addSubview: view];
+    //    Bitmap * bitmap = [Bitmap new];
+    //    UIImageView * imageView = [[UIImageView alloc] initWithImage: [bitmap test]];
+    //    imageView.center = self.view.center;
+    //    [self.view addSubview:imageView];
+    //
     
-//    TestImage * model = [TestImage new];
-//
-//    self.showImage = [UIImageView new];
-//
-//    self.showImage.image = [model resultImage];
-//    self.showImage.frame = CGRectMake(0, 0, 100, 100);
-//    [self.view addSubview: self.showImage];
-//    [self animate1];
+    //    AssetsLibraryTest *model = [AssetsLibraryTest new];
+    //    [model test1];
+    
+    //    TestImage * model = [TestImage new];
+    //
+    //    self.showImage = [UIImageView new];
+    //
+    //    self.showImage.image = [model resultImage];
+    //    self.showImage.frame = CGRectMake(0, 0, 100, 100);
+    //    [self.view addSubview: self.showImage];
+    //    [self animate1];
+    
+    //
+    //  #pragma mark - GCD相关测试
+    //    TestGCD * test = [[TestGCD alloc] init];
+    //    [test test];
     
     
-  #pragma mark - GCD相关测试
-    TestGCD * test = [[TestGCD alloc] init];
-    [test test];
-    
-
 #pragma mark - 你说到设备："请通知应用程序每次更改时方向"
-//    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
-        //[self testGCD];
+    //    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
+    //[self testGCD];
     
     
-//    UIButton * testButton = [UIButton new];
-//    testButton.frame = CGRectMake(200, 200, 50, 50);
-//    [self.view addSubview: testButton];
-//    [testButton setTitle:@"测试" forState: UIControlStateNormal];
-//    testButton.titleLabel.textColor = [UIColor blackColor];
-//    testButton.backgroundColor = [UIColor greenColor];
-//    [testButton addTarget:self action:@selector(testActionContinuity) forControlEvents:UIControlEventTouchUpInside];
+    //    UIButton * testButton = [UIButton new];
+    //    testButton.frame = CGRectMake(200, 200, 50, 50);
+    //    [self.view addSubview: testButton];
+    //    [testButton setTitle:@"测试" forState: UIControlStateNormal];
+    //    testButton.titleLabel.textColor = [UIColor blackColor];
+    //    testButton.backgroundColor = [UIColor greenColor];
+    //    [testButton addTarget:self action:@selector(testActionContinuity) forControlEvents:UIControlEventTouchUpInside];
     
-   // [self typeEncoding];
+    // [self typeEncoding];
     // Do any additional setup after loading the view, typically from a nib.
     
-  //  [self aboutClass];
+    //  [self aboutClass];
     
     
 #pragma mark - 自己写的kvo test
     
-//   NSString * number = @"1011";
-//    self.message = [[Message alloc] init];
-//    [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
-//                       withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
-//                           NSLog(@"%@.%@  oldVlue is %@ newvalue is  now: %@", observedObject, observedKey, oldValue,newValue);
-//
-//                       }];
-//    NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
-//    for (int  i = 0 ; i < array.count; i++) {
-//        self.message.text = array[i];
-//        NSLog(@"self.message.text : %@", self.message.text);
-//    }
-//
-//    NSLog(@" class name  :   %@",[self.message class]);
+    //   NSString * number = @"1011";
+    //    self.message = [[Message alloc] init];
+    //    [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
+    //                       withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
+    //                           NSLog(@"%@.%@  oldVlue is %@ newvalue is  now: %@", observedObject, observedKey, oldValue,newValue);
+    //
+    //                       }];
+    //    NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
+    //    for (int  i = 0 ; i < array.count; i++) {
+    //        self.message.text = array[i];
+    //        NSLog(@"self.message.text : %@", self.message.text);
+    //    }
+    //
+    //    NSLog(@" class name  :   %@",[self.message class]);
     
 #pragma mark - runtime执行测试
     //[self test];
-//    [self runtimeTest];
+    //    [self runtimeTest];
 #pragma mark - runtime执行模型赋值测试
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
-//    NSData *jsonData = [NSData dataWithContentsOfFile:path];
-//    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:NULL];
-//    Man * model = [Man new];
-//    [model setDict: [Man specialArrayJson]];
-//    NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.dog);
- #pragma mark - runloop测试
-//    _testRunLoop = [TestRunLoop new];
-//    [_testRunLoop logStatusOfRunLoop];
-//    [_testRunLoop showRunLoop];
+    //    NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
+    //    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+    //    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:NULL];
+    //    Man * model = [Man new];
+    //    [model setDict: [Man specialArrayJson]];
+    //    NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.dog);
+#pragma mark - runloop测试
+    //    _testRunLoop = [TestRunLoop new];
+    //    [_testRunLoop logStatusOfRunLoop];
+    //    [_testRunLoop showRunLoop];
     
     
 #pragma mark -Copy&MultableCopyTest结果
     
-//    Copy_MultableCopyTest * copyTest = [Copy_MultableCopyTest new];
-//    [copyTest containerTest];
+    //    Copy_MultableCopyTest * copyTest = [Copy_MultableCopyTest new];
+    //    [copyTest containerTest];
     //[copyTest mutableContainerTest];
     //[copyTest customObjectiveTest];
     //[copyTest propertyTest];
+    //
+    //
+    //    //测试语音输入动画
+    //    UIButton * testVioceButton = [self creatNormalBUttonWithName:@"语音动画" frame: CGRectMake(80, 100, 100, 40)];
+    //    [testVioceButton addTarget: self action:@selector(voiceAnimation) forControlEvents: UIControlEventTouchUpInside];
+    //    //测试语音输入动画
+    //    UIButton * micphoneButton = [self creatNormalBUttonWithName:@"micphone动画" frame: CGRectMake(80, 160, 100, 40)];
+    //    [micphoneButton addTarget: self action:@selector(voiceMicphoneAnimation) forControlEvents: UIControlEventTouchUpInside];
+    //    //测试语音输入动画
+    //    UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 60)];
+    //    [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
+    //    [circleButton setBackgroundImage:[UIImage imageNamed:@"goods_upload_image"] forState: UIControlStateNormal];
     
     
-    //测试语音输入动画
-    UIButton * testVioceButton = [self creatNormalBUttonWithName:@"语音动画" frame: CGRectMake(80, 100, 100, 40)];
-    [testVioceButton addTarget: self action:@selector(voiceAnimation) forControlEvents: UIControlEventTouchUpInside];
-    //测试语音输入动画
-    UIButton * micphoneButton = [self creatNormalBUttonWithName:@"micphone动画" frame: CGRectMake(80, 160, 100, 40)];
-    [micphoneButton addTarget: self action:@selector(voiceMicphoneAnimation) forControlEvents: UIControlEventTouchUpInside];
-    //测试语音输入动画
-    UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 60)];
-    [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
-    [circleButton setBackgroundImage:[UIImage imageNamed:@"goods_upload_image"] forState: UIControlStateNormal];
-    
-    
-//    [[NSRunLoop currentRunLoop] addTimer:[[NSTimer alloc] initWithFireDate:[NSDate date] interval: 1 repeats: YES block:^(NSTimer * _Nonnull timer) {
-//        NSLog(@"测试双击home后台运行");
-//        //测试结果显示双击home键时，当前程序处于继续运行状态
-//    }] forMode: NSRunLoopCommonModes];
-//
-//    NSLog(@"%@ ===== %@",[self.parentViewController class],self.parentViewController);
+    //    [[NSRunLoop currentRunLoop] addTimer:[[NSTimer alloc] initWithFireDate:[NSDate date] interval: 1 repeats: YES block:^(NSTimer * _Nonnull timer) {
+    //        NSLog(@"测试双击home后台运行");
+    //        //测试结果显示双击home键时，当前程序处于继续运行状态
+    //    }] forMode: NSRunLoopCommonModes];
+    //
+    //    NSLog(@"%@ ===== %@",[self.parentViewController class],self.parentViewController);
     
 }
 
@@ -190,7 +202,7 @@
     button.titleLabel.textColor = [UIColor blackColor];
     [button setTitle: name forState: UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState: UIControlStateNormal];
-
+    
     return button;
     
 }
@@ -298,16 +310,16 @@
 }
 
 - (void)testGCD {
-
+    
     NSLog(@"0");
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSLog(@"1");
-       dispatch_sync(dispatch_get_main_queue(), ^{
-           NSLog(@"2");
-       });
-         NSLog(@"3");
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            NSLog(@"2");
+        });
+        NSLog(@"3");
     });
-     NSLog(@"24");
+    NSLog(@"24");
 }
 
 - (BOOL)canBecomeFirstResponder {
@@ -358,7 +370,7 @@
                                               }
                                               completion:^(BOOL finished) {
                                                   [self.showImage removeFromSuperview];
-                                                 
+                                                  
                                               }];
                          }
                      }];
@@ -405,7 +417,7 @@
     NSLog(@"给私有变量赋值:%@",[fooView performSelector:@selector(name)]);
     //    void (*objc_msgSendCasted)(id, SEL, id) = (void *)objc_msgSend;
     //    objc_msgSendCasted(self,_cmd,newValue);
-
+    
     
     
     
@@ -695,7 +707,27 @@ void imp_submethod1(id self,SEL _cmd){
 }
 
 
+- (YLWKWebView *)webView {
+    if (_webView == nil) {
+        _webView = [[YLWKWebView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width,  [UIScreen mainScreen].bounds.size.height - 64)];
+        _webView.backgroundColor = [UIColor clearColor];
+        _webView.navigationDelegate = self;
+        _webView.progressCorlor = [UIColor greenColor];
+        //        UIButton * chatButton = [UIButton new];
+        //        [_webView addSubview: chatButton];
+        //        [chatButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        //            make.right.bottom.equalTo(_webView).offset(-5);
+        //            make.height.width.equalTo(@(40));
+        //        }];
+        //        chatButton.backgroundColor = [UIColor greenColor];
+        //        [chatButton addTarget:self action:@selector(chatButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _webView;
+}
+
+
 @end
+
 
 
 
