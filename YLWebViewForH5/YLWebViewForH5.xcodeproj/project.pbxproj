@@ -14,6 +14,19 @@
 		11E7983620F302E2007F2D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E7983420F302E2007F2D7F /* LaunchScreen.storyboard */; };
 		11E7983920F302E3007F2D7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7983820F302E3007F2D7F /* main.m */; };
 		11E7984320F302E3007F2D7F /* YLWebViewForH5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7984220F302E3007F2D7F /* YLWebViewForH5Tests.m */; };
+		11E7985120F303AF007F2D7F /* YLWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7984D20F303AF007F2D7F /* YLWKWebView.m */; };
+		11E7985220F303AF007F2D7F /* YLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7985020F303AF007F2D7F /* YLProgressView.m */; };
+		11E7986920F304C0007F2D7F /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7985920F304C0007F2D7F /* UILabel+Extension.m */; };
+		11E7986A20F304C0007F2D7F /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7985C20F304C0007F2D7F /* UIViewController+Extension.m */; };
+		11E7986B20F304C0007F2D7F /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7985D20F304C0007F2D7F /* UIImage+Extension.m */; };
+		11E7986C20F304C0007F2D7F /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7985E20F304C0007F2D7F /* UIImageView+Extension.m */; };
+		11E7986D20F304C0007F2D7F /* UIResponder+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7985F20F304C0007F2D7F /* UIResponder+Extension.m */; };
+		11E7986E20F304C0007F2D7F /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7986120F304C0007F2D7F /* NSDate+Extension.m */; };
+		11E7986F20F304C0007F2D7F /* NSTimer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7986220F304C0007F2D7F /* NSTimer+Extension.m */; };
+		11E7987020F304C0007F2D7F /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7986320F304C0007F2D7F /* UIColor+Extension.m */; };
+		11E7987120F304C0007F2D7F /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7986420F304C0007F2D7F /* NSString+Extension.m */; };
+		11E7987220F304C0007F2D7F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7986820F304C0007F2D7F /* UIView+Extension.m */; };
+		CDEE929DCBF52F559ADACCF3 /* libPods-YLWebViewForH5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6987ADD5173ECEDD6DF36E62 /* libPods-YLWebViewForH5.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +53,34 @@
 		11E7983E20F302E3007F2D7F /* YLWebViewForH5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLWebViewForH5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E7984220F302E3007F2D7F /* YLWebViewForH5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWebViewForH5Tests.m; sourceTree = "<group>"; };
 		11E7984420F302E3007F2D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E7984D20F303AF007F2D7F /* YLWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWKWebView.m; sourceTree = "<group>"; };
+		11E7984E20F303AF007F2D7F /* YLWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWKWebView.h; sourceTree = "<group>"; };
+		11E7984F20F303AF007F2D7F /* YLProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLProgressView.h; sourceTree = "<group>"; };
+		11E7985020F303AF007F2D7F /* YLProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLProgressView.m; sourceTree = "<group>"; };
+		11E7985420F304C0007F2D7F /* UIResponder+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Extension.h"; sourceTree = "<group>"; };
+		11E7985520F304C0007F2D7F /* UIImageView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
+		11E7985620F304C0007F2D7F /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		11E7985720F304C0007F2D7F /* NSTimer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Extension.h"; sourceTree = "<group>"; };
+		11E7985820F304C0007F2D7F /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		11E7985920F304C0007F2D7F /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		11E7985A20F304C0007F2D7F /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		11E7985B20F304C0007F2D7F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		11E7985C20F304C0007F2D7F /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
+		11E7985D20F304C0007F2D7F /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		11E7985E20F304C0007F2D7F /* UIImageView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension.m"; sourceTree = "<group>"; };
+		11E7985F20F304C0007F2D7F /* UIResponder+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Extension.m"; sourceTree = "<group>"; };
+		11E7986020F304C0007F2D7F /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		11E7986120F304C0007F2D7F /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		11E7986220F304C0007F2D7F /* NSTimer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Extension.m"; sourceTree = "<group>"; };
+		11E7986320F304C0007F2D7F /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		11E7986420F304C0007F2D7F /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		11E7986520F304C0007F2D7F /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		11E7986620F304C0007F2D7F /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
+		11E7986720F304C0007F2D7F /* ExtensionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionHeader.h; sourceTree = "<group>"; };
+		11E7986820F304C0007F2D7F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		6987ADD5173ECEDD6DF36E62 /* libPods-YLWebViewForH5.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLWebViewForH5.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B066A99ADE775AC8E93E349 /* Pods-YLWebViewForH5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLWebViewForH5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLWebViewForH5/Pods-YLWebViewForH5.debug.xcconfig"; sourceTree = "<group>"; };
+		B7C6D65A700F7C9AD21BE39F /* Pods-YLWebViewForH5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLWebViewForH5.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLWebViewForH5/Pods-YLWebViewForH5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEE929DCBF52F559ADACCF3 /* libPods-YLWebViewForH5.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +108,8 @@
 				11E7982820F302E1007F2D7F /* YLWebViewForH5 */,
 				11E7984120F302E3007F2D7F /* YLWebViewForH5Tests */,
 				11E7982720F302E1007F2D7F /* Products */,
+				6C8D8D2F70BD6ACA28789896 /* Pods */,
+				3691679186A88359F5921F66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +125,11 @@
 		11E7982820F302E1007F2D7F /* YLWebViewForH5 */ = {
 			isa = PBXGroup;
 			children = (
+				11E7985320F304C0007F2D7F /* Category */,
+				11E7984F20F303AF007F2D7F /* YLProgressView.h */,
+				11E7985020F303AF007F2D7F /* YLProgressView.m */,
+				11E7984E20F303AF007F2D7F /* YLWKWebView.h */,
+				11E7984D20F303AF007F2D7F /* YLWKWebView.m */,
 				11E7982920F302E1007F2D7F /* AppDelegate.h */,
 				11E7982A20F302E1007F2D7F /* AppDelegate.m */,
 				11E7982C20F302E1007F2D7F /* ViewController.h */,
@@ -103,6 +152,51 @@
 			path = YLWebViewForH5Tests;
 			sourceTree = "<group>";
 		};
+		11E7985320F304C0007F2D7F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				11E7985420F304C0007F2D7F /* UIResponder+Extension.h */,
+				11E7985520F304C0007F2D7F /* UIImageView+Extension.h */,
+				11E7985620F304C0007F2D7F /* NSString+Extension.h */,
+				11E7985720F304C0007F2D7F /* NSTimer+Extension.h */,
+				11E7985820F304C0007F2D7F /* UIColor+Extension.h */,
+				11E7985920F304C0007F2D7F /* UILabel+Extension.m */,
+				11E7985A20F304C0007F2D7F /* NSDate+Extension.h */,
+				11E7985B20F304C0007F2D7F /* UIView+Extension.h */,
+				11E7985C20F304C0007F2D7F /* UIViewController+Extension.m */,
+				11E7985D20F304C0007F2D7F /* UIImage+Extension.m */,
+				11E7985E20F304C0007F2D7F /* UIImageView+Extension.m */,
+				11E7985F20F304C0007F2D7F /* UIResponder+Extension.m */,
+				11E7986020F304C0007F2D7F /* UILabel+Extension.h */,
+				11E7986120F304C0007F2D7F /* NSDate+Extension.m */,
+				11E7986220F304C0007F2D7F /* NSTimer+Extension.m */,
+				11E7986320F304C0007F2D7F /* UIColor+Extension.m */,
+				11E7986420F304C0007F2D7F /* NSString+Extension.m */,
+				11E7986520F304C0007F2D7F /* UIImage+Extension.h */,
+				11E7986620F304C0007F2D7F /* UIViewController+Extension.h */,
+				11E7986720F304C0007F2D7F /* ExtensionHeader.h */,
+				11E7986820F304C0007F2D7F /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3691679186A88359F5921F66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6987ADD5173ECEDD6DF36E62 /* libPods-YLWebViewForH5.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C8D8D2F70BD6ACA28789896 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B066A99ADE775AC8E93E349 /* Pods-YLWebViewForH5.debug.xcconfig */,
+				B7C6D65A700F7C9AD21BE39F /* Pods-YLWebViewForH5.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11E7984720F302E3007F2D7F /* Build configuration list for PBXNativeTarget "YLWebViewForH5" */;
 			buildPhases = (
+				3C7EB06FEBEB90BCB687F3D9 /* [CP] Check Pods Manifest.lock */,
 				11E7982220F302E1007F2D7F /* Sources */,
 				11E7982320F302E1007F2D7F /* Frameworks */,
 				11E7982420F302E1007F2D7F /* Resources */,
@@ -198,14 +293,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C7EB06FEBEB90BCB687F3D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLWebViewForH5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11E7982220F302E1007F2D7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E7987220F304C0007F2D7F /* UIView+Extension.m in Sources */,
+				11E7986D20F304C0007F2D7F /* UIResponder+Extension.m in Sources */,
+				11E7986920F304C0007F2D7F /* UILabel+Extension.m in Sources */,
+				11E7986E20F304C0007F2D7F /* NSDate+Extension.m in Sources */,
+				11E7985120F303AF007F2D7F /* YLWKWebView.m in Sources */,
+				11E7986F20F304C0007F2D7F /* NSTimer+Extension.m in Sources */,
+				11E7987020F304C0007F2D7F /* UIColor+Extension.m in Sources */,
+				11E7986A20F304C0007F2D7F /* UIViewController+Extension.m in Sources */,
 				11E7982E20F302E1007F2D7F /* ViewController.m in Sources */,
 				11E7983920F302E3007F2D7F /* main.m in Sources */,
 				11E7982B20F302E1007F2D7F /* AppDelegate.m in Sources */,
+				11E7985220F303AF007F2D7F /* YLProgressView.m in Sources */,
+				11E7986C20F304C0007F2D7F /* UIImageView+Extension.m in Sources */,
+				11E7986B20F304C0007F2D7F /* UIImage+Extension.m in Sources */,
+				11E7987120F304C0007F2D7F /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,16 +487,14 @@
 		};
 		11E7984820F302E3007F2D7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B066A99ADE775AC8E93E349 /* Pods-YLWebViewForH5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLWebViewForH5/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftxmall.YLWebViewForH5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,16 +503,14 @@
 		};
 		11E7984920F302E3007F2D7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C6D65A700F7C9AD21BE39F /* Pods-YLWebViewForH5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLWebViewForH5/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftxmall.YLWebViewForH5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,11 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLWebViewForH5Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftxmall.YLWebViewForH5Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,11 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLWebViewForH5Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftxmall.YLWebViewForH5Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

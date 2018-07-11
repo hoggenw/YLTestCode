@@ -48,6 +48,7 @@
 		11B4DD0E2005F61800D01EEC /* TestDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B4DD0D2005F61800D01EEC /* TestDevice.m */; };
 		11CC77FE1FCFDC2500BE3017 /* YLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CC77FD1FCFDC2500BE3017 /* YLProgressView.m */; };
 		11CC78011FCFDC8000BE3017 /* YLWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CC78001FCFDC8000BE3017 /* YLWKWebView.m */; };
+		11E7987820F34B02007F2D7F /* YLImageMagnification.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7987720F34B02007F2D7F /* YLImageMagnification.m */; };
 		11F54F161FF263AC00406D12 /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 11F54F151FF263AC00406D12 /* model.json */; };
 		87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FE21EF3BB81009D4CF6 /* TestImage.m */; };
 		87127FE61EF4FD69009D4CF6 /* Quartz2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 87127FE51EF4FD69009D4CF6 /* Quartz2D.m */; };
@@ -150,6 +151,8 @@
 		11CC77FD1FCFDC2500BE3017 /* YLProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLProgressView.m; sourceTree = "<group>"; };
 		11CC77FF1FCFDC8000BE3017 /* YLWKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWKWebView.h; sourceTree = "<group>"; };
 		11CC78001FCFDC8000BE3017 /* YLWKWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWKWebView.m; sourceTree = "<group>"; };
+		11E7987620F34B02007F2D7F /* YLImageMagnification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLImageMagnification.h; sourceTree = "<group>"; };
+		11E7987720F34B02007F2D7F /* YLImageMagnification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLImageMagnification.m; sourceTree = "<group>"; };
 		11F54F151FF263AC00406D12 /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
 		87127FE11EF3BB81009D4CF6 /* TestImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestImage.h; sourceTree = "<group>"; };
 		87127FE21EF3BB81009D4CF6 /* TestImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestImage.m; sourceTree = "<group>"; };
@@ -325,6 +328,8 @@
 				1113219E1FF22D5900C0A11D /* NSObject+JSONExtension.m */,
 				11B4DD0C2005F61800D01EEC /* TestDevice.h */,
 				11B4DD0D2005F61800D01EEC /* TestDevice.m */,
+				11E7987620F34B02007F2D7F /* YLImageMagnification.h */,
+				11E7987720F34B02007F2D7F /* YLImageMagnification.m */,
 			);
 			path = YLAudioFrequecy;
 			sourceTree = "<group>";
@@ -511,6 +516,7 @@
 				87127FF71EF6B471009D4CF6 /* AssetsLibraryTest.m in Sources */,
 				111CB1CB2022B8AE0035D245 /* TopArcView.m in Sources */,
 				1143BA731E5D7F01002CD06B /* ViewController.m in Sources */,
+				11E7987820F34B02007F2D7F /* YLImageMagnification.m in Sources */,
 				111CB1B92021D2F10035D245 /* UIViewController+Extension.m in Sources */,
 				111CB1D72022ED3D0035D245 /* MicrophoneView.m in Sources */,
 				1119AAE12048ECD9000E9E35 /* Copy&MultableCopyTest.m in Sources */,
