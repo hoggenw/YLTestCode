@@ -1,0 +1,4 @@
+platform :ios, '9.0' #手机的系统
+target 'YLWebViewForH5' do #工程名字
+  pod 'Masonry'
+end    
