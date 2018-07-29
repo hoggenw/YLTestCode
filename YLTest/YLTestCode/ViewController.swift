@@ -246,7 +246,9 @@ class ViewController: UIViewController {
 
 extension ViewController: YLRecordVideoChoiceDelegate {
     func choiceVideoWith(path: String) {
-        print("选择视频路径为：\(path)")
+        let data  = try! Data.init(contentsOf: URL(fileURLWithPath:  path))
+        
+        print("选择视频路径为：\(path) === \(data.bytes)")
         
     }
 }
