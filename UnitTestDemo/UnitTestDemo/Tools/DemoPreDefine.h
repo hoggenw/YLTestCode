@@ -16,11 +16,12 @@
 #define IOS9_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"9.0"] != NSOrderedAscending )
 #define ButtonHeight 44
 #define NavigationBarHeight 44
-
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #define USER_APPID           @"5b5a8028"
 typedef enum : NSInteger {
-    Success,
+    Success = 1,
     UnAuthorized,
     Failed
 }AVCameraStatues;

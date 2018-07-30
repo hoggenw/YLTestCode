@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "FaceStreamDetectorViewController.h"
 
+#import "RecordVideoViewController.h"
+
 @interface ViewController ()<FaceDetectorDelegate>
 {
     UIImageView *imgView;
@@ -23,6 +25,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [self buttonWithTitle:@"人脸识别" frame:CGRectMake(100, 50, 150, 30) action:@selector(pushToFaceStreamDetectorVC) AddView:self.view];
+    [self buttonWithTitle:@"视频录制" frame:CGRectMake(100, 90, 150, 30) action:@selector(pushToRecordVideoViewController) AddView:self.view];
     
     imgView = [[UIImageView alloc]initWithFrame:CGRectMake(50, 150, self.view.frame.size.width-100, 300)];
     imgView.backgroundColor = [UIColor purpleColor];
@@ -34,6 +37,11 @@
 {
     imgView.frame = CGRectMake(50, 150, self.view.frame.size.width-100, (self.view.frame.size.width-100)/faceImage.size.width*faceImage.size.height);
     imgView.image = faceImage;
+}
+
+-(void)pushToRecordVideoViewController {
+    RecordVideoViewController *faceVC = [[RecordVideoViewController alloc]init];
+    [self.navigationController pushViewController:faceVC animated:YES];
 }
 
 -(void)pushToFaceStreamDetectorVC

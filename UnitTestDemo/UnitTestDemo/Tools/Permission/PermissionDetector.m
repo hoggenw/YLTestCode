@@ -85,11 +85,11 @@
                 [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
                     isGranted=YES;
                     *stop = YES;
-                    NSLog(@"enumerate");
+                   // NSLog(@"enumerate");
                     dispatch_semaphore_signal(sema);
                 } failureBlock:^(NSError *error) {
                     isGranted=NO;
-                    NSLog(@"error:%ld %@",(long)error.code,error.description);
+                    //NSLog(@"error:%ld %@",(long)error.code,error.description);
                     dispatch_semaphore_signal(sema);
                 }];
             });
