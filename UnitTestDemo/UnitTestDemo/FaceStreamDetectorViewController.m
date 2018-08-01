@@ -23,7 +23,7 @@
 #import "IFlyFaceResultKeys.h"
 #import "YLRecordVideoView.h"
 
-@interface FaceStreamDetectorViewController ()<CaptureManagerDelegate>
+@interface FaceStreamDetectorViewController ()<CaptureManagerDelegate,YLRecordVideoChoiceDelegate>
 {
     UILabel *alignLabel;
     int number;//
@@ -119,6 +119,9 @@
 -(void)makeUI
 {
 
+//    self.recordVideoView = [[YLRecordVideoView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64)];
+//    self.recordVideoView.delegate = self;
+//    [self.view addSubview:self.recordVideoView];
     
     self.previewView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight*2/3)];
     [self.view addSubview:self.previewView];
@@ -147,6 +150,8 @@
     
     //重拍图片按钮
     [self buttonWithTitle:@"重拍" frame:CGRectMake(ScreenWidth/2+50, CGRectGetMaxY(imageView.frame)+10, 100, 30) action:@selector(didClickPhotoAgain) AddView:backView];
+    
+    
     
 
 }
@@ -223,10 +228,7 @@
     }
     self.viewCanvas.arrPersons = arrPersons;
     [self.viewCanvas setNeedsDisplay] ;
-    if (!self.recordBegin) {
-        [self.recordVideoView startRecord];
-    }
-    self.recordBegin = true;
+
 }
 
 #pragma mark --- 关闭识别
@@ -371,11 +373,14 @@
             }) ;
             return;
         }
-        
+//        if (!self.recordBegin) {
+//            [self.recordVideoView startRecord];
+//        }
+//        self.recordBegin = true;
     
         //检测到人脸
         NSMutableArray *arrPersons = [NSMutableArray array] ;
-        
+
         for(id faceInArr in faceArray){
             
             if(faceInArr && [faceInArr isKindOfClass:[NSDictionary class]]){
@@ -468,20 +473,17 @@
         //            return YES;
         //        }
     }
-    //    else if (isJudgeMouth == YES && isShakeHead != YES) {
-    //        self.textLabel.text = @"请重复摇头动作...";
-    //        [self tomAnimationWithName:@"shakeHead" count:4];
-    //        number = 0;
-    //    }
+//        else if (isJudgeMouth == YES && isShakeHead != YES) {
+//            self.textLabel.text = @"请重复摇头动作...";
+//            [self tomAnimationWithName:@"shakeHead" count:4];
+//            number = 0;
+//        }
     else{
         takePhotoNumber += 1;
         if (takePhotoNumber == 2) {
-           // [self timeBegin];
-            [self.recordVideoView stopRecord];
-            self.previewView.hidden = true;
-            [self hideFace];
-            [self.recordVideoView previewCaptureVideo];
-             self.recordBegin = false;
+            [self timeBegin];
+           
+            // [self didClickTakePhoto];
         }
     }
     isCrossBorder = NO;
@@ -599,15 +601,16 @@
 #pragma mark --- 重拍按钮点击事件
 -(void)didClickPhotoAgain
 {
+    
     //清数据
     [self delateNumber];
-    
+
     //开始摄像
     [self.previewLayer.session startRunning];
     self.textLabel.text = @"请调整位置...";
-    
+
     [backView removeFromSuperview];
-    
+
     isJudgeMouth = NO;
     isShakeHead = NO;
     
@@ -678,8 +681,9 @@
     {
         [theTimer invalidate];
         theTimer=nil;
-        
-        [self didClickTakePhoto];
+        [self.captureManager stopRecord];
+//       [self.recordVideoView stopRecord];
+        //[self didClickTakePhoto];
     }
 }
 
@@ -736,4 +740,36 @@
     self.tapGesture=nil;
 }
 
+-(void)choiceVideoWith:(NSString *)path {
+    NSLog(@"path:%@",path);
+}
+-(void)onOutputSourceString:(NSString *)SourceString {
+    NSLog(@"结束录制： %@",SourceString);
+    [self calculationFileSize: SourceString];
+    //上传照片成功
+    [self.faceDelegate sendSourceString:SourceString];
+    //上传照片失败
+    //    [self.faceDelegate sendFaceImageError];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)calculationFileSize:(NSString * )path {
+    unsigned long long fileLength = 0;
+    NSNumber *fileSize;
+    NSString *videoSizeString;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSDictionary *fileAttributes = [fileManager attributesOfItemAtPath:path error:nil];
+    if ((fileSize = [fileAttributes objectForKey:NSFileSize])) {
+        fileLength = [fileSize unsignedLongLongValue];
+    }
+    if (fileLength < 1024) {
+        videoSizeString = [NSString stringWithFormat:@"%.1lluB",fileLength];
+    }else if (fileLength >1024 && fileLength < 1024*1024){
+        videoSizeString = [NSString stringWithFormat:@"%.1lluKB",fileLength/1024];
+    }else if (fileLength >1024*1024 && fileLength < 1024*1024 *1024){
+        videoSizeString = [NSString stringWithFormat:@"%.1lluMB",fileLength/(1024*1024)];
+    }
+    NSLog(@"文件大小为：%@",videoSizeString);
+    
+}
 @end

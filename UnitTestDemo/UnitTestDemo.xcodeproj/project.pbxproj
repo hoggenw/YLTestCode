@@ -62,6 +62,13 @@
 		111BA1F0210F048E00058979 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA1E6210F048D00058979 /* UIView+Extension.m */; };
 		111BA1F3210F096600058979 /* YLRecordControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA1F2210F096600058979 /* YLRecordControlView.m */; };
 		111BA1F6210F162500058979 /* RecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA1F5210F162500058979 /* RecordVideoViewController.m */; };
+		111BA2132110573E00058979 /* FMWriteVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA20B2110573D00058979 /* FMWriteVideoController.m */; };
+		111BA2142110573E00058979 /* FMWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA20D2110573D00058979 /* FMWModel.m */; };
+		111BA2152110573E00058979 /* AVAssetWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA2112110573D00058979 /* AVAssetWriteManager.m */; };
+		111BA2162110573E00058979 /* FMWVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA2122110573E00058979 /* FMWVideoView.m */; };
+		111BA219211057CE00058979 /* XCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA218211057CE00058979 /* XCFileManager.m */; };
+		111BA21E21105AE000058979 /* FMRecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA21B21105AE000058979 /* FMRecordProgressView.m */; };
+		111BA21F21105AE000058979 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA21C21105AE000058979 /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +164,20 @@
 		111BA1F2210F096600058979 /* YLRecordControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRecordControlView.m; sourceTree = "<group>"; };
 		111BA1F4210F162500058979 /* RecordVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordVideoViewController.h; sourceTree = "<group>"; };
 		111BA1F5210F162500058979 /* RecordVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordVideoViewController.m; sourceTree = "<group>"; };
+		111BA20B2110573D00058979 /* FMWriteVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMWriteVideoController.m; sourceTree = "<group>"; };
+		111BA20C2110573D00058979 /* FMWVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMWVideoView.h; sourceTree = "<group>"; };
+		111BA20D2110573D00058979 /* FMWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMWModel.m; sourceTree = "<group>"; };
+		111BA20E2110573D00058979 /* FMWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMWModel.h; sourceTree = "<group>"; };
+		111BA20F2110573D00058979 /* AVAssetWriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAssetWriteManager.h; sourceTree = "<group>"; };
+		111BA2102110573D00058979 /* FMWriteVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMWriteVideoController.h; sourceTree = "<group>"; };
+		111BA2112110573D00058979 /* AVAssetWriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAssetWriteManager.m; sourceTree = "<group>"; };
+		111BA2122110573E00058979 /* FMWVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMWVideoView.m; sourceTree = "<group>"; };
+		111BA217211057CE00058979 /* XCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCFileManager.h; path = UnitTestDemo/Tools/Capture/XCFileManager.h; sourceTree = SOURCE_ROOT; };
+		111BA218211057CE00058979 /* XCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCFileManager.m; path = UnitTestDemo/Tools/Capture/XCFileManager.m; sourceTree = SOURCE_ROOT; };
+		111BA21A21105AE000058979 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		111BA21B21105AE000058979 /* FMRecordProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRecordProgressView.m; sourceTree = "<group>"; };
+		111BA21C21105AE000058979 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		111BA21D21105AE000058979 /* FMRecordProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRecordProgressView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +238,7 @@
 		11153C9A1FDF7B0400BC79A3 /* UnitTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				111BA1FD211056C100058979 /* 测试方式1 */,
 				111BA1D1210F048D00058979 /* Category */,
 				111BA1BE210AFE3600058979 /* images */,
 				111BA18D210AF46000058979 /* Tools */,
@@ -387,6 +409,27 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		111BA1FD211056C100058979 /* 测试方式1 */ = {
+			isa = PBXGroup;
+			children = (
+				111BA21D21105AE000058979 /* FMRecordProgressView.h */,
+				111BA21B21105AE000058979 /* FMRecordProgressView.m */,
+				111BA21A21105AE000058979 /* UIColor+Hex.h */,
+				111BA21C21105AE000058979 /* UIColor+Hex.m */,
+				111BA217211057CE00058979 /* XCFileManager.h */,
+				111BA218211057CE00058979 /* XCFileManager.m */,
+				111BA20F2110573D00058979 /* AVAssetWriteManager.h */,
+				111BA2112110573D00058979 /* AVAssetWriteManager.m */,
+				111BA20E2110573D00058979 /* FMWModel.h */,
+				111BA20D2110573D00058979 /* FMWModel.m */,
+				111BA2102110573D00058979 /* FMWriteVideoController.h */,
+				111BA20B2110573D00058979 /* FMWriteVideoController.m */,
+				111BA20C2110573D00058979 /* FMWVideoView.h */,
+				111BA2122110573E00058979 /* FMWVideoView.m */,
+			);
+			path = "测试方式1";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -499,6 +542,7 @@
 				11153CC31FDF82C700BC79A3 /* User.m in Sources */,
 				111BA1A5210AF46100058979 /* CaptureManager.m in Sources */,
 				111BA1A4210AF46100058979 /* CanvasView.m in Sources */,
+				111BA2142110573E00058979 /* FMWModel.m in Sources */,
 				111BA1E7210F048E00058979 /* UILabel+Extension.m in Sources */,
 				111BA1F6210F162500058979 /* RecordVideoViewController.m in Sources */,
 				111BA1AB210AF46100058979 /* PermissionDetector.m in Sources */,
@@ -506,17 +550,23 @@
 				111BA1EF210F048E00058979 /* NSString+Extension.m in Sources */,
 				111BA1ED210F048E00058979 /* NSTimer+Extension.m in Sources */,
 				11153CA01FDF7B0400BC79A3 /* ViewController.m in Sources */,
+				111BA2152110573E00058979 /* AVAssetWriteManager.m in Sources */,
 				111BA1A8210AF46100058979 /* UIImage+compress.m in Sources */,
+				111BA219211057CE00058979 /* XCFileManager.m in Sources */,
 				111BA1A6210AF46100058979 /* IFlyFaceResultKeys.m in Sources */,
 				111BA1EB210F048E00058979 /* UIResponder+Extension.m in Sources */,
 				111BA1AA210AF46100058979 /* UIImage+Extensions.m in Sources */,
 				11153CAB1FDF7B0400BC79A3 /* main.m in Sources */,
+				111BA21F21105AE000058979 /* UIColor+Hex.m in Sources */,
+				111BA21E21105AE000058979 /* FMRecordProgressView.m in Sources */,
 				111BA1A7210AF46100058979 /* IFlyFaceImage.m in Sources */,
 				111BA1EC210F048E00058979 /* NSDate+Extension.m in Sources */,
+				111BA2132110573E00058979 /* FMWriteVideoController.m in Sources */,
 				111BA1A9210AF46100058979 /* CalculatorTools.m in Sources */,
 				111BA1CD210EAA7300058979 /* YLRecordVideoView.m in Sources */,
 				111BA1F0210F048E00058979 /* UIView+Extension.m in Sources */,
 				11153C9D1FDF7B0400BC79A3 /* AppDelegate.m in Sources */,
+				111BA2162110573E00058979 /* FMWVideoView.m in Sources */,
 				111BA1E9210F048E00058979 /* UIImage+Extension.m in Sources */,
 				111BA1E8210F048E00058979 /* UIViewController+Extension.m in Sources */,
 				111BA1F3210F096600058979 /* YLRecordControlView.m in Sources */,

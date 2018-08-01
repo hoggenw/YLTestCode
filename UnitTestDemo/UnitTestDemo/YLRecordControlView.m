@@ -27,6 +27,7 @@
     if (self) {
         self.ifRestart = false;
         self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent: 0.7];
+        self.totalSeconds = 10;
         [self initialUI];
     }
     return  self;
@@ -41,7 +42,7 @@
     self.recordButton.backgroundColor = [UIColor orangeColor];
     
     self.stopOrChioceButton = [self buttonWithTitle:@"停止" frame: CGRectMake(self.frame.size.width - 60, 20 + (self.frame.size.height - 20)/2 -25, 50, 40) action:@selector(stopOrChioceButtonAction:) AddView: self];
-    [self.stopOrChioceButton setTitle:@"选择" forState:UIControlStateNormal];
+    [self.stopOrChioceButton setTitle:@"选择" forState:UIControlStateSelected];
     
     self.cancalButton = [self buttonWithTitle:@"取消" frame: CGRectMake(10, 20 + (self.frame.size.height - 20)/2 -25, 50, 40) action:@selector(cancalButtonAction) AddView: self];
 
@@ -52,7 +53,7 @@
 
 -(void)stopOrChioceButtonAction:(UIButton *)sender {
     [self.progressView stopProgress];
-    self.recordButton.userInteractionEnabled = false;
+    self.recordButton.userInteractionEnabled = true;
     self.recordButton.selected = false;
     self.recordButton.backgroundColor = [UIColor orangeColor];
     [self.recordButton setTitle:@"重拍" forState: UIControlStateNormal];

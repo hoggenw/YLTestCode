@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RecordVideoViewController : UIViewController
-
+@property (nonatomic, strong, readwrite) NSString *videoUrl;
 @end

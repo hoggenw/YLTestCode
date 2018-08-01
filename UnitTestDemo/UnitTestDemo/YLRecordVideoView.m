@@ -10,6 +10,7 @@
 #import <Photos/Photos.h>
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "YLRecordControlView.h"
 
 
 
@@ -28,8 +29,7 @@
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureDevice *videoDevice;
 @property (nonatomic, strong) AVCaptureDevice *audioDevice;
-@property (nonatomic, strong) AVCaptureFileOutput *fileOutput;
-@property (nonatomic, copy) NSString *customVideoPath;
+@property (nonatomic, strong) AVCaptureMovieFileOutput *fileOutput;
 @property (nonatomic, strong) UIButton *previewButton;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer * videoLayer;
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
@@ -62,7 +62,7 @@
     if ([self.captureSession canAddInput: dudioDeviceInput]) {
         [self.captureSession addInput: dudioDeviceInput];
     }
-    CMTime maxDuration = CMTimeMake(self.totalSeconds, self.framesPerSecond);
+    CMTime maxDuration = CMTimeMake(10 * self.framesPerSecond, self.framesPerSecond);
     self.fileOutput.maxRecordedDuration = maxDuration;
     if ( [self.captureSession canAddOutput: self.fileOutput]) {
         [self.captureSession addOutput: self.fileOutput];
@@ -96,12 +96,24 @@
     }
     
 }
+
+-(AVCaptureDevice *)deviceWithMediaType:(NSString *)mediaType preferringPosition:(AVCaptureDevicePosition)position
+{
+    NSArray *devices = [AVCaptureDevice devicesWithMediaType:mediaType];
+    AVCaptureDevice *captureDevice = [devices firstObject];
+    
+    for (AVCaptureDevice *device in devices){
+        if ([device position] == position){
+            captureDevice = device;
+            break;
+        }
+    }
+    
+    return captureDevice;
+}
 -(void)setupAssetWriter {
     __weak YLRecordVideoView *weakSelf = self;
     dispatch_async(self.sessionQueue, ^{
-        if (!self.setupResult) {
-            return ;
-        }
         switch (self.setupResult) {
             case Success:{
                 [weakSelf.captureSession startRunning];
@@ -128,6 +140,7 @@
                break;
             }
             case UnAuthorized:{
+                NSLog(@"需要权限");
                 //设置权限
                 break;
             }
@@ -147,7 +160,7 @@
 - (NSDictionary *)configAudioInput
 {
     AudioChannelLayout channelLayout;
-    bzero( &channelLayout, sizeof(channelLayout));   //初始化音频通道
+    bzero( &channelLayout, sizeof(AudioChannelLayout));   //初始化音频通道
     
     channelLayout.mChannelLayoutTag = kAudioChannelLayoutTag_Mono;  //设置为单通道模式
     
@@ -180,7 +193,7 @@
     self.previewButton = [self buttonWithTitle:@"预览" frame:CGRectMake([UIScreen mainScreen].bounds.size.width/2 - 30, [UIScreen mainScreen].bounds.size.height/2 - 30, 60, 60) action:@selector(previewCaptureVideo) AddView:self];
     self.previewButton.hidden = true;
     
-    YLRecordVideoView *recordView = [[YLRecordVideoView alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 100, [UIScreen mainScreen].bounds.size.width, 100)];
+    YLRecordControlView *recordView = [[YLRecordControlView alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 100 - 64, [UIScreen mainScreen].bounds.size.width, 100)];
     recordView.delegate = self;
     recordView.totalSeconds = 10;
     [self addSubview: recordView];
@@ -198,8 +211,8 @@
     self.videoType = AVFileTypeMPEG4;
     self.sessionQueue = dispatch_queue_create("VideoCaptureQueue", DISPATCH_QUEUE_SERIAL);
     self.captureSession = [[AVCaptureSession alloc] init];
-    self.videoDevice = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo].firstObject;
-    self.audioDevice = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo].firstObject;
+    self.videoDevice =  [self deviceWithMediaType:AVMediaTypeVideo preferringPosition:AVCaptureDevicePositionFront];
+    self.audioDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     self.fileOutput = [[AVCaptureMovieFileOutput alloc] init];
     
     
@@ -269,11 +282,14 @@
 }
 
 -(void)stopRecord {
+   
     [self.fileOutput stopRecording];
+     [self preparePreview];
     [self calculationFileSize: self.customVideoPath];
-    NSLog(@"结束录像");
+    NSLog(@"结束录像:self.customVideoPath: %@",self.customVideoPath);
 }
 -(void)restartRecord {
+    self.previewButton.hidden = true;
     self.videoLayer.hidden = false;
     self.playerLayer.hidden = true;
     [self deleteFile: self.customVideoPath];
@@ -282,7 +298,7 @@
 }
 
 -(void)previewCaptureVideo {
-    NSLog(@"预览录制");
+    NSLog(@"预览录制:%@",self.customVideoPath);
     self.previewButton.hidden = true;
     NSString * outputFilePath = self.customVideoPath;
     NSURL *outputURL = [NSURL fileURLWithPath:outputFilePath];
@@ -301,6 +317,7 @@
 }
 
 -(void)preparePreview {
+    self.previewButton.hidden = false;
     self.videoLayer.hidden = true;
     self.playerLayer.hidden = false;
 }
@@ -341,9 +358,14 @@
 
 #pragma mark -delegate
 
+-(void)captureOutput:(AVCaptureFileOutput *)output didStartRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections{
+     NSLog(@"代理录制开始");
+}
 -(void)captureOutput:(AVCaptureFileOutput *)output didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections error:(NSError *)error {
     [self preparePreview];
     [self calculationFileSize: self.customVideoPath];
+    NSLog(@"结束录像:self.customVideoPath: %@",self.customVideoPath);
+    NSLog(@"代理录制结束");
 }
 
 
@@ -354,7 +376,7 @@
 }
 
 -(void)restartRecordDelegate {
-    [self restartRecordDelegate];
+    [self restartRecord];
 }
 -(void)cancelRecordDelegate {
     [self stopRecord];

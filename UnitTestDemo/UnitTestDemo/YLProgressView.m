@@ -45,10 +45,11 @@
         [self.layer addSublayer: self.shapeLayer];
         self.shapeLayer.borderWidth = 1;
         self.shapeLayer.lineWidth = 2;
-        self.shapeLayer.fillColor = [[[UIColor blackColor] colorWithAlphaComponent: 0.6] CGColor];
+        self.shapeLayer.fillColor = [[UIColor clearColor] CGColor];
         self.shapeLayer.strokeColor = [[UIColor colorWithHexString: @"#2bb3e7"] CGColor];
         self.shapeLayer.borderColor = [[UIColor colorWithHexString: @"#2bb3e7"] CGColor];
         self.incInterval = 0.05;
+        self.timeLeftLabel = [UILabel new];
         self.timeLeftLabel.frame = CGRectMake(0, self.shapeLayer.lineWidth, frame.size.width, frame.size.height - self.shapeLayer.lineWidth);
         self.timeLeftLabel.textAlignment = NSTextAlignmentCenter;
         self.timeLeftLabel.textColor = [UIColor whiteColor];
@@ -71,14 +72,20 @@
     
 -(void)timerProgress {
     self.totalTimerInterval = self.totalTimerInterval - self.incInterval ;
-    self.showProgress =self.showProgress -  self.startProgress * (self.totalTimerInterval/self.totalTime);
+    self.showProgress = self.showProgress -  self.startProgress * (self.incInterval/self.totalTime);
+    
     NSInteger second =  ((NSInteger )(self.totalTimerInterval * 100)) / 100;
     NSInteger microsecond = ((NSInteger )(self.totalTimerInterval * 100)) % 100;
-    self.timeLeftLabel.text = [NSString stringWithFormat:@"%d″%2d", second,microsecond];
+    self.timeLeftLabel.text = [NSString stringWithFormat:@"%@″%2d", @(second),microsecond];
+    //NSLog(@"self.showProgress: %@  ===  self.timeLeftLabel.text : %@ ===self.totalTimerInterval:%@", @(self.showProgress),self.timeLeftLabel.text,@(self.totalTimerInterval));
     [self update: self.showProgress];
     if (self.totalTimerInterval < 0) {
         [self stopProgress];
     }
+}
+
+-(void)postNotification{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"YLProgressTimeOver" object:nil];
 }
 
 - (void)stopProgress {
@@ -86,7 +93,8 @@
         [_progressTimer invalidate];
         _progressTimer = nil;
         self.timeLeftLabel.text = @"";
-        [self update: 1];
+        [self update: 0];
+        [self postNotification];
     }
 }
 
@@ -105,9 +113,9 @@
 }
 
 -(UIBezierPath *)layooutPath {
-    double Two_M_pI = 2.0 * M_PI;
-    double startAngle = 0.75 * Two_M_pI;
-    double endAngle = startAngle + Two_M_pI;
+//    double Two_M_pI = 2.0 * M_PI;
+//    double startAngle = 0.75 * Two_M_pI;
+//    double endAngle = startAngle + Two_M_pI;
     
     CGFloat width = self.frame.size.width;
     CGFloat  borderWidth = self.shapeLayer.borderWidth;

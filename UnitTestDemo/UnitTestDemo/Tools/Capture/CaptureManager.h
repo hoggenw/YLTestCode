@@ -11,6 +11,7 @@
 #import <CoreMedia/CoreMedia.h>
 #import <AVFoundation/AVFoundation.h>
 #import <CoreMotion/CoreMotion.h>
+#import "AVAssetWriteManager.h"
 
 typedef NS_ENUM(NSUInteger, CaptureContextType)
 {
@@ -24,7 +25,7 @@ typedef NS_ENUM(NSUInteger, CaptureContextType)
 
 @optional
 
-
+-(void)onOutputSourceString:(NSString *)SourceString;
 -(void)onOutputFaceImage:(IFlyFaceImage*)img;
 -(void)observerContext:(CaptureContextType)type Changed:(BOOL)boolValue;
 
@@ -58,6 +59,7 @@ typedef NS_ENUM(NSUInteger, CaptureContextType)
 @property (nonatomic, readonly, getter = isSessionRunningAndDeviceAuthorized) BOOL sessionRunningAndDeviceAuthorized;
 @property (nonatomic) BOOL lockInterfaceRotation;
 @property (nonatomic) id runtimeErrorHandlingObserver;
+@property (nonatomic, strong, readwrite) NSString *videoUrl;
 
 
 // init CaptureSessionManager functions
@@ -71,5 +73,9 @@ typedef NS_ENUM(NSUInteger, CaptureContextType)
 // functions
 - (void)cameraToggle;
 + (AVCaptureVideoOrientation)interfaceOrientationToVideoOrientation:(UIInterfaceOrientation)orientation;
+
+- (void)startRecord;
+
+- (void)stopRecord;
 
 @end

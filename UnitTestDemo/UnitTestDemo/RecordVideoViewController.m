@@ -20,9 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.recordVideoView = [[YLRecordVideoView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+    self.recordVideoView = [[YLRecordVideoView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64)];
     self.recordVideoView.delegate = self;
     [self.view addSubview:self.recordVideoView];
+    if (self.videoUrl.length > 0) {
+        [self.recordVideoView preparePreview];
+        self.recordVideoView.customVideoPath = self.videoUrl;
+    }
     // Do any additional setup after loading the view.
 }
 

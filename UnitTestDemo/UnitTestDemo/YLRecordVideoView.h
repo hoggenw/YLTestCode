@@ -13,10 +13,13 @@
 
 @property (nonatomic, assign) YLVideoQuality  videoQuality;
 @property (nonatomic, weak)id<YLRecordVideoChoiceDelegate> delegate;
+@property (nonatomic, copy) NSString *customVideoPath;
 
 -(void)startRecord;
 -(void)stopRecord ;
 -(void)restartRecord;
 -(void)previewCaptureVideo;
+-(void)choiceVideoDelegate;
+-(void)preparePreview;
 
 @end

@@ -13,11 +13,15 @@
 #import "UIImage+Extensions.h"
 #import "PermissionDetector.h"
 #import "IFlyFaceImage.h"
-
+#import "DemoPreDefine.h"
 //custom Context
 static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDeviceAuthorizedContext;
 
-@interface CaptureManager ()<AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface CaptureManager ()<AVCaptureVideoDataOutputSampleBufferDelegate,AVAssetWriteManagerDelegate>
+
+@property (nonatomic, strong)AVAssetWriteManager *writeManager;
+@property (nonatomic, assign) FMVideoViewType viewType;
+@property (nonatomic, assign) FMRecordState recordState;
 
 @end
 
@@ -32,8 +36,13 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 {
     if ((self = [super init])) {
         self.session=[[AVCaptureSession alloc] init];
+        if ([self.session canSetSessionPreset:AVCaptureSessionPresetHigh]) {//设置分辨率
+            self.session.sessionPreset=AVCaptureSessionPresetHigh;
+        }
+        _viewType = TypeFullScreen;
         self.lockInterfaceRotation=NO;
         self.previewLayer=[[AVCaptureVideoPreviewLayer alloc] initWithSession:self.session];
+        self.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     }
     return self;
 }
@@ -41,6 +50,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 - (void)dealloc
 {
     [self teardown];
+    [[NSNotificationCenter defaultCenter] removeObserver: self];
 }
 
 #pragma mark -
@@ -48,6 +58,9 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 {
     // Check for device authorization
     [self checkDeviceAuthorizationStatus];
+    //1.清除存储文件地址
+    [self setUpInit];
+    
     
     // 这里使用CoreMotion来获取设备方向以兼容iOS7.0设备
     self.motionManager = [[CMMotionManager alloc] init];
@@ -75,7 +88,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
         if([session canSetSessionPreset:AVCaptureSessionPreset640x480]){
             [session setSessionPreset:AVCaptureSessionPreset640x480];
         }
-
+        ///2. 设置视频的输入 =====
         NSError *error = nil;
         AVCaptureDevice *videoDevice = [CaptureManager deviceWithMediaType:AVMediaTypeVideo preferringPosition:AVCaptureDevicePositionFront];
         
@@ -88,20 +101,27 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
             [session addInput:videoDeviceInput];
             [self setVideoDeviceInput:videoDeviceInput];
         }
+        ///2. 设置视频的输入 =====结束
         
+        ///3. 设置音频的输入 ======展示不需要
+        ///3. 设置音频的输入 ======
+        
+        ///4.添加写入文件的fileoutput ======
          //output device
         AVCaptureVideoDataOutput *videoDataOutput = [[AVCaptureVideoDataOutput alloc] init];
+        videoDataOutput.alwaysDiscardsLateVideoFrames = YES;
         if ([session canAddOutput:videoDataOutput]){
             [session addOutput:videoDataOutput];
             AVCaptureConnection *connection = [videoDataOutput connectionWithMediaType:AVMediaTypeVideo];
             if ([connection isVideoStabilizationSupported]){
-                [connection setEnablesVideoStabilizationWhenAvailable:YES];
+               connection.preferredVideoStabilizationMode = AVCaptureVideoStabilizationModeAuto;
             }
             
             if ([connection isVideoOrientationSupported]){
                 connection.videoOrientation = AVCaptureVideoOrientationLandscapeLeft;
             }
             
+              ///4.添加写入文件的fileoutput ======
             
             // Configure your output.
             
@@ -120,6 +140,59 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     
 }
 
+//初始化设置
+- (void)setUpInit
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterBack) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becomeActive) name:UIApplicationWillEnterForegroundNotification object:nil];
+    [self clearFile];
+     // _recordState = FMRecordStateInit;
+
+}
+-(NSString *)recordVideoPath{
+    NSString *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask , true).firstObject;
+    NSString * name = [self randomUpperCaseString: 32];
+    NSString * pathString = [NSString stringWithFormat:@"%@/%@.mp4", documentsPath,RECORDFILRSTRINGNAME];
+    return  pathString;
+}
+
+-(NSString *)randomUpperCaseString:(NSInteger )length{
+    NSMutableString *resultString = [NSMutableString string];
+    for (int i = 0; i < length;  i++) {
+        NSInteger randomNumber = arc4random()%26 + 65;
+        NSString * randomChar = [NSString stringWithFormat:@"%c",randomNumber];
+        [resultString appendString: randomChar];
+        
+    }
+    NSLog(@"随机文件名：%@",resultString);
+    return resultString;
+}
+
+#pragma  mark - TODO
+- (void)enterBack
+{
+    self.videoUrl = nil;
+    [self.session stopRunning];
+    [self.writeManager destroyWrite];
+}
+#pragma  mark - TODO
+- (void)becomeActive
+{
+    [self reset];
+}
+
+//清空文件夹
+- (void)clearFile
+{
+    NSString * path = [self recordVideoPath];
+    if ([[NSFileManager defaultManager] fileExistsAtPath: path]) {
+        if ([[NSFileManager defaultManager] removeItemAtPath:path error: nil]) {
+            NSLog(@"删除文件%@成功",path);
+
+        }
+    }
+}
+
 - (void)teardown
 {
     [self.session stopRunning];
@@ -133,6 +206,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     
     [self.motionManager stopAccelerometerUpdates];
     self.motionManager=nil;
+    
 }
 
 - (void)addObserver
@@ -149,7 +223,61 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
             });
         }]];
         [self.session startRunning];
+        [self setUpWriter];
     });
+}
+
+- (void)setUpWriter
+{
+    self.videoUrl = [self recordVideoPath];
+    self.writeManager = [[AVAssetWriteManager alloc] initWithURL:[[NSURL alloc] initFileURLWithPath: self.videoUrl] viewType:_viewType];
+    self.writeManager.delegate = self;
+    [self startRecord];
+
+}
+
+- (void)finishWriting
+{
+    [self.session stopRunning];
+    self.recordState = FMRecordStateFinish;
+}
+
+- (void)updateWritingProgress:(CGFloat)progress { 
+    
+}
+
+
+- (void)startRecord
+{
+    if (self.recordState == FMRecordStateInit) {
+        [self.writeManager startWrite];
+        self.recordState = FMRecordStateRecording;
+        NSLog(@"开始录制： %@",self.videoUrl);
+
+    }
+}
+
+- (void)stopRecord
+{
+
+    [self.writeManager stopWrite];
+    [self.session stopRunning];
+    self.recordState = FMRecordStateFinish;
+    if ([self.delegate respondsToSelector:@selector(onOutputSourceString:)]) {
+        [self.delegate onOutputSourceString: self.videoUrl];
+    }
+
+
+}
+
+
+
+- (void)reset
+{
+    self.recordState = FMRecordStateInit;
+    [self.session startRunning];
+    [self setUpWriter];
+
 }
 
 - (void)removeObserver
@@ -314,6 +442,28 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
         IFlyFaceImage* faceImage=[self faceImageFromSampleBuffer:sampleBuffer];
         [self.delegate onOutputFaceImage:faceImage];
         faceImage=nil;
+    }
+    @autoreleasepool {
+        
+        //视频
+        if (connection == [self.videoDataOutput connectionWithMediaType:AVMediaTypeVideo]) {
+            
+            if (!self.writeManager.outputVideoFormatDescription) {
+                @synchronized(self) {
+                    CMFormatDescriptionRef formatDescription = CMSampleBufferGetFormatDescription(sampleBuffer);
+                    self.writeManager.outputVideoFormatDescription = formatDescription;
+                }
+            } else {
+                @synchronized(self) {
+                    if (self.writeManager.writeState == FMRecordStateRecording) {
+                        [self.writeManager appendSampleBuffer:sampleBuffer ofMediaType:AVMediaTypeVideo];
+                    }
+                    
+                }
+            }
+            
+            
+        }
     }
 }
 
