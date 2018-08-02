@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		11A9DE262113002C004EC8A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9DE252113002C004EC8A7 /* AppDelegate.m */; };
 		11A9DE292113002C004EC8A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9DE282113002C004EC8A7 /* ViewController.m */; };
-		11A9DE2C2113002C004EC8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A9DE2A2113002C004EC8A7 /* Main.storyboard */; };
 		11A9DE2E2113002E004EC8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A9DE2D2113002E004EC8A7 /* Assets.xcassets */; };
-		11A9DE312113002E004EC8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A9DE2F2113002E004EC8A7 /* LaunchScreen.storyboard */; };
 		11A9DE342113002E004EC8A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9DE332113002E004EC8A7 /* main.m */; };
 		11A9DE3E2113002E004EC8A7 /* FaceRecognitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9DE3D2113002E004EC8A7 /* FaceRecognitionTests.m */; };
 /* End PBXBuildFile section */
@@ -32,9 +30,7 @@
 		11A9DE252113002C004EC8A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		11A9DE272113002C004EC8A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		11A9DE282113002C004EC8A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		11A9DE2B2113002C004EC8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11A9DE2D2113002E004EC8A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		11A9DE302113002E004EC8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11A9DE322113002E004EC8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11A9DE332113002E004EC8A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11A9DE392113002E004EC8A7 /* FaceRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +81,7 @@
 				11A9DE252113002C004EC8A7 /* AppDelegate.m */,
 				11A9DE272113002C004EC8A7 /* ViewController.h */,
 				11A9DE282113002C004EC8A7 /* ViewController.m */,
-				11A9DE2A2113002C004EC8A7 /* Main.storyboard */,
 				11A9DE2D2113002E004EC8A7 /* Assets.xcassets */,
-				11A9DE2F2113002E004EC8A7 /* LaunchScreen.storyboard */,
 				11A9DE322113002E004EC8A7 /* Info.plist */,
 				11A9DE332113002E004EC8A7 /* main.m */,
 			);
@@ -183,9 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A9DE312113002E004EC8A7 /* LaunchScreen.storyboard in Resources */,
 				11A9DE2E2113002E004EC8A7 /* Assets.xcassets in Resources */,
-				11A9DE2C2113002C004EC8A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,25 +218,6 @@
 			targetProxy = 11A9DE3A2113002E004EC8A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		11A9DE2A2113002C004EC8A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11A9DE2B2113002C004EC8A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		11A9DE2F2113002E004EC8A7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11A9DE302113002E004EC8A7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		11A9DE402113002E004EC8A7 /* Debug */ = {
@@ -364,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD59NK3467;
 				INFOPLIST_FILE = FaceRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD59NK3467;
 				INFOPLIST_FILE = FaceRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
