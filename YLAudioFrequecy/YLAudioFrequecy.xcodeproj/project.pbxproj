@@ -45,6 +45,7 @@
 		114F02881ECECD8D0039F60C /* FooView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F02871ECECD8D0039F60C /* FooView.m */; };
 		114F028B1ECEDAB90039F60C /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F028A1ECEDAB90039F60C /* Man.m */; };
 		114F028E1ED271080039F60C /* TestGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F028D1ED271080039F60C /* TestGCD.m */; };
+		11A9DE172112DF52004EC8A7 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9DE162112DF52004EC8A7 /* FileManager.m */; };
 		11B4DD0E2005F61800D01EEC /* TestDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B4DD0D2005F61800D01EEC /* TestDevice.m */; };
 		11CC77FE1FCFDC2500BE3017 /* YLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CC77FD1FCFDC2500BE3017 /* YLProgressView.m */; };
 		11CC78011FCFDC8000BE3017 /* YLWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CC78001FCFDC8000BE3017 /* YLWKWebView.m */; };
@@ -145,6 +146,8 @@
 		114F028A1ECEDAB90039F60C /* Man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
 		114F028C1ED271080039F60C /* TestGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCD.h; sourceTree = "<group>"; };
 		114F028D1ED271080039F60C /* TestGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCD.m; sourceTree = "<group>"; };
+		11A9DE152112DF52004EC8A7 /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		11A9DE162112DF52004EC8A7 /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 		11B4DD0C2005F61800D01EEC /* TestDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDevice.h; sourceTree = "<group>"; };
 		11B4DD0D2005F61800D01EEC /* TestDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDevice.m; sourceTree = "<group>"; };
 		11CC77FC1FCFDC2500BE3017 /* YLProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLProgressView.h; sourceTree = "<group>"; };
@@ -330,6 +333,8 @@
 				11B4DD0D2005F61800D01EEC /* TestDevice.m */,
 				11E7987620F34B02007F2D7F /* YLImageMagnification.h */,
 				11E7987720F34B02007F2D7F /* YLImageMagnification.m */,
+				11A9DE152112DF52004EC8A7 /* FileManager.h */,
+				11A9DE162112DF52004EC8A7 /* FileManager.m */,
 			);
 			path = YLAudioFrequecy;
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 				111CB1BF2021D2F10035D245 /* UIColor+Extension.m in Sources */,
 				11CC78011FCFDC8000BE3017 /* YLWKWebView.m in Sources */,
 				111CB1D12022E8150035D245 /* MicrophoneTopView.m in Sources */,
+				11A9DE172112DF52004EC8A7 /* FileManager.m in Sources */,
 				111F51B41FEBBA5A00938567 /* NSObject+YLKVO.m in Sources */,
 				87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */,
 				111CB1D42022E82F0035D245 /* MicrophoneBottomView.m in Sources */,

@@ -69,6 +69,7 @@
 		111BA219211057CE00058979 /* XCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA218211057CE00058979 /* XCFileManager.m */; };
 		111BA21E21105AE000058979 /* FMRecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA21B21105AE000058979 /* FMRecordProgressView.m */; };
 		111BA21F21105AE000058979 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA21C21105AE000058979 /* UIColor+Hex.m */; };
+		11A9DE142112DCBC004EC8A7 /* YLRecordVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9DE132112DCBC004EC8A7 /* YLRecordVideoManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,8 @@
 		111BA21B21105AE000058979 /* FMRecordProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRecordProgressView.m; sourceTree = "<group>"; };
 		111BA21C21105AE000058979 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		111BA21D21105AE000058979 /* FMRecordProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRecordProgressView.h; sourceTree = "<group>"; };
+		11A9DE122112DCBC004EC8A7 /* YLRecordVideoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRecordVideoManager.h; sourceTree = "<group>"; };
+		11A9DE132112DCBC004EC8A7 /* YLRecordVideoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRecordVideoManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +265,8 @@
 				111BA1CF210F027D00058979 /* YLProgressView.m */,
 				111BA1F1210F096600058979 /* YLRecordControlView.h */,
 				111BA1F2210F096600058979 /* YLRecordControlView.m */,
+				11A9DE122112DCBC004EC8A7 /* YLRecordVideoManager.h */,
+				11A9DE132112DCBC004EC8A7 /* YLRecordVideoManager.m */,
 				111BA1F4210F162500058979 /* RecordVideoViewController.h */,
 				111BA1F5210F162500058979 /* RecordVideoViewController.m */,
 			);
@@ -563,6 +568,7 @@
 				111BA1EC210F048E00058979 /* NSDate+Extension.m in Sources */,
 				111BA2132110573E00058979 /* FMWriteVideoController.m in Sources */,
 				111BA1A9210AF46100058979 /* CalculatorTools.m in Sources */,
+				11A9DE142112DCBC004EC8A7 /* YLRecordVideoManager.m in Sources */,
 				111BA1CD210EAA7300058979 /* YLRecordVideoView.m in Sources */,
 				111BA1F0210F048E00058979 /* UIView+Extension.m in Sources */,
 				11153C9D1FDF7B0400BC79A3 /* AppDelegate.m in Sources */,

@@ -431,17 +431,32 @@
     
     //此处清理图片数据，以防止因为不必要的图片数据的反复传递造成的内存卷积占用。
     faceImg.data=nil;
-    
+/* 直接调用方法的方式有两种：performSelector:withObject: 和 NSInvocation。
+ * NSInvocation是一个消息调用类，它包含了所有OC消息的成分：target、selector、参数以及返回值。NSInvocation可以将消息转换成一个对象，消息的每一个参数能够直接设定，而且当一个NSInvocation对象调度时返回值是可以自己设定的。一个NSInvocation对象能够重复的调度不同的目标(target)，而且它的selector也能够设置为另外一个方法签名。NSInvocation遵守NSCoding协议，但是仅支持NSPortCoder编码，不支持归档型操作
+ *
+ *
+ */
+    //// 通过NSMethodSignature对象创建NSInvocation对象，NSMethodSignature为方法签名类
     NSMethodSignature *sig = [self methodSignatureForSelector:@selector(praseTrackResult:OrignImage:)];
     if (!sig) return;
     NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:sig];
+    //// 设置消息调用者，注意：target最好不要是局部变量
     [invocation setTarget:self];
+    //// 设置要调用的消息
     [invocation setSelector:@selector(praseTrackResult:OrignImage:)];
+    //// 设置消息参数. 参数必须从第2个索引开始，因为前两个已经被target和selector使用
     [invocation setArgument:&strResult atIndex:2];
     [invocation setArgument:&faceImg atIndex:3];
+    //// 保留参数，它会将传入的所有参数以及target都retain一遍
     [invocation retainArguments];
+    /// 发送消息，即执行方法
     [invocation performSelectorOnMainThread:@selector(invoke) withObject:nil  waitUntilDone:NO];
     faceImg=nil;
+    
+    // 5. 获取方法返回值
+//    NSNumber *num = nil;
+//    [invocation getReturnValue:&num];
+//    NSLog(@"最大数为：%@",num);
 }
 
 #pragma mark --- 判断位置
