@@ -187,6 +187,7 @@
         [self stopWrite];
         if (self.delegate && [self.delegate respondsToSelector:@selector(finishWriting)]) {
             [self.delegate finishWriting];
+            
         }
         return;
     }

@@ -28,6 +28,7 @@ typedef NS_ENUM(NSUInteger, CaptureContextType)
 -(void)onOutputSourceString:(NSString *)SourceString;
 -(void)onOutputFaceImage:(IFlyFaceImage*)img;
 -(void)observerContext:(CaptureContextType)type Changed:(BOOL)boolValue;
+-(void)timeOverForRecord;
 
 @end
 

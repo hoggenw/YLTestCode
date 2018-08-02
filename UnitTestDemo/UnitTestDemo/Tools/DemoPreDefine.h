@@ -24,7 +24,7 @@
 #define VIDEO_FOLDER @"videoFolder" //视频录制存放文件夹
 
 //video
-#define RECORD_MAX_TIME 8.0           //最长录制时间
+#define RECORD_MAX_TIME 10.0           //最长录制时间
 #define TIMER_INTERVAL 0.05         //计时器刷新频率
 
 #define USER_APPID           @"5b5a8028"

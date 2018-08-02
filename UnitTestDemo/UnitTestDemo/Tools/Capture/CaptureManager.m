@@ -236,10 +236,20 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 
 }
 
+#pragma mark - 自动停止的地方
 - (void)finishWriting
 {
+  
+    [self.writeManager stopWrite];
+    [self.writeManager destroyWrite];
+    self.writeManager = nil;
     [self.session stopRunning];
     self.recordState = FMRecordStateFinish;
+    [self clearFile];
+    if ([self.delegate respondsToSelector:@selector(timeOverForRecord)]) {
+        [self.delegate timeOverForRecord];
+    }
+    [self reset];
 }
 
 - (void)updateWritingProgress:(CGFloat)progress { 
@@ -269,8 +279,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 
 
 }
-
-
 
 - (void)reset
 {

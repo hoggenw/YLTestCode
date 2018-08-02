@@ -38,7 +38,7 @@
     UIImageView *imageView;//照片展示
     
     BOOL isCrossBorder;//判断是否越界
-    BOOL isJudgeMouth;//判断张嘴操作完成
+   // BOOL isJudgeMouth;//判断张嘴操作完成
     BOOL isShakeHead;//判断摇头操作完成
     
     //嘴角坐标
@@ -144,12 +144,12 @@
     //图片放置View
     imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 10, ScreenWidth, ScreenWidth*4/3)];
     [backView addSubview:imageView];
-    
-    //button上传图片
-    [self buttonWithTitle:@"上传图片" frame:CGRectMake(ScreenWidth/2-150, CGRectGetMaxY(imageView.frame)+10, 100, 30) action:@selector(didClickUpPhoto) AddView:backView];
-    
-    //重拍图片按钮
-    [self buttonWithTitle:@"重拍" frame:CGRectMake(ScreenWidth/2+50, CGRectGetMaxY(imageView.frame)+10, 100, 30) action:@selector(didClickPhotoAgain) AddView:backView];
+//
+//    //button上传图片
+//    [self buttonWithTitle:@"上传图片" frame:CGRectMake(ScreenWidth/2-150, CGRectGetMaxY(imageView.frame)+10, 100, 30) action:@selector(didClickUpPhoto) AddView:backView];
+//
+//    //重拍图片按钮
+//    [self buttonWithTitle:@"重拍" frame:CGRectMake(ScreenWidth/2+50, CGRectGetMaxY(imageView.frame)+10, 100, 30) action:@selector(didClickPhotoAgain) AddView:backView];
     
     
     
@@ -461,7 +461,7 @@
     //    }else{
     //
     //    }
-    if (isJudgeMouth != YES) {
+    if (takePhotoNumber < 2) {
         self.textLabel.text = @"请重复张嘴动作...";
         //[self tomAnimationWithName:@"openMouth" count:2];
 #pragma mark --- 限定脸部位置为中间位置
@@ -478,13 +478,9 @@
 //            [self tomAnimationWithName:@"shakeHead" count:4];
 //            number = 0;
 //        }
-    else{
-        takePhotoNumber += 1;
-        if (takePhotoNumber == 2) {
-            [self timeBegin];
-           
-            // [self didClickTakePhoto];
-        }
+    else if(takePhotoNumber == 2){
+        NSLog(@"=======");
+        [self.captureManager stopRecord];
     }
     isCrossBorder = NO;
     return NO;
@@ -505,10 +501,10 @@
     if ([key isEqualToString:@"mouth_right_corner"]) {
         rightX = p.x;
     }
-    if (rightX && leftX && upperY && lowerY && isJudgeMouth != YES) {
-        
+    if (rightX && leftX && upperY && lowerY && takePhotoNumber < 2) {
+//        NSLog(@"================= number:%@ ====================",@(number));
         number ++;
-        if (number == 1 || number == 300 || number == 600 || number ==900) {
+        if (number == 1 || number == 200 || number == 400 || number == 600 || number == 800 || number == 1000 || number == 1200 || number == 1400  || number == 1600) {
             //延时操作
             //            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
@@ -516,7 +512,8 @@
             mouthHeightF = lowerY - upperY < 0 ? abs(lowerY - upperY) : lowerY - upperY;
             //NSLog(@"%d,%d",mouthWidthF,mouthHeightF);
             //            });
-        }else if (number > 1200) {
+        }else if (number > 1700) {
+//            NSLog(@"================= 清除数据 ====================");
             [self delateNumber];//时间过长时重新清除数据
             //[self tomAnimationWithName:@"openMouth" count:2];
         }
@@ -528,9 +525,10 @@
         if (mouthWidth && mouthWidthF) {
             //张嘴验证完毕
             if (mouthHeight - mouthHeightF >= 20 && mouthWidthF - mouthWidth >= 15) {
-                isJudgeMouth = YES;
-                
-                imgView.animationImages = nil;
+                takePhotoNumber += 1;
+                mouthWidthF = 0;
+                mouthHeightF = 0;
+//                NSLog(@"================= takePhotoNumber：%@ ====================",@(takePhotoNumber));
             }
         }
     }
@@ -539,7 +537,7 @@
 #pragma mark --- 判断是否摇头
 -(void)identifyYourFaceShakeHead:(NSString *)key p:(CGPoint )p
 {
-    if ([key isEqualToString:@"mouth_middle"] && isJudgeMouth == YES) {
+    if ([key isEqualToString:@"mouth_middle"] && takePhotoNumber == 2) {
         
         if (bigNumber == 0 ) {
             firstNumber = p.x;
@@ -559,44 +557,44 @@
 }
 
 #pragma mark --- 拍照
--(void)didClickTakePhoto
-{
-    AVCaptureConnection *myVideoConnection = nil;
-    
-    //从 AVCaptureStillImageOutput 中取得正确类型的 AVCaptureConnection
-    for (AVCaptureConnection *connection in myStillImageOutput.connections) {
-        for (AVCaptureInputPort *port in [connection inputPorts]) {
-            if ([[port mediaType] isEqual:AVMediaTypeVideo]) {
-                
-                myVideoConnection = connection;
-                break;
-            }
-        }
-    }
-    
-    //撷取影像（包含拍照音效）
-    [myStillImageOutput captureStillImageAsynchronouslyFromConnection:myVideoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
-        
-        //完成撷取时的处理程序(Block)
-        if (imageDataSampleBuffer) {
-            NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
-            
-            //取得的静态影像
-            UIImage *myImage = [[UIImage alloc] initWithData:imageData];
-            imageView.backgroundColor = [UIColor lightGrayColor];
-            imageView.image = myImage;
-            
-            imageView.frame = CGRectMake(0, 10, ScreenWidth, ScreenWidth*myImage.size.height/myImage.size.width);
-            
-            [self.view addSubview:backView];
-            
-            //停止摄像
-            [self.previewLayer.session stopRunning];
-            
-            [self delateNumber];
-        }
-    }];
-}
+//-(void)didClickTakePhoto
+//{
+//    AVCaptureConnection *myVideoConnection = nil;
+//
+//    //从 AVCaptureStillImageOutput 中取得正确类型的 AVCaptureConnection
+//    for (AVCaptureConnection *connection in myStillImageOutput.connections) {
+//        for (AVCaptureInputPort *port in [connection inputPorts]) {
+//            if ([[port mediaType] isEqual:AVMediaTypeVideo]) {
+//
+//                myVideoConnection = connection;
+//                break;
+//            }
+//        }
+//    }
+//
+//    //撷取影像（包含拍照音效）
+//    [myStillImageOutput captureStillImageAsynchronouslyFromConnection:myVideoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+//
+//        //完成撷取时的处理程序(Block)
+//        if (imageDataSampleBuffer) {
+//            NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+//
+//            //取得的静态影像
+//            UIImage *myImage = [[UIImage alloc] initWithData:imageData];
+//            imageView.backgroundColor = [UIColor lightGrayColor];
+//            imageView.image = myImage;
+//
+//            imageView.frame = CGRectMake(0, 10, ScreenWidth, ScreenWidth*myImage.size.height/myImage.size.width);
+//
+//            [self.view addSubview:backView];
+//
+//            //停止摄像
+//            [self.previewLayer.session stopRunning];
+//
+//            [self delateNumber];
+//        }
+//    }];
+//}
 
 #pragma mark --- 重拍按钮点击事件
 -(void)didClickPhotoAgain
@@ -611,23 +609,23 @@
 
     [backView removeFromSuperview];
 
-    isJudgeMouth = NO;
+    takePhotoNumber = 0;
     isShakeHead = NO;
     
 }
 
 #pragma mark --- 上传图片按钮点击事件
--(void)didClickUpPhoto
-{
-    //    UIAlertView *alt = [[UIAlertView alloc]initWithTitle:@"提示" message:@"验证完成" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
-    //    [alt show];
-    
-    //上传照片失败
-    //    [self.faceDelegate sendFaceImageError];
-    //上传照片成功
-    [self.faceDelegate sendFaceImage:imageView.image];
-    [self.navigationController popViewControllerAnimated:YES];
-}
+//-(void)didClickUpPhoto
+//{
+//    //    UIAlertView *alt = [[UIAlertView alloc]initWithTitle:@"提示" message:@"验证完成" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+//    //    [alt show];
+//
+//    //上传照片失败
+//    //    [self.faceDelegate sendFaceImageError];
+//    //上传照片成功
+//    [self.faceDelegate sendFaceImage:imageView.image];
+//    [self.navigationController popViewControllerAnimated:YES];
+//}
 
 #pragma mark - 点击『验证完成』AlertView
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -655,37 +653,11 @@
     smallNumber = 0;
     bigNumber = 0;
     firstNumber = 0;
-    
-    imgView.animationImages = nil;
-    imgView.image = [UIImage imageNamed:@"shakeHead0"];
+//    
+//    imgView.animationImages = nil;
+//    imgView.image = [UIImage imageNamed:@"shakeHead0"];
 }
 
-#pragma mark --- 计时开始
--(void)timeBegin
-{
-    timeCount = 3;
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
-    self.textLabel.text = [NSString stringWithFormat:@"%ld s后拍照...", (long)timeCount];
-    
-}
-
-#pragma mark --- 时间变为0，拍照
-- (void)timerFireMethod:(NSTimer *)theTimer
-{
-    timeCount --;
-    if(timeCount >= 1)
-    {
-        self.textLabel.text = [NSString  stringWithFormat:@"%ld s后拍照...",(long)timeCount];
-    }
-    else
-    {
-        [theTimer invalidate];
-        theTimer=nil;
-        [self.captureManager stopRecord];
-//       [self.recordVideoView stopRecord];
-        //[self didClickTakePhoto];
-    }
-}
 
 #pragma mark --- 创建button公共方法
 /**使用示例:[self buttonWithTitle:@"点 击" frame:CGRectMake((self.view.frame.size.width - 150)/2, (self.view.frame.size.height - 40)/3, 150, 40) action:@selector(didClickButton) AddView:self.view];*/
@@ -701,36 +673,36 @@
 }
 
 #pragma mark --- UIImageView显示gif动画
-- (void)tomAnimationWithName:(NSString *)name count:(NSInteger)count
-{
-    // 如果正在动画，直接退出
-    if ([imgView isAnimating]) return;
-    
-    // 动画图片的数组
-    NSMutableArray *arrayM = [NSMutableArray array];
-    
-    // 添加动画播放的图片
-    for (int i = 0; i < count; i++) {
-        // 图像名称
-        NSString *imageName = [NSString stringWithFormat:@"%@%d.png", name, i];
-        //        UIImage *image = [UIImage imageNamed:imageName];
-        // ContentsOfFile需要全路径
-        NSString *path = [[NSBundle mainBundle] pathForResource:imageName ofType:nil];
-        UIImage *image = [UIImage imageWithContentsOfFile:path];
-        
-        [arrayM addObject:image];
-    }
-    
-    // 设置动画数组
-    imgView.animationImages = arrayM;
-    // 重复1次
-    imgView.animationRepeatCount = 100;
-    // 动画时长
-    imgView.animationDuration = imgView.animationImages.count * 0.75;
-    
-    // 开始动画
-    [imgView startAnimating];
-}
+//- (void)tomAnimationWithName:(NSString *)name count:(NSInteger)count
+//{
+//    // 如果正在动画，直接退出
+//    if ([imgView isAnimating]) return;
+//
+//    // 动画图片的数组
+//    NSMutableArray *arrayM = [NSMutableArray array];
+//
+//    // 添加动画播放的图片
+//    for (int i = 0; i < count; i++) {
+//        // 图像名称
+//        NSString *imageName = [NSString stringWithFormat:@"%@%d.png", name, i];
+//        //        UIImage *image = [UIImage imageNamed:imageName];
+//        // ContentsOfFile需要全路径
+//        NSString *path = [[NSBundle mainBundle] pathForResource:imageName ofType:nil];
+//        UIImage *image = [UIImage imageWithContentsOfFile:path];
+//
+//        [arrayM addObject:image];
+//    }
+//
+//    // 设置动画数组
+//    imgView.animationImages = arrayM;
+//    // 重复1次
+//    imgView.animationRepeatCount = 100;
+//    // 动画时长
+//    imgView.animationDuration = imgView.animationImages.count * 0.75;
+//
+//    // 开始动画
+//    [imgView startAnimating];
+//}
 
 -(void)dealloc
 {
@@ -751,6 +723,10 @@
     //上传照片失败
     //    [self.faceDelegate sendFaceImageError];
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)timeOverForRecord{
+    [self delateNumber];
 }
 
 -(void)calculationFileSize:(NSString * )path {
