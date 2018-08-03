@@ -356,11 +356,11 @@
 			children = (
 				111BA19C210AF46000058979 /* IFlyFaceImage.h */,
 				111BA198210AF46000058979 /* IFlyFaceImage.m */,
-				111BA199210AF46000058979 /* UIImage+compress.m */,
-				111BA19A210AF46000058979 /* UIImage+Extensions.h */,
-				111BA19B210AF46000058979 /* CalculatorTools.m */,
 				111BA19D210AF46000058979 /* UIImage+compress.h */,
+				111BA199210AF46000058979 /* UIImage+compress.m */,
 				111BA19E210AF46000058979 /* CalculatorTools.h */,
+				111BA19B210AF46000058979 /* CalculatorTools.m */,
+				111BA19A210AF46000058979 /* UIImage+Extensions.h */,
 				111BA19F210AF46000058979 /* UIImage+Extensions.m */,
 			);
 			path = Image;

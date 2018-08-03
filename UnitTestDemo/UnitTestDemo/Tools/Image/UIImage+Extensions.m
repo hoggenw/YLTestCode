@@ -341,7 +341,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
 {
     return [self imageRotatedByDegrees:RadiansToDegrees(radians)];
 }
-
+//逐度旋转图像
 - (UIImage *)imageRotatedByDegrees:(CGFloat)degrees
 {
     // calculate the size of the rotated view's containing box for our drawing space
@@ -374,7 +374,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
     return newImage;
     
 }
-
+//水平翻转
  - (UIImage *)horizontalFlip {
      UIGraphicsBeginImageContext(self.size);
      CGContextRef current_context = UIGraphicsGetCurrentContext();
@@ -385,7 +385,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
      UIGraphicsEndImageContext();
      return flipped_img;
  }
-
+//垂直翻转
 - (UIImage *)verticalFlip{
     UIGraphicsBeginImageContext(self.size);
     CGContextRef current_context = UIGraphicsGetCurrentContext();

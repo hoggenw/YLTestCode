@@ -11,8 +11,8 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <QuartzCore/QuartzCore.h>
 #import "PermissionDetector.h"
-#import "UIImage+Extensions.h"
-#import "UIImage+compress.h"
+//#import "UIImage+Extensions.h"
+//#import "UIImage+compress.h"
 #import "iflyMSC/IFlyFaceSDK.h"
 #import "DemoPreDefine.h"
 #import "CaptureManager.h"

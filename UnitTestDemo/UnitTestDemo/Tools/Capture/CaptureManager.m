@@ -10,7 +10,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <OpenGLES/EAGL.h>
 #import <Endian.h>
-#import "UIImage+Extensions.h"
+//#import "UIImage+Extensions.h"
 #import "PermissionDetector.h"
 #import "IFlyFaceImage.h"
 #import "DemoPreDefine.h"
