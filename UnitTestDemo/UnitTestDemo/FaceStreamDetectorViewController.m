@@ -517,7 +517,7 @@
         rightX = p.x;
     }
     if (rightX && leftX && upperY && lowerY && takePhotoNumber < 2) {
-//        NSLog(@"================= number:%@ ====================",@(number));
+       NSLog(@"================= number:%@ ====================",@(number));
         number ++;
         if (number == 1 || number == 200 || number == 400 || number == 600 || number == 800 || number == 1000 || number == 1200 || number == 1400  || number == 1600) {
             //延时操作
@@ -541,9 +541,9 @@
             //张嘴验证完毕
             if (mouthHeight - mouthHeightF >= 20 && mouthWidthF - mouthWidth >= 15) {
                 takePhotoNumber += 1;
-                mouthWidthF = 0;
-                mouthHeightF = 0;
-//                NSLog(@"================= takePhotoNumber：%@ ====================",@(takePhotoNumber));
+//                mouthWidthF = 0;
+//                mouthHeightF = 0;
+               NSLog(@"================= takePhotoNumber：%@ ====================",@(takePhotoNumber));
             }
         }
     }

@@ -13,6 +13,7 @@
 #import "PermissionDetector.h"
 #import "DemoPreDefine.h"
 #import "CaptureManager.h"
+#import "ExtensionHeader.h"
 
 @interface ViewController ()<CaptureManagerDelegate,YLRecordVideoChoiceDelegate>
 {
@@ -198,6 +199,67 @@
     //开始摄像
     [self.captureManager setup];
     [self.captureManager addObserver];
+}
+
+-(void)onOutputSourceString:(NSString *)SourceString{
+    
+}
+#pragma mark - CaptureManagerDelegate
+-(void)onOutputFaceImage:(UIImage *)faceImg
+{
+    //NSLog(@"%@===%@",faceImg,NSStringFromCGSize( faceImg.size));
+    CIImage * ciiimage = [CIImage imageWithCGImage: faceImg.CGImage];
+    //2.设置人脸识别精度
+    NSDictionary* opts = [NSDictionary dictionaryWithObject:
+                          CIDetectorAccuracyHigh forKey:CIDetectorAccuracy];
+    CIDetector * detector = [CIDetector detectorOfType:CIFeatureTypeFace context:nil options:opts];
+    NSArray *features = [detector featuresInImage: ciiimage];
+    NSLog(@"(features.count : %@",@(features.count));
+    
+    [self.previewView removeAllSubViews];
+    //5.分析人脸识别数据
+    for (CIFaceFeature *faceFeature in features){
+        
+        //注意坐标的换算，CIFaceFeature计算出来的坐标的坐标系的Y轴与iOS的Y轴是相反的,需要自行处理
+        
+        // 标出脸部
+        CGFloat faceWidth = faceFeature.bounds.size.width;
+        UIView* faceView = [[UIView alloc] initWithFrame:faceFeature.bounds];
+        faceView.frame = CGRectMake(faceView.frame.origin.x, self.previewView.bounds.size.height-faceView.frame.origin.y - faceView.bounds.size.height, faceView.frame.size.width, faceView.frame.size.height);
+        faceView.layer.borderWidth = 1;
+        faceView.layer.borderColor = [[UIColor redColor] CGColor];
+        [self.previewView addSubview:faceView];
+        // 标出左眼
+//        if(faceFeature.hasLeftEyePosition) {
+//            UIView* leftEyeView = [[UIView alloc] initWithFrame:
+//                                   CGRectMake(faceFeature.leftEyePosition.x-faceWidth*0.15,
+//                                              self.imageView.bounds.size.height-(faceFeature.leftEyePosition.y-faceWidth*0.15)-faceWidth*0.3, faceWidth*0.3, faceWidth*0.3)];
+//            [leftEyeView setBackgroundColor:[[UIColor blueColor] colorWithAlphaComponent:0.3]];
+//            //            [leftEyeView setCenter:faceFeature.leftEyePosition];
+//            leftEyeView.layer.cornerRadius = faceWidth*0.15;
+//            [self.imageView  addSubview:leftEyeView];
+//        }
+//        // 标出右眼
+//        if(faceFeature.hasRightEyePosition) {
+//            UIView* leftEye = [[UIView alloc] initWithFrame:
+//                               CGRectMake(faceFeature.rightEyePosition.x-faceWidth*0.15,
+//                                          self.imageView.bounds.size.height-(faceFeature.rightEyePosition.y-faceWidth*0.15)-faceWidth*0.3, faceWidth*0.3, faceWidth*0.3)];
+//            [leftEye setBackgroundColor:[[UIColor blueColor] colorWithAlphaComponent:0.3]];
+//            leftEye.layer.cornerRadius = faceWidth*0.15;
+//            [self.imageView  addSubview:leftEye];
+//        }
+//        // 标出嘴部
+//        if(faceFeature.hasMouthPosition) {
+//            UIView* mouth = [[UIView alloc] initWithFrame:
+//                             CGRectMake(faceFeature.mouthPosition.x-faceWidth*0.2,
+//                                        self.imageView.bounds.size.height-(faceFeature.mouthPosition.y-faceWidth*0.2)-faceWidth*0.4, faceWidth*0.4, faceWidth*0.4)];
+//            [mouth setBackgroundColor:[[UIColor greenColor] colorWithAlphaComponent:0.3]];
+//            
+//            mouth.layer.cornerRadius = faceWidth*0.2;
+//            [self.imageView  addSubview:mouth];
+//        }
+        
+    }
 }
 
 

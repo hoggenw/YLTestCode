@@ -140,13 +140,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     
 }
 
--(UIBezierPath *)layooutPath {
-    double Two_M_pI = 2.0 * M_PI;
-    double startAngle = 0.75 * Two_M_pI;
-    double endAngle = startAngle + Two_M_pI;
-    return  [UIBezierPath bezierPathWithArcCenter: CGPointMake( width/2, width/2) radius: width/2 - borderWidth startAngle: startAngle endAngle: endAngle clockwise: YES];
-    
-}
 
 //
 ////初始化设置
