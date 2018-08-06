@@ -43,8 +43,8 @@
 }
 -(void)sendSourceString:(NSString *)sourceString{
     self.videoUrl = sourceString;
-   // NSData * data = [self getFileData: sourceString];
-    //NSLog(@"data.length : %@",@(data.length));
+    NSData * data = [self getFileData: sourceString];
+    NSLog(@"data.length : %@",@(data.length));
 
 }
 
