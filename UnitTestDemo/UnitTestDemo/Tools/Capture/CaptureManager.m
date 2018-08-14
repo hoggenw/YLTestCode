@@ -19,7 +19,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 
 @interface CaptureManager ()<AVCaptureVideoDataOutputSampleBufferDelegate,AVAssetWriteManagerDelegate>
 
-@property (nonatomic, strong)AVAssetWriteManager *writeManager;
+
 @property (nonatomic, assign) FMVideoViewType viewType;
 @property (nonatomic, assign) FMRecordState recordState;
 

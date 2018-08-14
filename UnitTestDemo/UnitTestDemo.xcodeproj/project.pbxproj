@@ -70,6 +70,7 @@
 		111BA21E21105AE000058979 /* FMRecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA21B21105AE000058979 /* FMRecordProgressView.m */; };
 		111BA21F21105AE000058979 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BA21C21105AE000058979 /* UIColor+Hex.m */; };
 		11A9DE142112DCBC004EC8A7 /* YLRecordVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9DE132112DCBC004EC8A7 /* YLRecordVideoManager.m */; };
+		11A9DEB1212156DC004EC8A7 /* OriginFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9DEB0212156DC004EC8A7 /* OriginFaceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +182,8 @@
 		111BA21D21105AE000058979 /* FMRecordProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRecordProgressView.h; sourceTree = "<group>"; };
 		11A9DE122112DCBC004EC8A7 /* YLRecordVideoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRecordVideoManager.h; sourceTree = "<group>"; };
 		11A9DE132112DCBC004EC8A7 /* YLRecordVideoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRecordVideoManager.m; sourceTree = "<group>"; };
+		11A9DEAF212156DC004EC8A7 /* OriginFaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OriginFaceViewController.h; sourceTree = "<group>"; };
+		11A9DEB0212156DC004EC8A7 /* OriginFaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OriginFaceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,8 @@
 				11A9DE132112DCBC004EC8A7 /* YLRecordVideoManager.m */,
 				111BA1F4210F162500058979 /* RecordVideoViewController.h */,
 				111BA1F5210F162500058979 /* RecordVideoViewController.m */,
+				11A9DEAF212156DC004EC8A7 /* OriginFaceViewController.h */,
+				11A9DEB0212156DC004EC8A7 /* OriginFaceViewController.m */,
 			);
 			path = UnitTestDemo;
 			sourceTree = "<group>";
@@ -560,6 +565,7 @@
 				111BA219211057CE00058979 /* XCFileManager.m in Sources */,
 				111BA1A6210AF46100058979 /* IFlyFaceResultKeys.m in Sources */,
 				111BA1EB210F048E00058979 /* UIResponder+Extension.m in Sources */,
+				11A9DEB1212156DC004EC8A7 /* OriginFaceViewController.m in Sources */,
 				111BA1AA210AF46100058979 /* UIImage+Extensions.m in Sources */,
 				11153CAB1FDF7B0400BC79A3 /* main.m in Sources */,
 				111BA21F21105AE000058979 /* UIColor+Hex.m in Sources */,

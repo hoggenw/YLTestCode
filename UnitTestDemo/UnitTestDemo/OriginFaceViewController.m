@@ -1,18 +1,16 @@
 //
-//  FaceStreamDetectorViewController.m
+//  OriginFaceViewController.m
 //  UnitTestDemo
 //
-//  Created by 王留根 on 2018/7/27.
+//  Created by 王留根 on 2018/8/13.
 //  Copyright © 2018年 王留根. All rights reserved.
 //
 
-#import "FaceStreamDetectorViewController.h"
+#import "OriginFaceViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <QuartzCore/QuartzCore.h>
 #import "PermissionDetector.h"
-//#import "UIImage+Extensions.h"
-//#import "UIImage+compress.h"
 #import "iflyMSC/IFlyFaceSDK.h"
 #import "DemoPreDefine.h"
 #import "CaptureManager.h"
@@ -22,8 +20,9 @@
 #import "IFlyFaceImage.h"
 #import "IFlyFaceResultKeys.h"
 #import "YLRecordVideoView.h"
+#import "ExtensionHeader.h"
 
-@interface FaceStreamDetectorViewController ()<CaptureManagerDelegate,YLRecordVideoChoiceDelegate>
+@interface OriginFaceViewController ()<CaptureManagerDelegate,YLRecordVideoChoiceDelegate>
 {
     UILabel *alignLabel;
     int number;//
@@ -38,7 +37,7 @@
     UIImageView *imageView;//照片展示
     
     BOOL isCrossBorder;//判断是否越界
-   // BOOL isJudgeMouth;//判断张嘴操作完成
+    // BOOL isJudgeMouth;//判断张嘴操作完成
     BOOL isShakeHead;//判断摇头操作完成
     
     //嘴角坐标
@@ -72,7 +71,7 @@
 
 @end
 
-@implementation FaceStreamDetectorViewController
+@implementation OriginFaceViewController
 @synthesize captureManager;
 
 -(void)viewDidLoad
@@ -96,6 +95,9 @@
     //停止摄像
     [self.previewLayer.session stopRunning];
     [self.captureManager removeObserver];
+    [self.captureManager.writeManager stopWrite];
+    
+    
 }
 
 -(void)makeNumber
@@ -116,44 +118,19 @@
 }
 
 #pragma mark --- 创建UI界面
--(void)makeUI
-{
-
-//    self.recordVideoView = [[YLRecordVideoView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64)];
-//    self.recordVideoView.delegate = self;
-//    [self.view addSubview:self.recordVideoView];
+-(void)makeUI{
     
-    self.previewView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight*2/3)];
+    self.previewView = [[UIView alloc]initWithFrame:CGRectMake(ScreenWidth/8, ScreenWidth/3, ScreenWidth*3/4, ScreenWidth*3/4)];
+    self.previewView.layer.cornerRadius = ScreenWidth*3/8;
+    self.previewView.clipsToBounds = true;
+    self.previewView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:self.previewView];
-    
-    //提示框
-    imgView = [[UIImageView alloc]initWithFrame:CGRectMake((ScreenWidth-ScreenHeight/6+10)/2, CGRectGetMaxY(self.previewView.frame)+15, ScreenHeight/6-10, ScreenHeight/6-10)];
-    [self.view addSubview:imgView];
-    
-    self.textLabel = [[UILabel alloc]initWithFrame:CGRectMake((ScreenWidth-150)/2, CGRectGetMaxY(imgView.frame)+10, 150, 30)];
+    self.textLabel = [[UILabel alloc]initWithFrame:CGRectMake((ScreenWidth)/2 - 100, ScreenWidth * 13 /12 + 10, 200, 30)];
     self.textLabel.textAlignment = NSTextAlignmentCenter;
     self.textLabel.layer.cornerRadius = 15;
     self.textLabel.text = @"请按提示做动作";
-    self.textLabel.textColor = [UIColor whiteColor];
+    self.textLabel.textColor = [UIColor blackColor];
     [self.view addSubview:self.textLabel];
-    
-    //背景View
-    backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-64)];
-    backView.backgroundColor = [UIColor lightGrayColor];
-    
-    //图片放置View
-    imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 10, ScreenWidth, ScreenWidth*4/3)];
-    [backView addSubview:imageView];
-//
-//    //button上传图片
-//    [self buttonWithTitle:@"上传图片" frame:CGRectMake(ScreenWidth/2-150, CGRectGetMaxY(imageView.frame)+10, 100, 30) action:@selector(didClickUpPhoto) AddView:backView];
-//
-//    //重拍图片按钮
-//    [self buttonWithTitle:@"重拍" frame:CGRectMake(ScreenWidth/2+50, CGRectGetMaxY(imageView.frame)+10, 100, 30) action:@selector(didClickPhotoAgain) AddView:backView];
-    
-    
-    
-
 }
 
 #pragma mark --- 创建相机
@@ -170,7 +147,7 @@
     }
 #endif
     
-    self.view.backgroundColor=[UIColor blackColor];
+    self.view.backgroundColor = [UIColor colorWithHexString: @"f3f4f5"];
     self.previewView.backgroundColor=[UIColor clearColor];
     
     //设置初始化打开识别
@@ -184,8 +161,9 @@
     
     self.previewLayer=self.captureManager.previewLayer;
     
-    self.captureManager.previewLayer.frame= self.previewView.frame;
-    self.captureManager.previewLayer.position=self.previewView.center;
+    self.captureManager.previewLayer.frame= self.previewView.bounds;
+    //self.captureManager.previewLayer.cornerRadius = ScreenWidth/3;
+    //self.captureManager.previewLayer.position=self.previewView.center;
     self.captureManager.previewLayer.videoGravity=AVLayerVideoGravityResizeAspectFill;
     [self.previewView.layer addSublayer:self.captureManager.previewLayer];
     
@@ -228,7 +206,7 @@
     }
     self.viewCanvas.arrPersons = arrPersons;
     [self.viewCanvas setNeedsDisplay] ;
-
+    
 }
 
 #pragma mark --- 关闭识别
@@ -348,7 +326,7 @@
     if(!result){
         return;
     }
-
+    
     @try {
         NSError* error;
         NSData* resultData=[result dataUsingEncoding:NSUTF8StringEncoding];
@@ -373,14 +351,14 @@
             }) ;
             return;
         }
-//        if (!self.recordBegin) {
-//            [self.recordVideoView startRecord];
-//        }
-//        self.recordBegin = true;
-    
+        //        if (!self.recordBegin) {
+        //            [self.recordVideoView startRecord];
+        //        }
+        //        self.recordBegin = true;
+        
         //检测到人脸
         NSMutableArray *arrPersons = [NSMutableArray array] ;
-
+        
         for(id faceInArr in faceArray){
             
             if(faceInArr && [faceInArr isKindOfClass:[NSDictionary class]]){
@@ -417,7 +395,7 @@
         faceArray=nil;
     }
     @catch (NSException *exception) {
-       // NSLog(@"prase exception:%@",exception.name);
+        // NSLog(@"prase exception:%@",exception.name);
     }
     @finally {
     }
@@ -431,11 +409,11 @@
     
     //此处清理图片数据，以防止因为不必要的图片数据的反复传递造成的内存卷积占用。
     faceImg.data=nil;
-/* 直接调用方法的方式有两种：performSelector:withObject: 和 NSInvocation。
- * NSInvocation是一个消息调用类，它包含了所有OC消息的成分：target、selector、参数以及返回值。NSInvocation可以将消息转换成一个对象，消息的每一个参数能够直接设定，而且当一个NSInvocation对象调度时返回值是可以自己设定的。一个NSInvocation对象能够重复的调度不同的目标(target)，而且它的selector也能够设置为另外一个方法签名。NSInvocation遵守NSCoding协议，但是仅支持NSPortCoder编码，不支持归档型操作
- *
- *
- */
+    /* 直接调用方法的方式有两种：performSelector:withObject: 和 NSInvocation。
+     * NSInvocation是一个消息调用类，它包含了所有OC消息的成分：target、selector、参数以及返回值。NSInvocation可以将消息转换成一个对象，消息的每一个参数能够直接设定，而且当一个NSInvocation对象调度时返回值是可以自己设定的。一个NSInvocation对象能够重复的调度不同的目标(target)，而且它的selector也能够设置为另外一个方法签名。NSInvocation遵守NSCoding协议，但是仅支持NSPortCoder编码，不支持归档型操作
+     *
+     *
+     */
     //// 通过NSMethodSignature对象创建NSInvocation对象，NSMethodSignature为方法签名类
     NSMethodSignature *sig = [self methodSignatureForSelector:@selector(praseTrackResult:OrignImage:)];
     if (!sig) return;
@@ -454,9 +432,9 @@
     faceImg=nil;
     
     // 5. 获取方法返回值
-//    NSNumber *num = nil;
-//    [invocation getReturnValue:&num];
-//    NSLog(@"最大数为：%@",num);
+    //    NSNumber *num = nil;
+    //    [invocation getReturnValue:&num];
+    //    NSLog(@"最大数为：%@",num);
 }
 
 #pragma mark --- 判断位置
@@ -488,12 +466,13 @@
         //            return YES;
         //        }
     }
-//        else if (isJudgeMouth == YES && isShakeHead != YES) {
-//            self.textLabel.text = @"请重复摇头动作...";
-//            [self tomAnimationWithName:@"shakeHead" count:4];
-//            number = 0;
-//        }
+    //        else if (isJudgeMouth == YES && isShakeHead != YES) {
+    //            self.textLabel.text = @"请重复摇头动作...";
+    //            [self tomAnimationWithName:@"shakeHead" count:4];
+    //            number = 0;
+    //        }
     else if(takePhotoNumber == 2){
+        takePhotoNumber += 1;
         NSLog(@"=======");
         [self.captureManager stopRecord];
     }
@@ -517,7 +496,7 @@
         rightX = p.x;
     }
     if (rightX && leftX && upperY && lowerY && takePhotoNumber < 2) {
-       NSLog(@"================= number:%@ ====================",@(number));
+        //  NSLog(@"================= number:%@ ====================",@(number));
         number ++;
         if (number == 1 || number == 200 || number == 400 || number == 600 || number == 800 || number == 1000 || number == 1200 || number == 1400  || number == 1600) {
             //延时操作
@@ -528,7 +507,7 @@
             //NSLog(@"%d,%d",mouthWidthF,mouthHeightF);
             //            });
         }else if (number > 1700) {
-//            NSLog(@"================= 清除数据 ====================");
+            //            NSLog(@"================= 清除数据 ====================");
             [self delateNumber];//时间过长时重新清除数据
             //[self tomAnimationWithName:@"openMouth" count:2];
         }
@@ -541,9 +520,9 @@
             //张嘴验证完毕
             if (mouthHeight - mouthHeightF >= 20 && mouthWidthF - mouthWidth >= 15) {
                 takePhotoNumber += 1;
-//                mouthWidthF = 0;
-//                mouthHeightF = 0;
-               NSLog(@"================= takePhotoNumber：%@ ====================",@(takePhotoNumber));
+                //                mouthWidthF = 0;
+                //                mouthHeightF = 0;
+                // NSLog(@"================= takePhotoNumber：%@ ====================",@(takePhotoNumber));
             }
         }
     }
@@ -571,88 +550,9 @@
     }
 }
 
-#pragma mark --- 拍照
-//-(void)didClickTakePhoto
-//{
-//    AVCaptureConnection *myVideoConnection = nil;
-//
-//    //从 AVCaptureStillImageOutput 中取得正确类型的 AVCaptureConnection
-//    for (AVCaptureConnection *connection in myStillImageOutput.connections) {
-//        for (AVCaptureInputPort *port in [connection inputPorts]) {
-//            if ([[port mediaType] isEqual:AVMediaTypeVideo]) {
-//
-//                myVideoConnection = connection;
-//                break;
-//            }
-//        }
-//    }
-//
-//    //撷取影像（包含拍照音效）
-//    [myStillImageOutput captureStillImageAsynchronouslyFromConnection:myVideoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
-//
-//        //完成撷取时的处理程序(Block)
-//        if (imageDataSampleBuffer) {
-//            NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
-//
-//            //取得的静态影像
-//            UIImage *myImage = [[UIImage alloc] initWithData:imageData];
-//            imageView.backgroundColor = [UIColor lightGrayColor];
-//            imageView.image = myImage;
-//
-//            imageView.frame = CGRectMake(0, 10, ScreenWidth, ScreenWidth*myImage.size.height/myImage.size.width);
-//
-//            [self.view addSubview:backView];
-//
-//            //停止摄像
-//            [self.previewLayer.session stopRunning];
-//
-//            [self delateNumber];
-//        }
-//    }];
-//}
 
-#pragma mark --- 重拍按钮点击事件
--(void)didClickPhotoAgain
-{
-    
-    //清数据
-    [self delateNumber];
 
-    //开始摄像
-    [self.previewLayer.session startRunning];
-    self.textLabel.text = @"请调整位置...";
 
-    [backView removeFromSuperview];
-
-    takePhotoNumber = 0;
-    isShakeHead = NO;
-    
-}
-
-#pragma mark --- 上传图片按钮点击事件
-//-(void)didClickUpPhoto
-//{
-//    //    UIAlertView *alt = [[UIAlertView alloc]initWithTitle:@"提示" message:@"验证完成" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
-//    //    [alt show];
-//
-//    //上传照片失败
-//    //    [self.faceDelegate sendFaceImageError];
-//    //上传照片成功
-//    [self.faceDelegate sendFaceImage:imageView.image];
-//    [self.navigationController popViewControllerAnimated:YES];
-//}
-
-#pragma mark - 点击『验证完成』AlertView
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (imageView.image) {
-        //上传照片成功
-        [self.faceDelegate sendFaceImage:imageView.image];
-        //上传照片失败
-        //    [self.faceDelegate sendFaceImageError];
-        [self.navigationController popViewControllerAnimated:YES];
-    }
-}
 
 #pragma mark --- 清掉对应的数
 -(void)delateNumber
@@ -668,9 +568,9 @@
     smallNumber = 0;
     bigNumber = 0;
     firstNumber = 0;
-//    
-//    imgView.animationImages = nil;
-//    imgView.image = [UIImage imageNamed:@"shakeHead0"];
+    //
+    //    imgView.animationImages = nil;
+    //    imgView.image = [UIImage imageNamed:@"shakeHead0"];
 }
 
 
@@ -687,7 +587,6 @@
     return button;
 }
 
-#pragma mark --- UIImageView显示gif动画
 
 -(void)dealloc
 {
@@ -700,14 +599,19 @@
 -(void)choiceVideoWith:(NSString *)path {
     NSLog(@"path:%@",path);
 }
--(void)onOutputSourceString:(NSString *)SourceString {
-    NSLog(@"结束录制： %@",SourceString);
-    [self calculationFileSize: SourceString];
-    //上传照片成功
-    [self.faceDelegate sendSourceString:SourceString];
-    //上传照片失败
-    //    [self.faceDelegate sendFaceImageError];
-    [self.navigationController popViewControllerAnimated:YES];
+-(void)onOutputSourceString:(NSString *)sourceString {
+    NSLog(@"结束录制： %@",sourceString);
+    [self calculationFileSize: sourceString];
+
+}
+
+//获取文件
+- (NSData *)getFileData:(NSString *)filePath
+{
+    NSFileHandle *handle = [NSFileHandle fileHandleForReadingAtPath:filePath];
+    NSData *fileData = [handle readDataToEndOfFile];
+    [handle closeFile];
+    return fileData;
 }
 
 -(void)timeOverForRecord{

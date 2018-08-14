@@ -10,6 +10,7 @@
 #import "FaceStreamDetectorViewController.h"
 #import "FMWriteVideoController.h"
 #import "RecordVideoViewController.h"
+#import "OriginFaceViewController.h"
 
 @interface ViewController ()<FaceDetectorDelegate>
 {
@@ -27,6 +28,7 @@
     [self buttonWithTitle:@"人脸识别" frame:CGRectMake(100, 50, 150, 30) action:@selector(pushToFaceStreamDetectorVC) AddView:self.view];
     [self buttonWithTitle:@"视频录制" frame:CGRectMake(100, 90, 150, 30) action:@selector(pushToRecordVideoViewController) AddView:self.view];
     [self buttonWithTitle:@"测试方式1" frame:CGRectMake(100, 130, 150, 30) action:@selector(toFMWriteVideoController) AddView:self.view];
+    [self buttonWithTitle:@"原生人脸识别" frame:CGRectMake(100, 170, 150, 30) action:@selector(toOriginFaceController) AddView:self.view];
     
      [self buttonWithTitle:@"有数据测试" frame:CGRectMake(100, 400, 150, 30) action:@selector(dataTest) AddView:self.view];
     
@@ -73,6 +75,11 @@
 {
     FaceStreamDetectorViewController *faceVC = [[FaceStreamDetectorViewController alloc]init];
     faceVC.faceDelegate = self;
+    [self.navigationController pushViewController:faceVC animated:YES];
+}
+
+-(void)toOriginFaceController {
+    OriginFaceViewController *faceVC = [[OriginFaceViewController alloc]init];
     [self.navigationController pushViewController:faceVC animated:YES];
 }
 

@@ -61,6 +61,7 @@ typedef NS_ENUM(NSUInteger, CaptureContextType)
 @property (nonatomic) BOOL lockInterfaceRotation;
 @property (nonatomic) id runtimeErrorHandlingObserver;
 @property (nonatomic, strong, readwrite) NSString *videoUrl;
+@property (nonatomic, strong)AVAssetWriteManager *writeManager;
 
 
 // init CaptureSessionManager functions

@@ -229,25 +229,27 @@
         faceView.layer.borderWidth = 1;
         faceView.layer.borderColor = [[UIColor redColor] CGColor];
         [self.previewView addSubview:faceView];
+        
+        
         // 标出左眼
-//        if(faceFeature.hasLeftEyePosition) {
-//            UIView* leftEyeView = [[UIView alloc] initWithFrame:
-//                                   CGRectMake(faceFeature.leftEyePosition.x-faceWidth*0.15,
-//                                              self.imageView.bounds.size.height-(faceFeature.leftEyePosition.y-faceWidth*0.15)-faceWidth*0.3, faceWidth*0.3, faceWidth*0.3)];
-//            [leftEyeView setBackgroundColor:[[UIColor blueColor] colorWithAlphaComponent:0.3]];
-//            //            [leftEyeView setCenter:faceFeature.leftEyePosition];
-//            leftEyeView.layer.cornerRadius = faceWidth*0.15;
-//            [self.imageView  addSubview:leftEyeView];
-//        }
-//        // 标出右眼
-//        if(faceFeature.hasRightEyePosition) {
-//            UIView* leftEye = [[UIView alloc] initWithFrame:
-//                               CGRectMake(faceFeature.rightEyePosition.x-faceWidth*0.15,
-//                                          self.imageView.bounds.size.height-(faceFeature.rightEyePosition.y-faceWidth*0.15)-faceWidth*0.3, faceWidth*0.3, faceWidth*0.3)];
-//            [leftEye setBackgroundColor:[[UIColor blueColor] colorWithAlphaComponent:0.3]];
-//            leftEye.layer.cornerRadius = faceWidth*0.15;
-//            [self.imageView  addSubview:leftEye];
-//        }
+        if(faceFeature.hasLeftEyePosition) {
+            UIView* leftEyeView = [[UIView alloc] initWithFrame:
+                                   CGRectMake(faceFeature.leftEyePosition.x-faceWidth*0.15,
+                                              self.previewView.bounds.size.height-(faceFeature.leftEyePosition.y-faceWidth*0.15)-faceWidth*0.3, faceWidth*0.3, faceWidth*0.3)];
+            [leftEyeView setBackgroundColor:[[UIColor blueColor] colorWithAlphaComponent:0.3]];
+            //            [leftEyeView setCenter:faceFeature.leftEyePosition];
+            leftEyeView.layer.cornerRadius = faceWidth*0.15;
+            [self.previewView  addSubview:leftEyeView];
+        }
+        // 标出右眼
+        if(faceFeature.hasRightEyePosition) {
+            UIView* leftEye = [[UIView alloc] initWithFrame:
+                               CGRectMake(faceFeature.rightEyePosition.x-faceWidth*0.15,
+                                          self.previewView.bounds.size.height-(faceFeature.rightEyePosition.y-faceWidth*0.15)-faceWidth*0.3, faceWidth*0.3, faceWidth*0.3)];
+            [leftEye setBackgroundColor:[[UIColor blueColor] colorWithAlphaComponent:0.3]];
+            leftEye.layer.cornerRadius = faceWidth*0.15;
+            [self.previewView  addSubview:leftEye];
+        }
 //        // 标出嘴部
 //        if(faceFeature.hasMouthPosition) {
 //            UIView* mouth = [[UIView alloc] initWithFrame:
