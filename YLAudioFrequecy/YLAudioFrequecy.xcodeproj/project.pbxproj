@@ -33,6 +33,14 @@
 		11225E0220299E6E008DFDB6 /* YLMicrophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E0120299E6E008DFDB6 /* YLMicrophoneViewController.m */; };
 		11225E052029B742008DFDB6 /* YLVoiceCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E042029B742008DFDB6 /* YLVoiceCircleViewController.m */; };
 		11225E09202AA542008DFDB6 /* YLCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E08202AA542008DFDB6 /* YLCircleView.m */; };
+		1135787B21A3B12500DDEA74 /* YLPhonePermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135787A21A3B12500DDEA74 /* YLPhonePermissions.m */; };
+		1135787E21A3B3D000DDEA74 /* YLScanLineAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135787D21A3B3D000DDEA74 /* YLScanLineAnimation.m */; };
+		1135788121A3DBCE00DDEA74 /* YLScanViewSytle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135788021A3DBCE00DDEA74 /* YLScanViewSytle.m */; };
+		1135788521A3E06900DDEA74 /* YLScanViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135788421A3E06900DDEA74 /* YLScanViewSetting.m */; };
+		1135788821A3E0CC00DDEA74 /* YLScanResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135788721A3E0CC00DDEA74 /* YLScanResult.m */; };
+		1135788B21A3E2C600DDEA74 /* YLScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135788A21A3E2C600DDEA74 /* YLScanViewController.m */; };
+		1135788E21A413B500DDEA74 /* YLScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135788D21A413B500DDEA74 /* YLScanView.m */; };
+		1135789121A536B100DDEA74 /* YLScanViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135789021A536B100DDEA74 /* YLScanViewManager.m */; };
 		1143BA6D1E5D7F01002CD06B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6C1E5D7F01002CD06B /* main.m */; };
 		1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA6F1E5D7F01002CD06B /* AppDelegate.m */; };
 		1143BA731E5D7F01002CD06B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143BA721E5D7F01002CD06B /* ViewController.m */; };
@@ -123,6 +131,23 @@
 		11225E042029B742008DFDB6 /* YLVoiceCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLVoiceCircleViewController.m; sourceTree = "<group>"; };
 		11225E07202AA542008DFDB6 /* YLCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCircleView.h; sourceTree = "<group>"; };
 		11225E08202AA542008DFDB6 /* YLCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCircleView.m; sourceTree = "<group>"; };
+		1135787921A3B12500DDEA74 /* YLPhonePermissions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPhonePermissions.h; sourceTree = "<group>"; };
+		1135787A21A3B12500DDEA74 /* YLPhonePermissions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPhonePermissions.m; sourceTree = "<group>"; };
+		1135787C21A3B3D000DDEA74 /* YLScanLineAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScanLineAnimation.h; sourceTree = "<group>"; };
+		1135787D21A3B3D000DDEA74 /* YLScanLineAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScanLineAnimation.m; sourceTree = "<group>"; };
+		1135787F21A3DBCE00DDEA74 /* YLScanViewSytle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScanViewSytle.h; sourceTree = "<group>"; };
+		1135788021A3DBCE00DDEA74 /* YLScanViewSytle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScanViewSytle.m; sourceTree = "<group>"; };
+		1135788221A3DC0300DDEA74 /* YLOCScan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLOCScan.h; sourceTree = "<group>"; };
+		1135788321A3E06900DDEA74 /* YLScanViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScanViewSetting.h; sourceTree = "<group>"; };
+		1135788421A3E06900DDEA74 /* YLScanViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScanViewSetting.m; sourceTree = "<group>"; };
+		1135788621A3E0CC00DDEA74 /* YLScanResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScanResult.h; sourceTree = "<group>"; };
+		1135788721A3E0CC00DDEA74 /* YLScanResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScanResult.m; sourceTree = "<group>"; };
+		1135788921A3E2C600DDEA74 /* YLScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScanViewController.h; sourceTree = "<group>"; };
+		1135788A21A3E2C600DDEA74 /* YLScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScanViewController.m; sourceTree = "<group>"; };
+		1135788C21A413B500DDEA74 /* YLScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScanView.h; sourceTree = "<group>"; };
+		1135788D21A413B500DDEA74 /* YLScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScanView.m; sourceTree = "<group>"; };
+		1135788F21A536B100DDEA74 /* YLScanViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScanViewManager.h; sourceTree = "<group>"; };
+		1135789021A536B100DDEA74 /* YLScanViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScanViewManager.m; sourceTree = "<group>"; };
 		1143BA681E5D7F01002CD06B /* YLAudioFrequecy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLAudioFrequecy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1143BA6C1E5D7F01002CD06B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1143BA6E1E5D7F01002CD06B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -272,6 +297,30 @@
 			name = "Part two circle";
 			sourceTree = "<group>";
 		};
+		1135787821A3B0F600DDEA74 /* YLOCScan */ = {
+			isa = PBXGroup;
+			children = (
+				1135788221A3DC0300DDEA74 /* YLOCScan.h */,
+				1135787921A3B12500DDEA74 /* YLPhonePermissions.h */,
+				1135787A21A3B12500DDEA74 /* YLPhonePermissions.m */,
+				1135787C21A3B3D000DDEA74 /* YLScanLineAnimation.h */,
+				1135787D21A3B3D000DDEA74 /* YLScanLineAnimation.m */,
+				1135787F21A3DBCE00DDEA74 /* YLScanViewSytle.h */,
+				1135788021A3DBCE00DDEA74 /* YLScanViewSytle.m */,
+				1135788321A3E06900DDEA74 /* YLScanViewSetting.h */,
+				1135788421A3E06900DDEA74 /* YLScanViewSetting.m */,
+				1135788621A3E0CC00DDEA74 /* YLScanResult.h */,
+				1135788721A3E0CC00DDEA74 /* YLScanResult.m */,
+				1135788921A3E2C600DDEA74 /* YLScanViewController.h */,
+				1135788A21A3E2C600DDEA74 /* YLScanViewController.m */,
+				1135788C21A413B500DDEA74 /* YLScanView.h */,
+				1135788D21A413B500DDEA74 /* YLScanView.m */,
+				1135788F21A536B100DDEA74 /* YLScanViewManager.h */,
+				1135789021A536B100DDEA74 /* YLScanViewManager.m */,
+			);
+			name = YLOCScan;
+			sourceTree = "<group>";
+		};
 		1143BA5F1E5D7F01002CD06B = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +342,7 @@
 		1143BA6A1E5D7F01002CD06B /* YLAudioFrequecy */ = {
 			isa = PBXGroup;
 			children = (
+				1135787821A3B0F600DDEA74 /* YLOCScan */,
 				111CB1C22021D3530035D245 /* Animation */,
 				111CB1A22021D2F00035D245 /* Category */,
 				11CC77FB1FCFDBE800BE3017 /* WKWebView */,
@@ -495,19 +545,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1135788E21A413B500DDEA74 /* YLScanView.m in Sources */,
 				111CB1C12021D2F10035D245 /* UIView+Extension.m in Sources */,
 				11225E09202AA542008DFDB6 /* YLCircleView.m in Sources */,
 				87127FE61EF4FD69009D4CF6 /* Quartz2D.m in Sources */,
 				111CB1BE2021D2F10035D245 /* NSTimer+Extension.m in Sources */,
+				1135787B21A3B12500DDEA74 /* YLPhonePermissions.m in Sources */,
 				114F02851ECE80040039F60C /* TestRuntime.m in Sources */,
 				111CB1BF2021D2F10035D245 /* UIColor+Extension.m in Sources */,
+				1135788521A3E06900DDEA74 /* YLScanViewSetting.m in Sources */,
+				1135788821A3E0CC00DDEA74 /* YLScanResult.m in Sources */,
 				11CC78011FCFDC8000BE3017 /* YLWKWebView.m in Sources */,
 				111CB1D12022E8150035D245 /* MicrophoneTopView.m in Sources */,
 				11A9DE172112DF52004EC8A7 /* FileManager.m in Sources */,
 				111F51B41FEBBA5A00938567 /* NSObject+YLKVO.m in Sources */,
 				87127FE31EF3BB81009D4CF6 /* TestImage.m in Sources */,
 				111CB1D42022E82F0035D245 /* MicrophoneBottomView.m in Sources */,
+				1135787E21A3B3D000DDEA74 /* YLScanLineAnimation.m in Sources */,
 				1113219F1FF22D5900C0A11D /* NSObject+JSONExtension.m in Sources */,
+				1135788B21A3E2C600DDEA74 /* YLScanViewController.m in Sources */,
 				87127FED1EF605B1009D4CF6 /* QuartzView.m in Sources */,
 				11CC77FE1FCFDC2500BE3017 /* YLProgressView.m in Sources */,
 				111CB1C02021D2F10035D245 /* NSString+Extension.m in Sources */,
@@ -515,6 +571,7 @@
 				11225E0220299E6E008DFDB6 /* YLMicrophoneViewController.m in Sources */,
 				111CB1B82021D2F10035D245 /* UILabel+Extension.m in Sources */,
 				111CB1BC2021D2F10035D245 /* UIResponder+Extension.m in Sources */,
+				1135789121A536B100DDEA74 /* YLScanViewManager.m in Sources */,
 				111321971FF1F0B600C0A11D /* UIImage+YL.m in Sources */,
 				114F028B1ECEDAB90039F60C /* Man.m in Sources */,
 				111CB1CE2022BCA80035D245 /* TopViewAnimaton.m in Sources */,
@@ -527,6 +584,7 @@
 				111CB1D72022ED3D0035D245 /* MicrophoneView.m in Sources */,
 				1119AAE12048ECD9000E9E35 /* Copy&MultableCopyTest.m in Sources */,
 				111CB1BA2021D2F10035D245 /* UIImage+Extension.m in Sources */,
+				1135788121A3DBCE00DDEA74 /* YLScanViewSytle.m in Sources */,
 				1143BA701E5D7F01002CD06B /* AppDelegate.m in Sources */,
 				87127FF31EF6296E009D4CF6 /* Bitmap.m in Sources */,
 				87127FF01EF620A8009D4CF6 /* QuartzShadowAndGradient.m in Sources */,

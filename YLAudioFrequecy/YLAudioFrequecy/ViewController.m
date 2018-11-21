@@ -32,6 +32,7 @@
 #import "YLVoiceCircleViewController.h"
 #import "Copy&MultableCopyTest.h"
 #import "YLWKWebView.h"
+#import "YLScanViewManager.h"
 
 @interface Message : NSObject
 
@@ -57,7 +58,7 @@
 
 @end
 
-@interface ViewController ()<WKNavigationDelegate>
+@interface ViewController ()<WKNavigationDelegate,YLScanViewControllerDelegate>
 @property(nonatomic, strong)UIImageView * showImage;
 @property(nonatomic, strong)Message *message;
 @property(nonatomic, strong)TestRunLoop * testRunLoop;
@@ -78,7 +79,7 @@
 //NSSelectorFromString()方法
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+   
 #pragma mark - web相关测试
 //    [self.view addSubview:self.webView];
 //    NSString * strUrl = @"http://192.168.20.14:63342/vedeoJS/AJAX/baidu.html";
@@ -192,7 +193,34 @@
     //
     //    NSLog(@"%@ ===== %@",[self.parentViewController class],self.parentViewController);
     
+#pragma mark - 二维码测试
+        UIButton * testButton = [UIButton new];
+        testButton.frame = CGRectMake(200, 200, 100, 50);
+        [self.view addSubview: testButton];
+        [testButton setTitle:@"扫描测试" forState: UIControlStateNormal];
+        testButton.titleLabel.textColor = [UIColor blackColor];
+        testButton.backgroundColor = [UIColor greenColor];
+        [testButton addTarget:self action:@selector(creatSelfQRcODE) forControlEvents:UIControlEventTouchUpInside];
+    
 }
+-(void)creatSelfQRcODE {
+    YLScanViewManager * manager = [YLScanViewManager sharedInstance];
+    UIView *codeView = [manager produceQRcodeView:CGRectMake((self.view.bounds.size.width - 200)/2, self.view.bounds.size.height/2, 200, 200) logoIconName:@"device_scan" codeMessage:@"wlg's test Message"];
+    UIImageView * showImageView  = codeView.subviews.firstObject;
+    [self.view addSubview:showImageView];
+}
+-(void)testButtonAction {
+    //聊天
+    YLScanViewManager * manager = [YLScanViewManager sharedInstance];
+    manager.isNeedShowRetangle = true;
+    manager.imageStyle = secondeNetGrid;
+    manager.delegate = self;
+    [manager showScanView: self];
+}
+-(void)scanViewControllerSuccessWith:(YLScanResult *)result {
+    NSLog(@"wlg====%@", result.strScanned);
+}
+
 
 -(UIButton *)creatNormalBUttonWithName:(NSString *)name frame:(CGRect)frame {
     

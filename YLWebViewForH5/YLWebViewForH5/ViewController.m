@@ -23,7 +23,7 @@
     webView.backgroundColor = [UIColor clearColor];
     webView.progressCorlor = [UIColor greenColor];
     webView.navigationDelegate = self;
-    [self.view addSubview:webView];
+    [self.view addSubview:webView];a
     
     NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:[strUrl stringByAddingPercentEncodingWithAllowedCharacters: [NSCharacterSet URLQueryAllowedCharacterSet]]]];
     [webView loadRequest:request];
