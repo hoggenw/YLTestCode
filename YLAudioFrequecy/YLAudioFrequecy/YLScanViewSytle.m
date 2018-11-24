@@ -27,7 +27,7 @@
         self.colorAngle = [UIColor colorWithRed:0.0 green: 167.0/255.0 blue:231.0/255.0 alpha:1];
         self.photoframeAngleW = 24.0;
         self.photoframeAngleH = 24.0;
-        self.photoframeAngleW = 4;
+        self.photoframeLineW = 4;
         self.animationStyle = LineMove;
         self.animationImage = [YLScanViewSetting imageFromBundleWithName:@"qrcode_Scan_weixin_Line@2x"];
     }

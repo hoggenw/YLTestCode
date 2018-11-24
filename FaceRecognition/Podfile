@@ -14,6 +14,7 @@ target "FaceRecognition" do
     pod 'Masonry'
     pod 'MBProgressHUD'
     pod 'PNChart'
+    pod 'YLOCScan'
 
 end
 

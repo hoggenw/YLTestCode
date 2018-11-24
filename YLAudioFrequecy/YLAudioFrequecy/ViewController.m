@@ -79,6 +79,7 @@
 //NSSelectorFromString()方法
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
    
 #pragma mark - web相关测试
 //    [self.view addSubview:self.webView];
@@ -200,19 +201,18 @@
         [testButton setTitle:@"扫描测试" forState: UIControlStateNormal];
         testButton.titleLabel.textColor = [UIColor blackColor];
         testButton.backgroundColor = [UIColor greenColor];
-        [testButton addTarget:self action:@selector(creatSelfQRcODE) forControlEvents:UIControlEventTouchUpInside];
+        [testButton addTarget:self action:@selector(testButtonAction) forControlEvents:UIControlEventTouchUpInside];
     
 }
 -(void)creatSelfQRcODE {
     YLScanViewManager * manager = [YLScanViewManager sharedInstance];
     UIView *codeView = [manager produceQRcodeView:CGRectMake((self.view.bounds.size.width - 200)/2, self.view.bounds.size.height/2, 200, 200) logoIconName:@"device_scan" codeMessage:@"wlg's test Message"];
-    UIImageView * showImageView  = codeView.subviews.firstObject;
-    [self.view addSubview:showImageView];
+    //UIImageView * showImageView  = codeView.subviews.firstObject;
+    [self.view addSubview:codeView];
 }
 -(void)testButtonAction {
     //聊天
     YLScanViewManager * manager = [YLScanViewManager sharedInstance];
-    manager.isNeedShowRetangle = true;
     manager.imageStyle = secondeNetGrid;
     manager.delegate = self;
     [manager showScanView: self];

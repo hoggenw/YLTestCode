@@ -14,8 +14,9 @@
 #import "DemoPreDefine.h"
 #import "CaptureManager.h"
 #import "ExtensionHeader.h"
+#import "YLScanViewManager.h"
 
-@interface ViewController ()<CaptureManagerDelegate,YLRecordVideoChoiceDelegate>
+@interface ViewController ()<CaptureManagerDelegate,YLRecordVideoChoiceDelegate,YLScanViewControllerDelegate>
 {
     UILabel *alignLabel;
     int number;//
@@ -75,8 +76,31 @@
     [self makeCamera];
     //创建数据
     [self makeNumber];
+//    UIButton * testButton = [UIButton new];
+//    testButton.frame = CGRectMake(200, 200, 100, 50);
+//    [self.view addSubview: testButton];
+//    [testButton setTitle:@"扫描测试" forState: UIControlStateNormal];
+//    testButton.titleLabel.textColor = [UIColor blackColor];
+//    testButton.backgroundColor = [UIColor greenColor];
+//    [testButton addTarget:self action:@selector(testButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+-(void)creatSelfQRcODE {
+    YLScanViewManager * manager = [YLScanViewManager sharedInstance];
+    UIView *codeView = [manager produceQRcodeView:CGRectMake((self.view.bounds.size.width - 200)/2, self.view.bounds.size.height/2, 200, 200) logoIconName:@"device_scan" codeMessage:@"wlg's test Message"];
+    [self.view addSubview:codeView];
+}
+-(void)testButtonAction {
+    //聊天
+    YLScanViewManager * manager = [YLScanViewManager sharedInstance];
+    manager.imageStyle = secondeNetGrid;
+    manager.delegate = self;
+    [manager showScanView: self];
 }
 
+-(void)scanViewControllerSuccessWith:(YLScanResult *)result {
+    NSLog(@"wlg====%@", result.strScanned);
+}
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];

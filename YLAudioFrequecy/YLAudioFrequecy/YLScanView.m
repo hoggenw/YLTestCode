@@ -20,11 +20,32 @@
 }
 
 -(instancetype)initWithFrame:(CGRect)frame scanViewStyle:(YLScanViewSytle *)viewStyle{
-    if (self = [super init]) {
+    if (self = [super initWithFrame:frame]) {
         _viewStyle = [YLScanViewSytle new];
         _scanRetangleRect = CGRectZero;
         _fixedLine = [UIImageView new];
         _isAnimationing = false;
+        if (viewStyle != nil) {
+            _viewStyle = viewStyle;
+        }
+        switch (_viewStyle.animationStyle) {
+            case LineMove:{
+                _scanLineAnimation = [YLScanLineAnimation sharedInstance];
+                break;
+            }
+            case NetGrid:{
+                _scanLineAnimation = [YLScanLineAnimation nerGridInstance];
+                break;
+            }
+                
+            case LineStill:{
+                _fixedLine.image = _viewStyle.animationImage;
+                break;
+            }
+            default:
+                break;
+        }
+        self.backgroundColor = UIColor.clearColor;
         
     }
     return self;

@@ -27,6 +27,7 @@ PODS:
   - SDWebImage/Core (4.4.1)
   - SSKeychain (1.4.1)
   - UICountingLabel (1.2.0)
+  - YLOCScan (1.0.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -38,6 +39,7 @@ DEPENDENCIES:
   - PNChart
   - SDWebImage
   - SSKeychain
+  - YLOCScan
   - YYModel
 
 SPEC REPOS:
@@ -51,6 +53,7 @@ SPEC REPOS:
     - SDWebImage
     - SSKeychain
     - UICountingLabel
+    - YLOCScan
     - YYModel
 
 SPEC CHECKSUMS:
@@ -63,8 +66,9 @@ SPEC CHECKSUMS:
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  YLOCScan: 37b69e729c6080bfd92298c376e72a7651cc4cca
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 3b4d6d73fe15753a0b86778ba9cabb3b4a00ea95
+PODFILE CHECKSUM: eefeeb1191812d39179cf85571a86df2d3fc8681
 
 COCOAPODS: 1.5.0

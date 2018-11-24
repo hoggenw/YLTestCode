@@ -34,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.blackColor;
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.edgesForExtendedLayout = UIRectEdgeAll;
     [self.navigationController.navigationBar setHidden: true];
     // Do any additional setup after loading the view.
 }
@@ -46,7 +46,7 @@
 
 -(void)drawScanView {
     if (_qRScanView == nil ){
-        _qRScanView = [[YLScanView alloc] initWithFrame:self.view.frame scanViewStyle:_scanStyle];
+        _qRScanView = [[YLScanView alloc] initWithFrame:self.view.frame scanViewStyle: self.scanStyle ];
         [self.view addSubview: _qRScanView];
     }
     [_qRScanView deviceStartReadying: @"相机启动中..."];
