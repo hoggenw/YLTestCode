@@ -15,6 +15,7 @@ target "FaceRecognition" do
     pod 'MBProgressHUD'
     pod 'PNChart'
     pod 'YLOCScan'
+ 	pod 'YLOCRecordVideo'
 
 end
 

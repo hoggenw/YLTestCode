@@ -15,8 +15,9 @@
 #import "CaptureManager.h"
 #import "ExtensionHeader.h"
 #import "YLScanViewManager.h"
+#import "YLRecordVideoView.h"
 
-@interface ViewController ()<CaptureManagerDelegate,YLRecordVideoChoiceDelegate,YLScanViewControllerDelegate>
+@interface ViewController ()<CaptureManagerDelegate,YLRecordVideoChoiceDelegate,YLScanViewControllerDelegate,YLRecordVideoControlDelegate>
 {
     UILabel *alignLabel;
     int number;//
@@ -70,19 +71,19 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     //self.recordBegin = false;
-    //创建界面
-    [self makeUI];
-    //创建摄像页面
-    [self makeCamera];
-    //创建数据
-    [self makeNumber];
-//    UIButton * testButton = [UIButton new];
-//    testButton.frame = CGRectMake(200, 200, 100, 50);
-//    [self.view addSubview: testButton];
-//    [testButton setTitle:@"扫描测试" forState: UIControlStateNormal];
-//    testButton.titleLabel.textColor = [UIColor blackColor];
-//    testButton.backgroundColor = [UIColor greenColor];
-//    [testButton addTarget:self action:@selector(testButtonAction) forControlEvents:UIControlEventTouchUpInside];
+//    //创建界面
+//    [self makeUI];
+//    //创建摄像页面
+//    [self makeCamera];
+//    //创建数据
+//    [self makeNumber];
+    UIButton * testButton = [UIButton new];
+    testButton.frame = CGRectMake(200, 200, 100, 50);
+    [self.view addSubview: testButton];
+    [testButton setTitle:@"扫描测试" forState: UIControlStateNormal];
+    testButton.titleLabel.textColor = [UIColor blackColor];
+    testButton.backgroundColor = [UIColor greenColor];
+    [testButton addTarget:self action:@selector(testButtonAction) forControlEvents:UIControlEventTouchUpInside];
     
 }
 -(void)creatSelfQRcODE {
@@ -91,16 +92,48 @@
     [self.view addSubview:codeView];
 }
 -(void)testButtonAction {
-    //聊天
-    YLScanViewManager * manager = [YLScanViewManager sharedInstance];
-    manager.imageStyle = secondeNetGrid;
-    manager.delegate = self;
-    [manager showScanView: self];
+    
+    //本方法穿件录制视图，然后才可以赋值
+    YLRecordVideoView * recordView = [[YLRecordVideoView alloc] initWithFrame:self.view.bounds];
+    recordView.videoQuality = NormalQuality;
+    recordView.delegate = self;
+    recordView.totalSeconds = 15;
+    [self.view addSubview:recordView];
+//    //聊天
+//    YLScanViewManager * manager = [YLScanViewManager sharedInstance];
+//    manager.imageStyle = secondeNetGrid;
+//    manager.delegate = self;
+//    [manager showScanView: self];
 }
 
 -(void)scanViewControllerSuccessWith:(YLScanResult *)result {
     NSLog(@"wlg====%@", result.strScanned);
 }
+
+-(void)choiceVideoWith:(NSString *)path {
+    NSLog(@"path: %@",path);
+}
+
+
+- (void)cancelRecordWith:(NSString *)path {
+    [self.navigationController popViewControllerAnimated: true];
+}
+
+
+- (void)restartRecordDelegate {
+    
+}
+
+
+- (void)startRecordDelegate {
+    
+}
+
+
+- (void)stopRecordWith:(NSString *)path {
+    
+}
+
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];

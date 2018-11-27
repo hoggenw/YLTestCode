@@ -25,17 +25,17 @@
 #define TIMER_INTERVAL 0.05         //计时器刷新频率
 
 #define RECORDFILRSTRINGNAME           @"RECORDFILRSTRINGNAMEISNOTCHAGEDFOEEVER"
-typedef enum : NSInteger {
-    Success = 1,
-    UnAuthorized,
-    Failed
-}AVCameraStatues;
-
-typedef enum : NSInteger {
-    NormalQuality,
-    LowQuality,
-    HighQuality
-}YLVideoQuality;
+//typedef enum : NSInteger {
+//    Success = 1,
+//    UnAuthorized,
+//    Failed
+//}AVCameraStatues;
+//
+//typedef enum : NSInteger {
+//    NormalQuality,
+//    LowQuality,
+//    HighQuality
+//}YLVideoQuality;
 
 /// 人脸朝向类型
 typedef NS_ENUM(NSUInteger,YLFaceDirectionType) {
