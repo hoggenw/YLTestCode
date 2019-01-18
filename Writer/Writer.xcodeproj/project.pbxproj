@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1149896421E49686001E1443 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1149896321E49686001E1443 /* iflyMSC.framework */; };
 		119591EB1EC3F68F005B4BE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119591EA1EC3F68F005B4BE0 /* AppDelegate.swift */; };
 		119591ED1EC3F68F005B4BE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119591EC1EC3F68F005B4BE0 /* ViewController.swift */; };
 		119591F21EC3F68F005B4BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119591F11EC3F68F005B4BE0 /* Assets.xcassets */; };
 		119591F51EC3F68F005B4BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119591F31EC3F68F005B4BE0 /* LaunchScreen.storyboard */; };
 		119592001EC3F68F005B4BE0 /* WriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119591FF1EC3F68F005B4BE0 /* WriterTests.swift */; };
-		1195920C1EC3FE25005B4BE0 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1195920B1EC3FE25005B4BE0 /* iflyMSC.framework */; };
 		1195920F1EC3FE97005B4BE0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1195920E1EC3FE97005B4BE0 /* libz.tbd */; };
 		119592111EC3FEAA005B4BE0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119592101EC3FEAA005B4BE0 /* CoreLocation.framework */; };
 		119592131EC3FEB2005B4BE0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119592121EC3FEB2005B4BE0 /* CoreTelephony.framework */; };
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1149896321E49686001E1443 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		119591E71EC3F68F005B4BE0 /* Writer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Writer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119591EA1EC3F68F005B4BE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		119591EC1EC3F68F005B4BE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		119591FB1EC3F68F005B4BE0 /* WriterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WriterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119591FF1EC3F68F005B4BE0 /* WriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriterTests.swift; sourceTree = "<group>"; };
 		119592011EC3F68F005B4BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1195920B1EC3FE25005B4BE0 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = ../iflyMSC.framework; sourceTree = "<group>"; };
 		1195920E1EC3FE97005B4BE0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		119592101EC3FEAA005B4BE0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		119592121EC3FEB2005B4BE0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -77,6 +77,7 @@
 				119592251EC3FF38005B4BE0 /* CoreGraphics.framework in Frameworks */,
 				119592231EC3FF20005B4BE0 /* Foundation.framework in Frameworks */,
 				119592211EC3FF12005B4BE0 /* UIKit.framework in Frameworks */,
+				1149896421E49686001E1443 /* iflyMSC.framework in Frameworks */,
 				1195921F1EC3FF05005B4BE0 /* QuartzCore.framework in Frameworks */,
 				1195921D1EC3FEFC005B4BE0 /* SystemConfiguration.framework in Frameworks */,
 				1195921B1EC3FEED005B4BE0 /* AudioToolbox.framework in Frameworks */,
@@ -86,7 +87,6 @@
 				119592131EC3FEB2005B4BE0 /* CoreTelephony.framework in Frameworks */,
 				119592111EC3FEAA005B4BE0 /* CoreLocation.framework in Frameworks */,
 				1195920F1EC3FE97005B4BE0 /* libz.tbd in Frameworks */,
-				1195920C1EC3FE25005B4BE0 /* iflyMSC.framework in Frameworks */,
 				6EC8DEEE6E3882DB0D23E029 /* Pods_Writer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,8 +124,8 @@
 		119591E91EC3F68F005B4BE0 /* Writer */ = {
 			isa = PBXGroup;
 			children = (
+				1149896321E49686001E1443 /* iflyMSC.framework */,
 				1195922A1EC4368E005B4BE0 /* UIImage+Extension.swift */,
-				1195920A1EC3FDED005B4BE0 /* Vender */,
 				119591EA1EC3F68F005B4BE0 /* AppDelegate.swift */,
 				119591EC1EC3F68F005B4BE0 /* ViewController.swift */,
 				119591F11EC3F68F005B4BE0 /* Assets.xcassets */,
@@ -143,14 +143,6 @@
 				119592011EC3F68F005B4BE0 /* Info.plist */,
 			);
 			path = WriterTests;
-			sourceTree = "<group>";
-		};
-		1195920A1EC3FDED005B4BE0 /* Vender */ = {
-			isa = PBXGroup;
-			children = (
-				1195920B1EC3FE25005B4BE0 /* iflyMSC.framework */,
-			);
-			path = Vender;
 			sourceTree = "<group>";
 		};
 		1195920D1EC3FE97005B4BE0 /* Frameworks */ = {
