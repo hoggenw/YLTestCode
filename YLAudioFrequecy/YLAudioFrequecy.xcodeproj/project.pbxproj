@@ -318,7 +318,7 @@
 				1135788F21A536B100DDEA74 /* YLScanViewManager.h */,
 				1135789021A536B100DDEA74 /* YLScanViewManager.m */,
 			);
-			name = YLOCScan;
+			path = YLOCScan;
 			sourceTree = "<group>";
 		};
 		1143BA5F1E5D7F01002CD06B = {
