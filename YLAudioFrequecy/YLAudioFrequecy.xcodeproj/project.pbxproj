@@ -255,7 +255,7 @@
 				11225DF5202857BA008DFDB6 /* YLMicphoneVoiceView.h */,
 				11225DF6202857BA008DFDB6 /* YLMicphoneVoiceView.m */,
 			);
-			name = Animation;
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		111CB1EB202417AD0035D245 /* part one */ = {
@@ -272,7 +272,7 @@
 				111CB1D52022ED3D0035D245 /* MicrophoneView.h */,
 				111CB1D62022ED3D0035D245 /* MicrophoneView.m */,
 			);
-			name = "part one";
+			path = "part one";
 			sourceTree = "<group>";
 		};
 		11225DFF20299E2B008DFDB6 /* Controllers */ = {
@@ -285,7 +285,7 @@
 				11225E032029B742008DFDB6 /* YLVoiceCircleViewController.h */,
 				11225E042029B742008DFDB6 /* YLVoiceCircleViewController.m */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		11225E06202AA524008DFDB6 /* Part two circle */ = {
@@ -294,7 +294,7 @@
 				11225E07202AA542008DFDB6 /* YLCircleView.h */,
 				11225E08202AA542008DFDB6 /* YLCircleView.m */,
 			);
-			name = "Part two circle";
+			path = "Part two circle";
 			sourceTree = "<group>";
 		};
 		1135787821A3B0F600DDEA74 /* YLOCScan */ = {

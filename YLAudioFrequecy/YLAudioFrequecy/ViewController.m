@@ -175,16 +175,16 @@
     //[copyTest propertyTest];
     //
     //
-    //    //测试语音输入动画
-    //    UIButton * testVioceButton = [self creatNormalBUttonWithName:@"语音动画" frame: CGRectMake(80, 100, 100, 40)];
-    //    [testVioceButton addTarget: self action:@selector(voiceAnimation) forControlEvents: UIControlEventTouchUpInside];
-    //    //测试语音输入动画
-    //    UIButton * micphoneButton = [self creatNormalBUttonWithName:@"micphone动画" frame: CGRectMake(80, 160, 100, 40)];
-    //    [micphoneButton addTarget: self action:@selector(voiceMicphoneAnimation) forControlEvents: UIControlEventTouchUpInside];
-    //    //测试语音输入动画
-    //    UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 60)];
-    //    [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
-    //    [circleButton setBackgroundImage:[UIImage imageNamed:@"goods_upload_image"] forState: UIControlStateNormal];
+        //测试语音输入动画
+        UIButton * testVioceButton = [self creatNormalBUttonWithName:@"语音动画" frame: CGRectMake(80, 100, 100, 40)];
+        [testVioceButton addTarget: self action:@selector(voiceAnimation) forControlEvents: UIControlEventTouchUpInside];
+        //测试语音输入动画
+        UIButton * micphoneButton = [self creatNormalBUttonWithName:@"micphone动画" frame: CGRectMake(80, 160, 100, 40)];
+        [micphoneButton addTarget: self action:@selector(voiceMicphoneAnimation) forControlEvents: UIControlEventTouchUpInside];
+        //测试语音输入动画
+        UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 60)];
+        [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
+        [circleButton setBackgroundImage:[UIImage imageNamed:@"goods_upload_image"] forState: UIControlStateNormal];
     
     
     //    [[NSRunLoop currentRunLoop] addTimer:[[NSTimer alloc] initWithFireDate:[NSDate date] interval: 1 repeats: YES block:^(NSTimer * _Nonnull timer) {
@@ -195,13 +195,13 @@
     //    NSLog(@"%@ ===== %@",[self.parentViewController class],self.parentViewController);
     
 #pragma mark - 二维码测试
-        UIButton * testButton = [UIButton new];
-        testButton.frame = CGRectMake(200, 200, 100, 50);
-        [self.view addSubview: testButton];
-        [testButton setTitle:@"扫描测试" forState: UIControlStateNormal];
-        testButton.titleLabel.textColor = [UIColor blackColor];
-        testButton.backgroundColor = [UIColor greenColor];
-        [testButton addTarget:self action:@selector(testButtonAction) forControlEvents:UIControlEventTouchUpInside];
+//        UIButton * testButton = [UIButton new];
+//        testButton.frame = CGRectMake(200, 200, 100, 50);
+//        [self.view addSubview: testButton];
+//        [testButton setTitle:@"扫描测试" forState: UIControlStateNormal];
+//        testButton.titleLabel.textColor = [UIColor blackColor];
+//        testButton.backgroundColor = [UIColor greenColor];
+//        [testButton addTarget:self action:@selector(testButtonAction) forControlEvents:UIControlEventTouchUpInside];
     
 }
 -(void)creatSelfQRcODE {
