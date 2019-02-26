@@ -416,6 +416,7 @@
 				11CC78001FCFDC8000BE3017 /* YLWKWebView.m */,
 			);
 			name = WKWebView;
+			path = WKWebview;
 			sourceTree = "<group>";
 		};
 		87127FE71EF60521009D4CF6 /* Quartz2D */ = {
@@ -428,7 +429,7 @@
 				87127FF11EF6296E009D4CF6 /* Bitmap.h */,
 				87127FF21EF6296E009D4CF6 /* Bitmap.m */,
 			);
-			name = Quartz2D;
+			path = Quartz2D;
 			sourceTree = "<group>";
 		};
 		87127FF41EF6B45B009D4CF6 /* AssetsLibrary */ = {
