@@ -41,7 +41,7 @@ class WaveView: UIView {
     }
     
     func doAnimation() {
-        
+       
         offset += speed;
         offset2 += speed2;
         
