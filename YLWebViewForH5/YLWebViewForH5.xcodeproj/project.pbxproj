@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110F238C224DB90300D6548A /* SimpleMallGoodsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 110F2389224DB90300D6548A /* SimpleMallGoodsDetailView.m */; };
+		110F238D224DB90300D6548A /* SimpleMallGoodsDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110F238A224DB90300D6548A /* SimpleMallGoodsDetailView.xib */; };
 		11E7982B20F302E1007F2D7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7982A20F302E1007F2D7F /* AppDelegate.m */; };
 		11E7982E20F302E1007F2D7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7982D20F302E1007F2D7F /* ViewController.m */; };
 		11E7983120F302E1007F2D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E7982F20F302E1007F2D7F /* Main.storyboard */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110F2389224DB90300D6548A /* SimpleMallGoodsDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleMallGoodsDetailView.m; sourceTree = "<group>"; };
+		110F238A224DB90300D6548A /* SimpleMallGoodsDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleMallGoodsDetailView.xib; sourceTree = "<group>"; };
+		110F238B224DB90300D6548A /* SimpleMallGoodsDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleMallGoodsDetailView.h; sourceTree = "<group>"; };
 		11E7982620F302E1007F2D7F /* YLWebViewForH5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLWebViewForH5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E7982920F302E1007F2D7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11E7982A20F302E1007F2D7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +130,9 @@
 		11E7982820F302E1007F2D7F /* YLWebViewForH5 */ = {
 			isa = PBXGroup;
 			children = (
+				110F238B224DB90300D6548A /* SimpleMallGoodsDetailView.h */,
+				110F2389224DB90300D6548A /* SimpleMallGoodsDetailView.m */,
+				110F238A224DB90300D6548A /* SimpleMallGoodsDetailView.xib */,
 				11E7985320F304C0007F2D7F /* Category */,
 				11E7984F20F303AF007F2D7F /* YLProgressView.h */,
 				11E7985020F303AF007F2D7F /* YLProgressView.m */,
@@ -278,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110F238D224DB90300D6548A /* SimpleMallGoodsDetailView.xib in Resources */,
 				11E7983620F302E2007F2D7F /* LaunchScreen.storyboard in Resources */,
 				11E7983320F302E2007F2D7F /* Assets.xcassets in Resources */,
 				11E7983120F302E1007F2D7F /* Main.storyboard in Resources */,
@@ -331,6 +340,7 @@
 				11E7983920F302E3007F2D7F /* main.m in Sources */,
 				11E7982B20F302E1007F2D7F /* AppDelegate.m in Sources */,
 				11E7985220F303AF007F2D7F /* YLProgressView.m in Sources */,
+				110F238C224DB90300D6548A /* SimpleMallGoodsDetailView.m in Sources */,
 				11E7986C20F304C0007F2D7F /* UIImageView+Extension.m in Sources */,
 				11E7986B20F304C0007F2D7F /* UIImage+Extension.m in Sources */,
 				11E7987120F304C0007F2D7F /* NSString+Extension.m in Sources */,
@@ -494,7 +504,10 @@
 				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLWebViewForH5/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftxmall.YLWebViewForH5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,7 +523,10 @@
 				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLWebViewForH5/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftxmall.YLWebViewForH5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,7 +540,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLWebViewForH5Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftxmall.YLWebViewForH5Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -539,7 +559,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87F6Z4326W;
 				INFOPLIST_FILE = YLWebViewForH5Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftxmall.YLWebViewForH5Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
