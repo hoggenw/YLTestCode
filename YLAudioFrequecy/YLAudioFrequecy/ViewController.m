@@ -151,8 +151,8 @@
     //    NSLog(@" class name  :   %@",[self.message class]);
     
 #pragma mark - runtime执行测试
-    //[self test];
-    //    [self runtimeTest];
+    [self test];
+        [self runtimeTest];
 #pragma mark - runtime执行模型赋值测试
     //    NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
     //    NSData *jsonData = [NSData dataWithContentsOfFile:path];
@@ -175,16 +175,16 @@
     //[copyTest propertyTest];
     //
     //
-        //测试语音输入动画
-        UIButton * testVioceButton = [self creatNormalBUttonWithName:@"语音动画" frame: CGRectMake(80, 100, 100, 40)];
-        [testVioceButton addTarget: self action:@selector(voiceAnimation) forControlEvents: UIControlEventTouchUpInside];
-        //测试语音输入动画
-        UIButton * micphoneButton = [self creatNormalBUttonWithName:@"micphone动画" frame: CGRectMake(80, 160, 100, 40)];
-        [micphoneButton addTarget: self action:@selector(voiceMicphoneAnimation) forControlEvents: UIControlEventTouchUpInside];
-        //测试语音输入动画
-        UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 60)];
-        [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
-        [circleButton setBackgroundImage:[UIImage imageNamed:@"goods_upload_image"] forState: UIControlStateNormal];
+//        //测试语音输入动画
+//        UIButton * testVioceButton = [self creatNormalBUttonWithName:@"语音动画" frame: CGRectMake(80, 100, 100, 40)];
+//        [testVioceButton addTarget: self action:@selector(voiceAnimation) forControlEvents: UIControlEventTouchUpInside];
+//        //测试语音输入动画
+//        UIButton * micphoneButton = [self creatNormalBUttonWithName:@"micphone动画" frame: CGRectMake(80, 160, 100, 40)];
+//        [micphoneButton addTarget: self action:@selector(voiceMicphoneAnimation) forControlEvents: UIControlEventTouchUpInside];
+//        //测试语音输入动画
+//        UIButton * circleButton = [self creatNormalBUttonWithName:@"circle动画" frame: CGRectMake(80, 220, 100, 60)];
+//        [circleButton addTarget: self action:@selector(voiceCircleAnimation) forControlEvents: UIControlEventTouchUpInside];
+//        [circleButton setBackgroundImage:[UIImage imageNamed:@"goods_upload_image"] forState: UIControlStateNormal];
     
     
     //    [[NSRunLoop currentRunLoop] addTimer:[[NSTimer alloc] initWithFireDate:[NSDate date] interval: 1 repeats: YES block:^(NSTimer * _Nonnull timer) {
