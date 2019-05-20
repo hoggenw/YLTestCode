@@ -25,7 +25,6 @@
 #import <objc/message.h>
 #import "TestRunLoop.h"
 #import "YLMicrophoneViewController.h"
-
 #import "TestDevice.h"
 
 #import "YLVoiceAnimationViewController.h"
@@ -108,7 +107,7 @@
     //    [self animate1];
     
     //
-    //  #pragma mark - GCD相关测试
+ #pragma mark - GCD相关测试
     //    TestGCD * test = [[TestGCD alloc] init];
     //    [test test];
     
@@ -135,31 +134,33 @@
     
 #pragma mark - 自己写的kvo test
     
-    //   NSString * number = @"1011";
-    //    self.message = [[Message alloc] init];
-    //    [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
-    //                       withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
-    //                           NSLog(@"%@.%@  oldVlue is %@ newvalue is  now: %@", observedObject, observedKey, oldValue,newValue);
-    //
-    //                       }];
-    //    NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
-    //    for (int  i = 0 ; i < array.count; i++) {
-    //        self.message.text = array[i];
-    //        NSLog(@"self.message.text : %@", self.message.text);
-    //    }
-    //
-    //    NSLog(@" class name  :   %@",[self.message class]);
+//       NSString * number = @"1011";
+//        self.message = [[Message alloc] init];
+//        [self.message YLAddObserver:self forKey:NSStringFromSelector(@selector(text))
+//                           withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
+//                               NSLog(@"%@.%@  oldVlue is %@ newvalue is  now: %@", observedObject, observedKey, oldValue,newValue);
+//
+//                           }];
+//        NSArray * array = @[@"Hello World!", @"Objective C", @"Swift", @"Peng Gu", @"peng.gu@me.com", @"www.gupeng.me", @"glowing.com"];
+//        for (int  i = 0 ; i < array.count; i++) {
+//            self.message.text = array[i];
+//            NSLog(@"self.message.text : %@", self.message.text);
+//        }
+//
+//        NSLog(@" class name  :   %@",[self.message class]);
     
 #pragma mark - runtime执行测试
-    [self test];
-        [self runtimeTest];
+//    [self test];
+//        [self runtimeTest];
 #pragma mark - runtime执行模型赋值测试
-    //    NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
-    //    NSData *jsonData = [NSData dataWithContentsOfFile:path];
-    //    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:NULL];
-    //    Man * model = [Man new];
-    //    [model setDict: [Man specialArrayJson]];
-    //    NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.dog);
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
+//        NSData *jsonData = [NSData dataWithContentsOfFile:path];
+//        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:NULL];
+//        //NSLog(@"json : %@",json);
+//        Man * model = [Man objectWithDict:json];
+//        //[model setDict: [Man specialArrayJson]];
+////        [model setDict:];
+//        NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.books.firstObject);
 #pragma mark - runloop测试
     //    _testRunLoop = [TestRunLoop new];
     //    [_testRunLoop logStatusOfRunLoop];
@@ -168,11 +169,11 @@
     
 #pragma mark -Copy&MultableCopyTest结果
     
-    //    Copy_MultableCopyTest * copyTest = [Copy_MultableCopyTest new];
-    //    [copyTest containerTest];
-    //[copyTest mutableContainerTest];
-    //[copyTest customObjectiveTest];
-    //[copyTest propertyTest];
+        Copy_MultableCopyTest * copyTest = [Copy_MultableCopyTest new];
+        [copyTest containerTest];
+        [copyTest mutableContainerTest];
+        [copyTest customObjectiveTest];
+        [copyTest propertyTest];
     //
     //
 //        //测试语音输入动画
@@ -599,7 +600,7 @@
     objc_property_attribute_t attrs[] = {type,ownership,backingivar};
     
     class_addProperty(cls, "property2", attrs, 3);
-    objc_registerClassPair(cls);
+    //objc_registerClassPair(cls);
     
     id instanc = [[cls alloc] init];
     [instanc performSelector:@selector(submethod1)];

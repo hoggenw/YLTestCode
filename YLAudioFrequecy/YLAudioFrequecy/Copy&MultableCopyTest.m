@@ -38,6 +38,7 @@
 @implementation Copy_MultableCopyTest
 
 -(void)propertyTest {
+    NSLog(@"======================方法分割处=====================");
     NSArray *array = @[ @1, @2, @3, @4 ];
     NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithArray:array];
     self.array = [mutableArray copy];//本质上赋值的是mutable的值
@@ -48,7 +49,7 @@
 
 
 - (void)customObjectiveTest {
-    
+    NSLog(@"======================方法分割处=====================");
     Person * model = [Person new];
     NSString *nameString = @"hoggen";
     model.name = [nameString mutableCopy];
@@ -57,8 +58,8 @@
     Person * mutableCopyPerson = [model mutableCopy];
     
     NSLog(@"origin_p: %p, class: %@", model, [model class]);
-    NSLog(@"copyArray_p: %p, class: %@", copyPerson, [copyPerson class]);
-    NSLog(@"mutableCopyArray_p: %p, class: %@", mutableCopyPerson, [mutableCopyPerson class]);
+    NSLog(@"copyPerson: %p, class: %@", copyPerson, [copyPerson class]);
+    NSLog(@"mutableCopyPerson: %p, class: %@", mutableCopyPerson, [mutableCopyPerson class]);
     
     NSLog(@"value:%@, object_p: %p, class: %@",nameString,nameString, [nameString class]);
     NSLog(@"======原对象=====");
@@ -87,11 +88,12 @@
 }
 
 - (void)containerTest {
+    NSLog(@"======================方法分割处=====================");
     NSMutableString *multableString = [NSMutableString stringWithFormat:@"非容器可变对象"];
     
     NSArray *array = [NSArray arrayWithObjects:multableString, @"非容器不可变对象", nil];
-    NSArray *copyArray = array;//[array copy];
-    NSArray *mutableCopyArray = array;// [array mutableCopy];
+    NSArray *copyArray = [array copy];//array;//
+    NSArray *mutableCopyArray =  [array mutableCopy];//array;//
     
     NSLog(@"array_p: %p, class: %@", array, [array class]);
     NSLog(@"copyArray_p: %p, class: %@", copyArray, [copyArray class]);
@@ -130,11 +132,13 @@
 
 
 - (void)mutableContainerTest {
+    NSLog(@"======================方法分割处=====================");
+    
     NSMutableString *multableString = [NSMutableString stringWithFormat:@"非容器可变对象"];
     
     NSMutableArray *array = [NSMutableArray arrayWithObjects:multableString, @"非容器不可变对象", nil];
-    NSMutableArray *copyArray = array;//[array copy];
-    NSMutableArray *mutableCopyArray = array;//[array mutableCopy];
+    NSMutableArray *copyArray = [array copy];//array;//
+    NSMutableArray *mutableCopyArray = [array mutableCopy];//array;//
     
     NSLog(@"array_p: %p, class: %@", array, [array class]);
     NSLog(@"copyArray_p: %p, class: %@", copyArray, [copyArray class]);

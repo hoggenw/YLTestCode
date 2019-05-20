@@ -118,8 +118,8 @@ class ViewController: UIViewController {
     }
     
     func drawMap() {
-//        let vc = DrawMapViewController();
-//        self.navigationController?.pushViewController(vc, animated: true);
+        let vc = DrawMapViewController();
+        self.navigationController?.pushViewController(vc, animated: true);
     }
     
     func callApp() {

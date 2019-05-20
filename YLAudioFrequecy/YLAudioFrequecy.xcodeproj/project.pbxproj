@@ -217,7 +217,6 @@
 		111CB1A22021D2F00035D245 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				111CB1A32021D2F00035D245 /* UIResponder+Extension.h */,
 				111CB1A42021D2F00035D245 /* UIImageView+Extension.h */,
 				111CB1A52021D2F00035D245 /* NSString+Extension.h */,
 				111CB1A62021D2F00035D245 /* NSTimer+Extension.h */,
@@ -228,6 +227,7 @@
 				111CB1AB2021D2F00035D245 /* UIViewController+Extension.m */,
 				111CB1AC2021D2F00035D245 /* UIImage+Extension.m */,
 				111CB1AD2021D2F00035D245 /* UIImageView+Extension.m */,
+				111CB1A32021D2F00035D245 /* UIResponder+Extension.h */,
 				111CB1AE2021D2F00035D245 /* UIResponder+Extension.m */,
 				111CB1AF2021D2F00035D245 /* UILabel+Extension.h */,
 				111CB1B02021D2F00035D245 /* NSDate+Extension.m */,
