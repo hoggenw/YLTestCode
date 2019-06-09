@@ -86,30 +86,33 @@
 //    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[strUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]]] cachePolicy:NSURLRequestReloadRevalidatingCacheData timeoutInterval:30];
 //    //NSLog(@"request.URL == %@",request.URL);
 //    [self.webView loadRequest:request];
-    //    QuartzShadowAndGradient * view = [[QuartzShadowAndGradient alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    //    [self.view addSubview: view];
-    //    Bitmap * bitmap = [Bitmap new];
-    //    UIImageView * imageView = [[UIImageView alloc] initWithImage: [bitmap test]];
-    //    imageView.center = self.view.center;
-    //    [self.view addSubview:imageView];
-    //
     
-    //    AssetsLibraryTest *model = [AssetsLibraryTest new];
-    //    [model test1];
     
-    //    TestImage * model = [TestImage new];
-    //
-    //    self.showImage = [UIImageView new];
-    //
-    //    self.showImage.image = [model resultImage];
-    //    self.showImage.frame = CGRectMake(0, 0, 100, 100);
-    //    [self.view addSubview: self.showImage];
-    //    [self animate1];
+    
+//        QuartzShadowAndGradient * view = [[QuartzShadowAndGradient alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//        [self.view addSubview: view];
+//        Bitmap * bitmap = [Bitmap new];
+//        UIImageView * imageView = [[UIImageView alloc] initWithImage: [bitmap test]];
+//        imageView.center = self.view.center;
+//        [self.view addSubview:imageView];
+//
+//
+//        AssetsLibraryTest *model = [AssetsLibraryTest new];
+//        [model test1];
+//
+//        TestImage * model = [TestImage new];
+//
+//        self.showImage = [UIImageView new];
+//
+//        self.showImage.image = [model resultImage];
+//        self.showImage.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width);
+//        [self.view addSubview: self.showImage];
+//        [self animate2];
     
     //
  #pragma mark - GCD相关测试
-    //    TestGCD * test = [[TestGCD alloc] init];
-    //    [test test];
+//        TestGCD * test = [[TestGCD alloc] init];
+//        [test test];
     
     
 #pragma mark - 你说到设备："请通知应用程序每次更改时方向"
@@ -162,18 +165,18 @@
 ////        [model setDict:];
 //        NSLog(@"测试结果:%@== ==%@==%ld==%f==%@",model.name,model.money,model.age,model.height,model.books.firstObject);
 #pragma mark - runloop测试
-    //    _testRunLoop = [TestRunLoop new];
-    //    [_testRunLoop logStatusOfRunLoop];
-    //    [_testRunLoop showRunLoop];
+//        _testRunLoop = [TestRunLoop new];
+        //[_testRunLoop logStatusOfRunLoop];
+//        [_testRunLoop showRunLoop];
     
     
 #pragma mark -Copy&MultableCopyTest结果
     
-        Copy_MultableCopyTest * copyTest = [Copy_MultableCopyTest new];
-        [copyTest containerTest];
-        [copyTest mutableContainerTest];
-        [copyTest customObjectiveTest];
-        [copyTest propertyTest];
+//        Copy_MultableCopyTest * copyTest = [Copy_MultableCopyTest new];
+//        [copyTest containerTest];
+//        [copyTest mutableContainerTest];
+//        [copyTest customObjectiveTest];
+//        [copyTest propertyTest];
     //
     //
 //        //测试语音输入动画
@@ -188,21 +191,21 @@
 //        [circleButton setBackgroundImage:[UIImage imageNamed:@"goods_upload_image"] forState: UIControlStateNormal];
     
     
-    //    [[NSRunLoop currentRunLoop] addTimer:[[NSTimer alloc] initWithFireDate:[NSDate date] interval: 1 repeats: YES block:^(NSTimer * _Nonnull timer) {
-    //        NSLog(@"测试双击home后台运行");
-    //        //测试结果显示双击home键时，当前程序处于继续运行状态
-    //    }] forMode: NSRunLoopCommonModes];
-    //
-    //    NSLog(@"%@ ===== %@",[self.parentViewController class],self.parentViewController);
+//        [[NSRunLoop currentRunLoop] addTimer:[[NSTimer alloc] initWithFireDate:[NSDate date] interval: 1 repeats: YES block:^(NSTimer * _Nonnull timer) {
+//            NSLog(@"测试双击home后台运行");
+//            //测试结果显示双击home键时，当前程序处于继续运行状态
+//        }] forMode: NSRunLoopCommonModes];
+    
+//        NSLog(@"%@ ===== %@",[self.parentViewController class],self.parentViewController);
     
 #pragma mark - 二维码测试
-//        UIButton * testButton = [UIButton new];
-//        testButton.frame = CGRectMake(200, 200, 100, 50);
-//        [self.view addSubview: testButton];
-//        [testButton setTitle:@"扫描测试" forState: UIControlStateNormal];
-//        testButton.titleLabel.textColor = [UIColor blackColor];
-//        testButton.backgroundColor = [UIColor greenColor];
-//        [testButton addTarget:self action:@selector(testButtonAction) forControlEvents:UIControlEventTouchUpInside];
+        UIButton * testButton = [UIButton new];
+        testButton.frame = CGRectMake(200, 200, 100, 50);
+        [self.view addSubview: testButton];
+        [testButton setTitle:@"扫描测试" forState: UIControlStateNormal];
+        testButton.titleLabel.textColor = [UIColor blackColor];
+        testButton.backgroundColor = [UIColor greenColor];
+        [testButton addTarget:self action:@selector(testButtonAction) forControlEvents:UIControlEventTouchUpInside];
     
 }
 -(void)creatSelfQRcODE {
@@ -212,11 +215,16 @@
     [self.view addSubview:codeView];
 }
 -(void)testButtonAction {
-    //聊天
+
     YLScanViewManager * manager = [YLScanViewManager sharedInstance];
     manager.imageStyle = secondeNetGrid;
-    manager.delegate = self;
-    [manager showScanView: self];
+//    manager.delegate = self;
+//    [manager showScanView: self];
+    
+    [manager showScanView:self withBlock:^(YLScanResult * result) {
+         NSLog(@"wlg====%@", result.strScanned);
+    }];
+    
 }
 -(void)scanViewControllerSuccessWith:(YLScanResult *)result {
     NSLog(@"wlg====%@", result.strScanned);
@@ -268,6 +276,9 @@
 -(void)testLoop{
     NSLog(@"testtesttest");
 }
+
+
+
 #pragma mark - runtime test
 - (void)runtimeTest {
     TestRuntime * model = [TestRuntime shareRuntimer];
@@ -414,7 +425,7 @@
     [UIView setAnimationDidStopSelector:@selector(didStop)];//监听结束的事件
     [UIView setAnimationDuration:2.0];//执行时间
     [UIView setAnimationRepeatAutoreverses:YES];//自动复原
-    [UIView setAnimationRepeatCount:1.5];//重复次数
+    [UIView setAnimationRepeatCount:2.5];//重复次数
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];//执行的加速过程（加速开始，减速结束）
     [UIView setAnimationBeginsFromCurrentState:YES];//是否由当前动画状态开始执行（处理同一个控件上一次动画还没有结束，这次动画就要开始的情况）
     //实际执行的动画
@@ -430,6 +441,8 @@
 //这个有点问题
 -(void)didStop{
     NSLog(@"did stop");
+    self.showImage.transform = CGAffineTransformConcat(CGAffineTransformMakeRotation(0), CGAffineTransformMakeScale(1, 1));
+    self.showImage.alpha = 1;
 }
 
 

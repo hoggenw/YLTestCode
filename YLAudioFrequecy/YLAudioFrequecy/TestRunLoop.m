@@ -13,7 +13,7 @@
 -(void)logStatusOfRunLoop {
     //runloop 状态监听
     // 创建observer
-    NSLog(@"即将进入loop kCFRunLoopEntry %zd \n, 即将处理timer kCFRunLoopBeforeTimers %zd \n,即将处理source kCFRunLoopBeforeSources %zd \n, 即将进入休眠 kCFRunLoopBeforeWaiting %zd \n,从休眠中唤醒 kCFRunLoopAfterWaiting %zd \n,即将推出 kCFRunLoopExit %zd \n",kCFRunLoopEntry,kCFRunLoopBeforeTimers,kCFRunLoopBeforeSources,kCFRunLoopBeforeWaiting,kCFRunLoopAfterWaiting,kCFRunLoopExit);
+    NSLog(@"即将进入loop kCFRunLoopEntry %zd \n, 即将处理timer kCFRunLoopBeforeTimers %zd \n,即将处理source kCFRunLoopBeforeSources %zd \n, 即将进入休眠 kCFRunLoopBeforeWaiting %zd \n,从休眠中唤醒 kCFRunLoopAfterWaiting %zd \n,即将退出出 kCFRunLoopExit %zd \n",kCFRunLoopEntry,kCFRunLoopBeforeTimers,kCFRunLoopBeforeSources,kCFRunLoopBeforeWaiting,kCFRunLoopAfterWaiting,kCFRunLoopExit);
     CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(CFAllocatorGetDefault(), kCFRunLoopAllActivities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
         NSLog(@"----监听到RunLoop状态发生改变---%zd", activity);
     });

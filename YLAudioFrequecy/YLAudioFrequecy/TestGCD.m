@@ -11,13 +11,13 @@
 @implementation TestGCD
 
 -(void)test {
-   //[self creatQueue];
-   //[self testCommunication];
-    //[self barrier];
-     //[self testMain];
-    //[self groub];
+//   [self creatQueue];
+//   [self testCommunication];
+//    [self barrier];
+//     [self testMain];
+//    [self groub];
 //    [self deadThread];
-  //  [self deadThread2];
+    [self deadThread2];
     [self semaphore];
 }
 
@@ -228,7 +228,7 @@
     });
     //延时执行，不受栅栏的影响
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSLog(@"run -----");
+        NSLog(@"run ----延时执行，不受栅栏的影响");
     });
 }
 
