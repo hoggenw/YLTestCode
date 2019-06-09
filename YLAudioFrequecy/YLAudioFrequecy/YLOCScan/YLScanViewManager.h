@@ -12,6 +12,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^ScanResultBlock)(YLScanResult *);
+
 @interface YLScanViewManager : NSObject
 
 @property (nonatomic,weak)id<YLScanViewControllerDelegate> delegate;
@@ -37,6 +39,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic,assign)float scanViewWidth;
 
+
+/**
+ *  block返回结果
+ */
+@property (nonatomic,copy)ScanResultBlock scanRresultBlock;
 
 /**
  *  扫码区域的4个角类型
@@ -65,6 +72,10 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)sharedInstance;
 //显示扫描界面
 -(void)showScanView:(UIViewController *)viewController ;
+
+
+//显示扫描界面
+-(void)showScanView:(UIViewController *)viewController withBlock:(ScanResultBlock)block;
 
 //生成二维码界面
 /*

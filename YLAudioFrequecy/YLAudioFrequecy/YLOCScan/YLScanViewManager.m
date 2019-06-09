@@ -131,8 +131,19 @@
     if (self.delegate != nil) {
         [self.delegate scanViewControllerSuccessWith: result];
     }
+    
+    if (self.scanRresultBlock != NULL) {
+        self.scanRresultBlock(result);
+    }
 }
 
-
+//显示扫描界面
+-(void)showScanView:(UIViewController *)viewController withBlock:(ScanResultBlock)block {
+    self.scanRresultBlock = block;
+    _scanViewController.delegate = self;
+    _scanViewController.hidesBottomBarWhenPushed = true;
+    [viewController.navigationController pushViewController:_scanViewController animated: true];
+    
+}
 
 @end
