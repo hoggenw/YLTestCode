@@ -1,12 +1,20 @@
 PODS:
   - BaiduMapKit (3.4.2)
+  - BMKLocationKit (1.5.0)
 
 DEPENDENCIES:
   - BaiduMapKit
+  - BMKLocationKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BaiduMapKit
+    - BMKLocationKit
 
 SPEC CHECKSUMS:
   BaiduMapKit: f61b19ecf07a3f2deede72b221b366bf698739ed
+  BMKLocationKit: 40d267478acd8704ddebd0e9deaddc727b13df9f
 
-PODFILE CHECKSUM: 17a291b75feb71fed6b84464cefd95fdfa40803d
+PODFILE CHECKSUM: b89d8f94ca7ce9f58bac122cee8803dba3d791b3
 
-COCOAPODS: 1.3.0.beta.2
+COCOAPODS: 1.5.0
