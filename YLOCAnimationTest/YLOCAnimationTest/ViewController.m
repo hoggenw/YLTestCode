@@ -11,7 +11,7 @@
 #import "YLVoiceAnimationViewController.h"
 #import "YLVoiceCircleViewController.h"
 #import "BaiduMapViewController.h"
-
+#import "BMKPolylineViewController.h"
 @interface ViewController ()
 
 @end
@@ -34,6 +34,10 @@
     
     UIButton * mapButton = [self creatNormalBUttonWithName:@"行车测试" frame: CGRectMake(80, 280, 100, 40)];
     [mapButton addTarget: self action:@selector(baiduMapButtonAction) forControlEvents: UIControlEventTouchUpInside];
+    
+    
+    UIButton * mapButton2 = [self creatNormalBUttonWithName:@"后台定位" frame: CGRectMake(80, 340, 100, 40)];
+    [mapButton2 addTarget: self action:@selector(baiduMapButtonAction2) forControlEvents: UIControlEventTouchUpInside];
 }
 -(UIButton *)creatNormalBUttonWithName:(NSString *)name frame:(CGRect)frame {
     
@@ -74,7 +78,10 @@
     [self.navigationController pushViewController: vc animated: true];
 }
 
-
+-(void)baiduMapButtonAction2 {
+    BMKPolylineViewController * vc = [BMKPolylineViewController new];
+    [self.navigationController pushViewController: vc animated: true];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

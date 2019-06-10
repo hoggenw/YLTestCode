@@ -11,6 +11,8 @@
 #import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
 #import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
 #import "MapCarAnnotationView.h"
+#import "AppDelegate.h"
+#import <BMKLocationkit/BMKLocationComponent.h>
 
 //百度地图秘钥
 //NS6lYC0TtQdaKmuWseunZ5pqobicYbyY
@@ -20,6 +22,7 @@
     BMKPointAnnotation *pointAnnotation ;
     BMKLocationService *_locService;
     BMKGeoCodeSearch *_geoCodeSearch;
+    CLLocationCoordinate2D * coors;
 }
 @property (nonatomic, strong) MapCarAnnotationView *busAnnotationView;
 @end
@@ -51,6 +54,12 @@
     
     //启动LocationService
     [_locService startUserLocationService];
+    
+    
+    
+ 
+    
+    
 }
 
 //遵循代理写在viewwillappear中
@@ -60,6 +69,21 @@
     mapView.delegate = self;
     _locService.delegate = self;
     _geoCodeSearch.delegate = self;
+    
+    AppDelegate *AppDele = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSInteger count = 0;
+    count = AppDele.locationArray.count;
+    if (count <= 0) {
+        count = 0;
+    }
+    coors = malloc(count * sizeof(CLLocationCoordinate2D));
+    for (int i = 0; i<AppDele.locationArray.count; i++) {
+        BMKLocation * locationM = AppDele.locationArray[i];
+        coors[i] = locationM.location.coordinate;
+        NSLog(@"组合绘制线数组");
+    }
+    BMKPolyline *polyline = [BMKPolyline polylineWithCoordinates:coors count:AppDele.locationArray.count];
+    [mapView addOverlay:polyline];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -188,6 +212,19 @@
     
     self.busAnnotationView = annotationView;
     return annotationView;
+}
+
+- (BMKOverlayView *)mapView:(BMKMapView *)mapView viewForOverlay:(id <BMKOverlay>)overlay{
+   
+    if ([overlay isKindOfClass:[BMKPolyline class]]){
+         NSLog(@"绘制线");
+        BMKPolylineView *polylineView = [[BMKPolylineView alloc] initWithOverlay:overlay];
+        polylineView.strokeColor = [UIColor redColor];
+        polylineView.lineWidth = 2.0;
+        
+        return polylineView;
+    }
+    return nil;
 }
 
 @end

@@ -8,10 +8,12 @@
 
 #import "AppDelegate.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import <BMKLocationkit/BMKLocationComponent.h>
 #import "ViewController.h"
 
-@interface AppDelegate (){
+@interface AppDelegate ()<BMKLocationManagerDelegate,BMKLocationAuthDelegate>{
     BMKMapManager* _mapManager;
+    BMKLocationManager *_locationManager;
 }
 
 @end
@@ -28,13 +30,66 @@
     if (!ret) {
         NSLog(@"manager start failed!");
     }
+    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"NS6lYC0TtQdaKmuWseunZ5pqobicYbyY" authDelegate:self];
+    //初始化实例
+    _locationManager = [[BMKLocationManager alloc] init];
+    //设置delegate
+    _locationManager.delegate = self;
+    //设置返回位置的坐标系类型
+    _locationManager.coordinateType = BMKLocationCoordinateTypeBMK09LL;
+    //设置距离过滤参数
+    _locationManager.distanceFilter = kCLLocationAccuracyHundredMeters;
+    //设置预期精度参数
+    _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    //设置应用位置类型
+    _locationManager.activityType = CLActivityTypeAutomotiveNavigation;
+    //设置是否自动停止位置更新
+    _locationManager.pausesLocationUpdatesAutomatically = NO;
+    //设置是否允许后台定位
+    _locationManager.allowsBackgroundLocationUpdates = YES;
+    //设置位置获取超时时间
+    _locationManager.locationTimeout = 10;
+    //设置获取地址信息超时时间
+    _locationManager.reGeocodeTimeout = 10;
+
     
-    
+    [_locationManager setLocatingWithReGeocode:YES];
+    [_locationManager startUpdatingLocation];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     return YES;
+}
+
+- (void)BMKLocationManager:(BMKLocationManager * _Nonnull)manager didUpdateLocation:(BMKLocation * _Nullable)location orError:(NSError * _Nullable)error
+
+{
+    if (error)
+    {
+        NSLog(@"locError:{%ld - %@};", (long)error.code, error.localizedDescription);
+    } if (location) {//得到定位信息，添加annotation
+        if (_locationArray == nil) {
+            _locationArray = [NSMutableArray array];
+        }
+        if (location.location) {
+            NSLog(@"LOC = %@",location.location);
+            [_locationArray addObject: location];
+            
+        }
+        if (location.rgcData) {
+            NSLog(@"rgc = %@",[location.rgcData description]);
+        }
+    }
+}
+
+
+/**
+ *@brief 返回授权验证错误
+ *@param iError 错误号 : 为0时验证通过，具体参加BMKLocationAuthErrorCode
+ */
+- (void)onCheckPermissionState:(BMKLocationAuthErrorCode)iError{
+    NSLog(@"BMKLocationAuthErrorCode = %@",@(iError));
 }
 
 

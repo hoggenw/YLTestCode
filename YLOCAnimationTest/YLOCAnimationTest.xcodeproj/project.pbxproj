@@ -35,6 +35,7 @@
 		11225E80202AAEA2008DFDB6 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E73202AAEA2008DFDB6 /* UIColor+Extension.m */; };
 		11225E81202AAEA2008DFDB6 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E74202AAEA2008DFDB6 /* NSString+Extension.m */; };
 		11225E82202AAEA2008DFDB6 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225E78202AAEA2008DFDB6 /* UIView+Extension.m */; };
+		1190C34B229D19460070FA95 /* BMKPolylineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1190C34A229D19460070FA95 /* BMKPolylineViewController.m */; };
 		11B09C3020566AD900E8346A /* BaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C2F20566AD900E8346A /* BaiduMapViewController.m */; };
 		11B09C332057B0A900E8346A /* MapCarAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B09C322057B0A900E8346A /* MapCarAnnotationView.m */; };
 		914BAB6A6BE27080DC88E070 /* libPods-YLOCAnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0055FB0BFAAF6880D4EA248 /* libPods-YLOCAnimationTest.a */; };
@@ -108,6 +109,8 @@
 		11225E76202AAEA2008DFDB6 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
 		11225E77202AAEA2008DFDB6 /* ExtensionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionHeader.h; sourceTree = "<group>"; };
 		11225E78202AAEA2008DFDB6 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		1190C349229D19460070FA95 /* BMKPolylineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMKPolylineViewController.h; sourceTree = "<group>"; };
+		1190C34A229D19460070FA95 /* BMKPolylineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMKPolylineViewController.m; sourceTree = "<group>"; };
 		11B09C2E20566AD900E8346A /* BaiduMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
 		11B09C2F20566AD900E8346A /* BaiduMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMapViewController.m; sourceTree = "<group>"; };
 		11B09C312057B0A900E8346A /* MapCarAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapCarAnnotationView.h; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 				11B09C2F20566AD900E8346A /* BaiduMapViewController.m */,
 				11B09C312057B0A900E8346A /* MapCarAnnotationView.h */,
 				11B09C322057B0A900E8346A /* MapCarAnnotationView.m */,
+				1190C349229D19460070FA95 /* BMKPolylineViewController.h */,
+				1190C34A229D19460070FA95 /* BMKPolylineViewController.m */,
 			);
 			path = MapTest;
 			sourceTree = "<group>";
@@ -313,7 +318,6 @@
 				11225E0F202AA81F008DFDB6 /* Sources */,
 				11225E10202AA81F008DFDB6 /* Frameworks */,
 				11225E11202AA81F008DFDB6 /* Resources */,
-				91B1FE4218A6C0CCC1A3BA76 /* [CP] Embed Pods Frameworks */,
 				4339A3B0826D1F71F6A2E465 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -355,6 +359,11 @@
 					11225E12202AA81F008DFDB6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					11225E2A202AA81F008DFDB6 = {
 						CreatedOnToolsVersion = 9.2;
@@ -413,26 +422,11 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLOCAnimationTest/Pods-YLOCAnimationTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91B1FE4218A6C0CCC1A3BA76 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLOCAnimationTest/Pods-YLOCAnimationTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AFA09659A48C20FBB1FE7AA8 /* [CP] Check Pods Manifest.lock */ = {
@@ -471,6 +465,7 @@
 				11225E81202AAEA2008DFDB6 /* NSString+Extension.m in Sources */,
 				11B09C332057B0A900E8346A /* MapCarAnnotationView.m in Sources */,
 				11225E7F202AAEA2008DFDB6 /* NSTimer+Extension.m in Sources */,
+				1190C34B229D19460070FA95 /* BMKPolylineViewController.m in Sources */,
 				11225E57202AAD8F008DFDB6 /* YLMicphoneVoiceView.m in Sources */,
 				11225E61202AADF9008DFDB6 /* YLMicrophoneViewController.m in Sources */,
 				11225E7C202AAEA2008DFDB6 /* UIImageView+Extension.m in Sources */,
