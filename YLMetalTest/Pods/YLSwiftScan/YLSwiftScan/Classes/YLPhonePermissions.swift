@@ -18,7 +18,7 @@ class YLPhonePermissions: NSObject {
     
     static func  isGetCameraPermission() -> Bool {
         
-        let authStaus = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo)
+        let authStaus = AVCaptureDevice.authorizationStatus(for: AVMediaTypeVideo)
         
         if authStaus != AVAuthorizationStatus.denied{
             return true
