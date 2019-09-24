@@ -20,5 +20,17 @@ class ShowInfoTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    public  static func cellInTableView(tableView :UITableView) ->ShowInfoTableViewCell {
+        let identifier = "ShowInfoTableViewCell";
+        var cell:ShowInfoTableViewCell? = tableView.dequeueReusableCell(withIdentifier: identifier) as? ShowInfoTableViewCell;
+        
+        guard let _ = cell  else {
+            cell = ShowInfoTableViewCell();
+            return cell!;
+        }
+        
+        return cell!;
+        
+    }
 }

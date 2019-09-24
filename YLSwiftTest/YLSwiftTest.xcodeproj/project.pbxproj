@@ -3,25 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111BABDB232F2A4C0011C710 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABDA232F2A4C0011C710 /* Music.swift */; };
+		111BABDD232F2B340011C710 /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABDC232F2B340011C710 /* MusicListViewModel.swift */; };
+		111BABE0232F2D580011C710 /* YLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABDF232F2D580011C710 /* YLConstant.swift */; };
+		111BABE3232F2DF90011C710 /* LanguageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABE2232F2DF90011C710 /* LanguageUtil.swift */; };
+		111BABE6232F38E90011C710 /* ShowInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABE5232F38E90011C710 /* ShowInfoTableViewCell.swift */; };
+		111BABE8232F67F80011C710 /* UILabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABE7232F67F80011C710 /* UILabelViewController.swift */; };
+		111BABEC232F6CCF0011C710 /* UITextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABEB232F6CCF0011C710 /* UITextFieldViewController.swift */; };
 		112262472328CEB7007CE3A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112262462328CEB7007CE3A6 /* AppDelegate.swift */; };
 		112262492328CEB7007CE3A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112262482328CEB7007CE3A6 /* ViewController.swift */; };
-		1122624C2328CEB7007CE3A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122624A2328CEB7007CE3A6 /* Main.storyboard */; };
 		1122624E2328CEB8007CE3A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1122624D2328CEB8007CE3A6 /* Assets.xcassets */; };
-		112262512328CEB8007CE3A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122624F2328CEB8007CE3A6 /* LaunchScreen.storyboard */; };
+		1169D8152329F23F0022C00E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8052329F23F0022C00E /* UIImageView+Extension.swift */; };
+		1169D8162329F23F0022C00E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8062329F23F0022C00E /* UIColor+Extension.swift */; };
+		1169D8172329F23F0022C00E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8072329F23F0022C00E /* Date+Extension.swift */; };
+		1169D8182329F23F0022C00E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8082329F23F0022C00E /* UIView+Extension.swift */; };
+		1169D8192329F23F0022C00E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8092329F23F0022C00E /* UIImage+Extension.swift */; };
+		1169D81A2329F23F0022C00E /* YLMumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D80A2329F23F0022C00E /* YLMumViewController.swift */; };
+		1169D81B2329F23F0022C00E /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D80B2329F23F0022C00E /* UIButton + Extension.swift */; };
+		1169D81C2329F23F0022C00E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D80C2329F23F0022C00E /* String+Extension.swift */; };
+		1169D81D2329F23F0022C00E /* YLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D80D2329F23F0022C00E /* YLNavigationController.swift */; };
+		1169D81E2329F23F0022C00E /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D80E2329F23F0022C00E /* Timer+Extension.swift */; };
+		1169D81F2329F23F0022C00E /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D80F2329F23F0022C00E /* Dictionary+Extension.swift */; };
+		1169D8202329F23F0022C00E /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8102329F23F0022C00E /* Device.swift */; };
+		1169D8212329F23F0022C00E /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8112329F23F0022C00E /* CGSize+Extension.swift */; };
+		1169D8222329F23F0022C00E /* YLMainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8122329F23F0022C00E /* YLMainTabbarViewController.swift */; };
+		1169D8232329F23F0022C00E /* Array+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8132329F23F0022C00E /* Array+Extension .swift */; };
+		1169D8242329F23F0022C00E /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8142329F23F0022C00E /* UILable+Extension.swift */; };
+		8841204FBC47F4F9CD0230DB /* Pods_YLSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52099E6CB9EB1298C9844324 /* Pods_YLSwiftTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B7308C87586667DDDD50F0E /* Pods-YLSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLSwiftTest.release.xcconfig"; path = "Target Support Files/Pods-YLSwiftTest/Pods-YLSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		111BABDA232F2A4C0011C710 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		111BABDC232F2B340011C710 /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
+		111BABDF232F2D580011C710 /* YLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLConstant.swift; sourceTree = "<group>"; };
+		111BABE2232F2DF90011C710 /* LanguageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageUtil.swift; sourceTree = "<group>"; };
+		111BABE5232F38E90011C710 /* ShowInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoTableViewCell.swift; sourceTree = "<group>"; };
+		111BABE7232F67F80011C710 /* UILabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelViewController.swift; sourceTree = "<group>"; };
+		111BABEB232F6CCF0011C710 /* UITextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldViewController.swift; sourceTree = "<group>"; };
 		112262432328CEB7007CE3A6 /* YLSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		112262462328CEB7007CE3A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		112262482328CEB7007CE3A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1122624B2328CEB7007CE3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1122624D2328CEB8007CE3A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		112262502328CEB8007CE3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		112262522328CEB8007CE3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1169D8052329F23F0022C00E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		1169D8062329F23F0022C00E /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1169D8072329F23F0022C00E /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1169D8082329F23F0022C00E /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1169D8092329F23F0022C00E /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		1169D80A2329F23F0022C00E /* YLMumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLMumViewController.swift; sourceTree = "<group>"; };
+		1169D80B2329F23F0022C00E /* UIButton + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		1169D80C2329F23F0022C00E /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		1169D80D2329F23F0022C00E /* YLNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNavigationController.swift; sourceTree = "<group>"; };
+		1169D80E2329F23F0022C00E /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
+		1169D80F2329F23F0022C00E /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		1169D8102329F23F0022C00E /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		1169D8112329F23F0022C00E /* CGSize+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
+		1169D8122329F23F0022C00E /* YLMainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLMainTabbarViewController.swift; sourceTree = "<group>"; };
+		1169D8132329F23F0022C00E /* Array+Extension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension .swift"; sourceTree = "<group>"; };
+		1169D8142329F23F0022C00E /* UILable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extension.swift"; sourceTree = "<group>"; };
+		52099E6CB9EB1298C9844324 /* Pods_YLSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA59A3D00E6CDF44F0C1D5E /* Pods-YLSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLSwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-YLSwiftTest/Pods-YLSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +75,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8841204FBC47F4F9CD0230DB /* Pods_YLSwiftTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111BABDE232F2D350011C710 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				111BABDF232F2D580011C710 /* YLConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		111BABE1232F2DDC0011C710 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				111BABE2232F2DF90011C710 /* LanguageUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		1122623A2328CEB7007CE3A6 = {
 			isa = PBXGroup;
 			children = (
 				112262452328CEB7007CE3A6 /* YLSwiftTest */,
 				112262442328CEB7007CE3A6 /* Products */,
+				CC8CD6527EB0D1BD69F56018 /* Pods */,
+				C0F8C85C42DD697BBB95E3BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +119,60 @@
 		112262452328CEB7007CE3A6 /* YLSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				111BABE1232F2DDC0011C710 /* Utils */,
+				111BABDE232F2D350011C710 /* Constant */,
+				1169D8042329F23F0022C00E /* Extension */,
 				112262462328CEB7007CE3A6 /* AppDelegate.swift */,
 				112262482328CEB7007CE3A6 /* ViewController.swift */,
-				1122624A2328CEB7007CE3A6 /* Main.storyboard */,
 				1122624D2328CEB8007CE3A6 /* Assets.xcassets */,
-				1122624F2328CEB8007CE3A6 /* LaunchScreen.storyboard */,
 				112262522328CEB8007CE3A6 /* Info.plist */,
+				111BABDA232F2A4C0011C710 /* Music.swift */,
+				111BABDC232F2B340011C710 /* MusicListViewModel.swift */,
+				111BABE5232F38E90011C710 /* ShowInfoTableViewCell.swift */,
+				111BABE7232F67F80011C710 /* UILabelViewController.swift */,
+				111BABEB232F6CCF0011C710 /* UITextFieldViewController.swift */,
 			);
 			path = YLSwiftTest;
+			sourceTree = "<group>";
+		};
+		1169D8042329F23F0022C00E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1169D8052329F23F0022C00E /* UIImageView+Extension.swift */,
+				1169D8062329F23F0022C00E /* UIColor+Extension.swift */,
+				1169D8072329F23F0022C00E /* Date+Extension.swift */,
+				1169D8082329F23F0022C00E /* UIView+Extension.swift */,
+				1169D8092329F23F0022C00E /* UIImage+Extension.swift */,
+				1169D80A2329F23F0022C00E /* YLMumViewController.swift */,
+				1169D80B2329F23F0022C00E /* UIButton + Extension.swift */,
+				1169D80C2329F23F0022C00E /* String+Extension.swift */,
+				1169D80D2329F23F0022C00E /* YLNavigationController.swift */,
+				1169D80E2329F23F0022C00E /* Timer+Extension.swift */,
+				1169D80F2329F23F0022C00E /* Dictionary+Extension.swift */,
+				1169D8102329F23F0022C00E /* Device.swift */,
+				1169D8112329F23F0022C00E /* CGSize+Extension.swift */,
+				1169D8122329F23F0022C00E /* YLMainTabbarViewController.swift */,
+				1169D8132329F23F0022C00E /* Array+Extension .swift */,
+				1169D8142329F23F0022C00E /* UILable+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C0F8C85C42DD697BBB95E3BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52099E6CB9EB1298C9844324 /* Pods_YLSwiftTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC8CD6527EB0D1BD69F56018 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AA59A3D00E6CDF44F0C1D5E /* Pods-YLSwiftTest.debug.xcconfig */,
+				0B7308C87586667DDDD50F0E /* Pods-YLSwiftTest.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 112262552328CEB8007CE3A6 /* Build configuration list for PBXNativeTarget "YLSwiftTest" */;
 			buildPhases = (
+				9DC9A02ECB7BB95BDB702718 /* [CP] Check Pods Manifest.lock */,
 				1122623F2328CEB7007CE3A6 /* Sources */,
 				112262402328CEB7007CE3A6 /* Frameworks */,
 				112262412328CEB7007CE3A6 /* Resources */,
+				56FCDDA9880FAF35274836AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,44 +235,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				112262512328CEB8007CE3A6 /* LaunchScreen.storyboard in Resources */,
 				1122624E2328CEB8007CE3A6 /* Assets.xcassets in Resources */,
-				1122624C2328CEB7007CE3A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56FCDDA9880FAF35274836AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YLSwiftTest/Pods-YLSwiftTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YLSwiftTest/Pods-YLSwiftTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YLSwiftTest/Pods-YLSwiftTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC9A02ECB7BB95BDB702718 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLSwiftTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1122623F2328CEB7007CE3A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1169D8222329F23F0022C00E /* YLMainTabbarViewController.swift in Sources */,
+				1169D8182329F23F0022C00E /* UIView+Extension.swift in Sources */,
+				1169D8192329F23F0022C00E /* UIImage+Extension.swift in Sources */,
+				1169D8172329F23F0022C00E /* Date+Extension.swift in Sources */,
+				111BABDD232F2B340011C710 /* MusicListViewModel.swift in Sources */,
+				1169D8242329F23F0022C00E /* UILable+Extension.swift in Sources */,
+				1169D8232329F23F0022C00E /* Array+Extension .swift in Sources */,
+				1169D8152329F23F0022C00E /* UIImageView+Extension.swift in Sources */,
+				1169D81F2329F23F0022C00E /* Dictionary+Extension.swift in Sources */,
+				111BABDB232F2A4C0011C710 /* Music.swift in Sources */,
+				1169D8202329F23F0022C00E /* Device.swift in Sources */,
+				111BABE8232F67F80011C710 /* UILabelViewController.swift in Sources */,
+				111BABEC232F6CCF0011C710 /* UITextFieldViewController.swift in Sources */,
+				111BABE6232F38E90011C710 /* ShowInfoTableViewCell.swift in Sources */,
 				112262492328CEB7007CE3A6 /* ViewController.swift in Sources */,
+				1169D81E2329F23F0022C00E /* Timer+Extension.swift in Sources */,
+				1169D81B2329F23F0022C00E /* UIButton + Extension.swift in Sources */,
+				111BABE0232F2D580011C710 /* YLConstant.swift in Sources */,
+				111BABE3232F2DF90011C710 /* LanguageUtil.swift in Sources */,
 				112262472328CEB7007CE3A6 /* AppDelegate.swift in Sources */,
+				1169D8162329F23F0022C00E /* UIColor+Extension.swift in Sources */,
+				1169D8212329F23F0022C00E /* CGSize+Extension.swift in Sources */,
+				1169D81C2329F23F0022C00E /* String+Extension.swift in Sources */,
+				1169D81A2329F23F0022C00E /* YLMumViewController.swift in Sources */,
+				1169D81D2329F23F0022C00E /* YLNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1122624A2328CEB7007CE3A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1122624B2328CEB7007CE3A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1122624F2328CEB8007CE3A6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				112262502328CEB8007CE3A6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		112262532328CEB8007CE3A6 /* Debug */ = {
@@ -280,6 +437,7 @@
 		};
 		112262562328CEB8007CE3A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA59A3D00E6CDF44F0C1D5E /* Pods-YLSwiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +456,7 @@
 		};
 		112262572328CEB8007CE3A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7308C87586667DDDD50F0E /* Pods-YLSwiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

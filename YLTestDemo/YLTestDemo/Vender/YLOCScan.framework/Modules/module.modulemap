@@ -1,0 +1,6 @@
+framework module YLOCScan {
+  umbrella header "YLOCScan.h"
+
+  export *
+  module * { export * }
+}

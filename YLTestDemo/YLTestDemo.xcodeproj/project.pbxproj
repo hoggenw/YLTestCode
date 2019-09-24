@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		112261FC2326374F007CE3A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 112261FB2326374F007CE3A6 /* AppDelegate.m */; };
 		112261FF2326374F007CE3A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112261FE2326374F007CE3A6 /* ViewController.m */; };
-		112262022326374F007CE3A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112262002326374F007CE3A6 /* Main.storyboard */; };
 		1122620423263750007CE3A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1122620323263750007CE3A6 /* Assets.xcassets */; };
-		1122620723263750007CE3A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122620523263750007CE3A6 /* LaunchScreen.storyboard */; };
 		1122620A23263750007CE3A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122620923263750007CE3A6 /* main.m */; };
+		1122621223263D6C007CE3A6 /* YLOCScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1122621123263D6C007CE3A6 /* YLOCScan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +20,10 @@
 		112261FB2326374F007CE3A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		112261FD2326374F007CE3A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		112261FE2326374F007CE3A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		112262012326374F007CE3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1122620323263750007CE3A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1122620623263750007CE3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1122620823263750007CE3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1122620923263750007CE3A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1122621123263D6C007CE3A6 /* YLOCScan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YLOCScan.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1122621223263D6C007CE3A6 /* YLOCScan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,17 +57,24 @@
 		112261F92326374F007CE3A6 /* YLTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1122621023263D58007CE3A6 /* Vender */,
 				112261FA2326374F007CE3A6 /* AppDelegate.h */,
 				112261FB2326374F007CE3A6 /* AppDelegate.m */,
 				112261FD2326374F007CE3A6 /* ViewController.h */,
 				112261FE2326374F007CE3A6 /* ViewController.m */,
-				112262002326374F007CE3A6 /* Main.storyboard */,
 				1122620323263750007CE3A6 /* Assets.xcassets */,
-				1122620523263750007CE3A6 /* LaunchScreen.storyboard */,
 				1122620823263750007CE3A6 /* Info.plist */,
 				1122620923263750007CE3A6 /* main.m */,
 			);
 			path = YLTestDemo;
+			sourceTree = "<group>";
+		};
+		1122621023263D58007CE3A6 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				1122621123263D6C007CE3A6 /* YLOCScan.framework */,
+			);
+			path = Vender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1122620723263750007CE3A6 /* LaunchScreen.storyboard in Resources */,
 				1122620423263750007CE3A6 /* Assets.xcassets in Resources */,
-				112262022326374F007CE3A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,25 +152,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		112262002326374F007CE3A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				112262012326374F007CE3A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1122620523263750007CE3A6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1122620623263750007CE3A6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1122620B23263750007CE3A6 /* Debug */ = {
@@ -287,6 +272,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD59NK3467;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YLTestDemo/Vender",
+				);
 				INFOPLIST_FILE = YLTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +293,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD59NK3467;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YLTestDemo/Vender",
+				);
 				INFOPLIST_FILE = YLTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
