@@ -22,4 +22,10 @@ let HEIGHT_TABBAR = 49;
 let HEIGHT_NAVBAR = 44;
 let ScreenWidth = UIScreen.main.bounds.size.width;
 let ScreenHeight = UIScreen.main.bounds.size.height;
+let MINUTE = 60;
+let HOUR  = (60 * MINUTE);
+let DAY   = (24 * HOUR);
+let WEEK  = (7 * DAY);
+let MONTH = (30 * DAY);
+let YEAR  = (365 * DAY);
 

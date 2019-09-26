@@ -33,5 +33,41 @@ public extension Date{
         return strDate
         
     }
+    func formatDayOfYear() -> String {
+        return formatDate(format: "yyyy-MM-dd");
+    }
+    
+    func formatWeekday() -> String {
+        return formatDate(format: "EEEE");
+    }
+    
+    
+    func formatHourAndMinute() -> String {
+        return formatDate(format: "HH:mm");
+    }
+    
+    func formatYYMMDDHHMMSS() -> String {
+        return formatDate(format: "yyyy-MM-dd HH:mm:ss");
+    }
+    
+    func formatMonthAndDay() -> String {
+        return formatDate(format: "MM月dd日");
+    }
+    
+    
+    func formatMMDDHHMM() -> String {
+        return formatDate(format: "MM-dd HH:mm");
+    }
+    
+    
+    func formatMMDD() -> String {
+        return formatDate(format: "MM-dd");
+    }
+    
+    func formatDate(format: String) -> String {
+        let formatter =  DateFormatter();
+        formatter.dateFormat = format;
+        return formatter.string(from: self);
+    }
     
 }

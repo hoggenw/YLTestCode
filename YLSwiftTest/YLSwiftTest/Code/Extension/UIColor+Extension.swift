@@ -49,6 +49,14 @@ public extension UIColor {
         return UIColor.init(R: red, G: green, B: blue, A: 1)
     }
     
+    static func colorWithHexString(hexString:String)->UIColor {
+        let removeSharpMarkhexString = hexString.replacingOccurrences(of: "#", with: "");
+        let scanner = Scanner(string: removeSharpMarkhexString);
+        var result = 0;
+        scanner.scanInt(&result);
+        return self.colorWith(hexRGBValue: UInt32(result));
+    }
+    
     // randomColor
     static func randomColor() -> UIColor {
         

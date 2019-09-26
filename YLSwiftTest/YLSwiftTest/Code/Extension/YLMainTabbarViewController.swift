@@ -106,8 +106,28 @@ public class YLMainTabbarViewController: UITabBarController {
 //        
 //    }
     
+    func exitApplication()  {
+        UIView.beginAnimations("exitApplication", context: nil);
+        UIView.setAnimationDuration(0.5);
+        UIView.setAnimationDelegate(self);
+        let appDelegate = UIApplication.shared.delegate!;
+        UIView.setAnimationTransition(UIView.AnimationTransition.flipFromRight, for: appDelegate.window!!, cache: false);
+       // UIView.setAnimationDidStop(#selector(animationFinished(animationID:finished:context:)));
+        UIView.setAnimationDidStop(#selector(animationFinished(animationID:finished:)))
+        
+        appDelegate.window!!.bounds = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 0, height: 0));
+        UIView.commitAnimations();
+       
+    }
+ 
+   @objc func animationFinished(animationID:String , finished: NSNumber) {
+        if animationID.compare("exitApplication").rawValue == 0 {
+            exit(0);
+        }
+       
+    }
+    
 }
-
 
 extension YLMainTabbarViewController: UITabBarControllerDelegate {
     public func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {

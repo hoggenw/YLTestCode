@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+// 导入CommonCrypto
+import CommonCrypto
 
 fileprivate let IVString = "xxxxxxxxxxxxxxxxx"
 public extension String {
@@ -79,23 +81,7 @@ public extension String {
 //        return nil
 //    }
 //    
-//    var md5:String {
-//        let str = cString(using: String.Encoding.utf8)
-//        let strLen = CC_LONG(lengthOfBytes(using: String.Encoding.utf8))
-//        let digestLen = Int(CC_MD5_DIGEST_LENGTH)
-//        let result = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLen)
-//        
-//        CC_MD5(str!, strLen, result)
-//        
-//        let hash = NSMutableString()
-//        for i in 0..<digestLen {
-//            hash.appendFormat("%02x", result[i])
-//        }
-//        
-//        result.deallocate(capacity: digestLen)
-//        
-//        return String(format: hash as String)
-//    }
+ 
     
 }
 
@@ -152,13 +138,15 @@ public extension String {
     func toInt() -> Int? {
         return NumberFormatter().number(from: self)?.intValue
     }
-    
+/**除掉空格的空字符串判断 */
     func isEmptyWithoutWhitespacesAndNewlines() -> Bool {
         if isEmpty {
             return true
         }
-        return 0 == trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).count
+        return 0 == self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).count
     }
+
+    
     
 }
 
@@ -197,6 +185,40 @@ public extension String {
             }
         }
         return nil
+    }
+    
+    func base64Encoding()->String
+    {
+        let plainData = self.data(using: String.Encoding.utf8)
+        let base64String = plainData?.base64EncodedString(options: NSData.Base64EncodingOptions.init(rawValue: 0))
+        return base64String!
+    }
+    
+    /**
+     *   base64解码
+     */
+    func base64Decoding()->String
+    {
+        let decodedData = NSData(base64Encoded: self, options: NSData.Base64DecodingOptions.init(rawValue: 0))
+        let decodedString = NSString(data: decodedData! as Data, encoding: String.Encoding.utf8.rawValue)! as String
+        return decodedString
+    }
+    
+    var md5:String {
+        let str = cString(using: String.Encoding.utf8)
+        let strLen = CUnsignedInt(lengthOfBytes(using: String.Encoding.utf8))
+        let digestLen = Int(CC_MD5_DIGEST_LENGTH)
+        let result = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLen)
+        
+        CC_MD5(str!, strLen, result)
+        
+        let hash = NSMutableString()
+        for i in 0..<digestLen {
+            hash.appendFormat("%02x", result[i])
+        }
+        free(result)
+        
+        return String(format: hash as String)
     }
 }
 

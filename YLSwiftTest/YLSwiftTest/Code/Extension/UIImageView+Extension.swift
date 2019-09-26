@@ -34,7 +34,7 @@ public extension UIImageView
         self.clipsToBounds = clipsToBounds
     }
     
-//
+
 //    @discardableResult
 //    func setImage(with resource: Resource?,
 //                  placeholder: Image? = nil,
@@ -158,8 +158,6 @@ public extension UIImageView
     }
     
     //使用UIImage类型的二维码图片生成Metal纹理。
-    
-
     private func createQRCodeTexture(device: MTLDevice) -> MTLTexture? {
         let bitsPerComponent = 8
         let bytesPerPixel = 4
