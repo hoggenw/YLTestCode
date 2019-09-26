@@ -6,7 +6,7 @@ target 'YLSwiftTest' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'Kingfisher'
-      pod 'SnapKit'
+    pod 'SnapKit'
 end
 
 # RxTests 和 RxBlocking 将在单元/集成测试中起到重要作用

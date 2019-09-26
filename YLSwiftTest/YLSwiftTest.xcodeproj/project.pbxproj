@@ -14,6 +14,9 @@
 		111BABE6232F38E90011C710 /* ShowInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABE5232F38E90011C710 /* ShowInfoTableViewCell.swift */; };
 		111BABE8232F67F80011C710 /* UILabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABE7232F67F80011C710 /* UILabelViewController.swift */; };
 		111BABEC232F6CCF0011C710 /* UITextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABEB232F6CCF0011C710 /* UITextFieldViewController.swift */; };
+		111BABEE233A0BD40011C710 /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABED233A0BD40011C710 /* UIResponder+Extension.swift */; };
+		111E64B0233B572E00BE3ECD /* FileManagerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E64AF233B572E00BE3ECD /* FileManagerUtil.swift */; };
+		111E64B2233C8CEC00BE3ECD /* UserDefUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E64B1233C8CEC00BE3ECD /* UserDefUtils.swift */; };
 		112262472328CEB7007CE3A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112262462328CEB7007CE3A6 /* AppDelegate.swift */; };
 		112262492328CEB7007CE3A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112262482328CEB7007CE3A6 /* ViewController.swift */; };
 		1122624E2328CEB8007CE3A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1122624D2328CEB8007CE3A6 /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		111BABE5232F38E90011C710 /* ShowInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoTableViewCell.swift; sourceTree = "<group>"; };
 		111BABE7232F67F80011C710 /* UILabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelViewController.swift; sourceTree = "<group>"; };
 		111BABEB232F6CCF0011C710 /* UITextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldViewController.swift; sourceTree = "<group>"; };
+		111BABED233A0BD40011C710 /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
+		111E64AF233B572E00BE3ECD /* FileManagerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUtil.swift; sourceTree = "<group>"; };
+		111E64B1233C8CEC00BE3ECD /* UserDefUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefUtils.swift; sourceTree = "<group>"; };
 		112262432328CEB7007CE3A6 /* YLSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		112262462328CEB7007CE3A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		112262482328CEB7007CE3A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,20 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		111BABDE232F2D350011C710 /* Constant */ = {
-			isa = PBXGroup;
-			children = (
-				111BABDF232F2D580011C710 /* YLConstant.swift */,
-			);
-			path = Constant;
-			sourceTree = "<group>";
-		};
 		111BABE1232F2DDC0011C710 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				111BABE2232F2DF90011C710 /* LanguageUtil.swift */,
+				111E64AF233B572E00BE3ECD /* FileManagerUtil.swift */,
+				111E64B1233C8CEC00BE3ECD /* UserDefUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		111E64AB233B15AC00BE3ECD /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				111E64AC233B4B7200BE3ECD /* BaseMain */,
+				111BABE1232F2DDC0011C710 /* Utils */,
+				1169D8042329F23F0022C00E /* Extension */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		111E64AC233B4B7200BE3ECD /* BaseMain */ = {
+			isa = PBXGroup;
+			children = (
+				111BABDF232F2D580011C710 /* YLConstant.swift */,
+				112262462328CEB7007CE3A6 /* AppDelegate.swift */,
+			);
+			path = BaseMain;
 			sourceTree = "<group>";
 		};
 		1122623A2328CEB7007CE3A6 = {
@@ -119,10 +138,7 @@
 		112262452328CEB7007CE3A6 /* YLSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
-				111BABE1232F2DDC0011C710 /* Utils */,
-				111BABDE232F2D350011C710 /* Constant */,
-				1169D8042329F23F0022C00E /* Extension */,
-				112262462328CEB7007CE3A6 /* AppDelegate.swift */,
+				111E64AB233B15AC00BE3ECD /* Code */,
 				112262482328CEB7007CE3A6 /* ViewController.swift */,
 				1122624D2328CEB8007CE3A6 /* Assets.xcassets */,
 				112262522328CEB8007CE3A6 /* Info.plist */,
@@ -154,6 +170,7 @@
 				1169D8122329F23F0022C00E /* YLMainTabbarViewController.swift */,
 				1169D8132329F23F0022C00E /* Array+Extension .swift */,
 				1169D8142329F23F0022C00E /* UILable+Extension.swift */,
+				111BABED233A0BD40011C710 /* UIResponder+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -296,16 +313,19 @@
 				1169D8242329F23F0022C00E /* UILable+Extension.swift in Sources */,
 				1169D8232329F23F0022C00E /* Array+Extension .swift in Sources */,
 				1169D8152329F23F0022C00E /* UIImageView+Extension.swift in Sources */,
+				111BABEE233A0BD40011C710 /* UIResponder+Extension.swift in Sources */,
 				1169D81F2329F23F0022C00E /* Dictionary+Extension.swift in Sources */,
 				111BABDB232F2A4C0011C710 /* Music.swift in Sources */,
 				1169D8202329F23F0022C00E /* Device.swift in Sources */,
 				111BABE8232F67F80011C710 /* UILabelViewController.swift in Sources */,
+				111E64B0233B572E00BE3ECD /* FileManagerUtil.swift in Sources */,
 				111BABEC232F6CCF0011C710 /* UITextFieldViewController.swift in Sources */,
 				111BABE6232F38E90011C710 /* ShowInfoTableViewCell.swift in Sources */,
 				112262492328CEB7007CE3A6 /* ViewController.swift in Sources */,
 				1169D81E2329F23F0022C00E /* Timer+Extension.swift in Sources */,
 				1169D81B2329F23F0022C00E /* UIButton + Extension.swift in Sources */,
 				111BABE0232F2D580011C710 /* YLConstant.swift in Sources */,
+				111E64B2233C8CEC00BE3ECD /* UserDefUtils.swift in Sources */,
 				111BABE3232F2DF90011C710 /* LanguageUtil.swift in Sources */,
 				112262472328CEB7007CE3A6 /* AppDelegate.swift in Sources */,
 				1169D8162329F23F0022C00E /* UIColor+Extension.swift in Sources */,
