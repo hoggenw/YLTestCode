@@ -17,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window = UIWindow(frame: UIScreen.main.bounds)
             window?.makeKeyAndVisible()
           window?.rootViewController =  UINavigationController(rootViewController: ViewController())
+        
+        
+        // U-Share 平台设置 分享
+        YLUMengHelper.UMSocialStart();
+        //人脸识别
+        YLIFlyHelper.makeConfiguration();
+        
         // Override point for customization after application launch.
         return true
     }

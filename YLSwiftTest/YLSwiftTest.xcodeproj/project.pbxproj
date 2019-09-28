@@ -17,6 +17,32 @@
 		111BABEE233A0BD40011C710 /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BABED233A0BD40011C710 /* UIResponder+Extension.swift */; };
 		111E64B0233B572E00BE3ECD /* FileManagerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E64AF233B572E00BE3ECD /* FileManagerUtil.swift */; };
 		111E64B2233C8CEC00BE3ECD /* UserDefUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E64B1233C8CEC00BE3ECD /* UserDefUtils.swift */; };
+		111E64B8233C932500BE3ECD /* YLUMengHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E64B7233C932500BE3ECD /* YLUMengHelper.swift */; };
+		111E64BF233CA0C200BE3ECD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 111E64BD233CA0C200BE3ECD /* Localizable.strings */; };
+		111E64C0233CA0C200BE3ECD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 111E64BE233CA0C200BE3ECD /* InfoPlist.strings */; };
+		111E64C2233CA19A00BE3ECD /* YLIFlyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E64C1233CA19A00BE3ECD /* YLIFlyHelper.swift */; };
+		111E64C5233CA26C00BE3ECD /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64C4233CA26C00BE3ECD /* iflyMSC.framework */; };
+		111E64C7233CA2F100BE3ECD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64C6233CA2F000BE3ECD /* libc++.tbd */; };
+		111E64C9233CA33500BE3ECD /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64C8233CA33500BE3ECD /* libstdc++.6.0.9.tbd */; };
+		111E64CB233CA34400BE3ECD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64CA233CA34400BE3ECD /* libz.tbd */; };
+		111E64CD233CA35200BE3ECD /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64CC233CA35200BE3ECD /* libbz2.tbd */; };
+		111E64CF233CA35D00BE3ECD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64CE233CA35D00BE3ECD /* AudioToolbox.framework */; };
+		111E64D1233CA36300BE3ECD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64D0233CA36300BE3ECD /* AVFoundation.framework */; };
+		111E64D3233CA36F00BE3ECD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64D2233CA36F00BE3ECD /* CoreGraphics.framework */; };
+		111E64D5233CA37D00BE3ECD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64D4233CA37D00BE3ECD /* CoreVideo.framework */; };
+		111E64D7233CA38900BE3ECD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64D6233CA38900BE3ECD /* MediaPlayer.framework */; };
+		111E64D9233CA39300BE3ECD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64D8233CA39300BE3ECD /* MobileCoreServices.framework */; };
+		111E64DB233CA39D00BE3ECD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64DA233CA39D00BE3ECD /* OpenGLES.framework */; };
+		111E64DD233CA3A600BE3ECD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64DC233CA3A600BE3ECD /* QuartzCore.framework */; };
+		111E64DF233CA3B000BE3ECD /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64DE233CA3B000BE3ECD /* VideoToolbox.framework */; };
+		111E64E1233CA3C000BE3ECD /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64E0233CA3C000BE3ECD /* libiconv.tbd */; };
+		111E64E3233CA3DA00BE3ECD /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64E2233CA3DA00BE3ECD /* AddressBook.framework */; };
+		111E64E5233CA3EF00BE3ECD /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64E4233CA3EF00BE3ECD /* Contacts.framework */; };
+		111E64E7233CA40100BE3ECD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64E6233CA40100BE3ECD /* CoreLocation.framework */; };
+		111E64E9233CA40A00BE3ECD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64E8233CA40A00BE3ECD /* UIKit.framework */; };
+		111E64EB233CA41100BE3ECD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64EA233CA41100BE3ECD /* Foundation.framework */; };
+		111E64ED233CA41E00BE3ECD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64EC233CA41E00BE3ECD /* SystemConfiguration.framework */; };
+		111E64EF233CA42800BE3ECD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E64EE233CA42800BE3ECD /* CoreTelephony.framework */; };
 		112262472328CEB7007CE3A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112262462328CEB7007CE3A6 /* AppDelegate.swift */; };
 		112262492328CEB7007CE3A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112262482328CEB7007CE3A6 /* ViewController.swift */; };
 		1122624E2328CEB8007CE3A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1122624D2328CEB8007CE3A6 /* Assets.xcassets */; };
@@ -36,6 +62,7 @@
 		1169D8222329F23F0022C00E /* YLMainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8122329F23F0022C00E /* YLMainTabbarViewController.swift */; };
 		1169D8232329F23F0022C00E /* Array+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8132329F23F0022C00E /* Array+Extension .swift */; };
 		1169D8242329F23F0022C00E /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8142329F23F0022C00E /* UILable+Extension.swift */; };
+		116B9219233DF1520069AEAC /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116B9218233DF1520069AEAC /* DatePickerView.swift */; };
 		8841204FBC47F4F9CD0230DB /* Pods_YLSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52099E6CB9EB1298C9844324 /* Pods_YLSwiftTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +78,33 @@
 		111BABED233A0BD40011C710 /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
 		111E64AF233B572E00BE3ECD /* FileManagerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUtil.swift; sourceTree = "<group>"; };
 		111E64B1233C8CEC00BE3ECD /* UserDefUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefUtils.swift; sourceTree = "<group>"; };
+		111E64B3233C91DE00BE3ECD /* YLSwiftTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLSwiftTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		111E64B7233C932500BE3ECD /* YLUMengHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLUMengHelper.swift; sourceTree = "<group>"; };
+		111E64BD233CA0C200BE3ECD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		111E64BE233CA0C200BE3ECD /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		111E64C1233CA19A00BE3ECD /* YLIFlyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLIFlyHelper.swift; sourceTree = "<group>"; };
+		111E64C4233CA26C00BE3ECD /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		111E64C6233CA2F000BE3ECD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		111E64C8233CA33500BE3ECD /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		111E64CA233CA34400BE3ECD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		111E64CC233CA35200BE3ECD /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		111E64CE233CA35D00BE3ECD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		111E64D0233CA36300BE3ECD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		111E64D2233CA36F00BE3ECD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		111E64D4233CA37D00BE3ECD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		111E64D6233CA38900BE3ECD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		111E64D8233CA39300BE3ECD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		111E64DA233CA39D00BE3ECD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		111E64DC233CA3A600BE3ECD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		111E64DE233CA3B000BE3ECD /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		111E64E0233CA3C000BE3ECD /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		111E64E2233CA3DA00BE3ECD /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		111E64E4233CA3EF00BE3ECD /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		111E64E6233CA40100BE3ECD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		111E64E8233CA40A00BE3ECD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		111E64EA233CA41100BE3ECD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		111E64EC233CA41E00BE3ECD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		111E64EE233CA42800BE3ECD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		112262432328CEB7007CE3A6 /* YLSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		112262462328CEB7007CE3A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		112262482328CEB7007CE3A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +126,7 @@
 		1169D8122329F23F0022C00E /* YLMainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLMainTabbarViewController.swift; sourceTree = "<group>"; };
 		1169D8132329F23F0022C00E /* Array+Extension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension .swift"; sourceTree = "<group>"; };
 		1169D8142329F23F0022C00E /* UILable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extension.swift"; sourceTree = "<group>"; };
+		116B9218233DF1520069AEAC /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		52099E6CB9EB1298C9844324 /* Pods_YLSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA59A3D00E6CDF44F0C1D5E /* Pods-YLSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLSwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-YLSwiftTest/Pods-YLSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +136,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111E64EF233CA42800BE3ECD /* CoreTelephony.framework in Frameworks */,
+				111E64ED233CA41E00BE3ECD /* SystemConfiguration.framework in Frameworks */,
+				111E64EB233CA41100BE3ECD /* Foundation.framework in Frameworks */,
+				111E64E9233CA40A00BE3ECD /* UIKit.framework in Frameworks */,
+				111E64E7233CA40100BE3ECD /* CoreLocation.framework in Frameworks */,
+				111E64E5233CA3EF00BE3ECD /* Contacts.framework in Frameworks */,
+				111E64E3233CA3DA00BE3ECD /* AddressBook.framework in Frameworks */,
+				111E64E1233CA3C000BE3ECD /* libiconv.tbd in Frameworks */,
+				111E64DF233CA3B000BE3ECD /* VideoToolbox.framework in Frameworks */,
+				111E64DD233CA3A600BE3ECD /* QuartzCore.framework in Frameworks */,
+				111E64DB233CA39D00BE3ECD /* OpenGLES.framework in Frameworks */,
+				111E64D9233CA39300BE3ECD /* MobileCoreServices.framework in Frameworks */,
+				111E64D7233CA38900BE3ECD /* MediaPlayer.framework in Frameworks */,
+				111E64D5233CA37D00BE3ECD /* CoreVideo.framework in Frameworks */,
+				111E64D3233CA36F00BE3ECD /* CoreGraphics.framework in Frameworks */,
+				111E64D1233CA36300BE3ECD /* AVFoundation.framework in Frameworks */,
+				111E64CF233CA35D00BE3ECD /* AudioToolbox.framework in Frameworks */,
+				111E64CD233CA35200BE3ECD /* libbz2.tbd in Frameworks */,
+				111E64CB233CA34400BE3ECD /* libz.tbd in Frameworks */,
+				111E64C9233CA33500BE3ECD /* libstdc++.6.0.9.tbd in Frameworks */,
+				111E64C7233CA2F100BE3ECD /* libc++.tbd in Frameworks */,
+				111E64C5233CA26C00BE3ECD /* iflyMSC.framework in Frameworks */,
 				8841204FBC47F4F9CD0230DB /* Pods_YLSwiftTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +171,8 @@
 				111BABE2232F2DF90011C710 /* LanguageUtil.swift */,
 				111E64AF233B572E00BE3ECD /* FileManagerUtil.swift */,
 				111E64B1233C8CEC00BE3ECD /* UserDefUtils.swift */,
+				111E64B7233C932500BE3ECD /* YLUMengHelper.swift */,
+				111E64C1233CA19A00BE3ECD /* YLIFlyHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -101,6 +180,8 @@
 		111E64AB233B15AC00BE3ECD /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				116B9217233DF1240069AEAC /* CustomView */,
+				111E64C3233CA1EA00BE3ECD /* Vender */,
 				111E64AC233B4B7200BE3ECD /* BaseMain */,
 				111BABE1232F2DDC0011C710 /* Utils */,
 				1169D8042329F23F0022C00E /* Extension */,
@@ -113,8 +194,35 @@
 			children = (
 				111BABDF232F2D580011C710 /* YLConstant.swift */,
 				112262462328CEB7007CE3A6 /* AppDelegate.swift */,
+				111E64B3233C91DE00BE3ECD /* YLSwiftTest-Bridging-Header.h */,
 			);
 			path = BaseMain;
+			sourceTree = "<group>";
+		};
+		111E64B9233C9F4C00BE3ECD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1122624D2328CEB8007CE3A6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		111E64BA233C9F7100BE3ECD /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				111E64BE233CA0C200BE3ECD /* InfoPlist.strings */,
+				111E64BD233CA0C200BE3ECD /* Localizable.strings */,
+				112262522328CEB8007CE3A6 /* Info.plist */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		111E64C3233CA1EA00BE3ECD /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				111E64C4233CA26C00BE3ECD /* iflyMSC.framework */,
+			);
+			path = Vender;
 			sourceTree = "<group>";
 		};
 		1122623A2328CEB7007CE3A6 = {
@@ -138,10 +246,10 @@
 		112262452328CEB7007CE3A6 /* YLSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				111E64BA233C9F7100BE3ECD /* Supporting File */,
+				111E64B9233C9F4C00BE3ECD /* Resources */,
 				111E64AB233B15AC00BE3ECD /* Code */,
 				112262482328CEB7007CE3A6 /* ViewController.swift */,
-				1122624D2328CEB8007CE3A6 /* Assets.xcassets */,
-				112262522328CEB8007CE3A6 /* Info.plist */,
 				111BABDA232F2A4C0011C710 /* Music.swift */,
 				111BABDC232F2B340011C710 /* MusicListViewModel.swift */,
 				111BABE5232F38E90011C710 /* ShowInfoTableViewCell.swift */,
@@ -175,9 +283,38 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		116B9217233DF1240069AEAC /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				116B9218233DF1520069AEAC /* DatePickerView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		C0F8C85C42DD697BBB95E3BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				111E64EE233CA42800BE3ECD /* CoreTelephony.framework */,
+				111E64EC233CA41E00BE3ECD /* SystemConfiguration.framework */,
+				111E64EA233CA41100BE3ECD /* Foundation.framework */,
+				111E64E8233CA40A00BE3ECD /* UIKit.framework */,
+				111E64E6233CA40100BE3ECD /* CoreLocation.framework */,
+				111E64E4233CA3EF00BE3ECD /* Contacts.framework */,
+				111E64E2233CA3DA00BE3ECD /* AddressBook.framework */,
+				111E64E0233CA3C000BE3ECD /* libiconv.tbd */,
+				111E64DE233CA3B000BE3ECD /* VideoToolbox.framework */,
+				111E64DC233CA3A600BE3ECD /* QuartzCore.framework */,
+				111E64DA233CA39D00BE3ECD /* OpenGLES.framework */,
+				111E64D8233CA39300BE3ECD /* MobileCoreServices.framework */,
+				111E64D6233CA38900BE3ECD /* MediaPlayer.framework */,
+				111E64D4233CA37D00BE3ECD /* CoreVideo.framework */,
+				111E64D2233CA36F00BE3ECD /* CoreGraphics.framework */,
+				111E64D0233CA36300BE3ECD /* AVFoundation.framework */,
+				111E64CE233CA35D00BE3ECD /* AudioToolbox.framework */,
+				111E64CC233CA35200BE3ECD /* libbz2.tbd */,
+				111E64CA233CA34400BE3ECD /* libz.tbd */,
+				111E64C8233CA33500BE3ECD /* libstdc++.6.0.9.tbd */,
+				111E64C6233CA2F000BE3ECD /* libc++.tbd */,
 				52099E6CB9EB1298C9844324 /* Pods_YLSwiftTest.framework */,
 			);
 			name = Frameworks;
@@ -204,6 +341,7 @@
 				112262402328CEB7007CE3A6 /* Frameworks */,
 				112262412328CEB7007CE3A6 /* Resources */,
 				56FCDDA9880FAF35274836AB /* [CP] Embed Pods Frameworks */,
+				26257C4497FF1FE39B809671 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,6 +364,7 @@
 				TargetAttributes = {
 					112262422328CEB7007CE3A6 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -253,12 +392,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				1122624E2328CEB8007CE3A6 /* Assets.xcassets in Resources */,
+				111E64C0233CA0C200BE3ECD /* InfoPlist.strings in Resources */,
+				111E64BF233CA0C200BE3ECD /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		26257C4497FF1FE39B809671 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YLSwiftTest/Pods-YLSwiftTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YLSwiftTest/Pods-YLSwiftTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YLSwiftTest/Pods-YLSwiftTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		56FCDDA9880FAF35274836AB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,8 +463,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111E64C2233CA19A00BE3ECD /* YLIFlyHelper.swift in Sources */,
 				1169D8222329F23F0022C00E /* YLMainTabbarViewController.swift in Sources */,
 				1169D8182329F23F0022C00E /* UIView+Extension.swift in Sources */,
+				116B9219233DF1520069AEAC /* DatePickerView.swift in Sources */,
 				1169D8192329F23F0022C00E /* UIImage+Extension.swift in Sources */,
 				1169D8172329F23F0022C00E /* Date+Extension.swift in Sources */,
 				111BABDD232F2B340011C710 /* MusicListViewModel.swift in Sources */,
@@ -317,6 +477,7 @@
 				1169D81F2329F23F0022C00E /* Dictionary+Extension.swift in Sources */,
 				111BABDB232F2A4C0011C710 /* Music.swift in Sources */,
 				1169D8202329F23F0022C00E /* Device.swift in Sources */,
+				111E64B8233C932500BE3ECD /* YLUMengHelper.swift in Sources */,
 				111BABE8232F67F80011C710 /* UILabelViewController.swift in Sources */,
 				111E64B0233B572E00BE3ECD /* FileManagerUtil.swift in Sources */,
 				111BABEC232F6CCF0011C710 /* UITextFieldViewController.swift in Sources */,
@@ -460,15 +621,22 @@
 			baseConfigurationReference = 7AA59A3D00E6CDF44F0C1D5E /* Pods-YLSwiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD59NK3467;
-				INFOPLIST_FILE = YLSwiftTest/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YLSwiftTest/Code/Vender",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/YLSwiftTest/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hoggen.com.YLSwiftTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YLSwiftTest/Code/BaseMain/YLSwiftTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,15 +647,21 @@
 			baseConfigurationReference = 0B7308C87586667DDDD50F0E /* Pods-YLSwiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD59NK3467;
-				INFOPLIST_FILE = YLSwiftTest/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YLSwiftTest/Code/Vender",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/YLSwiftTest/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hoggen.com.YLSwiftTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YLSwiftTest/Code/BaseMain/YLSwiftTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

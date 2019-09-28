@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+public struct YLIFlyHelper {
+    static func makeConfiguration(){
+        //IFlySetting.setLogFile(LOG_LEVEL.LVL_LOW);
+        IFlySetting.showLogcat(false);
+        let cachePath = FileManagerUtil.getCachePath();
+        IFlySetting.setLogFilePath(cachePath);
+        let initString = String(format: "appid=%@", USER_APPID);
+        IFlySpeechUtility.createUtility(initString);
+        
+        
+    }
+}

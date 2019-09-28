@@ -29,3 +29,6 @@ let WEEK  = (7 * DAY);
 let MONTH = (30 * DAY);
 let YEAR  = (365 * DAY);
 
+let  YLThirdSDKUMSocialAppkey = "5bf283a7b465f5a2ab0001e1";
+let USER_APPID = "5b5a8028";
+
