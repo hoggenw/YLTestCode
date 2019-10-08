@@ -9,3 +9,4 @@
 #import <UMCommon/UMCommon.h>
 #import <UMCommon/UMConfigure.h>
 #import "iflyMSC/IFlyFaceSDK.h"
+#import "Message.pbobjc.h"

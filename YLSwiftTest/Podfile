@@ -21,6 +21,12 @@ target 'YLSwiftTest' do
     pod 'UMCShare/Social/ReducedQQ'
     # 集成短信
     pod 'UMCShare/Social/SMS'
+    
+    
+    
+    pod 'BaiduMapKit' #百度地图SDK
+    pod 'BMKLocationKit' #定位功能
+    
 end
 
 # RxTests 和 RxBlocking 将在单元/集成测试中起到重要作用

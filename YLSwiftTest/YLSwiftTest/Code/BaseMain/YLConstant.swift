@@ -32,3 +32,5 @@ let YEAR  = (365 * DAY);
 let  YLThirdSDKUMSocialAppkey = "5bf283a7b465f5a2ab0001e1";
 let USER_APPID = "5b5a8028";
 
+let ThemeColor = UIColor.coloreWithRGB(red: 40, green: 197, blue: 190, alpha: 1)
+

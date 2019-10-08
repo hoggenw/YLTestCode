@@ -11,12 +11,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-            window = UIWindow(frame: UIScreen.main.bounds)
-            window?.makeKeyAndVisible()
-          window?.rootViewController =  UINavigationController(rootViewController: ViewController())
+        backgroundSetting();
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController =  UINavigationController(rootViewController: ViewController())
+        
+        //国际化设置
+        if  UserDefUtils.getStringForKey(key: "appLanguage") == ""   {
+            let language:String = Locale.preferredLanguages.first ?? "";
+            if language.hasPrefix("zh-Hans") {
+                UserDefUtils.saveString(saveString: "zh-Hans", for: "appLanguage");
+            }else {
+                 UserDefUtils.saveString(saveString: "en", for: "appLanguage");
+            }
+            
+        }
         
         
         // U-Share 平台设置 分享
@@ -27,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         return true
     }
+    
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -49,7 +65,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+//MARK: 背景色香港设置
+    func backgroundSetting() {
+        UINavigationBar.appearance().tintColor = UIColor.white;
+        var attributes = [NSAttributedString.Key : Any]();
+        attributes[NSAttributedString.Key.foregroundColor] = UIColor.white;
+        UINavigationBar.appearance().titleTextAttributes = attributes;
+       UINavigationBar.appearance().barTintColor = ThemeColor;
+        UIApplication.shared.statusBarStyle = .lightContent;
+        
+        
+        
+        
+    }
 
 
 }
-
+ 
